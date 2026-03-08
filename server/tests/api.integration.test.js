@@ -168,14 +168,44 @@ describe("API integration", () => {
     ]);
   });
 
-  it("does not inherit incorrect base evolution targets for divergent regional forms", async () => {
+  it("returns expected Meowth evolution lines across Kantonian, Alolan, and Galarian forms", async () => {
     const app = buildTestApp();
-    const response = await request(app).get("/api/pokemon/521/evolution");
+    const regular = await request(app).get("/api/pokemon/520/evolution");
+    const alola = await request(app).get("/api/pokemon/522/evolution");
+    const galar = await request(app).get("/api/pokemon/521/evolution");
 
-    expect(response.status).toBe(200);
-    expect(response.body.no_evolutions).toBe(true);
-    expect(response.body.nodes.map((node) => node.name)).toEqual(["Meowth (Galarian)"]);
-    expect(response.body.edges).toEqual([]);
+    expect(regular.status).toBe(200);
+    expect(regular.body.nodes.map((node) => node.name)).toEqual(["Meowth", "Persian"]);
+    expect(regular.body.edges).toEqual([
+      expect.objectContaining({
+        from_pokemon_id: 520,
+        to_pokemon_id: 530,
+      }),
+    ]);
+
+    expect(alola.status).toBe(200);
+    expect(alola.body.nodes.map((node) => node.name)).toEqual([
+      "Meowth (Alolan)",
+      "Persian (Alolan)",
+    ]);
+    expect(alola.body.edges).toEqual([
+      expect.objectContaining({
+        from_pokemon_id: 522,
+        to_pokemon_id: 531,
+      }),
+    ]);
+
+    expect(galar.status).toBe(200);
+    expect(galar.body.nodes.map((node) => node.name)).toEqual([
+      "Meowth (Galarian)",
+      "Perrserker",
+    ]);
+    expect(galar.body.edges).toEqual([
+      expect.objectContaining({
+        from_pokemon_id: 521,
+        to_pokemon_id: 864,
+      }),
+    ]);
   });
 
   it("embeds evolution_line in pokemon detail payload", async () => {

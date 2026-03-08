@@ -238,6 +238,32 @@ export const createPokemonRepository = (db) => ({
     return result.rows[0] ?? null;
   },
 
+  async getPokemonByProfileKey(profileKey) {
+    if (!profileKey) {
+      return null;
+    }
+
+    const query = `
+      SELECT
+        p.id,
+        p.profile_key,
+        p.national_dex_number,
+        p.name,
+        p.is_regional_variant,
+        p.sprite_url,
+        t1.name AS primary_type,
+        t2.name AS secondary_type
+      FROM battleex.pokemon p
+      JOIN battleex.types t1 ON t1.id = p.primary_type_id
+      LEFT JOIN battleex.types t2 ON t2.id = p.secondary_type_id
+      WHERE LOWER(p.profile_key) = LOWER($1)
+      LIMIT 1
+    `;
+
+    const result = await db.query(query, [profileKey]);
+    return result.rows[0] ?? null;
+  },
+
   async getRegionalVariantsByDexAndToken(dexNumbers, token) {
     if (!Array.isArray(dexNumbers) || dexNumbers.length === 0 || !token) {
       return [];

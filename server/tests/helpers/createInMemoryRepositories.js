@@ -398,6 +398,60 @@ const pokemon = [
     abilities: [{ name: "Intimidate", slot_type: "primary", short_effect: "Lowers foe Attack on entry." }],
   },
   {
+    id: 522,
+    profile_key: "52-meowth-alola",
+    national_dex_number: 52,
+    name: "Meowth (Alolan)",
+    is_regional_variant: true,
+    primary_type: "Dark",
+    secondary_type: null,
+    hp: 40,
+    attack: 35,
+    defense: 35,
+    special_attack: 50,
+    special_defense: 40,
+    speed: 90,
+    base_stat_total: 290,
+    sprite_url: "meowth-alola.png",
+    abilities: [{ name: "Intimidate", slot_type: "primary", short_effect: "Lowers foe Attack on entry." }],
+  },
+  {
+    id: 531,
+    profile_key: "53-persian-alola",
+    national_dex_number: 53,
+    name: "Persian (Alolan)",
+    is_regional_variant: true,
+    primary_type: "Dark",
+    secondary_type: null,
+    hp: 65,
+    attack: 60,
+    defense: 60,
+    special_attack: 75,
+    special_defense: 65,
+    speed: 115,
+    base_stat_total: 440,
+    sprite_url: "persian-alola.png",
+    abilities: [{ name: "Intimidate", slot_type: "primary", short_effect: "Lowers foe Attack on entry." }],
+  },
+  {
+    id: 864,
+    profile_key: "863",
+    national_dex_number: 863,
+    name: "Perrserker",
+    is_regional_variant: false,
+    primary_type: "Steel",
+    secondary_type: null,
+    hp: 70,
+    attack: 110,
+    defense: 100,
+    special_attack: 50,
+    special_defense: 60,
+    speed: 50,
+    base_stat_total: 440,
+    sprite_url: "perrserker.png",
+    abilities: [{ name: "Intimidate", slot_type: "primary", short_effect: "Lowers foe Attack on entry." }],
+  },
+  {
     id: 46,
     profile_key: "38-ninetales-alola",
     national_dex_number: 38,
@@ -605,6 +659,15 @@ const pokemonAbilities = {
   521: [
     { id: 3, name: "Intimidate", short_effect: "Lowers foe Attack on entry.", full_effect: "Lowers the Attack stat of opposing Pokemon on switch-in.", slot_type: "primary" },
   ],
+  522: [
+    { id: 3, name: "Intimidate", short_effect: "Lowers foe Attack on entry.", full_effect: "Lowers the Attack stat of opposing Pokemon on switch-in.", slot_type: "primary" },
+  ],
+  531: [
+    { id: 3, name: "Intimidate", short_effect: "Lowers foe Attack on entry.", full_effect: "Lowers the Attack stat of opposing Pokemon on switch-in.", slot_type: "primary" },
+  ],
+  864: [
+    { id: 3, name: "Intimidate", short_effect: "Lowers foe Attack on entry.", full_effect: "Lowers the Attack stat of opposing Pokemon on switch-in.", slot_type: "primary" },
+  ],
   46: [
     { id: 1, name: "Blaze", short_effect: "Boosts Fire moves at low HP.", full_effect: "Strengthens Fire-type attacks when HP is low.", slot_type: "primary" },
   ],
@@ -657,6 +720,9 @@ const pokemonMoves = {
   520: [{ ...moves[2], learn_method: "level_up", is_notable_battle_move: true }],
   530: [{ ...moves[2], learn_method: "level_up", is_notable_battle_move: true }],
   521: [{ ...moves[2], learn_method: "level_up", is_notable_battle_move: true }],
+  522: [{ ...moves[2], learn_method: "level_up", is_notable_battle_move: true }],
+  531: [{ ...moves[2], learn_method: "level_up", is_notable_battle_move: true }],
+  864: [{ ...moves[2], learn_method: "level_up", is_notable_battle_move: true }],
   46: [{ ...moves[2], learn_method: "level_up", is_notable_battle_move: true }],
   133: [{ ...moves[2], learn_method: "level_up", is_notable_battle_move: true }],
   134: [{ ...moves[3], learn_method: "level_up", is_notable_battle_move: true }],
@@ -678,7 +744,7 @@ const evolutionFamilies = [
   { family_id: 2, source_chain_id: 67, is_branched: true },
   { family_id: 3, source_chain_id: 287, is_branched: true },
   { family_id: 4, source_chain_id: 38, is_branched: false },
-  { family_id: 5, source_chain_id: 52, is_branched: false },
+  { family_id: 5, source_chain_id: 22, is_branched: true },
 ];
 
 const evolutionNodesByFamily = {
@@ -705,6 +771,7 @@ const evolutionNodesByFamily = {
   5: [
     { pokemon_id: 520, depth: 0, display_order: 0 },
     { pokemon_id: 530, depth: 1, display_order: 1 },
+    { pokemon_id: 864, depth: 1, display_order: 2 },
   ],
 };
 
@@ -770,9 +837,16 @@ const evolutionEdgesByFamily = {
     {
       from_pokemon_id: 520,
       to_pokemon_id: 530,
+      label: "Level 28 or Level up (High Friendship)",
+      tooltip: "Level 28 OR Level up: High Friendship",
+      sort_order: 0,
+    },
+    {
+      from_pokemon_id: 520,
+      to_pokemon_id: 864,
       label: "Level 28",
       tooltip: "Level 28",
-      sort_order: 0,
+      sort_order: 1,
     },
   ],
 };
@@ -792,6 +866,7 @@ const pokemonToEvolutionFamily = new Map([
   [38, 4],
   [520, 5],
   [530, 5],
+  [864, 5],
 ]);
 
 const toPokemonSummary = (pokemonId) => {
@@ -901,6 +976,18 @@ export const createInMemoryRepositories = (options = {}) => {
           (entry) =>
             entry.national_dex_number === Number(dexNumber) &&
             !Boolean(entry.is_regional_variant),
+        ) ?? null
+      );
+    },
+
+    async getPokemonByProfileKey(profileKey) {
+      if (!profileKey) {
+        return null;
+      }
+
+      return (
+        pokemon.find(
+          (entry) => String(entry.profile_key || "").toLowerCase() === String(profileKey).toLowerCase(),
         ) ?? null
       );
     },

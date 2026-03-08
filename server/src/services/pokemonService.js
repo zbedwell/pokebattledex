@@ -182,6 +182,239 @@ const isEvolutionSubgraphBranched = (edges) => {
 };
 
 const REGIONAL_TOKENS = ["alola", "galar", "hisui", "paldea"];
+const REGIONAL_VARIANT_TARGET_PROFILE_OVERRIDES = new Map([
+  ["52-meowth-galar", "863"],
+]);
+const MANUAL_EVOLUTION_LINES = [
+  {
+    familyId: 7,
+    nodes: [
+      { profileKey: "19", depth: 0, displayOrder: 0 },
+      { profileKey: "20", depth: 1, displayOrder: 1 },
+      { profileKey: "19-rattata-alola", depth: 0, displayOrder: 2 },
+      { profileKey: "20-raticate-alola", depth: 1, displayOrder: 3 },
+    ],
+    edges: [
+      {
+        fromProfileKey: "19",
+        toProfileKey: "20",
+        label: "Level 20",
+        tooltip: "Level 20",
+      },
+      {
+        fromProfileKey: "19-rattata-alola",
+        toProfileKey: "20-raticate-alola",
+        label: "Level 20 (Night)",
+        tooltip: "Level 20 at night.",
+      },
+    ],
+  },
+  {
+    familyId: 11,
+    nodes: [
+      { profileKey: "27", depth: 0, displayOrder: 0 },
+      { profileKey: "28", depth: 1, displayOrder: 1 },
+      { profileKey: "27-sandshrew-alola", depth: 0, displayOrder: 2 },
+      { profileKey: "28-sandslash-alola", depth: 1, displayOrder: 3 },
+    ],
+    edges: [
+      {
+        fromProfileKey: "27",
+        toProfileKey: "28",
+        label: "Level 22",
+        tooltip: "Level 22",
+      },
+      {
+        fromProfileKey: "27-sandshrew-alola",
+        toProfileKey: "28-sandslash-alola",
+        label: "Use Ice Stone",
+        tooltip: "Use Ice Stone",
+      },
+    ],
+  },
+  {
+    familyId: 15,
+    nodes: [
+      { profileKey: "37", depth: 0, displayOrder: 0 },
+      { profileKey: "38", depth: 1, displayOrder: 1 },
+      { profileKey: "37-vulpix-alola", depth: 0, displayOrder: 2 },
+      { profileKey: "38-ninetales-alola", depth: 1, displayOrder: 3 },
+    ],
+    edges: [
+      {
+        fromProfileKey: "37",
+        toProfileKey: "38",
+        label: "Use Fire Stone",
+        tooltip: "Use Fire Stone",
+      },
+      {
+        fromProfileKey: "37-vulpix-alola",
+        toProfileKey: "38-ninetales-alola",
+        label: "Use Ice Stone",
+        tooltip: "Use Ice Stone",
+      },
+    ],
+  },
+  {
+    familyId: 22,
+    nodes: [
+      { profileKey: "52", depth: 0, displayOrder: 0 },
+      { profileKey: "53", depth: 1, displayOrder: 1 },
+      { profileKey: "52-meowth-alola", depth: 0, displayOrder: 2 },
+      { profileKey: "53-persian-alola", depth: 1, displayOrder: 3 },
+      { profileKey: "52-meowth-galar", depth: 0, displayOrder: 4 },
+      { profileKey: "863", depth: 1, displayOrder: 5 },
+    ],
+    edges: [
+      {
+        fromProfileKey: "52",
+        toProfileKey: "53",
+        label: "Level 28",
+        tooltip: "Level 28",
+      },
+      {
+        fromProfileKey: "52-meowth-alola",
+        toProfileKey: "53-persian-alola",
+        label: "Level up (High Friendship)",
+        tooltip: "Level up with high friendship.",
+      },
+      {
+        fromProfileKey: "52-meowth-galar",
+        toProfileKey: "863",
+        label: "Level 28",
+        tooltip: "Level 28",
+      },
+    ],
+  },
+  {
+    familyId: 33,
+    nodes: [
+      { profileKey: "79", depth: 0, displayOrder: 0 },
+      { profileKey: "80", depth: 1, displayOrder: 1 },
+      { profileKey: "199", depth: 1, displayOrder: 2 },
+      { profileKey: "79-slowpoke-galar", depth: 0, displayOrder: 3 },
+      { profileKey: "80-slowbro-galar", depth: 1, displayOrder: 4 },
+      { profileKey: "199-slowking-galar", depth: 1, displayOrder: 5 },
+    ],
+    edges: [
+      {
+        fromProfileKey: "79",
+        toProfileKey: "80",
+        label: "Level 37",
+        tooltip: "Level 37",
+      },
+      {
+        fromProfileKey: "79",
+        toProfileKey: "199",
+        label: "Trade while holding Kings Rock",
+        tooltip: "Trigger: Trade; hold Kings Rock",
+      },
+      {
+        fromProfileKey: "79-slowpoke-galar",
+        toProfileKey: "80-slowbro-galar",
+        label: "Use Galarica Cuff",
+        tooltip: "Use Galarica Cuff",
+      },
+      {
+        fromProfileKey: "79-slowpoke-galar",
+        toProfileKey: "199-slowking-galar",
+        label: "Use Galarica Wreath",
+        tooltip: "Use Galarica Wreath",
+      },
+    ],
+  },
+  {
+    familyId: 96,
+    nodes: [
+      { profileKey: "194", depth: 0, displayOrder: 0 },
+      { profileKey: "195", depth: 1, displayOrder: 1 },
+      { profileKey: "194-wooper-paldea", depth: 0, displayOrder: 2 },
+      { profileKey: "980", depth: 1, displayOrder: 3 },
+    ],
+    edges: [
+      {
+        fromProfileKey: "194",
+        toProfileKey: "195",
+        label: "Level 20",
+        tooltip: "Level 20",
+      },
+      {
+        fromProfileKey: "194-wooper-paldea",
+        toProfileKey: "980",
+        label: "Level 20",
+        tooltip: "Level 20",
+      },
+    ],
+  },
+  {
+    familyId: 106,
+    nodes: [
+      { profileKey: "211", depth: 0, displayOrder: 0 },
+      { profileKey: "211-qwilfish-hisui", depth: 0, displayOrder: 1 },
+      { profileKey: "904", depth: 1, displayOrder: 2 },
+    ],
+    edges: [
+      {
+        fromProfileKey: "211-qwilfish-hisui",
+        toProfileKey: "904",
+        label: "Use Barb Barrage 20 times, then level up",
+        tooltip: "Use Barb Barrage 20 times, then level up.",
+      },
+    ],
+  },
+  {
+    familyId: 109,
+    nodes: [
+      { profileKey: "215", depth: 0, displayOrder: 0 },
+      { profileKey: "461", depth: 1, displayOrder: 1 },
+      { profileKey: "215-sneasel-hisui", depth: 0, displayOrder: 2 },
+      { profileKey: "903", depth: 1, displayOrder: 3 },
+    ],
+    edges: [
+      {
+        fromProfileKey: "215",
+        toProfileKey: "461",
+        label: "Level up (Hold Razor Claw, Night)",
+        tooltip: "Level up at night while holding Razor Claw.",
+      },
+      {
+        fromProfileKey: "215-sneasel-hisui",
+        toProfileKey: "903",
+        label: "Level up (Hold Razor Claw, Day)",
+        tooltip: "Level up during day while holding Razor Claw.",
+      },
+    ],
+  },
+  {
+    familyId: 282,
+    nodes: [
+      { profileKey: "554", depth: 0, displayOrder: 0 },
+      { profileKey: "555", depth: 1, displayOrder: 1 },
+      { profileKey: "554-darumaka-galar", depth: 0, displayOrder: 2 },
+      { profileKey: "555-darmanitan-galar-standard", depth: 1, displayOrder: 3 },
+    ],
+    edges: [
+      {
+        fromProfileKey: "554",
+        toProfileKey: "555",
+        label: "Level 35",
+        tooltip: "Level 35",
+      },
+      {
+        fromProfileKey: "554-darumaka-galar",
+        toProfileKey: "555-darmanitan-galar-standard",
+        label: "Use Ice Stone",
+        tooltip: "Use Ice Stone",
+      },
+    ],
+  },
+];
+const MANUAL_EVOLUTION_LINES_BY_PROFILE = new Map();
+for (const line of MANUAL_EVOLUTION_LINES) {
+  for (const node of line.nodes) {
+    MANUAL_EVOLUTION_LINES_BY_PROFILE.set(String(node.profileKey).toLowerCase(), line);
+  }
+}
 
 const extractRegionalToken = (profileKey) => {
   if (!profileKey) return null;
@@ -205,6 +438,17 @@ const toEvolutionEdgeShape = (row) => ({
   to_pokemon_id: Number(row.to_pokemon_id),
   label: row.label,
   tooltip: row.tooltip,
+});
+
+const toEvolutionNodeRow = (pokemon, depth, displayOrder = depth) => ({
+  pokemon_id: Number(pokemon.id),
+  name: pokemon.name,
+  dex_number: Number(pokemon.national_dex_number),
+  sprite_url: pokemon.sprite_url,
+  primary_type: pokemon.primary_type,
+  secondary_type: pokemon.secondary_type,
+  depth: Number(depth),
+  display_order: Number(displayOrder),
 });
 
 const buildEvolutionPayload = ({ family, nodeRows, edgeRows, pokemon }) => {
@@ -258,7 +502,66 @@ export const createPokemonService = ({ pokemonRepository, typeService }) => {
   };
 
   const getEvolutionLine = async (pokemon) => {
+    const resolveManualEvolutionLine = async () => {
+      const profileKey = String(pokemon.profile_key || "").toLowerCase();
+      const line = MANUAL_EVOLUTION_LINES_BY_PROFILE.get(profileKey);
+      if (!line) {
+        return null;
+      }
+
+      const requiredKeys = [
+        ...new Set([
+          ...line.nodes.map((node) => String(node.profileKey)),
+          ...line.edges.flatMap((edge) => [String(edge.fromProfileKey), String(edge.toProfileKey)]),
+        ]),
+      ];
+
+      const linePokemonRows = await Promise.all(
+        requiredKeys.map((key) => pokemonRepository.getPokemonByProfileKey(key)),
+      );
+
+      if (linePokemonRows.some((row) => !row)) {
+        return null;
+      }
+
+      const rowsByProfileKey = new Map(
+        requiredKeys.map((key, index) => [String(key).toLowerCase(), linePokemonRows[index]]),
+      );
+
+      const nodeRows = line.nodes.map((node) =>
+        toEvolutionNodeRow(
+          rowsByProfileKey.get(String(node.profileKey).toLowerCase()),
+          node.depth,
+          node.displayOrder,
+        ),
+      );
+
+      const edgeRows = line.edges.map((edge) => {
+        const fromPokemon = rowsByProfileKey.get(String(edge.fromProfileKey).toLowerCase());
+        const toPokemon = rowsByProfileKey.get(String(edge.toProfileKey).toLowerCase());
+
+        return {
+          from_pokemon_id: Number(fromPokemon.id),
+          to_pokemon_id: Number(toPokemon.id),
+          label: edge.label,
+          tooltip: edge.tooltip ?? null,
+        };
+      });
+
+      return buildEvolutionPayload({
+        family: { source_chain_id: line.familyId },
+        nodeRows,
+        edgeRows,
+        pokemon,
+      });
+    };
+
     try {
+      const manualEvolutionLine = await resolveManualEvolutionLine();
+      if (manualEvolutionLine) {
+        return manualEvolutionLine;
+      }
+
       const family = await pokemonRepository.getEvolutionFamilyByPokemonId(pokemon.id);
       if (family) {
         const [nodeRows, edgeRows] = await Promise.all([
@@ -323,6 +626,40 @@ export const createPokemonService = ({ pokemonRepository, typeService }) => {
                     });
 
                   if (hasUnmappedOutgoingTarget) {
+                    const manualTargetProfileKey = REGIONAL_VARIANT_TARGET_PROFILE_OVERRIDES.get(
+                      String(pokemon.profile_key || "").toLowerCase(),
+                    );
+
+                    if (manualTargetProfileKey) {
+                      const manualTarget = await pokemonRepository.getPokemonByProfileKey(
+                        manualTargetProfileKey,
+                      );
+                      if (manualTarget) {
+                        const baseOutgoingEdge =
+                          baseEdges.find(
+                            (edge) =>
+                              Number(edge.from_pokemon_id) === Number(currentBaseNode.pokemon_id),
+                          ) ?? null;
+
+                        return buildEvolutionPayload({
+                          family: baseFamily,
+                          nodeRows: [
+                            toEvolutionNodeRow(pokemon, 0, 0),
+                            toEvolutionNodeRow(manualTarget, 1, 1),
+                          ],
+                          edgeRows: [
+                            {
+                              from_pokemon_id: Number(pokemon.id),
+                              to_pokemon_id: Number(manualTarget.id),
+                              label: baseOutgoingEdge?.label || "Level up",
+                              tooltip: baseOutgoingEdge?.tooltip || null,
+                            },
+                          ],
+                          pokemon,
+                        });
+                      }
+                    }
+
                     return buildNoEvolutionLine(pokemon, pokemon.id);
                   }
                 }
