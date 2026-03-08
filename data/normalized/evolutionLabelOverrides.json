@@ -1,0 +1,22 @@
+{
+  "edges": {
+    "chain:35:83->865": {
+      "from_profile_key": "83-farfetchd-galar",
+      "label": "Land 3 critical hits in one battle, then level up",
+      "tooltip": "Galarian Farfetch'd only."
+    },
+    "chain:287:562->867": {
+      "from_profile_key": "562-yamask-galar",
+      "label": "Take 49+ damage in battle, then pass under the Dusty Bowl arch",
+      "tooltip": "Galarian Yamask only."
+    }
+  },
+  "nodes": {
+    "chain:35:83-farfetchd-galar": {
+      "display_name": "Farfetch'd (Galarian)"
+    },
+    "chain:287:562-yamask-galar": {
+      "display_name": "Yamask (Galarian)"
+    }
+  }
+}

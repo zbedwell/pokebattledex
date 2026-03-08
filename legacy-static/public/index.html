@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Database</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="loadPokemonData();">
+    <header>
+        <div class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/640px-International_Pok%C3%A9mon_logo.svg.png" alt="Pokémon Logo">
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="#pokemon-list">Pokédex</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Welcome to the Pokémon Database</h2>
+            <p>Explore detailed information about your favorite Pokémon.</p>
+        </section>
+        <section id="pokemon-list">
+            <h2>Pokémon Information</h2>
+            <div id="myPokemon"></div>
+        </section>
+        <section>
+            <h2>Add New Pokémon</h2>
+            <form id="pokemon_form" onsubmit="return addPokemon(event);">
+                <label for="pokemon_id">Pokémon ID:</label>
+                <input type="text" id="pokemon_id" name="pokemon_id" placeholder="Enter Pokémon ID (e.g., 0001)" required>
+                <br>
+                <label for="pokemon_name">Pokémon Name:</label>
+                <input type="text" id="pokemon_name" name="pokemon_name" placeholder="Enter Pokémon Name" required>
+                <br>
+                <label for="hp">HP:</label>
+                <input type="number" id="hp" name="hp" placeholder="Enter HP" required>
+                <br>
+                <label for="attack">Attack:</label>
+                <input type="number" id="attack" name="attack" placeholder="Enter Attack Stat" required>
+                <br>
+                <label for="defense">Defense:</label>
+                <input type="number" id="defense" name="defense" placeholder="Enter Defense Stat" required>
+                <br>
+                <label for="special_attack">Special Attack:</label>
+                <input type="number" id="special_attack" name="special_attack" placeholder="Enter Special Attack Stat" required>
+                <br>
+                <label for="special_defense">Special Defense:</label>
+                <input type="number" id="special_defense" name="special_defense" placeholder="Enter Special Defense Stat" required>
+                <br>
+                <label for="speed">Speed:</label>
+                <input type="number" id="speed" name="speed" placeholder="Enter Speed Stat" required>
+                <br>
+                <label for="dex_entry">Dex Entry:</label>
+                <input type="text" id="dex_entry" name="dex_entry" placeholder="Enter Dex Entry (e.g., 001)" required>
+                <br>
+                <label for="generation">Generation:</label>
+                <select id="generation" name="generation" required>
+                    <option value="01">Kanto</option>
+                </select>
+                <br>
+                <button type="submit">Add Pokémon</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Pokémon Database</p>
+    </footer>
+    <script defer src="data.js"></script>
+</body>
+</html>

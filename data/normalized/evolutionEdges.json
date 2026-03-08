@@ -1,0 +1,3874 @@
+[
+  {
+    "sourceChainId": 1,
+    "fromPokemonProfileKey": "1",
+    "toPokemonProfileKey": "2",
+    "label": "Level 16",
+    "tooltip": "Level 16",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 1,
+    "fromPokemonProfileKey": "2",
+    "toPokemonProfileKey": "3",
+    "label": "Level 32",
+    "tooltip": "Level 32",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 2,
+    "fromPokemonProfileKey": "4",
+    "toPokemonProfileKey": "5",
+    "label": "Level 16",
+    "tooltip": "Level 16",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 2,
+    "fromPokemonProfileKey": "5",
+    "toPokemonProfileKey": "6",
+    "label": "Level 36",
+    "tooltip": "Level 36",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 3,
+    "fromPokemonProfileKey": "7",
+    "toPokemonProfileKey": "8",
+    "label": "Level 16",
+    "tooltip": "Level 16",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 3,
+    "fromPokemonProfileKey": "8",
+    "toPokemonProfileKey": "9",
+    "label": "Level 36",
+    "tooltip": "Level 36",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 4,
+    "fromPokemonProfileKey": "10",
+    "toPokemonProfileKey": "11",
+    "label": "Level 7",
+    "tooltip": "Level 7",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 4,
+    "fromPokemonProfileKey": "11",
+    "toPokemonProfileKey": "12",
+    "label": "Level 10",
+    "tooltip": "Level 10",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 5,
+    "fromPokemonProfileKey": "13",
+    "toPokemonProfileKey": "14",
+    "label": "Level 7",
+    "tooltip": "Level 7",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 5,
+    "fromPokemonProfileKey": "14",
+    "toPokemonProfileKey": "15",
+    "label": "Level 10",
+    "tooltip": "Level 10",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 6,
+    "fromPokemonProfileKey": "16",
+    "toPokemonProfileKey": "17",
+    "label": "Level 18",
+    "tooltip": "Level 18",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 6,
+    "fromPokemonProfileKey": "17",
+    "toPokemonProfileKey": "18",
+    "label": "Level 36",
+    "tooltip": "Level 36",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 7,
+    "fromPokemonProfileKey": "19",
+    "toPokemonProfileKey": "20",
+    "label": "Level 20 or Level 20",
+    "tooltip": "Level 20 OR Level 20; Time: Night",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 8,
+    "fromPokemonProfileKey": "21",
+    "toPokemonProfileKey": "22",
+    "label": "Level 20",
+    "tooltip": "Level 20",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 9,
+    "fromPokemonProfileKey": "23",
+    "toPokemonProfileKey": "24",
+    "label": "Level 22",
+    "tooltip": "Level 22",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 10,
+    "fromPokemonProfileKey": "172",
+    "toPokemonProfileKey": "25",
+    "label": "Level up (High Friendship)",
+    "tooltip": "Level up: High Friendship",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 10,
+    "fromPokemonProfileKey": "25",
+    "toPokemonProfileKey": "26",
+    "label": "Use Thunder Stone",
+    "tooltip": "Use Thunder Stone",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 11,
+    "fromPokemonProfileKey": "27",
+    "toPokemonProfileKey": "28",
+    "label": "Level 22 or Use Ice Stone",
+    "tooltip": "Level 22 OR Use Ice Stone",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 12,
+    "fromPokemonProfileKey": "29",
+    "toPokemonProfileKey": "30",
+    "label": "Level 16",
+    "tooltip": "Level 16",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 12,
+    "fromPokemonProfileKey": "30",
+    "toPokemonProfileKey": "31",
+    "label": "Use Moon Stone",
+    "tooltip": "Use Moon Stone",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 13,
+    "fromPokemonProfileKey": "32",
+    "toPokemonProfileKey": "33",
+    "label": "Level 16",
+    "tooltip": "Level 16",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 13,
+    "fromPokemonProfileKey": "33",
+    "toPokemonProfileKey": "34",
+    "label": "Use Moon Stone",
+    "tooltip": "Use Moon Stone",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 14,
+    "fromPokemonProfileKey": "173",
+    "toPokemonProfileKey": "35",
+    "label": "Level up (High Friendship)",
+    "tooltip": "Level up: High Friendship",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 14,
+    "fromPokemonProfileKey": "35",
+    "toPokemonProfileKey": "36",
+    "label": "Use Moon Stone",
+    "tooltip": "Use Moon Stone",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 15,
+    "fromPokemonProfileKey": "37",
+    "toPokemonProfileKey": "38",
+    "label": "Use Fire Stone or Use Ice Stone",
+    "tooltip": "Use Fire Stone OR Use Ice Stone",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 16,
+    "fromPokemonProfileKey": "174",
+    "toPokemonProfileKey": "39",
+    "label": "Level up (High Friendship)",
+    "tooltip": "Level up: High Friendship",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 16,
+    "fromPokemonProfileKey": "39",
+    "toPokemonProfileKey": "40",
+    "label": "Use Moon Stone",
+    "tooltip": "Use Moon Stone",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 17,
+    "fromPokemonProfileKey": "41",
+    "toPokemonProfileKey": "42",
+    "label": "Level 22",
+    "tooltip": "Level 22",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 17,
+    "fromPokemonProfileKey": "42",
+    "toPokemonProfileKey": "169",
+    "label": "Level up (High Friendship)",
+    "tooltip": "Level up: High Friendship",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 18,
+    "fromPokemonProfileKey": "43",
+    "toPokemonProfileKey": "44",
+    "label": "Level 21",
+    "tooltip": "Level 21",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 18,
+    "fromPokemonProfileKey": "44",
+    "toPokemonProfileKey": "45",
+    "label": "Use Leaf Stone",
+    "tooltip": "Use Leaf Stone",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 18,
+    "fromPokemonProfileKey": "44",
+    "toPokemonProfileKey": "182",
+    "label": "Use Sun Stone",
+    "tooltip": "Use Sun Stone",
+    "sortOrder": 2
+  },
+  {
+    "sourceChainId": 19,
+    "fromPokemonProfileKey": "46",
+    "toPokemonProfileKey": "47",
+    "label": "Level 24",
+    "tooltip": "Level 24",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 20,
+    "fromPokemonProfileKey": "48",
+    "toPokemonProfileKey": "49",
+    "label": "Level 31",
+    "tooltip": "Level 31",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 21,
+    "fromPokemonProfileKey": "50",
+    "toPokemonProfileKey": "51",
+    "label": "Level 26",
+    "tooltip": "Level 26",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 22,
+    "fromPokemonProfileKey": "52",
+    "toPokemonProfileKey": "53",
+    "label": "Level 28 or Level up (High Friendship)",
+    "tooltip": "Level 28 OR Level up: High Friendship",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 22,
+    "fromPokemonProfileKey": "52",
+    "toPokemonProfileKey": "863",
+    "label": "Level 28",
+    "tooltip": "Level 28",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 23,
+    "fromPokemonProfileKey": "54",
+    "toPokemonProfileKey": "55",
+    "label": "Level 33",
+    "tooltip": "Level 33",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 24,
+    "fromPokemonProfileKey": "56",
+    "toPokemonProfileKey": "57",
+    "label": "Level 28",
+    "tooltip": "Level 28",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 24,
+    "fromPokemonProfileKey": "57",
+    "toPokemonProfileKey": "979",
+    "label": "Use Rage Fist 20 times, then level up",
+    "tooltip": "Use Rage Fist 20 times, then level up.",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 25,
+    "fromPokemonProfileKey": "58",
+    "toPokemonProfileKey": "59",
+    "label": "Use Fire Stone",
+    "tooltip": "Use Fire Stone",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 26,
+    "fromPokemonProfileKey": "60",
+    "toPokemonProfileKey": "61",
+    "label": "Level 25",
+    "tooltip": "Level 25",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 26,
+    "fromPokemonProfileKey": "61",
+    "toPokemonProfileKey": "62",
+    "label": "Use Water Stone",
+    "tooltip": "Use Water Stone",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 26,
+    "fromPokemonProfileKey": "61",
+    "toPokemonProfileKey": "186",
+    "label": "Trade while holding Kings Rock",
+    "tooltip": "Trigger: Trade; hold Kings Rock",
+    "sortOrder": 2
+  },
+  {
+    "sourceChainId": 27,
+    "fromPokemonProfileKey": "63",
+    "toPokemonProfileKey": "64",
+    "label": "Level 16",
+    "tooltip": "Level 16",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 27,
+    "fromPokemonProfileKey": "64",
+    "toPokemonProfileKey": "65",
+    "label": "Trade",
+    "tooltip": "Trigger: Trade",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 28,
+    "fromPokemonProfileKey": "66",
+    "toPokemonProfileKey": "67",
+    "label": "Level 28",
+    "tooltip": "Level 28",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 28,
+    "fromPokemonProfileKey": "67",
+    "toPokemonProfileKey": "68",
+    "label": "Trade",
+    "tooltip": "Trigger: Trade",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 29,
+    "fromPokemonProfileKey": "69",
+    "toPokemonProfileKey": "70",
+    "label": "Level 21",
+    "tooltip": "Level 21",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 29,
+    "fromPokemonProfileKey": "70",
+    "toPokemonProfileKey": "71",
+    "label": "Use Leaf Stone",
+    "tooltip": "Use Leaf Stone",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 30,
+    "fromPokemonProfileKey": "72",
+    "toPokemonProfileKey": "73",
+    "label": "Level 30",
+    "tooltip": "Level 30",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 31,
+    "fromPokemonProfileKey": "74",
+    "toPokemonProfileKey": "75",
+    "label": "Level 25",
+    "tooltip": "Level 25",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 31,
+    "fromPokemonProfileKey": "75",
+    "toPokemonProfileKey": "76",
+    "label": "Trade",
+    "tooltip": "Trigger: Trade",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 32,
+    "fromPokemonProfileKey": "77",
+    "toPokemonProfileKey": "78",
+    "label": "Level 40",
+    "tooltip": "Level 40",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 33,
+    "fromPokemonProfileKey": "79",
+    "toPokemonProfileKey": "80",
+    "label": "Level 37 or Use Galarica Cuff",
+    "tooltip": "Level 37 OR Use Galarica Cuff",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 33,
+    "fromPokemonProfileKey": "79",
+    "toPokemonProfileKey": "199",
+    "label": "Trade while holding Kings Rock or Use Galarica Wreath",
+    "tooltip": "Trigger: Trade; hold Kings Rock OR Use Galarica Wreath",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 34,
+    "fromPokemonProfileKey": "81",
+    "toPokemonProfileKey": "82",
+    "label": "Level 30",
+    "tooltip": "Level 30",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 34,
+    "fromPokemonProfileKey": "82",
+    "toPokemonProfileKey": "462",
+    "label": "Level up (At Mt Coronet) or Level up (At Chargestone Cave) or Level up (At Kalos Route 13) or Level up (At Blush Mountain) or Level up (At Vast Poni Canyon) or Use Thunder Stone",
+    "tooltip": "Level up: At Mt Coronet OR Level up: At Chargestone Cave OR Level up: At Kalos Route 13 OR Level up: At Blush Mountain OR Level up: At Vast Poni Canyon OR Use Thunder Stone",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 35,
+    "fromPokemonProfileKey": "83-farfetchd-galar",
+    "toPokemonProfileKey": "865",
+    "label": "Land 3 critical hits in one battle, then level up",
+    "tooltip": "Galarian Farfetch'd only.",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 36,
+    "fromPokemonProfileKey": "84",
+    "toPokemonProfileKey": "85",
+    "label": "Level 31",
+    "tooltip": "Level 31",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 37,
+    "fromPokemonProfileKey": "86",
+    "toPokemonProfileKey": "87",
+    "label": "Level 34",
+    "tooltip": "Level 34",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 38,
+    "fromPokemonProfileKey": "88",
+    "toPokemonProfileKey": "89",
+    "label": "Level 38",
+    "tooltip": "Level 38",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 39,
+    "fromPokemonProfileKey": "90",
+    "toPokemonProfileKey": "91",
+    "label": "Use Water Stone",
+    "tooltip": "Use Water Stone",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 40,
+    "fromPokemonProfileKey": "92",
+    "toPokemonProfileKey": "93",
+    "label": "Level 25",
+    "tooltip": "Level 25",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 40,
+    "fromPokemonProfileKey": "93",
+    "toPokemonProfileKey": "94",
+    "label": "Trade",
+    "tooltip": "Trigger: Trade",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 41,
+    "fromPokemonProfileKey": "95",
+    "toPokemonProfileKey": "208",
+    "label": "Trade while holding Metal Coat",
+    "tooltip": "Trigger: Trade; hold Metal Coat",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 42,
+    "fromPokemonProfileKey": "96",
+    "toPokemonProfileKey": "97",
+    "label": "Level 26",
+    "tooltip": "Level 26",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 43,
+    "fromPokemonProfileKey": "98",
+    "toPokemonProfileKey": "99",
+    "label": "Level 28",
+    "tooltip": "Level 28",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 44,
+    "fromPokemonProfileKey": "100",
+    "toPokemonProfileKey": "101",
+    "label": "Level 30",
+    "tooltip": "Level 30",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 45,
+    "fromPokemonProfileKey": "102",
+    "toPokemonProfileKey": "103",
+    "label": "Use Leaf Stone",
+    "tooltip": "Use Leaf Stone",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 46,
+    "fromPokemonProfileKey": "104",
+    "toPokemonProfileKey": "105",
+    "label": "Level 28 or Level 28",
+    "tooltip": "Level 28 OR Level 28; Time: Night",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 47,
+    "fromPokemonProfileKey": "236",
+    "toPokemonProfileKey": "106",
+    "label": "Level 20",
+    "tooltip": "Level 20; Attack > Defense",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 47,
+    "fromPokemonProfileKey": "236",
+    "toPokemonProfileKey": "107",
+    "label": "Level 20",
+    "tooltip": "Level 20; Attack < Defense",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 47,
+    "fromPokemonProfileKey": "236",
+    "toPokemonProfileKey": "237",
+    "label": "Level 20",
+    "tooltip": "Level 20; Attack = Defense",
+    "sortOrder": 2
+  },
+  {
+    "sourceChainId": 48,
+    "fromPokemonProfileKey": "108",
+    "toPokemonProfileKey": "463",
+    "label": "Level up (Know Rollout)",
+    "tooltip": "Level up: Know Rollout",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 49,
+    "fromPokemonProfileKey": "109",
+    "toPokemonProfileKey": "110",
+    "label": "Level 35",
+    "tooltip": "Level 35",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 50,
+    "fromPokemonProfileKey": "111",
+    "toPokemonProfileKey": "112",
+    "label": "Level 42",
+    "tooltip": "Level 42",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 50,
+    "fromPokemonProfileKey": "112",
+    "toPokemonProfileKey": "464",
+    "label": "Trade while holding Protector",
+    "tooltip": "Trigger: Trade; hold Protector",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 51,
+    "fromPokemonProfileKey": "440",
+    "toPokemonProfileKey": "113",
+    "label": "Level up (Hold Oval Stone)",
+    "tooltip": "Level up: Hold Oval Stone, Time: Day",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 51,
+    "fromPokemonProfileKey": "113",
+    "toPokemonProfileKey": "242",
+    "label": "Level up (High Friendship)",
+    "tooltip": "Level up: High Friendship",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 52,
+    "fromPokemonProfileKey": "114",
+    "toPokemonProfileKey": "465",
+    "label": "Level up (Know Ancient Power)",
+    "tooltip": "Level up: Know Ancient Power",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 54,
+    "fromPokemonProfileKey": "116",
+    "toPokemonProfileKey": "117",
+    "label": "Level 32",
+    "tooltip": "Level 32",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 54,
+    "fromPokemonProfileKey": "117",
+    "toPokemonProfileKey": "230",
+    "label": "Trade while holding Dragon Scale",
+    "tooltip": "Trigger: Trade; hold Dragon Scale",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 55,
+    "fromPokemonProfileKey": "118",
+    "toPokemonProfileKey": "119",
+    "label": "Level 33",
+    "tooltip": "Level 33",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 56,
+    "fromPokemonProfileKey": "120",
+    "toPokemonProfileKey": "121",
+    "label": "Use Water Stone",
+    "tooltip": "Use Water Stone",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 57,
+    "fromPokemonProfileKey": "439",
+    "toPokemonProfileKey": "122",
+    "label": "Level up (Know Mimic)",
+    "tooltip": "Level up: Know Mimic",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 57,
+    "fromPokemonProfileKey": "122",
+    "toPokemonProfileKey": "866",
+    "label": "Level 42",
+    "tooltip": "Level 42",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 58,
+    "fromPokemonProfileKey": "123",
+    "toPokemonProfileKey": "212",
+    "label": "Trade while holding Metal Coat",
+    "tooltip": "Trigger: Trade; hold Metal Coat",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 58,
+    "fromPokemonProfileKey": "123",
+    "toPokemonProfileKey": "900",
+    "label": "Use Black Augurite",
+    "tooltip": "Use Black Augurite",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 59,
+    "fromPokemonProfileKey": "238",
+    "toPokemonProfileKey": "124",
+    "label": "Level 30",
+    "tooltip": "Level 30",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 60,
+    "fromPokemonProfileKey": "239",
+    "toPokemonProfileKey": "125",
+    "label": "Level 30",
+    "tooltip": "Level 30",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 60,
+    "fromPokemonProfileKey": "125",
+    "toPokemonProfileKey": "466",
+    "label": "Trade while holding Electirizer",
+    "tooltip": "Trigger: Trade; hold Electirizer",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 61,
+    "fromPokemonProfileKey": "240",
+    "toPokemonProfileKey": "126",
+    "label": "Level 30",
+    "tooltip": "Level 30",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 61,
+    "fromPokemonProfileKey": "126",
+    "toPokemonProfileKey": "467",
+    "label": "Trade while holding Magmarizer",
+    "tooltip": "Trigger: Trade; hold Magmarizer",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 64,
+    "fromPokemonProfileKey": "129",
+    "toPokemonProfileKey": "130",
+    "label": "Level 20",
+    "tooltip": "Level 20",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 67,
+    "fromPokemonProfileKey": "133",
+    "toPokemonProfileKey": "134",
+    "label": "Use Water Stone",
+    "tooltip": "Use Water Stone",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 67,
+    "fromPokemonProfileKey": "133",
+    "toPokemonProfileKey": "135",
+    "label": "Use Thunder Stone",
+    "tooltip": "Use Thunder Stone",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 67,
+    "fromPokemonProfileKey": "133",
+    "toPokemonProfileKey": "136",
+    "label": "Use Fire Stone",
+    "tooltip": "Use Fire Stone",
+    "sortOrder": 2
+  },
+  {
+    "sourceChainId": 67,
+    "fromPokemonProfileKey": "133",
+    "toPokemonProfileKey": "196",
+    "label": "High Friendship (Day)",
+    "tooltip": "Level up with high friendship during day.",
+    "sortOrder": 3
+  },
+  {
+    "sourceChainId": 67,
+    "fromPokemonProfileKey": "133",
+    "toPokemonProfileKey": "197",
+    "label": "High Friendship (Night)",
+    "tooltip": "Level up with high friendship during night.",
+    "sortOrder": 4
+  },
+  {
+    "sourceChainId": 67,
+    "fromPokemonProfileKey": "133",
+    "toPokemonProfileKey": "470",
+    "label": "Level up (At Eterna Forest) or Level up (At Pinwheel Forest) or Level up (At Kalos Route 20) or Use Leaf Stone",
+    "tooltip": "Level up: At Eterna Forest OR Level up: At Pinwheel Forest OR Level up: At Kalos Route 20 OR Use Leaf Stone",
+    "sortOrder": 5
+  },
+  {
+    "sourceChainId": 67,
+    "fromPokemonProfileKey": "133",
+    "toPokemonProfileKey": "471",
+    "label": "Level up (At Sinnoh Route 217) or Level up (At Twist Mountain) or Level up (At Frost Cavern) or Use Ice Stone",
+    "tooltip": "Level up: At Sinnoh Route 217 OR Level up: At Twist Mountain OR Level up: At Frost Cavern OR Use Ice Stone",
+    "sortOrder": 6
+  },
+  {
+    "sourceChainId": 67,
+    "fromPokemonProfileKey": "133",
+    "toPokemonProfileKey": "700",
+    "label": "Level up (Know a Fairy-type move) or Level up (Know a Fairy-type move)",
+    "tooltip": "Level up: Know a Fairy-type move, High Affection OR Level up: Know a Fairy-type move, High Friendship",
+    "sortOrder": 7
+  },
+  {
+    "sourceChainId": 68,
+    "fromPokemonProfileKey": "137",
+    "toPokemonProfileKey": "233",
+    "label": "Trade while holding Up Grade",
+    "tooltip": "Trigger: Trade; hold Up Grade",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 68,
+    "fromPokemonProfileKey": "233",
+    "toPokemonProfileKey": "474",
+    "label": "Trade while holding Dubious Disc",
+    "tooltip": "Trigger: Trade; hold Dubious Disc",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 69,
+    "fromPokemonProfileKey": "138",
+    "toPokemonProfileKey": "139",
+    "label": "Level 40",
+    "tooltip": "Level 40",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 70,
+    "fromPokemonProfileKey": "140",
+    "toPokemonProfileKey": "141",
+    "label": "Level 40",
+    "tooltip": "Level 40",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 72,
+    "fromPokemonProfileKey": "446",
+    "toPokemonProfileKey": "143",
+    "label": "Level up (High Friendship)",
+    "tooltip": "Level up: High Friendship",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 76,
+    "fromPokemonProfileKey": "147",
+    "toPokemonProfileKey": "148",
+    "label": "Level 30",
+    "tooltip": "Level 30",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 76,
+    "fromPokemonProfileKey": "148",
+    "toPokemonProfileKey": "149",
+    "label": "Level 55",
+    "tooltip": "Level 55",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 79,
+    "fromPokemonProfileKey": "152",
+    "toPokemonProfileKey": "153",
+    "label": "Level 16",
+    "tooltip": "Level 16",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 79,
+    "fromPokemonProfileKey": "153",
+    "toPokemonProfileKey": "154",
+    "label": "Level 32",
+    "tooltip": "Level 32",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 80,
+    "fromPokemonProfileKey": "155",
+    "toPokemonProfileKey": "156",
+    "label": "Level 14",
+    "tooltip": "Level 14",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 80,
+    "fromPokemonProfileKey": "156",
+    "toPokemonProfileKey": "157",
+    "label": "Level 36",
+    "tooltip": "Level 36",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 81,
+    "fromPokemonProfileKey": "158",
+    "toPokemonProfileKey": "159",
+    "label": "Level 18",
+    "tooltip": "Level 18",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 81,
+    "fromPokemonProfileKey": "159",
+    "toPokemonProfileKey": "160",
+    "label": "Level 30",
+    "tooltip": "Level 30",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 82,
+    "fromPokemonProfileKey": "161",
+    "toPokemonProfileKey": "162",
+    "label": "Level 15",
+    "tooltip": "Level 15",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 83,
+    "fromPokemonProfileKey": "163",
+    "toPokemonProfileKey": "164",
+    "label": "Level 20",
+    "tooltip": "Level 20",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 84,
+    "fromPokemonProfileKey": "165",
+    "toPokemonProfileKey": "166",
+    "label": "Level 18",
+    "tooltip": "Level 18",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 85,
+    "fromPokemonProfileKey": "167",
+    "toPokemonProfileKey": "168",
+    "label": "Level 22",
+    "tooltip": "Level 22",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 86,
+    "fromPokemonProfileKey": "170",
+    "toPokemonProfileKey": "171",
+    "label": "Level 27",
+    "tooltip": "Level 27",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 87,
+    "fromPokemonProfileKey": "175",
+    "toPokemonProfileKey": "176",
+    "label": "Level up (High Friendship)",
+    "tooltip": "Level up: High Friendship",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 87,
+    "fromPokemonProfileKey": "176",
+    "toPokemonProfileKey": "468",
+    "label": "Use Shiny Stone",
+    "tooltip": "Use Shiny Stone",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 88,
+    "fromPokemonProfileKey": "177",
+    "toPokemonProfileKey": "178",
+    "label": "Level 25",
+    "tooltip": "Level 25",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 89,
+    "fromPokemonProfileKey": "179",
+    "toPokemonProfileKey": "180",
+    "label": "Level 15",
+    "tooltip": "Level 15",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 89,
+    "fromPokemonProfileKey": "180",
+    "toPokemonProfileKey": "181",
+    "label": "Level 30",
+    "tooltip": "Level 30",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 90,
+    "fromPokemonProfileKey": "298",
+    "toPokemonProfileKey": "183",
+    "label": "Level up (High Friendship)",
+    "tooltip": "Level up: High Friendship",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 90,
+    "fromPokemonProfileKey": "183",
+    "toPokemonProfileKey": "184",
+    "label": "Level 18",
+    "tooltip": "Level 18",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 91,
+    "fromPokemonProfileKey": "438",
+    "toPokemonProfileKey": "185",
+    "label": "Level up (Know Mimic)",
+    "tooltip": "Level up: Know Mimic",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 92,
+    "fromPokemonProfileKey": "187",
+    "toPokemonProfileKey": "188",
+    "label": "Level 18",
+    "tooltip": "Level 18",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 92,
+    "fromPokemonProfileKey": "188",
+    "toPokemonProfileKey": "189",
+    "label": "Level 27",
+    "tooltip": "Level 27",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 93,
+    "fromPokemonProfileKey": "190",
+    "toPokemonProfileKey": "424",
+    "label": "Level up (Know Double Hit)",
+    "tooltip": "Level up: Know Double Hit",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 94,
+    "fromPokemonProfileKey": "191",
+    "toPokemonProfileKey": "192",
+    "label": "Use Sun Stone",
+    "tooltip": "Use Sun Stone",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 95,
+    "fromPokemonProfileKey": "193",
+    "toPokemonProfileKey": "469",
+    "label": "Level up (Know Ancient Power)",
+    "tooltip": "Level up: Know Ancient Power",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 96,
+    "fromPokemonProfileKey": "194",
+    "toPokemonProfileKey": "195",
+    "label": "Level 20",
+    "tooltip": "Level 20",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 96,
+    "fromPokemonProfileKey": "194",
+    "toPokemonProfileKey": "980",
+    "label": "Level 20",
+    "tooltip": "Level 20",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 97,
+    "fromPokemonProfileKey": "198",
+    "toPokemonProfileKey": "430",
+    "label": "Use Dusk Stone",
+    "tooltip": "Use Dusk Stone",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 98,
+    "fromPokemonProfileKey": "200",
+    "toPokemonProfileKey": "429",
+    "label": "Use Dusk Stone",
+    "tooltip": "Use Dusk Stone",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 100,
+    "fromPokemonProfileKey": "360",
+    "toPokemonProfileKey": "202",
+    "label": "Level 15",
+    "tooltip": "Level 15",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 101,
+    "fromPokemonProfileKey": "203",
+    "toPokemonProfileKey": "981",
+    "label": "Level up (Know Twin Beam)",
+    "tooltip": "Level up: Know Twin Beam",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 102,
+    "fromPokemonProfileKey": "204",
+    "toPokemonProfileKey": "205",
+    "label": "Level 31",
+    "tooltip": "Level 31",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 103,
+    "fromPokemonProfileKey": "206",
+    "toPokemonProfileKey": "982",
+    "label": "Level up (Know Hyper Drill)",
+    "tooltip": "Level up: Know Hyper Drill",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 104,
+    "fromPokemonProfileKey": "207",
+    "toPokemonProfileKey": "472",
+    "label": "Level up (Hold Razor Fang)",
+    "tooltip": "Level up: Hold Razor Fang, Time: Night",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 105,
+    "fromPokemonProfileKey": "209",
+    "toPokemonProfileKey": "210",
+    "label": "Level 23",
+    "tooltip": "Level 23",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 106,
+    "fromPokemonProfileKey": "211",
+    "toPokemonProfileKey": "904",
+    "label": "Use Barb Barrage or Level up (Know Barb Barrage) or Use Barb Barrage 20 times, then level up",
+    "tooltip": "Use Barb Barrage, Count: 20 uses OR Level up: Know Barb Barrage OR Use Barb Barrage 20 times, then level up.",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 109,
+    "fromPokemonProfileKey": "215",
+    "toPokemonProfileKey": "461",
+    "label": "Level up (Hold Razor Claw)",
+    "tooltip": "Level up: Hold Razor Claw, Time: Night",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 109,
+    "fromPokemonProfileKey": "215",
+    "toPokemonProfileKey": "903",
+    "label": "Level up (Hold Razor Claw)",
+    "tooltip": "Level up: Hold Razor Claw, Time: Day",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 110,
+    "fromPokemonProfileKey": "216",
+    "toPokemonProfileKey": "217",
+    "label": "Level 30",
+    "tooltip": "Level 30",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 110,
+    "fromPokemonProfileKey": "217",
+    "toPokemonProfileKey": "901",
+    "label": "Use Peat Block",
+    "tooltip": "Use Peat Block; Time: Full-moon",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 111,
+    "fromPokemonProfileKey": "218",
+    "toPokemonProfileKey": "219",
+    "label": "Level 38",
+    "tooltip": "Level 38",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 112,
+    "fromPokemonProfileKey": "220",
+    "toPokemonProfileKey": "221",
+    "label": "Level 33",
+    "tooltip": "Level 33",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 112,
+    "fromPokemonProfileKey": "221",
+    "toPokemonProfileKey": "473",
+    "label": "Level up (Know Ancient Power)",
+    "tooltip": "Level up: Know Ancient Power",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 113,
+    "fromPokemonProfileKey": "222",
+    "toPokemonProfileKey": "864",
+    "label": "Level 38",
+    "tooltip": "Level 38",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 114,
+    "fromPokemonProfileKey": "223",
+    "toPokemonProfileKey": "224",
+    "label": "Level 25",
+    "tooltip": "Level 25",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 116,
+    "fromPokemonProfileKey": "458",
+    "toPokemonProfileKey": "226",
+    "label": "Level up (With Remoraid in party)",
+    "tooltip": "Level up: With Remoraid in party",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 118,
+    "fromPokemonProfileKey": "228",
+    "toPokemonProfileKey": "229",
+    "label": "Level 24",
+    "tooltip": "Level 24",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 119,
+    "fromPokemonProfileKey": "231",
+    "toPokemonProfileKey": "232",
+    "label": "Level 25",
+    "tooltip": "Level 25",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 120,
+    "fromPokemonProfileKey": "234",
+    "toPokemonProfileKey": "899",
+    "label": "Use Psyshield Bash",
+    "tooltip": "Use Psyshield Bash, Count: 20 uses",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 126,
+    "fromPokemonProfileKey": "246",
+    "toPokemonProfileKey": "247",
+    "label": "Level 30",
+    "tooltip": "Level 30",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 126,
+    "fromPokemonProfileKey": "247",
+    "toPokemonProfileKey": "248",
+    "label": "Level 55",
+    "tooltip": "Level 55",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 130,
+    "fromPokemonProfileKey": "252",
+    "toPokemonProfileKey": "253",
+    "label": "Level 16",
+    "tooltip": "Level 16",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 130,
+    "fromPokemonProfileKey": "253",
+    "toPokemonProfileKey": "254",
+    "label": "Level 36",
+    "tooltip": "Level 36",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 131,
+    "fromPokemonProfileKey": "255",
+    "toPokemonProfileKey": "256",
+    "label": "Level 16",
+    "tooltip": "Level 16",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 131,
+    "fromPokemonProfileKey": "256",
+    "toPokemonProfileKey": "257",
+    "label": "Level 36",
+    "tooltip": "Level 36",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 132,
+    "fromPokemonProfileKey": "258",
+    "toPokemonProfileKey": "259",
+    "label": "Level 16",
+    "tooltip": "Level 16",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 132,
+    "fromPokemonProfileKey": "259",
+    "toPokemonProfileKey": "260",
+    "label": "Level 36",
+    "tooltip": "Level 36",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 133,
+    "fromPokemonProfileKey": "261",
+    "toPokemonProfileKey": "262",
+    "label": "Level 18",
+    "tooltip": "Level 18",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 134,
+    "fromPokemonProfileKey": "263",
+    "toPokemonProfileKey": "264",
+    "label": "Level 20",
+    "tooltip": "Level 20",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 134,
+    "fromPokemonProfileKey": "264",
+    "toPokemonProfileKey": "862",
+    "label": "Level 35",
+    "tooltip": "Level 35; Time: Night",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 135,
+    "fromPokemonProfileKey": "265",
+    "toPokemonProfileKey": "266",
+    "label": "Level 7",
+    "tooltip": "Level 7",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 135,
+    "fromPokemonProfileKey": "266",
+    "toPokemonProfileKey": "267",
+    "label": "Level 10",
+    "tooltip": "Level 10",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 135,
+    "fromPokemonProfileKey": "265",
+    "toPokemonProfileKey": "268",
+    "label": "Level 7",
+    "tooltip": "Level 7",
+    "sortOrder": 2
+  },
+  {
+    "sourceChainId": 135,
+    "fromPokemonProfileKey": "268",
+    "toPokemonProfileKey": "269",
+    "label": "Level 10",
+    "tooltip": "Level 10",
+    "sortOrder": 3
+  },
+  {
+    "sourceChainId": 136,
+    "fromPokemonProfileKey": "270",
+    "toPokemonProfileKey": "271",
+    "label": "Level 14",
+    "tooltip": "Level 14",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 136,
+    "fromPokemonProfileKey": "271",
+    "toPokemonProfileKey": "272",
+    "label": "Use Water Stone",
+    "tooltip": "Use Water Stone",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 137,
+    "fromPokemonProfileKey": "273",
+    "toPokemonProfileKey": "274",
+    "label": "Level 14",
+    "tooltip": "Level 14",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 137,
+    "fromPokemonProfileKey": "274",
+    "toPokemonProfileKey": "275",
+    "label": "Use Leaf Stone",
+    "tooltip": "Use Leaf Stone",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 138,
+    "fromPokemonProfileKey": "276",
+    "toPokemonProfileKey": "277",
+    "label": "Level 22",
+    "tooltip": "Level 22",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 139,
+    "fromPokemonProfileKey": "278",
+    "toPokemonProfileKey": "279",
+    "label": "Level 25",
+    "tooltip": "Level 25",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 140,
+    "fromPokemonProfileKey": "280",
+    "toPokemonProfileKey": "281",
+    "label": "Level 20",
+    "tooltip": "Level 20",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 140,
+    "fromPokemonProfileKey": "281",
+    "toPokemonProfileKey": "282",
+    "label": "Level 30",
+    "tooltip": "Level 30",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 140,
+    "fromPokemonProfileKey": "281",
+    "toPokemonProfileKey": "475",
+    "label": "Use Dawn Stone",
+    "tooltip": "Use Dawn Stone; Male",
+    "sortOrder": 2
+  },
+  {
+    "sourceChainId": 141,
+    "fromPokemonProfileKey": "283",
+    "toPokemonProfileKey": "284",
+    "label": "Level 22",
+    "tooltip": "Level 22",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 142,
+    "fromPokemonProfileKey": "285",
+    "toPokemonProfileKey": "286",
+    "label": "Level 23",
+    "tooltip": "Level 23",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 143,
+    "fromPokemonProfileKey": "287",
+    "toPokemonProfileKey": "288",
+    "label": "Level 18",
+    "tooltip": "Level 18",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 143,
+    "fromPokemonProfileKey": "288",
+    "toPokemonProfileKey": "289",
+    "label": "Level 36",
+    "tooltip": "Level 36",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 144,
+    "fromPokemonProfileKey": "290",
+    "toPokemonProfileKey": "291",
+    "label": "Level 20",
+    "tooltip": "Level 20",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 144,
+    "fromPokemonProfileKey": "290",
+    "toPokemonProfileKey": "292",
+    "label": "Special condition",
+    "tooltip": "Special shed evolution condition.",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 145,
+    "fromPokemonProfileKey": "293",
+    "toPokemonProfileKey": "294",
+    "label": "Level 20",
+    "tooltip": "Level 20",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 145,
+    "fromPokemonProfileKey": "294",
+    "toPokemonProfileKey": "295",
+    "label": "Level 40",
+    "tooltip": "Level 40",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 146,
+    "fromPokemonProfileKey": "296",
+    "toPokemonProfileKey": "297",
+    "label": "Level 24",
+    "tooltip": "Level 24",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 147,
+    "fromPokemonProfileKey": "299",
+    "toPokemonProfileKey": "476",
+    "label": "Level up (At Mt Coronet) or Level up (At Chargestone Cave) or Level up (At Kalos Route 13) or Level up (At Blush Mountain) or Level up (At Vast Poni Canyon) or Use Thunder Stone",
+    "tooltip": "Level up: At Mt Coronet OR Level up: At Chargestone Cave OR Level up: At Kalos Route 13 OR Level up: At Blush Mountain OR Level up: At Vast Poni Canyon OR Use Thunder Stone",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 148,
+    "fromPokemonProfileKey": "300",
+    "toPokemonProfileKey": "301",
+    "label": "Use Moon Stone",
+    "tooltip": "Use Moon Stone",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 151,
+    "fromPokemonProfileKey": "304",
+    "toPokemonProfileKey": "305",
+    "label": "Level 32",
+    "tooltip": "Level 32",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 151,
+    "fromPokemonProfileKey": "305",
+    "toPokemonProfileKey": "306",
+    "label": "Level 42",
+    "tooltip": "Level 42",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 152,
+    "fromPokemonProfileKey": "307",
+    "toPokemonProfileKey": "308",
+    "label": "Level 37",
+    "tooltip": "Level 37",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 153,
+    "fromPokemonProfileKey": "309",
+    "toPokemonProfileKey": "310",
+    "label": "Level 26",
+    "tooltip": "Level 26",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 158,
+    "fromPokemonProfileKey": "406",
+    "toPokemonProfileKey": "315",
+    "label": "High Friendship (Day)",
+    "tooltip": "Level up with high friendship during day.",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 158,
+    "fromPokemonProfileKey": "315",
+    "toPokemonProfileKey": "407",
+    "label": "Use Shiny Stone",
+    "tooltip": "Use Shiny Stone",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 159,
+    "fromPokemonProfileKey": "316",
+    "toPokemonProfileKey": "317",
+    "label": "Level 26",
+    "tooltip": "Level 26",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 160,
+    "fromPokemonProfileKey": "318",
+    "toPokemonProfileKey": "319",
+    "label": "Level 30",
+    "tooltip": "Level 30",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 161,
+    "fromPokemonProfileKey": "320",
+    "toPokemonProfileKey": "321",
+    "label": "Level 40",
+    "tooltip": "Level 40",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 162,
+    "fromPokemonProfileKey": "322",
+    "toPokemonProfileKey": "323",
+    "label": "Level 33",
+    "tooltip": "Level 33",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 164,
+    "fromPokemonProfileKey": "325",
+    "toPokemonProfileKey": "326",
+    "label": "Level 32",
+    "tooltip": "Level 32",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 166,
+    "fromPokemonProfileKey": "328",
+    "toPokemonProfileKey": "329",
+    "label": "Level 35",
+    "tooltip": "Level 35",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 166,
+    "fromPokemonProfileKey": "329",
+    "toPokemonProfileKey": "330",
+    "label": "Level 45",
+    "tooltip": "Level 45",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 167,
+    "fromPokemonProfileKey": "331",
+    "toPokemonProfileKey": "332",
+    "label": "Level 32",
+    "tooltip": "Level 32",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 168,
+    "fromPokemonProfileKey": "333",
+    "toPokemonProfileKey": "334",
+    "label": "Level 35",
+    "tooltip": "Level 35",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 173,
+    "fromPokemonProfileKey": "339",
+    "toPokemonProfileKey": "340",
+    "label": "Level 30",
+    "tooltip": "Level 30",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 174,
+    "fromPokemonProfileKey": "341",
+    "toPokemonProfileKey": "342",
+    "label": "Level 30",
+    "tooltip": "Level 30",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 175,
+    "fromPokemonProfileKey": "343",
+    "toPokemonProfileKey": "344",
+    "label": "Level 36",
+    "tooltip": "Level 36",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 176,
+    "fromPokemonProfileKey": "345",
+    "toPokemonProfileKey": "346",
+    "label": "Level 40",
+    "tooltip": "Level 40",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 177,
+    "fromPokemonProfileKey": "347",
+    "toPokemonProfileKey": "348",
+    "label": "Level 40",
+    "tooltip": "Level 40",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 178,
+    "fromPokemonProfileKey": "349",
+    "toPokemonProfileKey": "350",
+    "label": "Level up (High Beauty) or Trade while holding Prism Scale",
+    "tooltip": "Level up: High Beauty OR Trigger: Trade; hold Prism Scale",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 181,
+    "fromPokemonProfileKey": "353",
+    "toPokemonProfileKey": "354",
+    "label": "Level 37",
+    "tooltip": "Level 37",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 182,
+    "fromPokemonProfileKey": "355",
+    "toPokemonProfileKey": "356",
+    "label": "Level 37",
+    "tooltip": "Level 37",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 182,
+    "fromPokemonProfileKey": "356",
+    "toPokemonProfileKey": "477",
+    "label": "Trade while holding Reaper Cloth",
+    "tooltip": "Trigger: Trade; hold Reaper Cloth",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 184,
+    "fromPokemonProfileKey": "433",
+    "toPokemonProfileKey": "358",
+    "label": "High Friendship (Night)",
+    "tooltip": "Level up with high friendship during night.",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 186,
+    "fromPokemonProfileKey": "361",
+    "toPokemonProfileKey": "362",
+    "label": "Level 42",
+    "tooltip": "Level 42",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 186,
+    "fromPokemonProfileKey": "361",
+    "toPokemonProfileKey": "478",
+    "label": "Use Dawn Stone",
+    "tooltip": "Use Dawn Stone; Female",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 187,
+    "fromPokemonProfileKey": "363",
+    "toPokemonProfileKey": "364",
+    "label": "Level 32",
+    "tooltip": "Level 32",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 187,
+    "fromPokemonProfileKey": "364",
+    "toPokemonProfileKey": "365",
+    "label": "Level 44",
+    "tooltip": "Level 44",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 188,
+    "fromPokemonProfileKey": "366",
+    "toPokemonProfileKey": "367",
+    "label": "Trade while holding Deep Sea Tooth",
+    "tooltip": "Trigger: Trade; hold Deep Sea Tooth",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 188,
+    "fromPokemonProfileKey": "366",
+    "toPokemonProfileKey": "368",
+    "label": "Trade while holding Deep Sea Scale",
+    "tooltip": "Trigger: Trade; hold Deep Sea Scale",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 191,
+    "fromPokemonProfileKey": "371",
+    "toPokemonProfileKey": "372",
+    "label": "Level 30",
+    "tooltip": "Level 30",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 191,
+    "fromPokemonProfileKey": "372",
+    "toPokemonProfileKey": "373",
+    "label": "Level 50",
+    "tooltip": "Level 50",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 192,
+    "fromPokemonProfileKey": "374",
+    "toPokemonProfileKey": "375",
+    "label": "Level 20",
+    "tooltip": "Level 20",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 192,
+    "fromPokemonProfileKey": "375",
+    "toPokemonProfileKey": "376",
+    "label": "Level 45",
+    "tooltip": "Level 45",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 203,
+    "fromPokemonProfileKey": "387",
+    "toPokemonProfileKey": "388",
+    "label": "Level 18",
+    "tooltip": "Level 18",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 203,
+    "fromPokemonProfileKey": "388",
+    "toPokemonProfileKey": "389",
+    "label": "Level 32",
+    "tooltip": "Level 32",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 204,
+    "fromPokemonProfileKey": "390",
+    "toPokemonProfileKey": "391",
+    "label": "Level 14",
+    "tooltip": "Level 14",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 204,
+    "fromPokemonProfileKey": "391",
+    "toPokemonProfileKey": "392",
+    "label": "Level 36",
+    "tooltip": "Level 36",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 205,
+    "fromPokemonProfileKey": "393",
+    "toPokemonProfileKey": "394",
+    "label": "Level 16",
+    "tooltip": "Level 16",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 205,
+    "fromPokemonProfileKey": "394",
+    "toPokemonProfileKey": "395",
+    "label": "Level 36",
+    "tooltip": "Level 36",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 206,
+    "fromPokemonProfileKey": "396",
+    "toPokemonProfileKey": "397",
+    "label": "Level 14",
+    "tooltip": "Level 14",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 206,
+    "fromPokemonProfileKey": "397",
+    "toPokemonProfileKey": "398",
+    "label": "Level 34",
+    "tooltip": "Level 34",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 207,
+    "fromPokemonProfileKey": "399",
+    "toPokemonProfileKey": "400",
+    "label": "Level 15",
+    "tooltip": "Level 15",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 208,
+    "fromPokemonProfileKey": "401",
+    "toPokemonProfileKey": "402",
+    "label": "Level 10",
+    "tooltip": "Level 10",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 209,
+    "fromPokemonProfileKey": "403",
+    "toPokemonProfileKey": "404",
+    "label": "Level 15",
+    "tooltip": "Level 15",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 209,
+    "fromPokemonProfileKey": "404",
+    "toPokemonProfileKey": "405",
+    "label": "Level 30",
+    "tooltip": "Level 30",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 211,
+    "fromPokemonProfileKey": "408",
+    "toPokemonProfileKey": "409",
+    "label": "Level 30",
+    "tooltip": "Level 30",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 212,
+    "fromPokemonProfileKey": "410",
+    "toPokemonProfileKey": "411",
+    "label": "Level 30",
+    "tooltip": "Level 30",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 213,
+    "fromPokemonProfileKey": "412",
+    "toPokemonProfileKey": "413",
+    "label": "Level 20",
+    "tooltip": "Level 20; Female",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 213,
+    "fromPokemonProfileKey": "412",
+    "toPokemonProfileKey": "414",
+    "label": "Level 20",
+    "tooltip": "Level 20; Male",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 214,
+    "fromPokemonProfileKey": "415",
+    "toPokemonProfileKey": "416",
+    "label": "Level 21",
+    "tooltip": "Level 21; Female",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 216,
+    "fromPokemonProfileKey": "418",
+    "toPokemonProfileKey": "419",
+    "label": "Level 26",
+    "tooltip": "Level 26",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 217,
+    "fromPokemonProfileKey": "420",
+    "toPokemonProfileKey": "421",
+    "label": "Level 25",
+    "tooltip": "Level 25",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 218,
+    "fromPokemonProfileKey": "422",
+    "toPokemonProfileKey": "423",
+    "label": "Level 30",
+    "tooltip": "Level 30",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 219,
+    "fromPokemonProfileKey": "425",
+    "toPokemonProfileKey": "426",
+    "label": "Level 28",
+    "tooltip": "Level 28",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 220,
+    "fromPokemonProfileKey": "427",
+    "toPokemonProfileKey": "428",
+    "label": "Level up (High Friendship)",
+    "tooltip": "Level up: High Friendship",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 221,
+    "fromPokemonProfileKey": "431",
+    "toPokemonProfileKey": "432",
+    "label": "Level 38",
+    "tooltip": "Level 38",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 223,
+    "fromPokemonProfileKey": "434",
+    "toPokemonProfileKey": "435",
+    "label": "Level 34",
+    "tooltip": "Level 34",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 224,
+    "fromPokemonProfileKey": "436",
+    "toPokemonProfileKey": "437",
+    "label": "Level 33",
+    "tooltip": "Level 33",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 230,
+    "fromPokemonProfileKey": "443",
+    "toPokemonProfileKey": "444",
+    "label": "Level 24",
+    "tooltip": "Level 24",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 230,
+    "fromPokemonProfileKey": "444",
+    "toPokemonProfileKey": "445",
+    "label": "Level 48",
+    "tooltip": "Level 48",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 232,
+    "fromPokemonProfileKey": "447",
+    "toPokemonProfileKey": "448",
+    "label": "High Friendship (Day)",
+    "tooltip": "Level up with high friendship during day.",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 233,
+    "fromPokemonProfileKey": "449",
+    "toPokemonProfileKey": "450",
+    "label": "Level 34",
+    "tooltip": "Level 34",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 234,
+    "fromPokemonProfileKey": "451",
+    "toPokemonProfileKey": "452",
+    "label": "Level 40",
+    "tooltip": "Level 40",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 235,
+    "fromPokemonProfileKey": "453",
+    "toPokemonProfileKey": "454",
+    "label": "Level 37",
+    "tooltip": "Level 37",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 237,
+    "fromPokemonProfileKey": "456",
+    "toPokemonProfileKey": "457",
+    "label": "Level 31",
+    "tooltip": "Level 31",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 239,
+    "fromPokemonProfileKey": "459",
+    "toPokemonProfileKey": "460",
+    "label": "Level 40",
+    "tooltip": "Level 40",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 250,
+    "fromPokemonProfileKey": "489",
+    "toPokemonProfileKey": "490",
+    "label": "Special condition",
+    "tooltip": null,
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 256,
+    "fromPokemonProfileKey": "495",
+    "toPokemonProfileKey": "496",
+    "label": "Level 17",
+    "tooltip": "Level 17",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 256,
+    "fromPokemonProfileKey": "496",
+    "toPokemonProfileKey": "497",
+    "label": "Level 36",
+    "tooltip": "Level 36",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 257,
+    "fromPokemonProfileKey": "498",
+    "toPokemonProfileKey": "499",
+    "label": "Level 17",
+    "tooltip": "Level 17",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 257,
+    "fromPokemonProfileKey": "499",
+    "toPokemonProfileKey": "500",
+    "label": "Level 36",
+    "tooltip": "Level 36",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 258,
+    "fromPokemonProfileKey": "501",
+    "toPokemonProfileKey": "502",
+    "label": "Level 17",
+    "tooltip": "Level 17",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 258,
+    "fromPokemonProfileKey": "502",
+    "toPokemonProfileKey": "503",
+    "label": "Level 36",
+    "tooltip": "Level 36",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 259,
+    "fromPokemonProfileKey": "504",
+    "toPokemonProfileKey": "505",
+    "label": "Level 20",
+    "tooltip": "Level 20",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 260,
+    "fromPokemonProfileKey": "506",
+    "toPokemonProfileKey": "507",
+    "label": "Level 16",
+    "tooltip": "Level 16",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 260,
+    "fromPokemonProfileKey": "507",
+    "toPokemonProfileKey": "508",
+    "label": "Level 32",
+    "tooltip": "Level 32",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 261,
+    "fromPokemonProfileKey": "509",
+    "toPokemonProfileKey": "510",
+    "label": "Level 20",
+    "tooltip": "Level 20",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 262,
+    "fromPokemonProfileKey": "511",
+    "toPokemonProfileKey": "512",
+    "label": "Use Leaf Stone",
+    "tooltip": "Use Leaf Stone",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 263,
+    "fromPokemonProfileKey": "513",
+    "toPokemonProfileKey": "514",
+    "label": "Use Fire Stone",
+    "tooltip": "Use Fire Stone",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 264,
+    "fromPokemonProfileKey": "515",
+    "toPokemonProfileKey": "516",
+    "label": "Use Water Stone",
+    "tooltip": "Use Water Stone",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 265,
+    "fromPokemonProfileKey": "517",
+    "toPokemonProfileKey": "518",
+    "label": "Use Moon Stone",
+    "tooltip": "Use Moon Stone",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 266,
+    "fromPokemonProfileKey": "519",
+    "toPokemonProfileKey": "520",
+    "label": "Level 21",
+    "tooltip": "Level 21",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 266,
+    "fromPokemonProfileKey": "520",
+    "toPokemonProfileKey": "521",
+    "label": "Level 32",
+    "tooltip": "Level 32",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 267,
+    "fromPokemonProfileKey": "522",
+    "toPokemonProfileKey": "523",
+    "label": "Level 27",
+    "tooltip": "Level 27",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 268,
+    "fromPokemonProfileKey": "524",
+    "toPokemonProfileKey": "525",
+    "label": "Level 25",
+    "tooltip": "Level 25",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 268,
+    "fromPokemonProfileKey": "525",
+    "toPokemonProfileKey": "526",
+    "label": "Trade",
+    "tooltip": "Trigger: Trade",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 269,
+    "fromPokemonProfileKey": "527",
+    "toPokemonProfileKey": "528",
+    "label": "Level up (High Friendship)",
+    "tooltip": "Level up: High Friendship",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 270,
+    "fromPokemonProfileKey": "529",
+    "toPokemonProfileKey": "530",
+    "label": "Level 31",
+    "tooltip": "Level 31",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 272,
+    "fromPokemonProfileKey": "532",
+    "toPokemonProfileKey": "533",
+    "label": "Level 25",
+    "tooltip": "Level 25",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 272,
+    "fromPokemonProfileKey": "533",
+    "toPokemonProfileKey": "534",
+    "label": "Trade",
+    "tooltip": "Trigger: Trade",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 273,
+    "fromPokemonProfileKey": "535",
+    "toPokemonProfileKey": "536",
+    "label": "Level 25",
+    "tooltip": "Level 25",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 273,
+    "fromPokemonProfileKey": "536",
+    "toPokemonProfileKey": "537",
+    "label": "Level 36",
+    "tooltip": "Level 36",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 276,
+    "fromPokemonProfileKey": "540",
+    "toPokemonProfileKey": "541",
+    "label": "Level 20",
+    "tooltip": "Level 20",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 276,
+    "fromPokemonProfileKey": "541",
+    "toPokemonProfileKey": "542",
+    "label": "Level up (High Friendship)",
+    "tooltip": "Level up: High Friendship",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 277,
+    "fromPokemonProfileKey": "543",
+    "toPokemonProfileKey": "544",
+    "label": "Level 22",
+    "tooltip": "Level 22",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 277,
+    "fromPokemonProfileKey": "544",
+    "toPokemonProfileKey": "545",
+    "label": "Level 30",
+    "tooltip": "Level 30",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 278,
+    "fromPokemonProfileKey": "546",
+    "toPokemonProfileKey": "547",
+    "label": "Use Sun Stone",
+    "tooltip": "Use Sun Stone",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 279,
+    "fromPokemonProfileKey": "548",
+    "toPokemonProfileKey": "549",
+    "label": "Use Sun Stone",
+    "tooltip": "Use Sun Stone",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 280,
+    "fromPokemonProfileKey": "550",
+    "toPokemonProfileKey": "902",
+    "label": "Take 294+ damage",
+    "tooltip": "Take 294+ damage",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 281,
+    "fromPokemonProfileKey": "551",
+    "toPokemonProfileKey": "552",
+    "label": "Level 29",
+    "tooltip": "Level 29",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 281,
+    "fromPokemonProfileKey": "552",
+    "toPokemonProfileKey": "553",
+    "label": "Level 40",
+    "tooltip": "Level 40",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 282,
+    "fromPokemonProfileKey": "554",
+    "toPokemonProfileKey": "555",
+    "label": "Level 35 or Use Ice Stone",
+    "tooltip": "Level 35 OR Use Ice Stone",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 284,
+    "fromPokemonProfileKey": "557",
+    "toPokemonProfileKey": "558",
+    "label": "Level 34",
+    "tooltip": "Level 34",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 285,
+    "fromPokemonProfileKey": "559",
+    "toPokemonProfileKey": "560",
+    "label": "Level 39",
+    "tooltip": "Level 39",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 287,
+    "fromPokemonProfileKey": "562",
+    "toPokemonProfileKey": "563",
+    "label": "Level 34",
+    "tooltip": "Level 34",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 287,
+    "fromPokemonProfileKey": "562-yamask-galar",
+    "toPokemonProfileKey": "867",
+    "label": "Take 49+ damage in battle, then pass under the Dusty Bowl arch",
+    "tooltip": "Galarian Yamask only.",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 288,
+    "fromPokemonProfileKey": "564",
+    "toPokemonProfileKey": "565",
+    "label": "Level 37",
+    "tooltip": "Level 37",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 289,
+    "fromPokemonProfileKey": "566",
+    "toPokemonProfileKey": "567",
+    "label": "Level 37",
+    "tooltip": "Level 37",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 290,
+    "fromPokemonProfileKey": "568",
+    "toPokemonProfileKey": "569",
+    "label": "Level 36",
+    "tooltip": "Level 36",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 291,
+    "fromPokemonProfileKey": "570",
+    "toPokemonProfileKey": "571",
+    "label": "Level 30",
+    "tooltip": "Level 30",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 292,
+    "fromPokemonProfileKey": "572",
+    "toPokemonProfileKey": "573",
+    "label": "Use Shiny Stone",
+    "tooltip": "Use Shiny Stone",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 293,
+    "fromPokemonProfileKey": "574",
+    "toPokemonProfileKey": "575",
+    "label": "Level 32",
+    "tooltip": "Level 32",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 293,
+    "fromPokemonProfileKey": "575",
+    "toPokemonProfileKey": "576",
+    "label": "Level 41",
+    "tooltip": "Level 41",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 294,
+    "fromPokemonProfileKey": "577",
+    "toPokemonProfileKey": "578",
+    "label": "Level 32",
+    "tooltip": "Level 32",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 294,
+    "fromPokemonProfileKey": "578",
+    "toPokemonProfileKey": "579",
+    "label": "Level 41",
+    "tooltip": "Level 41",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 295,
+    "fromPokemonProfileKey": "580",
+    "toPokemonProfileKey": "581",
+    "label": "Level 35",
+    "tooltip": "Level 35",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 296,
+    "fromPokemonProfileKey": "582",
+    "toPokemonProfileKey": "583",
+    "label": "Level 35",
+    "tooltip": "Level 35",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 296,
+    "fromPokemonProfileKey": "583",
+    "toPokemonProfileKey": "584",
+    "label": "Level 47",
+    "tooltip": "Level 47",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 297,
+    "fromPokemonProfileKey": "585",
+    "toPokemonProfileKey": "586",
+    "label": "Level 34",
+    "tooltip": "Level 34",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 299,
+    "fromPokemonProfileKey": "588",
+    "toPokemonProfileKey": "589",
+    "label": "Trade for Shelmet",
+    "tooltip": "Trigger: Trade for Shelmet",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 300,
+    "fromPokemonProfileKey": "590",
+    "toPokemonProfileKey": "591",
+    "label": "Level 39",
+    "tooltip": "Level 39",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 301,
+    "fromPokemonProfileKey": "592",
+    "toPokemonProfileKey": "593",
+    "label": "Level 40",
+    "tooltip": "Level 40",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 303,
+    "fromPokemonProfileKey": "595",
+    "toPokemonProfileKey": "596",
+    "label": "Level 36",
+    "tooltip": "Level 36",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 304,
+    "fromPokemonProfileKey": "597",
+    "toPokemonProfileKey": "598",
+    "label": "Level 40",
+    "tooltip": "Level 40",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 305,
+    "fromPokemonProfileKey": "599",
+    "toPokemonProfileKey": "600",
+    "label": "Level 38",
+    "tooltip": "Level 38",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 305,
+    "fromPokemonProfileKey": "600",
+    "toPokemonProfileKey": "601",
+    "label": "Level 49",
+    "tooltip": "Level 49",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 306,
+    "fromPokemonProfileKey": "602",
+    "toPokemonProfileKey": "603",
+    "label": "Level 39",
+    "tooltip": "Level 39",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 306,
+    "fromPokemonProfileKey": "603",
+    "toPokemonProfileKey": "604",
+    "label": "Use Thunder Stone",
+    "tooltip": "Use Thunder Stone",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 307,
+    "fromPokemonProfileKey": "605",
+    "toPokemonProfileKey": "606",
+    "label": "Level 42",
+    "tooltip": "Level 42",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 308,
+    "fromPokemonProfileKey": "607",
+    "toPokemonProfileKey": "608",
+    "label": "Level 41",
+    "tooltip": "Level 41",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 308,
+    "fromPokemonProfileKey": "608",
+    "toPokemonProfileKey": "609",
+    "label": "Use Dusk Stone",
+    "tooltip": "Use Dusk Stone",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 309,
+    "fromPokemonProfileKey": "610",
+    "toPokemonProfileKey": "611",
+    "label": "Level 38",
+    "tooltip": "Level 38",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 309,
+    "fromPokemonProfileKey": "611",
+    "toPokemonProfileKey": "612",
+    "label": "Level 48",
+    "tooltip": "Level 48",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 310,
+    "fromPokemonProfileKey": "613",
+    "toPokemonProfileKey": "614",
+    "label": "Level 37",
+    "tooltip": "Level 37",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 312,
+    "fromPokemonProfileKey": "616",
+    "toPokemonProfileKey": "617",
+    "label": "Trade for Karrablast",
+    "tooltip": "Trigger: Trade for Karrablast",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 314,
+    "fromPokemonProfileKey": "619",
+    "toPokemonProfileKey": "620",
+    "label": "Level 50",
+    "tooltip": "Level 50",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 316,
+    "fromPokemonProfileKey": "622",
+    "toPokemonProfileKey": "623",
+    "label": "Level 43",
+    "tooltip": "Level 43",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 317,
+    "fromPokemonProfileKey": "624",
+    "toPokemonProfileKey": "625",
+    "label": "Level 52",
+    "tooltip": "Level 52",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 317,
+    "fromPokemonProfileKey": "625",
+    "toPokemonProfileKey": "983",
+    "label": "Special condition",
+    "tooltip": "Trigger: Three Defeated Bisharp",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 319,
+    "fromPokemonProfileKey": "627",
+    "toPokemonProfileKey": "628",
+    "label": "Level 54",
+    "tooltip": "Level 54",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 320,
+    "fromPokemonProfileKey": "629",
+    "toPokemonProfileKey": "630",
+    "label": "Level 54",
+    "tooltip": "Level 54",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 323,
+    "fromPokemonProfileKey": "633",
+    "toPokemonProfileKey": "634",
+    "label": "Level 50",
+    "tooltip": "Level 50",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 323,
+    "fromPokemonProfileKey": "634",
+    "toPokemonProfileKey": "635",
+    "label": "Level 64",
+    "tooltip": "Level 64",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 324,
+    "fromPokemonProfileKey": "636",
+    "toPokemonProfileKey": "637",
+    "label": "Level 59",
+    "tooltip": "Level 59",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 337,
+    "fromPokemonProfileKey": "650",
+    "toPokemonProfileKey": "651",
+    "label": "Level 16",
+    "tooltip": "Level 16",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 337,
+    "fromPokemonProfileKey": "651",
+    "toPokemonProfileKey": "652",
+    "label": "Level 36",
+    "tooltip": "Level 36",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 338,
+    "fromPokemonProfileKey": "653",
+    "toPokemonProfileKey": "654",
+    "label": "Level 16",
+    "tooltip": "Level 16",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 338,
+    "fromPokemonProfileKey": "654",
+    "toPokemonProfileKey": "655",
+    "label": "Level 36",
+    "tooltip": "Level 36",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 339,
+    "fromPokemonProfileKey": "656",
+    "toPokemonProfileKey": "657",
+    "label": "Level 16",
+    "tooltip": "Level 16",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 339,
+    "fromPokemonProfileKey": "657",
+    "toPokemonProfileKey": "658",
+    "label": "Level 36",
+    "tooltip": "Level 36",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 340,
+    "fromPokemonProfileKey": "659",
+    "toPokemonProfileKey": "660",
+    "label": "Level 20",
+    "tooltip": "Level 20",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 341,
+    "fromPokemonProfileKey": "661",
+    "toPokemonProfileKey": "662",
+    "label": "Level 17",
+    "tooltip": "Level 17",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 341,
+    "fromPokemonProfileKey": "662",
+    "toPokemonProfileKey": "663",
+    "label": "Level 35",
+    "tooltip": "Level 35",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 342,
+    "fromPokemonProfileKey": "664",
+    "toPokemonProfileKey": "665",
+    "label": "Level 9",
+    "tooltip": "Level 9",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 342,
+    "fromPokemonProfileKey": "665",
+    "toPokemonProfileKey": "666",
+    "label": "Level 12",
+    "tooltip": "Level 12",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 343,
+    "fromPokemonProfileKey": "667",
+    "toPokemonProfileKey": "668",
+    "label": "Level 35",
+    "tooltip": "Level 35",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 344,
+    "fromPokemonProfileKey": "669",
+    "toPokemonProfileKey": "670",
+    "label": "Level 19",
+    "tooltip": "Level 19",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 344,
+    "fromPokemonProfileKey": "670",
+    "toPokemonProfileKey": "671",
+    "label": "Use Shiny Stone",
+    "tooltip": "Use Shiny Stone",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 345,
+    "fromPokemonProfileKey": "672",
+    "toPokemonProfileKey": "673",
+    "label": "Level 32",
+    "tooltip": "Level 32",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 346,
+    "fromPokemonProfileKey": "674",
+    "toPokemonProfileKey": "675",
+    "label": "Level 32",
+    "tooltip": "Level 32; With Dark-type in party",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 348,
+    "fromPokemonProfileKey": "677",
+    "toPokemonProfileKey": "678",
+    "label": "Level 25",
+    "tooltip": "Level 25",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 349,
+    "fromPokemonProfileKey": "679",
+    "toPokemonProfileKey": "680",
+    "label": "Level 35",
+    "tooltip": "Level 35",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 349,
+    "fromPokemonProfileKey": "680",
+    "toPokemonProfileKey": "681",
+    "label": "Use Dusk Stone",
+    "tooltip": "Use Dusk Stone",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 350,
+    "fromPokemonProfileKey": "682",
+    "toPokemonProfileKey": "683",
+    "label": "Trade while holding Sachet",
+    "tooltip": "Trigger: Trade; hold Sachet",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 351,
+    "fromPokemonProfileKey": "684",
+    "toPokemonProfileKey": "685",
+    "label": "Trade while holding Whipped Dream",
+    "tooltip": "Trigger: Trade; hold Whipped Dream",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 352,
+    "fromPokemonProfileKey": "686",
+    "toPokemonProfileKey": "687",
+    "label": "Level 30",
+    "tooltip": "Level 30; Turn device upside down",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 353,
+    "fromPokemonProfileKey": "688",
+    "toPokemonProfileKey": "689",
+    "label": "Level 39",
+    "tooltip": "Level 39",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 354,
+    "fromPokemonProfileKey": "690",
+    "toPokemonProfileKey": "691",
+    "label": "Level 48",
+    "tooltip": "Level 48",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 355,
+    "fromPokemonProfileKey": "692",
+    "toPokemonProfileKey": "693",
+    "label": "Level 37",
+    "tooltip": "Level 37",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 356,
+    "fromPokemonProfileKey": "694",
+    "toPokemonProfileKey": "695",
+    "label": "Use Sun Stone",
+    "tooltip": "Use Sun Stone",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 357,
+    "fromPokemonProfileKey": "696",
+    "toPokemonProfileKey": "697",
+    "label": "Level 39",
+    "tooltip": "Level 39; Time: Day",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 358,
+    "fromPokemonProfileKey": "698",
+    "toPokemonProfileKey": "699",
+    "label": "Level 39",
+    "tooltip": "Level 39; Time: Night",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 362,
+    "fromPokemonProfileKey": "704",
+    "toPokemonProfileKey": "705",
+    "label": "Level 40",
+    "tooltip": "Level 40",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 362,
+    "fromPokemonProfileKey": "705",
+    "toPokemonProfileKey": "706",
+    "label": "Level 50",
+    "tooltip": "Level 50; During rain",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 364,
+    "fromPokemonProfileKey": "708",
+    "toPokemonProfileKey": "709",
+    "label": "Trade",
+    "tooltip": "Trigger: Trade",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 365,
+    "fromPokemonProfileKey": "710",
+    "toPokemonProfileKey": "711",
+    "label": "Trade",
+    "tooltip": "Trigger: Trade",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 366,
+    "fromPokemonProfileKey": "712",
+    "toPokemonProfileKey": "713",
+    "label": "Level 37",
+    "tooltip": "Level 37",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 367,
+    "fromPokemonProfileKey": "714",
+    "toPokemonProfileKey": "715",
+    "label": "Level 48",
+    "tooltip": "Level 48",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 374,
+    "fromPokemonProfileKey": "722",
+    "toPokemonProfileKey": "723",
+    "label": "Level 17",
+    "tooltip": "Level 17",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 374,
+    "fromPokemonProfileKey": "723",
+    "toPokemonProfileKey": "724",
+    "label": "Level 34",
+    "tooltip": "Level 34",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 375,
+    "fromPokemonProfileKey": "725",
+    "toPokemonProfileKey": "726",
+    "label": "Level 17",
+    "tooltip": "Level 17",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 375,
+    "fromPokemonProfileKey": "726",
+    "toPokemonProfileKey": "727",
+    "label": "Level 34",
+    "tooltip": "Level 34",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 376,
+    "fromPokemonProfileKey": "728",
+    "toPokemonProfileKey": "729",
+    "label": "Level 17",
+    "tooltip": "Level 17",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 376,
+    "fromPokemonProfileKey": "729",
+    "toPokemonProfileKey": "730",
+    "label": "Level 34",
+    "tooltip": "Level 34",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 377,
+    "fromPokemonProfileKey": "731",
+    "toPokemonProfileKey": "732",
+    "label": "Level 14",
+    "tooltip": "Level 14",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 377,
+    "fromPokemonProfileKey": "732",
+    "toPokemonProfileKey": "733",
+    "label": "Level 28",
+    "tooltip": "Level 28",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 378,
+    "fromPokemonProfileKey": "734",
+    "toPokemonProfileKey": "735",
+    "label": "Level 20",
+    "tooltip": "Level 20; Time: Day",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 379,
+    "fromPokemonProfileKey": "736",
+    "toPokemonProfileKey": "737",
+    "label": "Level 20",
+    "tooltip": "Level 20",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 379,
+    "fromPokemonProfileKey": "737",
+    "toPokemonProfileKey": "738",
+    "label": "Level up (At Vast Poni Canyon) or Level up (At Blush Mountain) or Use Thunder Stone",
+    "tooltip": "Level up: At Vast Poni Canyon OR Level up: At Blush Mountain OR Use Thunder Stone",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 380,
+    "fromPokemonProfileKey": "739",
+    "toPokemonProfileKey": "740",
+    "label": "Level up (At Mount Lanakila) or Use Ice Stone",
+    "tooltip": "Level up: At Mount Lanakila OR Use Ice Stone",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 382,
+    "fromPokemonProfileKey": "742",
+    "toPokemonProfileKey": "743",
+    "label": "Level 25",
+    "tooltip": "Level 25",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 383,
+    "fromPokemonProfileKey": "744",
+    "toPokemonProfileKey": "745",
+    "label": "Level 25 or Level 25 or Level 25",
+    "tooltip": "Level 25; Time: Day OR Level 25; Time: Night OR Level 25; Time: Dusk",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 385,
+    "fromPokemonProfileKey": "747",
+    "toPokemonProfileKey": "748",
+    "label": "Level 38",
+    "tooltip": "Level 38",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 386,
+    "fromPokemonProfileKey": "749",
+    "toPokemonProfileKey": "750",
+    "label": "Level 30",
+    "tooltip": "Level 30",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 387,
+    "fromPokemonProfileKey": "751",
+    "toPokemonProfileKey": "752",
+    "label": "Level 22",
+    "tooltip": "Level 22",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 388,
+    "fromPokemonProfileKey": "753",
+    "toPokemonProfileKey": "754",
+    "label": "Level 34",
+    "tooltip": "Level 34; Time: Day",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 389,
+    "fromPokemonProfileKey": "755",
+    "toPokemonProfileKey": "756",
+    "label": "Level 24",
+    "tooltip": "Level 24",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 390,
+    "fromPokemonProfileKey": "757",
+    "toPokemonProfileKey": "758",
+    "label": "Level 33",
+    "tooltip": "Level 33; Female",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 391,
+    "fromPokemonProfileKey": "759",
+    "toPokemonProfileKey": "760",
+    "label": "Level 27",
+    "tooltip": "Level 27",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 392,
+    "fromPokemonProfileKey": "761",
+    "toPokemonProfileKey": "762",
+    "label": "Level 18",
+    "tooltip": "Level 18",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 392,
+    "fromPokemonProfileKey": "762",
+    "toPokemonProfileKey": "763",
+    "label": "Level up (Know Stomp)",
+    "tooltip": "Level up: Know Stomp",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 396,
+    "fromPokemonProfileKey": "767",
+    "toPokemonProfileKey": "768",
+    "label": "Level 30",
+    "tooltip": "Level 30",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 397,
+    "fromPokemonProfileKey": "769",
+    "toPokemonProfileKey": "770",
+    "label": "Level 42",
+    "tooltip": "Level 42",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 399,
+    "fromPokemonProfileKey": "772",
+    "toPokemonProfileKey": "773",
+    "label": "Level up (High Friendship)",
+    "tooltip": "Level up: High Friendship",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 408,
+    "fromPokemonProfileKey": "782",
+    "toPokemonProfileKey": "783",
+    "label": "Level 35",
+    "tooltip": "Level 35",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 408,
+    "fromPokemonProfileKey": "783",
+    "toPokemonProfileKey": "784",
+    "label": "Level 45",
+    "tooltip": "Level 45",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 413,
+    "fromPokemonProfileKey": "789",
+    "toPokemonProfileKey": "790",
+    "label": "Level 43",
+    "tooltip": "Level 43",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 413,
+    "fromPokemonProfileKey": "790",
+    "toPokemonProfileKey": "791",
+    "label": "Level 53",
+    "tooltip": "Level 53",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 413,
+    "fromPokemonProfileKey": "790",
+    "toPokemonProfileKey": "792",
+    "label": "Level 53",
+    "tooltip": "Level 53",
+    "sortOrder": 2
+  },
+  {
+    "sourceChainId": 424,
+    "fromPokemonProfileKey": "803",
+    "toPokemonProfileKey": "804",
+    "label": "Level up (Know Dragon Pulse)",
+    "tooltip": "Level up: Know Dragon Pulse",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 430,
+    "fromPokemonProfileKey": "810",
+    "toPokemonProfileKey": "811",
+    "label": "Level 16",
+    "tooltip": "Level 16",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 430,
+    "fromPokemonProfileKey": "811",
+    "toPokemonProfileKey": "812",
+    "label": "Level 35",
+    "tooltip": "Level 35",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 431,
+    "fromPokemonProfileKey": "813",
+    "toPokemonProfileKey": "814",
+    "label": "Level 16",
+    "tooltip": "Level 16",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 431,
+    "fromPokemonProfileKey": "814",
+    "toPokemonProfileKey": "815",
+    "label": "Level 35",
+    "tooltip": "Level 35",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 432,
+    "fromPokemonProfileKey": "816",
+    "toPokemonProfileKey": "817",
+    "label": "Level 16",
+    "tooltip": "Level 16",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 432,
+    "fromPokemonProfileKey": "817",
+    "toPokemonProfileKey": "818",
+    "label": "Level 35",
+    "tooltip": "Level 35",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 433,
+    "fromPokemonProfileKey": "819",
+    "toPokemonProfileKey": "820",
+    "label": "Level 24",
+    "tooltip": "Level 24",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 434,
+    "fromPokemonProfileKey": "821",
+    "toPokemonProfileKey": "822",
+    "label": "Level 18",
+    "tooltip": "Level 18",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 434,
+    "fromPokemonProfileKey": "822",
+    "toPokemonProfileKey": "823",
+    "label": "Level 38",
+    "tooltip": "Level 38",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 435,
+    "fromPokemonProfileKey": "824",
+    "toPokemonProfileKey": "825",
+    "label": "Level 10",
+    "tooltip": "Level 10",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 435,
+    "fromPokemonProfileKey": "825",
+    "toPokemonProfileKey": "826",
+    "label": "Level 30",
+    "tooltip": "Level 30",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 436,
+    "fromPokemonProfileKey": "827",
+    "toPokemonProfileKey": "828",
+    "label": "Level 18",
+    "tooltip": "Level 18",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 437,
+    "fromPokemonProfileKey": "829",
+    "toPokemonProfileKey": "830",
+    "label": "Level 20",
+    "tooltip": "Level 20",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 438,
+    "fromPokemonProfileKey": "831",
+    "toPokemonProfileKey": "832",
+    "label": "Level 24",
+    "tooltip": "Level 24",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 439,
+    "fromPokemonProfileKey": "833",
+    "toPokemonProfileKey": "834",
+    "label": "Level 22",
+    "tooltip": "Level 22",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 440,
+    "fromPokemonProfileKey": "835",
+    "toPokemonProfileKey": "836",
+    "label": "Level 25",
+    "tooltip": "Level 25",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 441,
+    "fromPokemonProfileKey": "837",
+    "toPokemonProfileKey": "838",
+    "label": "Level 18",
+    "tooltip": "Level 18",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 441,
+    "fromPokemonProfileKey": "838",
+    "toPokemonProfileKey": "839",
+    "label": "Level 34",
+    "tooltip": "Level 34",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 442,
+    "fromPokemonProfileKey": "840",
+    "toPokemonProfileKey": "841",
+    "label": "Use Tart Apple",
+    "tooltip": "Use Tart Apple",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 442,
+    "fromPokemonProfileKey": "840",
+    "toPokemonProfileKey": "842",
+    "label": "Use Sweet Apple",
+    "tooltip": "Use Sweet Apple",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 442,
+    "fromPokemonProfileKey": "840",
+    "toPokemonProfileKey": "1011",
+    "label": "Special condition",
+    "tooltip": null,
+    "sortOrder": 2
+  },
+  {
+    "sourceChainId": 442,
+    "fromPokemonProfileKey": "1011",
+    "toPokemonProfileKey": "1019",
+    "label": "Special condition",
+    "tooltip": null,
+    "sortOrder": 3
+  },
+  {
+    "sourceChainId": 443,
+    "fromPokemonProfileKey": "843",
+    "toPokemonProfileKey": "844",
+    "label": "Level 36",
+    "tooltip": "Level 36",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 445,
+    "fromPokemonProfileKey": "846",
+    "toPokemonProfileKey": "847",
+    "label": "Level 26",
+    "tooltip": "Level 26",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 446,
+    "fromPokemonProfileKey": "848",
+    "toPokemonProfileKey": "849",
+    "label": "Level 30",
+    "tooltip": "Level 30",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 447,
+    "fromPokemonProfileKey": "850",
+    "toPokemonProfileKey": "851",
+    "label": "Level 28",
+    "tooltip": "Level 28",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 448,
+    "fromPokemonProfileKey": "852",
+    "toPokemonProfileKey": "853",
+    "label": "Level up (Know Taunt)",
+    "tooltip": "Level up: Know Taunt",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 449,
+    "fromPokemonProfileKey": "854",
+    "toPokemonProfileKey": "855",
+    "label": "Use Cracked Pot",
+    "tooltip": "Use Cracked Pot",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 450,
+    "fromPokemonProfileKey": "856",
+    "toPokemonProfileKey": "857",
+    "label": "Level 32",
+    "tooltip": "Level 32",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 450,
+    "fromPokemonProfileKey": "857",
+    "toPokemonProfileKey": "858",
+    "label": "Level 42",
+    "tooltip": "Level 42",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 451,
+    "fromPokemonProfileKey": "859",
+    "toPokemonProfileKey": "860",
+    "label": "Level 32",
+    "tooltip": "Level 32",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 451,
+    "fromPokemonProfileKey": "860",
+    "toPokemonProfileKey": "861",
+    "label": "Level 42",
+    "tooltip": "Level 42",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 452,
+    "fromPokemonProfileKey": "868",
+    "toPokemonProfileKey": "869",
+    "label": "Special condition",
+    "tooltip": "Trigger: Spin",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 455,
+    "fromPokemonProfileKey": "872",
+    "toPokemonProfileKey": "873",
+    "label": "High Friendship (Night)",
+    "tooltip": "Level up with high friendship during night.",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 460,
+    "fromPokemonProfileKey": "878",
+    "toPokemonProfileKey": "879",
+    "label": "Level 34",
+    "tooltip": "Level 34",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 465,
+    "fromPokemonProfileKey": "884",
+    "toPokemonProfileKey": "1018",
+    "label": "Special condition",
+    "tooltip": null,
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 466,
+    "fromPokemonProfileKey": "885",
+    "toPokemonProfileKey": "886",
+    "label": "Level 50",
+    "tooltip": "Level 50",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 466,
+    "fromPokemonProfileKey": "886",
+    "toPokemonProfileKey": "887",
+    "label": "Level 60",
+    "tooltip": "Level 60",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 470,
+    "fromPokemonProfileKey": "891",
+    "toPokemonProfileKey": "892",
+    "label": "Special condition or Special condition",
+    "tooltip": "Trigger: Tower Of Darkness OR Trigger: Tower Of Waters",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 478,
+    "fromPokemonProfileKey": "906",
+    "toPokemonProfileKey": "907",
+    "label": "Level 16",
+    "tooltip": "Level 16",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 478,
+    "fromPokemonProfileKey": "907",
+    "toPokemonProfileKey": "908",
+    "label": "Level 36",
+    "tooltip": "Level 36",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 479,
+    "fromPokemonProfileKey": "909",
+    "toPokemonProfileKey": "910",
+    "label": "Level 16",
+    "tooltip": "Level 16",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 479,
+    "fromPokemonProfileKey": "910",
+    "toPokemonProfileKey": "911",
+    "label": "Level 36",
+    "tooltip": "Level 36",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 480,
+    "fromPokemonProfileKey": "912",
+    "toPokemonProfileKey": "913",
+    "label": "Level 16",
+    "tooltip": "Level 16",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 480,
+    "fromPokemonProfileKey": "913",
+    "toPokemonProfileKey": "914",
+    "label": "Level 36",
+    "tooltip": "Level 36",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 481,
+    "fromPokemonProfileKey": "915",
+    "toPokemonProfileKey": "916",
+    "label": "Level 18",
+    "tooltip": "Level 18",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 482,
+    "fromPokemonProfileKey": "917",
+    "toPokemonProfileKey": "918",
+    "label": "Level 15",
+    "tooltip": "Level 15",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 483,
+    "fromPokemonProfileKey": "919",
+    "toPokemonProfileKey": "920",
+    "label": "Level 24",
+    "tooltip": "Level 24",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 484,
+    "fromPokemonProfileKey": "921",
+    "toPokemonProfileKey": "922",
+    "label": "Level 18",
+    "tooltip": "Level 18",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 484,
+    "fromPokemonProfileKey": "922",
+    "toPokemonProfileKey": "923",
+    "label": "Level up (1000 steps)",
+    "tooltip": "Level up: 1000 steps",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 485,
+    "fromPokemonProfileKey": "924",
+    "toPokemonProfileKey": "925",
+    "label": "Level 25",
+    "tooltip": "Level 25",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 486,
+    "fromPokemonProfileKey": "926",
+    "toPokemonProfileKey": "927",
+    "label": "Level 26",
+    "tooltip": "Level 26",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 487,
+    "fromPokemonProfileKey": "928",
+    "toPokemonProfileKey": "929",
+    "label": "Level 25",
+    "tooltip": "Level 25",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 487,
+    "fromPokemonProfileKey": "929",
+    "toPokemonProfileKey": "930",
+    "label": "Level 35",
+    "tooltip": "Level 35",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 489,
+    "fromPokemonProfileKey": "932",
+    "toPokemonProfileKey": "933",
+    "label": "Level 24",
+    "tooltip": "Level 24",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 489,
+    "fromPokemonProfileKey": "933",
+    "toPokemonProfileKey": "934",
+    "label": "Level 38",
+    "tooltip": "Level 38",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 490,
+    "fromPokemonProfileKey": "935",
+    "toPokemonProfileKey": "936",
+    "label": "Use Auspicious Armor",
+    "tooltip": "Use Auspicious Armor",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 490,
+    "fromPokemonProfileKey": "935",
+    "toPokemonProfileKey": "937",
+    "label": "Use Malicious Armor",
+    "tooltip": "Use Malicious Armor",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 491,
+    "fromPokemonProfileKey": "938",
+    "toPokemonProfileKey": "939",
+    "label": "Use Thunder Stone",
+    "tooltip": "Use Thunder Stone",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 492,
+    "fromPokemonProfileKey": "940",
+    "toPokemonProfileKey": "941",
+    "label": "Level 25",
+    "tooltip": "Level 25",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 493,
+    "fromPokemonProfileKey": "942",
+    "toPokemonProfileKey": "943",
+    "label": "Level 30",
+    "tooltip": "Level 30",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 494,
+    "fromPokemonProfileKey": "944",
+    "toPokemonProfileKey": "945",
+    "label": "Level 28",
+    "tooltip": "Level 28",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 495,
+    "fromPokemonProfileKey": "946",
+    "toPokemonProfileKey": "947",
+    "label": "Level up (1000 steps)",
+    "tooltip": "Level up: 1000 steps",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 496,
+    "fromPokemonProfileKey": "948",
+    "toPokemonProfileKey": "949",
+    "label": "Level 30",
+    "tooltip": "Level 30",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 498,
+    "fromPokemonProfileKey": "951",
+    "toPokemonProfileKey": "952",
+    "label": "Use Fire Stone",
+    "tooltip": "Use Fire Stone",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 499,
+    "fromPokemonProfileKey": "953",
+    "toPokemonProfileKey": "954",
+    "label": "Level up (1000 steps)",
+    "tooltip": "Level up: 1000 steps",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 500,
+    "fromPokemonProfileKey": "955",
+    "toPokemonProfileKey": "956",
+    "label": "Level 35",
+    "tooltip": "Level 35",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 501,
+    "fromPokemonProfileKey": "957",
+    "toPokemonProfileKey": "958",
+    "label": "Level 24",
+    "tooltip": "Level 24",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 501,
+    "fromPokemonProfileKey": "958",
+    "toPokemonProfileKey": "959",
+    "label": "Level 38",
+    "tooltip": "Level 38",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 502,
+    "fromPokemonProfileKey": "960",
+    "toPokemonProfileKey": "961",
+    "label": "Level 26",
+    "tooltip": "Level 26",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 504,
+    "fromPokemonProfileKey": "963",
+    "toPokemonProfileKey": "964",
+    "label": "Level 38",
+    "tooltip": "Level 38; Multiplayer required",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 505,
+    "fromPokemonProfileKey": "965",
+    "toPokemonProfileKey": "966",
+    "label": "Level 40",
+    "tooltip": "Level 40",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 508,
+    "fromPokemonProfileKey": "969",
+    "toPokemonProfileKey": "970",
+    "label": "Level 35",
+    "tooltip": "Level 35",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 509,
+    "fromPokemonProfileKey": "971",
+    "toPokemonProfileKey": "972",
+    "label": "Level 30",
+    "tooltip": "Level 30; Time: Night",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 511,
+    "fromPokemonProfileKey": "974",
+    "toPokemonProfileKey": "975",
+    "label": "Use Ice Stone",
+    "tooltip": "Use Ice Stone",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 527,
+    "fromPokemonProfileKey": "996",
+    "toPokemonProfileKey": "997",
+    "label": "Level 35",
+    "tooltip": "Level 35",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 527,
+    "fromPokemonProfileKey": "997",
+    "toPokemonProfileKey": "998",
+    "label": "Level 54",
+    "tooltip": "Level 54",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 528,
+    "fromPokemonProfileKey": "999",
+    "toPokemonProfileKey": "1000",
+    "label": "Special condition",
+    "tooltip": "Trigger: Gimmmighoul Coins",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 539,
+    "fromPokemonProfileKey": "1012",
+    "toPokemonProfileKey": "1013",
+    "label": "Special condition",
+    "tooltip": null,
+    "sortOrder": 0
+  }
+]

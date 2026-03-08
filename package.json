@@ -1,0 +1,37 @@
+{
+  "name": "cs256-lab-zbedwell",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Pokemon BattleDex MVP",
+  "main": "server/src/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:server": "npm --prefix server run dev",
+    "dev:client": "npm --prefix client run dev",
+    "build": "npm --prefix client run build",
+    "create-db": "npm --prefix server run create-db",
+    "migrate": "npm --prefix server run migrate",
+    "seed": "npm --prefix server run seed",
+    "setup": "npm run migrate && npm run seed",
+    "setup:fresh": "npm run create-db && npm run setup",
+    "generate:data": "node scripts/generate-normalized-data.mjs",
+    "generate:data:all": "node scripts/generate-normalized-data.mjs --max-gen=9",
+    "start": "cross-env NODE_ENV=production npm --prefix server run start",
+    "test": "npm --prefix server run test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2",
+    "path": "^0.12.7",
+    "pg": "^8.13.1",
+    "tunnel-ssh": "^5.1.2"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1",
+    "cross-env": "^10.1.0"
+  }
+}

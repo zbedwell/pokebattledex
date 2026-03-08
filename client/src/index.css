@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&family=Source+Sans+3:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "Source Sans 3", sans-serif;
+  color: #1b2433;
+  background: radial-gradient(circle at 12% 8%, #ffe5d3 0%, #f6f8fc 38%, #eef2f9 100%);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: #1b2433;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.type-badge {
+  @apply inline-flex items-center rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white;
+}
+
+.type-Fire {
+  @apply bg-orange-500;
+}
+
+.type-Water {
+  @apply bg-blue-500;
+}
+
+.type-Grass {
+  @apply bg-green-500;
+}
+
+.type-Electric {
+  @apply bg-yellow-500 text-black;
+}
+
+.type-Ice {
+  @apply bg-cyan-400 text-black;
+}
+
+.type-Fighting {
+  @apply bg-red-700;
+}
+
+.type-Poison {
+  @apply bg-purple-600;
+}
+
+.type-Ground {
+  @apply bg-amber-700;
+}
+
+.type-Flying {
+  @apply bg-indigo-500;
+}
+
+.type-Psychic {
+  @apply bg-pink-500;
+}
+
+.type-Bug {
+  @apply bg-lime-600;
+}
+
+.type-Rock {
+  @apply bg-yellow-700;
+}
+
+.type-Ghost {
+  @apply bg-violet-700;
+}
+
+.type-Dragon {
+  @apply bg-indigo-700;
+}
+
+.type-Dark {
+  @apply bg-stone-700;
+}
+
+.type-Steel {
+  @apply bg-slate-500;
+}
+
+.type-Fairy {
+  @apply bg-pink-400 text-black;
+}
+
+.type-Normal {
+  @apply bg-zinc-500;
+}
+
+.evolution-enter {
+  animation: evolutionFadeUp 260ms ease-out both;
+}
+
+@keyframes evolutionFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .evolution-enter {
+    animation: none;
+  }
+}
