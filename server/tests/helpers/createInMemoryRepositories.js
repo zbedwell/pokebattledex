@@ -344,6 +344,60 @@ const pokemon = [
     abilities: [{ name: "Blaze", slot_type: "primary", short_effect: "Boosts Fire moves at low HP." }],
   },
   {
+    id: 520,
+    profile_key: "52",
+    national_dex_number: 52,
+    name: "Meowth",
+    is_regional_variant: false,
+    primary_type: "Normal",
+    secondary_type: null,
+    hp: 40,
+    attack: 45,
+    defense: 35,
+    special_attack: 40,
+    special_defense: 40,
+    speed: 90,
+    base_stat_total: 290,
+    sprite_url: "meowth.png",
+    abilities: [{ name: "Intimidate", slot_type: "primary", short_effect: "Lowers foe Attack on entry." }],
+  },
+  {
+    id: 530,
+    profile_key: "53",
+    national_dex_number: 53,
+    name: "Persian",
+    is_regional_variant: false,
+    primary_type: "Normal",
+    secondary_type: null,
+    hp: 65,
+    attack: 70,
+    defense: 60,
+    special_attack: 65,
+    special_defense: 65,
+    speed: 115,
+    base_stat_total: 440,
+    sprite_url: "persian.png",
+    abilities: [{ name: "Intimidate", slot_type: "primary", short_effect: "Lowers foe Attack on entry." }],
+  },
+  {
+    id: 521,
+    profile_key: "52-meowth-galar",
+    national_dex_number: 52,
+    name: "Meowth (Galarian)",
+    is_regional_variant: true,
+    primary_type: "Steel",
+    secondary_type: null,
+    hp: 50,
+    attack: 65,
+    defense: 55,
+    special_attack: 40,
+    special_defense: 40,
+    speed: 40,
+    base_stat_total: 290,
+    sprite_url: "meowth-galar.png",
+    abilities: [{ name: "Intimidate", slot_type: "primary", short_effect: "Lowers foe Attack on entry." }],
+  },
+  {
     id: 46,
     profile_key: "38-ninetales-alola",
     national_dex_number: 38,
@@ -542,6 +596,15 @@ const pokemonAbilities = {
   44: [
     { id: 1, name: "Blaze", short_effect: "Boosts Fire moves at low HP.", full_effect: "Strengthens Fire-type attacks when HP is low.", slot_type: "primary" },
   ],
+  520: [
+    { id: 3, name: "Intimidate", short_effect: "Lowers foe Attack on entry.", full_effect: "Lowers the Attack stat of opposing Pokemon on switch-in.", slot_type: "primary" },
+  ],
+  530: [
+    { id: 3, name: "Intimidate", short_effect: "Lowers foe Attack on entry.", full_effect: "Lowers the Attack stat of opposing Pokemon on switch-in.", slot_type: "primary" },
+  ],
+  521: [
+    { id: 3, name: "Intimidate", short_effect: "Lowers foe Attack on entry.", full_effect: "Lowers the Attack stat of opposing Pokemon on switch-in.", slot_type: "primary" },
+  ],
   46: [
     { id: 1, name: "Blaze", short_effect: "Boosts Fire moves at low HP.", full_effect: "Strengthens Fire-type attacks when HP is low.", slot_type: "primary" },
   ],
@@ -591,6 +654,9 @@ const pokemonMoves = {
   37: [{ ...moves[0], learn_method: "level_up", is_notable_battle_move: true }],
   38: [{ ...moves[0], learn_method: "level_up", is_notable_battle_move: true }],
   44: [{ ...moves[2], learn_method: "level_up", is_notable_battle_move: true }],
+  520: [{ ...moves[2], learn_method: "level_up", is_notable_battle_move: true }],
+  530: [{ ...moves[2], learn_method: "level_up", is_notable_battle_move: true }],
+  521: [{ ...moves[2], learn_method: "level_up", is_notable_battle_move: true }],
   46: [{ ...moves[2], learn_method: "level_up", is_notable_battle_move: true }],
   133: [{ ...moves[2], learn_method: "level_up", is_notable_battle_move: true }],
   134: [{ ...moves[3], learn_method: "level_up", is_notable_battle_move: true }],
@@ -612,6 +678,7 @@ const evolutionFamilies = [
   { family_id: 2, source_chain_id: 67, is_branched: true },
   { family_id: 3, source_chain_id: 287, is_branched: true },
   { family_id: 4, source_chain_id: 38, is_branched: false },
+  { family_id: 5, source_chain_id: 52, is_branched: false },
 ];
 
 const evolutionNodesByFamily = {
@@ -634,6 +701,10 @@ const evolutionNodesByFamily = {
   4: [
     { pokemon_id: 37, depth: 0, display_order: 0 },
     { pokemon_id: 38, depth: 1, display_order: 1 },
+  ],
+  5: [
+    { pokemon_id: 520, depth: 0, display_order: 0 },
+    { pokemon_id: 530, depth: 1, display_order: 1 },
   ],
 };
 
@@ -695,6 +766,15 @@ const evolutionEdgesByFamily = {
       sort_order: 0,
     },
   ],
+  5: [
+    {
+      from_pokemon_id: 520,
+      to_pokemon_id: 530,
+      label: "Level 28",
+      tooltip: "Level 28",
+      sort_order: 0,
+    },
+  ],
 };
 
 const pokemonToEvolutionFamily = new Map([
@@ -710,6 +790,8 @@ const pokemonToEvolutionFamily = new Map([
   [867, 3],
   [37, 4],
   [38, 4],
+  [520, 5],
+  [530, 5],
 ]);
 
 const toPokemonSummary = (pokemonId) => {

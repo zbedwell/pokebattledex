@@ -300,6 +300,33 @@ export const createPokemonService = ({ pokemonRepository, typeService }) => {
                   }
                 }
 
+                const baseNodesById = new Map(
+                  baseNodes.map((row) => [Number(row.pokemon_id), row]),
+                );
+                const currentBaseNode =
+                  baseNodes.find(
+                    (row) => Number(row.dex_number) === Number(pokemon.national_dex_number),
+                  ) ?? null;
+
+                // If the current regional form exists but its base-family outgoing target
+                // has no matching regional replacement, we cannot safely infer the next stage.
+                // Return no-evolution instead of showing an incorrect base-form evolution.
+                if (currentBaseNode && variantsByDex.has(Number(currentBaseNode.dex_number))) {
+                  const hasUnmappedOutgoingTarget = baseEdges
+                    .filter(
+                      (edge) =>
+                        Number(edge.from_pokemon_id) === Number(currentBaseNode.pokemon_id),
+                    )
+                    .some((edge) => {
+                      const targetNode = baseNodesById.get(Number(edge.to_pokemon_id));
+                      return targetNode && !variantsByDex.has(Number(targetNode.dex_number));
+                    });
+
+                  if (hasUnmappedOutgoingTarget) {
+                    return buildNoEvolutionLine(pokemon, pokemon.id);
+                  }
+                }
+
                 const mappedNodes = baseNodes.map((row) => {
                   const replacement = variantsByDex.get(Number(row.dex_number));
                   if (!replacement) {

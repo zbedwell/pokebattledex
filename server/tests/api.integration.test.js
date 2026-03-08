@@ -168,6 +168,16 @@ describe("API integration", () => {
     ]);
   });
 
+  it("does not inherit incorrect base evolution targets for divergent regional forms", async () => {
+    const app = buildTestApp();
+    const response = await request(app).get("/api/pokemon/521/evolution");
+
+    expect(response.status).toBe(200);
+    expect(response.body.no_evolutions).toBe(true);
+    expect(response.body.nodes.map((node) => node.name)).toEqual(["Meowth (Galarian)"]);
+    expect(response.body.edges).toEqual([]);
+  });
+
   it("embeds evolution_line in pokemon detail payload", async () => {
     const app = buildTestApp();
     const response = await request(app).get("/api/pokemon/6");
