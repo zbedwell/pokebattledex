@@ -3,6 +3,7 @@ import { SearchBar } from "./SearchBar.jsx";
 
 export const Navbar = () => {
   const navigate = useNavigate();
+  const globalSearchInputId = "global-navbar-search";
 
   const quickLinks = [
     { to: "/pokemon", label: "Pokemon" },
@@ -10,6 +11,7 @@ export const Navbar = () => {
     { to: "/abilities", label: "Abilities" },
     { to: "/types", label: "Type Tool" },
     { to: "/compare", label: "Compare" },
+    { to: "/about", label: "About" },
   ];
 
   return (
@@ -34,6 +36,7 @@ export const Navbar = () => {
 
         <div className="md:w-[440px]">
           <SearchBar
+            inputId={globalSearchInputId}
             onSelect={(entry) => {
               if (entry.kind === "pokemon") navigate(`/pokemon/${entry.id}`);
               if (entry.kind === "moves") navigate(`/moves/${entry.id}`);

@@ -11,6 +11,7 @@ const types = [
   { id: 10, name: "Ghost" },
   { id: 11, name: "Ice" },
   { id: 12, name: "Fairy" },
+  { id: 13, name: "Dragon" },
 ];
 
 const typeMultiplierMap = new Map();
@@ -98,6 +99,27 @@ const abilities = [
     name: "Overgrow",
     short_effect: "Boosts Grass moves at low HP.",
     full_effect: "Strengthens Grass-type attacks when HP is low.",
+    is_battle_relevant: true,
+  },
+  {
+    id: 5,
+    name: "Tough Claws",
+    short_effect: "Boosts contact move power.",
+    full_effect: "Boosts the power of moves that make direct contact.",
+    is_battle_relevant: true,
+  },
+  {
+    id: 6,
+    name: "Drought",
+    short_effect: "Turns sunlight harsh on entry.",
+    full_effect: "Summons harsh sunlight when the Pokemon enters battle.",
+    is_battle_relevant: true,
+  },
+  {
+    id: 7,
+    name: "Desolate Land",
+    short_effect: "Summons intense sunlight.",
+    full_effect: "Summons extremely harsh sunlight that negates Water-type attacks while active.",
     is_battle_relevant: true,
   },
 ];
@@ -224,8 +246,10 @@ const pokemon = [
   },
   {
     id: 6,
+    profile_key: "6",
     national_dex_number: 6,
     name: "Charizard",
+    form_name: null,
     primary_type: "Fire",
     secondary_type: "Flying",
     hp: 78,
@@ -240,6 +264,44 @@ const pokemon = [
       { name: "Blaze", slot_type: "primary", short_effect: "Boosts Fire moves at low HP." },
       { name: "Solar Power", slot_type: "hidden", short_effect: "Boosts Sp. Atk in sun." },
     ],
+  },
+  {
+    id: 6006,
+    profile_key: "6-charizard-mega-x",
+    national_dex_number: 6,
+    name: "Charizard (Mega X)",
+    form_name: "Mega X",
+    is_regional_variant: false,
+    primary_type: "Fire",
+    secondary_type: "Dragon",
+    hp: 78,
+    attack: 130,
+    defense: 111,
+    special_attack: 130,
+    special_defense: 85,
+    speed: 100,
+    base_stat_total: 634,
+    sprite_url: "charizard-mega-x.png",
+    abilities: [{ name: "Tough Claws", slot_type: "primary", short_effect: "Boosts contact move power." }],
+  },
+  {
+    id: 6007,
+    profile_key: "6-charizard-mega-y",
+    national_dex_number: 6,
+    name: "Charizard (Mega Y)",
+    form_name: "Mega Y",
+    is_regional_variant: false,
+    primary_type: "Fire",
+    secondary_type: "Flying",
+    hp: 78,
+    attack: 104,
+    defense: 78,
+    special_attack: 159,
+    special_defense: 115,
+    speed: 100,
+    base_stat_total: 634,
+    sprite_url: "charizard-mega-y.png",
+    abilities: [{ name: "Drought", slot_type: "primary", short_effect: "Turns sunlight harsh on entry." }],
   },
   {
     id: 130,
@@ -607,6 +669,44 @@ const pokemon = [
     sprite_url: "cubchoo.png",
     abilities: [{ name: "Intimidate", slot_type: "primary", short_effect: "Lowers foe Attack on entry." }],
   },
+  {
+    id: 383,
+    profile_key: "383",
+    national_dex_number: 383,
+    name: "Groudon",
+    form_name: null,
+    is_regional_variant: false,
+    primary_type: "Ground",
+    secondary_type: null,
+    hp: 100,
+    attack: 150,
+    defense: 140,
+    special_attack: 100,
+    special_defense: 90,
+    speed: 90,
+    base_stat_total: 670,
+    sprite_url: "groudon.png",
+    abilities: [{ name: "Intimidate", slot_type: "primary", short_effect: "Lowers foe Attack on entry." }],
+  },
+  {
+    id: 7001,
+    profile_key: "383-groudon-primal",
+    national_dex_number: 383,
+    name: "Groudon (Primal)",
+    form_name: "Primal",
+    is_regional_variant: false,
+    primary_type: "Ground",
+    secondary_type: "Fire",
+    hp: 100,
+    attack: 180,
+    defense: 160,
+    special_attack: 150,
+    special_defense: 90,
+    speed: 90,
+    base_stat_total: 770,
+    sprite_url: "groudon-primal.png",
+    abilities: [{ name: "Desolate Land", slot_type: "primary", short_effect: "Summons intense sunlight." }],
+  },
 ];
 
 const pokemonAbilities = {
@@ -631,6 +731,12 @@ const pokemonAbilities = {
   6: [
     { id: 1, name: "Blaze", short_effect: "Boosts Fire moves at low HP.", full_effect: "Strengthens Fire-type attacks when HP is low.", slot_type: "primary" },
     { id: 2, name: "Solar Power", short_effect: "Boosts Sp. Atk in sun but drains HP.", full_effect: "Raises Special Attack in harsh sunlight and drains HP each turn.", slot_type: "hidden" },
+  ],
+  6006: [
+    { id: 5, name: "Tough Claws", short_effect: "Boosts contact move power.", full_effect: "Boosts the power of moves that make direct contact.", slot_type: "primary" },
+  ],
+  6007: [
+    { id: 6, name: "Drought", short_effect: "Turns sunlight harsh on entry.", full_effect: "Summons harsh sunlight when the Pokemon enters battle.", slot_type: "primary" },
   ],
   130: [
     { id: 3, name: "Intimidate", short_effect: "Lowers foe Attack on entry.", full_effect: "Lowers the Attack stat of opposing Pokemon on switch-in.", slot_type: "primary" },
@@ -695,12 +801,30 @@ const pokemonAbilities = {
   714: [
     { id: 3, name: "Intimidate", short_effect: "Lowers foe Attack on entry.", full_effect: "Lowers the Attack stat of opposing Pokemon on switch-in.", slot_type: "primary" },
   ],
+  383: [
+    { id: 3, name: "Intimidate", short_effect: "Lowers foe Attack on entry.", full_effect: "Lowers the Attack stat of opposing Pokemon on switch-in.", slot_type: "primary" },
+  ],
+  7001: [
+    { id: 7, name: "Desolate Land", short_effect: "Summons intense sunlight.", full_effect: "Summons extremely harsh sunlight that negates Water-type attacks while active.", slot_type: "primary" },
+  ],
 };
 
 const pokemonMoves = {
   4: [{ ...moves[0], learn_method: "level_up", is_notable_battle_move: true }],
   5: [{ ...moves[0], learn_method: "level_up", is_notable_battle_move: true }],
   6: [
+    { ...moves[0], learn_method: "level_up", is_notable_battle_move: true },
+    { ...moves[1], learn_method: "level_up", is_notable_battle_move: true },
+    { ...moves[2], learn_method: "machine", is_notable_battle_move: true },
+    { ...moves[6], learn_method: "machine", is_notable_battle_move: true },
+  ],
+  6006: [
+    { ...moves[0], learn_method: "level_up", is_notable_battle_move: true },
+    { ...moves[1], learn_method: "level_up", is_notable_battle_move: true },
+    { ...moves[2], learn_method: "machine", is_notable_battle_move: true },
+    { ...moves[6], learn_method: "machine", is_notable_battle_move: true },
+  ],
+  6007: [
     { ...moves[0], learn_method: "level_up", is_notable_battle_move: true },
     { ...moves[1], learn_method: "level_up", is_notable_battle_move: true },
     { ...moves[2], learn_method: "machine", is_notable_battle_move: true },
@@ -732,6 +856,78 @@ const pokemonMoves = {
   563: [{ ...moves[6], learn_method: "level_up", is_notable_battle_move: true }],
   867: [{ ...moves[6], learn_method: "level_up", is_notable_battle_move: true }],
   714: [{ ...moves[2], learn_method: "level_up", is_notable_battle_move: true }],
+  383: [{ ...moves[6], learn_method: "level_up", is_notable_battle_move: true }],
+  7001: [{ ...moves[6], learn_method: "level_up", is_notable_battle_move: true }],
+};
+
+const battleFormGames = [
+  "X",
+  "Y",
+  "Omega Ruby",
+  "Alpha Sapphire",
+  "Sun",
+  "Moon",
+  "Ultra Sun",
+  "Ultra Moon",
+  "Let's Go Pikachu",
+  "Let's Go Eevee",
+  "Legends: Z-A",
+];
+
+const toBattleFormObtainEntries = (method) =>
+  battleFormGames.map((game) => ({
+    game,
+    methods: [method],
+    locations: [{ location: "Battle Transformation", methods: [method] }],
+  }));
+
+const pokemonObtainMethodsById = {
+  4: [
+    {
+      game: "Red",
+      methods: ["Starter"],
+      locations: [{ location: "Pallet Town", methods: ["Starter"] }],
+    },
+    {
+      game: "Blue",
+      methods: ["Starter"],
+      locations: [{ location: "Pallet Town", methods: ["Starter"] }],
+    },
+  ],
+  6: [
+    {
+      game: "Sun",
+      methods: ["Gift"],
+      locations: [
+        { location: "Route 12", methods: ["Gift"] },
+        { location: "Route 3", methods: ["Gift"] },
+      ],
+    },
+    {
+      game: "Sword",
+      methods: ["Static Encounter"],
+      locations: [{ location: "Lake of Outrage", methods: ["Static Encounter"] }],
+    },
+  ],
+  24: [
+    {
+      game: "Red",
+      methods: ["Walk"],
+      locations: [{ location: "Route 4", methods: ["Grass/Cave Walk"] }],
+    },
+    {
+      game: "Blue",
+      methods: ["Walk"],
+      locations: [{ location: "Route 4", methods: ["Grass/Cave Walk"] }],
+    },
+  ],
+  520: [{ game: "Red", methods: ["Walk"], locations: [{ location: "Route 5", methods: ["Grass/Cave Walk"] }] }],
+  522: [{ game: "Sun", methods: ["Walk"], locations: [{ location: "Route 2", methods: ["Grass/Cave Walk"] }] }],
+  521: [{ game: "Sword", methods: ["Gift"], locations: [{ location: "Turffield", methods: ["Gift"] }] }],
+  864: [{ game: "Sword", methods: ["Evolve"], locations: [{ location: "Evolution", methods: ["Evolve"] }] }],
+  6006: toBattleFormObtainEntries("Mega Evolution"),
+  6007: toBattleFormObtainEntries("Mega Evolution"),
+  7001: toBattleFormObtainEntries("Primal Reversion"),
 };
 
 const paginate = (rows, page, limit) => {
@@ -745,6 +941,7 @@ const evolutionFamilies = [
   { family_id: 3, source_chain_id: 287, is_branched: true },
   { family_id: 4, source_chain_id: 38, is_branched: false },
   { family_id: 5, source_chain_id: 22, is_branched: true },
+  { family_id: 6, source_chain_id: 383, is_branched: false },
 ];
 
 const evolutionNodesByFamily = {
@@ -752,6 +949,8 @@ const evolutionNodesByFamily = {
     { pokemon_id: 4, depth: 0, display_order: 0 },
     { pokemon_id: 5, depth: 1, display_order: 1 },
     { pokemon_id: 6, depth: 2, display_order: 2 },
+    { pokemon_id: 6006, depth: 3, display_order: 3 },
+    { pokemon_id: 6007, depth: 3, display_order: 4 },
   ],
   2: [
     { pokemon_id: 133, depth: 0, display_order: 0 },
@@ -773,6 +972,10 @@ const evolutionNodesByFamily = {
     { pokemon_id: 530, depth: 1, display_order: 1 },
     { pokemon_id: 864, depth: 1, display_order: 2 },
   ],
+  6: [
+    { pokemon_id: 383, depth: 0, display_order: 0 },
+    { pokemon_id: 7001, depth: 1, display_order: 1 },
+  ],
 };
 
 const evolutionEdgesByFamily = {
@@ -790,6 +993,20 @@ const evolutionEdgesByFamily = {
       label: "Level 36",
       tooltip: "Level 36",
       sort_order: 1,
+    },
+    {
+      from_pokemon_id: 6,
+      to_pokemon_id: 6006,
+      label: "Mega Evolution (Charizardite X)",
+      tooltip: "Mega Evolution (Charizardite X)",
+      sort_order: 2,
+    },
+    {
+      from_pokemon_id: 6,
+      to_pokemon_id: 6007,
+      label: "Mega Evolution (Charizardite Y)",
+      tooltip: "Mega Evolution (Charizardite Y)",
+      sort_order: 3,
     },
   ],
   2: [
@@ -849,12 +1066,23 @@ const evolutionEdgesByFamily = {
       sort_order: 1,
     },
   ],
+  6: [
+    {
+      from_pokemon_id: 383,
+      to_pokemon_id: 7001,
+      label: "Primal Reversion (Red Orb)",
+      tooltip: "Primal Reversion (Red Orb)",
+      sort_order: 0,
+    },
+  ],
 };
 
 const pokemonToEvolutionFamily = new Map([
   [4, 1],
   [5, 1],
   [6, 1],
+  [6006, 1],
+  [6007, 1],
   [133, 2],
   [134, 2],
   [135, 2],
@@ -867,6 +1095,8 @@ const pokemonToEvolutionFamily = new Map([
   [520, 5],
   [530, 5],
   [864, 5],
+  [383, 6],
+  [7001, 6],
 ]);
 
 const toPokemonSummary = (pokemonId) => {
@@ -941,6 +1171,12 @@ export const createInMemoryRepositories = (options = {}) => {
           pokemon.find(
             (entry) =>
               entry.national_dex_number === numeric &&
+              !Boolean(entry.is_regional_variant) &&
+              entry.form_name == null,
+          ) ??
+          pokemon.find(
+            (entry) =>
+              entry.national_dex_number === numeric &&
               !Boolean(entry.is_regional_variant),
           ) ??
           pokemon.find((entry) => entry.national_dex_number === numeric) ??
@@ -966,12 +1202,22 @@ export const createInMemoryRepositories = (options = {}) => {
       return pokemonAbilities[pokemonId] ?? [];
     },
 
+    async getPokemonObtainMethods(pokemonId) {
+      return pokemonObtainMethodsById[pokemonId] ?? [];
+    },
+
     async getPokemonSummaryById(pokemonId) {
       return toPokemonSummary(pokemonId);
     },
 
     async getDefaultPokemonByDex(dexNumber) {
       return (
+        pokemon.find(
+          (entry) =>
+            entry.national_dex_number === Number(dexNumber) &&
+            !Boolean(entry.is_regional_variant) &&
+            entry.form_name == null,
+        ) ??
         pokemon.find(
           (entry) =>
             entry.national_dex_number === Number(dexNumber) &&

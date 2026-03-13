@@ -16,6 +16,14 @@
     "sortOrder": 1
   },
   {
+    "sourceChainId": 1,
+    "fromPokemonProfileKey": "3",
+    "toPokemonProfileKey": "3-venusaur-mega",
+    "label": "Mega Evolution (Venusaurite)",
+    "tooltip": "Mega Evolution (Venusaurite)",
+    "sortOrder": 2
+  },
+  {
     "sourceChainId": 2,
     "fromPokemonProfileKey": "4",
     "toPokemonProfileKey": "5",
@@ -32,6 +40,22 @@
     "sortOrder": 1
   },
   {
+    "sourceChainId": 2,
+    "fromPokemonProfileKey": "6",
+    "toPokemonProfileKey": "6-charizard-mega-x",
+    "label": "Mega Evolution (Charizardite X)",
+    "tooltip": "Mega Evolution (Charizardite X)",
+    "sortOrder": 2
+  },
+  {
+    "sourceChainId": 2,
+    "fromPokemonProfileKey": "6",
+    "toPokemonProfileKey": "6-charizard-mega-y",
+    "label": "Mega Evolution (Charizardite Y)",
+    "tooltip": "Mega Evolution (Charizardite Y)",
+    "sortOrder": 3
+  },
+  {
     "sourceChainId": 3,
     "fromPokemonProfileKey": "7",
     "toPokemonProfileKey": "8",
@@ -46,6 +70,14 @@
     "label": "Level 36",
     "tooltip": "Level 36",
     "sortOrder": 1
+  },
+  {
+    "sourceChainId": 3,
+    "fromPokemonProfileKey": "9",
+    "toPokemonProfileKey": "9-blastoise-mega",
+    "label": "Mega Evolution (Blastoisinite)",
+    "tooltip": "Mega Evolution (Blastoisinite)",
+    "sortOrder": 2
   },
   {
     "sourceChainId": 4,
@@ -80,6 +112,14 @@
     "sortOrder": 1
   },
   {
+    "sourceChainId": 5,
+    "fromPokemonProfileKey": "15",
+    "toPokemonProfileKey": "15-beedrill-mega",
+    "label": "Mega Evolution (Beedrillite)",
+    "tooltip": "Mega Evolution (Beedrillite)",
+    "sortOrder": 2
+  },
+  {
     "sourceChainId": 6,
     "fromPokemonProfileKey": "16",
     "toPokemonProfileKey": "17",
@@ -94,6 +134,14 @@
     "label": "Level 36",
     "tooltip": "Level 36",
     "sortOrder": 1
+  },
+  {
+    "sourceChainId": 6,
+    "fromPokemonProfileKey": "18",
+    "toPokemonProfileKey": "18-pidgeot-mega",
+    "label": "Mega Evolution (Pidgeotite)",
+    "tooltip": "Mega Evolution (Pidgeotite)",
+    "sortOrder": 2
   },
   {
     "sourceChainId": 7,
@@ -134,6 +182,22 @@
     "label": "Use Thunder Stone",
     "tooltip": "Use Thunder Stone",
     "sortOrder": 1
+  },
+  {
+    "sourceChainId": 10,
+    "fromPokemonProfileKey": "26",
+    "toPokemonProfileKey": "26-raichu-mega-x",
+    "label": "Mega Evolution (Mega Stone X)",
+    "tooltip": "Mega Evolution (Mega Stone X)",
+    "sortOrder": 2
+  },
+  {
+    "sourceChainId": 10,
+    "fromPokemonProfileKey": "26",
+    "toPokemonProfileKey": "26-raichu-mega-y",
+    "label": "Mega Evolution (Mega Stone Y)",
+    "tooltip": "Mega Evolution (Mega Stone Y)",
+    "sortOrder": 3
   },
   {
     "sourceChainId": 11,
@@ -190,6 +254,14 @@
     "label": "Use Moon Stone",
     "tooltip": "Use Moon Stone",
     "sortOrder": 1
+  },
+  {
+    "sourceChainId": 14,
+    "fromPokemonProfileKey": "36",
+    "toPokemonProfileKey": "36-clefable-mega",
+    "label": "Mega Evolution (Mega Stone)",
+    "tooltip": "Mega Evolution (Mega Stone)",
+    "sortOrder": 2
   },
   {
     "sourceChainId": 15,
@@ -368,6 +440,14 @@
     "sortOrder": 1
   },
   {
+    "sourceChainId": 27,
+    "fromPokemonProfileKey": "65",
+    "toPokemonProfileKey": "65-alakazam-mega",
+    "label": "Mega Evolution (Alakazite)",
+    "tooltip": "Mega Evolution (Alakazite)",
+    "sortOrder": 2
+  },
+  {
     "sourceChainId": 28,
     "fromPokemonProfileKey": "66",
     "toPokemonProfileKey": "67",
@@ -398,6 +478,14 @@
     "label": "Use Leaf Stone",
     "tooltip": "Use Leaf Stone",
     "sortOrder": 1
+  },
+  {
+    "sourceChainId": 29,
+    "fromPokemonProfileKey": "71",
+    "toPokemonProfileKey": "71-victreebel-mega",
+    "label": "Mega Evolution (Mega Stone)",
+    "tooltip": "Mega Evolution (Mega Stone)",
+    "sortOrder": 2
   },
   {
     "sourceChainId": 30,
@@ -446,6 +534,14 @@
     "label": "Trade while holding Kings Rock or Use Galarica Wreath",
     "tooltip": "Trigger: Trade; hold Kings Rock OR Use Galarica Wreath",
     "sortOrder": 1
+  },
+  {
+    "sourceChainId": 33,
+    "fromPokemonProfileKey": "80",
+    "toPokemonProfileKey": "80-slowbro-mega",
+    "label": "Mega Evolution (Slowbronite)",
+    "tooltip": "Mega Evolution (Slowbronite)",
+    "sortOrder": 2
   },
   {
     "sourceChainId": 34,
@@ -520,12 +616,28 @@
     "sortOrder": 1
   },
   {
+    "sourceChainId": 40,
+    "fromPokemonProfileKey": "94",
+    "toPokemonProfileKey": "94-gengar-mega",
+    "label": "Mega Evolution (Gengarite)",
+    "tooltip": "Mega Evolution (Gengarite)",
+    "sortOrder": 2
+  },
+  {
     "sourceChainId": 41,
     "fromPokemonProfileKey": "95",
     "toPokemonProfileKey": "208",
     "label": "Trade while holding Metal Coat",
     "tooltip": "Trigger: Trade; hold Metal Coat",
     "sortOrder": 0
+  },
+  {
+    "sourceChainId": 41,
+    "fromPokemonProfileKey": "208",
+    "toPokemonProfileKey": "208-steelix-mega",
+    "label": "Mega Evolution (Steelixite)",
+    "tooltip": "Mega Evolution (Steelixite)",
+    "sortOrder": 1
   },
   {
     "sourceChainId": 42,
@@ -648,6 +760,14 @@
     "sortOrder": 0
   },
   {
+    "sourceChainId": 53,
+    "fromPokemonProfileKey": "115",
+    "toPokemonProfileKey": "115-kangaskhan-mega",
+    "label": "Mega Evolution (Kangaskhanite)",
+    "tooltip": "Mega Evolution (Kangaskhanite)",
+    "sortOrder": 0
+  },
+  {
     "sourceChainId": 54,
     "fromPokemonProfileKey": "116",
     "toPokemonProfileKey": "117",
@@ -680,6 +800,14 @@
     "sortOrder": 0
   },
   {
+    "sourceChainId": 56,
+    "fromPokemonProfileKey": "121",
+    "toPokemonProfileKey": "121-starmie-mega",
+    "label": "Mega Evolution (Mega Stone)",
+    "tooltip": "Mega Evolution (Mega Stone)",
+    "sortOrder": 1
+  },
+  {
     "sourceChainId": 57,
     "fromPokemonProfileKey": "439",
     "toPokemonProfileKey": "122",
@@ -710,6 +838,14 @@
     "label": "Use Black Augurite",
     "tooltip": "Use Black Augurite",
     "sortOrder": 1
+  },
+  {
+    "sourceChainId": 58,
+    "fromPokemonProfileKey": "212",
+    "toPokemonProfileKey": "212-scizor-mega",
+    "label": "Mega Evolution (Scizorite)",
+    "tooltip": "Mega Evolution (Scizorite)",
+    "sortOrder": 2
   },
   {
     "sourceChainId": 59,
@@ -752,12 +888,28 @@
     "sortOrder": 1
   },
   {
+    "sourceChainId": 62,
+    "fromPokemonProfileKey": "127",
+    "toPokemonProfileKey": "127-pinsir-mega",
+    "label": "Mega Evolution (Pinsirite)",
+    "tooltip": "Mega Evolution (Pinsirite)",
+    "sortOrder": 0
+  },
+  {
     "sourceChainId": 64,
     "fromPokemonProfileKey": "129",
     "toPokemonProfileKey": "130",
     "label": "Level 20",
     "tooltip": "Level 20",
     "sortOrder": 0
+  },
+  {
+    "sourceChainId": 64,
+    "fromPokemonProfileKey": "130",
+    "toPokemonProfileKey": "130-gyarados-mega",
+    "label": "Mega Evolution (Gyaradosite)",
+    "tooltip": "Mega Evolution (Gyaradosite)",
+    "sortOrder": 1
   },
   {
     "sourceChainId": 67,
@@ -856,6 +1008,14 @@
     "sortOrder": 0
   },
   {
+    "sourceChainId": 71,
+    "fromPokemonProfileKey": "142",
+    "toPokemonProfileKey": "142-aerodactyl-mega",
+    "label": "Mega Evolution (Aerodactylite)",
+    "tooltip": "Mega Evolution (Aerodactylite)",
+    "sortOrder": 0
+  },
+  {
     "sourceChainId": 72,
     "fromPokemonProfileKey": "446",
     "toPokemonProfileKey": "143",
@@ -880,6 +1040,30 @@
     "sortOrder": 1
   },
   {
+    "sourceChainId": 76,
+    "fromPokemonProfileKey": "149",
+    "toPokemonProfileKey": "149-dragonite-mega",
+    "label": "Mega Evolution (Mega Stone)",
+    "tooltip": "Mega Evolution (Mega Stone)",
+    "sortOrder": 2
+  },
+  {
+    "sourceChainId": 77,
+    "fromPokemonProfileKey": "150",
+    "toPokemonProfileKey": "150-mewtwo-mega-x",
+    "label": "Mega Evolution (Mewtwonite X)",
+    "tooltip": "Mega Evolution (Mewtwonite X)",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 77,
+    "fromPokemonProfileKey": "150",
+    "toPokemonProfileKey": "150-mewtwo-mega-y",
+    "label": "Mega Evolution (Mewtwonite Y)",
+    "tooltip": "Mega Evolution (Mewtwonite Y)",
+    "sortOrder": 1
+  },
+  {
     "sourceChainId": 79,
     "fromPokemonProfileKey": "152",
     "toPokemonProfileKey": "153",
@@ -894,6 +1078,14 @@
     "label": "Level 32",
     "tooltip": "Level 32",
     "sortOrder": 1
+  },
+  {
+    "sourceChainId": 79,
+    "fromPokemonProfileKey": "154",
+    "toPokemonProfileKey": "154-meganium-mega",
+    "label": "Mega Evolution (Mega Stone)",
+    "tooltip": "Mega Evolution (Mega Stone)",
+    "sortOrder": 2
   },
   {
     "sourceChainId": 80,
@@ -926,6 +1118,14 @@
     "label": "Level 30",
     "tooltip": "Level 30",
     "sortOrder": 1
+  },
+  {
+    "sourceChainId": 81,
+    "fromPokemonProfileKey": "160",
+    "toPokemonProfileKey": "160-feraligatr-mega",
+    "label": "Mega Evolution (Mega Stone)",
+    "tooltip": "Mega Evolution (Mega Stone)",
+    "sortOrder": 2
   },
   {
     "sourceChainId": 82,
@@ -1006,6 +1206,14 @@
     "label": "Level 30",
     "tooltip": "Level 30",
     "sortOrder": 1
+  },
+  {
+    "sourceChainId": 89,
+    "fromPokemonProfileKey": "181",
+    "toPokemonProfileKey": "181-ampharos-mega",
+    "label": "Mega Evolution (Ampharosite)",
+    "tooltip": "Mega Evolution (Ampharosite)",
+    "sortOrder": 2
   },
   {
     "sourceChainId": 90,
@@ -1160,6 +1368,14 @@
     "sortOrder": 0
   },
   {
+    "sourceChainId": 108,
+    "fromPokemonProfileKey": "214",
+    "toPokemonProfileKey": "214-heracross-mega",
+    "label": "Mega Evolution (Heracronite)",
+    "tooltip": "Mega Evolution (Heracronite)",
+    "sortOrder": 0
+  },
+  {
     "sourceChainId": 109,
     "fromPokemonProfileKey": "215",
     "toPokemonProfileKey": "461",
@@ -1240,12 +1456,28 @@
     "sortOrder": 0
   },
   {
+    "sourceChainId": 117,
+    "fromPokemonProfileKey": "227",
+    "toPokemonProfileKey": "227-skarmory-mega",
+    "label": "Mega Evolution (Mega Stone)",
+    "tooltip": "Mega Evolution (Mega Stone)",
+    "sortOrder": 0
+  },
+  {
     "sourceChainId": 118,
     "fromPokemonProfileKey": "228",
     "toPokemonProfileKey": "229",
     "label": "Level 24",
     "tooltip": "Level 24",
     "sortOrder": 0
+  },
+  {
+    "sourceChainId": 118,
+    "fromPokemonProfileKey": "229",
+    "toPokemonProfileKey": "229-houndoom-mega",
+    "label": "Mega Evolution (Houndoominite)",
+    "tooltip": "Mega Evolution (Houndoominite)",
+    "sortOrder": 1
   },
   {
     "sourceChainId": 119,
@@ -1280,6 +1512,14 @@
     "sortOrder": 1
   },
   {
+    "sourceChainId": 126,
+    "fromPokemonProfileKey": "248",
+    "toPokemonProfileKey": "248-tyranitar-mega",
+    "label": "Mega Evolution (Tyranitarite)",
+    "tooltip": "Mega Evolution (Tyranitarite)",
+    "sortOrder": 2
+  },
+  {
     "sourceChainId": 130,
     "fromPokemonProfileKey": "252",
     "toPokemonProfileKey": "253",
@@ -1294,6 +1534,14 @@
     "label": "Level 36",
     "tooltip": "Level 36",
     "sortOrder": 1
+  },
+  {
+    "sourceChainId": 130,
+    "fromPokemonProfileKey": "254",
+    "toPokemonProfileKey": "254-sceptile-mega",
+    "label": "Mega Evolution (Sceptilite)",
+    "tooltip": "Mega Evolution (Sceptilite)",
+    "sortOrder": 2
   },
   {
     "sourceChainId": 131,
@@ -1312,6 +1560,14 @@
     "sortOrder": 1
   },
   {
+    "sourceChainId": 131,
+    "fromPokemonProfileKey": "257",
+    "toPokemonProfileKey": "257-blaziken-mega",
+    "label": "Mega Evolution (Blazikenite)",
+    "tooltip": "Mega Evolution (Blazikenite)",
+    "sortOrder": 2
+  },
+  {
     "sourceChainId": 132,
     "fromPokemonProfileKey": "258",
     "toPokemonProfileKey": "259",
@@ -1326,6 +1582,14 @@
     "label": "Level 36",
     "tooltip": "Level 36",
     "sortOrder": 1
+  },
+  {
+    "sourceChainId": 132,
+    "fromPokemonProfileKey": "260",
+    "toPokemonProfileKey": "260-swampert-mega",
+    "label": "Mega Evolution (Swampertite)",
+    "tooltip": "Mega Evolution (Swampertite)",
+    "sortOrder": 2
   },
   {
     "sourceChainId": 133,
@@ -1456,6 +1720,22 @@
     "sortOrder": 2
   },
   {
+    "sourceChainId": 140,
+    "fromPokemonProfileKey": "282",
+    "toPokemonProfileKey": "282-gardevoir-mega",
+    "label": "Mega Evolution (Gardevoirite)",
+    "tooltip": "Mega Evolution (Gardevoirite)",
+    "sortOrder": 3
+  },
+  {
+    "sourceChainId": 140,
+    "fromPokemonProfileKey": "475",
+    "toPokemonProfileKey": "475-gallade-mega",
+    "label": "Mega Evolution (Galladite)",
+    "tooltip": "Mega Evolution (Galladite)",
+    "sortOrder": 4
+  },
+  {
     "sourceChainId": 141,
     "fromPokemonProfileKey": "283",
     "toPokemonProfileKey": "284",
@@ -1544,6 +1824,22 @@
     "sortOrder": 0
   },
   {
+    "sourceChainId": 149,
+    "fromPokemonProfileKey": "302",
+    "toPokemonProfileKey": "302-sableye-mega",
+    "label": "Mega Evolution (Sablenite)",
+    "tooltip": "Mega Evolution (Sablenite)",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 150,
+    "fromPokemonProfileKey": "303",
+    "toPokemonProfileKey": "303-mawile-mega",
+    "label": "Mega Evolution (Mawilite)",
+    "tooltip": "Mega Evolution (Mawilite)",
+    "sortOrder": 0
+  },
+  {
     "sourceChainId": 151,
     "fromPokemonProfileKey": "304",
     "toPokemonProfileKey": "305",
@@ -1560,6 +1856,14 @@
     "sortOrder": 1
   },
   {
+    "sourceChainId": 151,
+    "fromPokemonProfileKey": "306",
+    "toPokemonProfileKey": "306-aggron-mega",
+    "label": "Mega Evolution (Aggronite)",
+    "tooltip": "Mega Evolution (Aggronite)",
+    "sortOrder": 2
+  },
+  {
     "sourceChainId": 152,
     "fromPokemonProfileKey": "307",
     "toPokemonProfileKey": "308",
@@ -1568,12 +1872,28 @@
     "sortOrder": 0
   },
   {
+    "sourceChainId": 152,
+    "fromPokemonProfileKey": "308",
+    "toPokemonProfileKey": "308-medicham-mega",
+    "label": "Mega Evolution (Medichamite)",
+    "tooltip": "Mega Evolution (Medichamite)",
+    "sortOrder": 1
+  },
+  {
     "sourceChainId": 153,
     "fromPokemonProfileKey": "309",
     "toPokemonProfileKey": "310",
     "label": "Level 26",
     "tooltip": "Level 26",
     "sortOrder": 0
+  },
+  {
+    "sourceChainId": 153,
+    "fromPokemonProfileKey": "310",
+    "toPokemonProfileKey": "310-manectric-mega",
+    "label": "Mega Evolution (Manectite)",
+    "tooltip": "Mega Evolution (Manectite)",
+    "sortOrder": 1
   },
   {
     "sourceChainId": 158,
@@ -1608,6 +1928,14 @@
     "sortOrder": 0
   },
   {
+    "sourceChainId": 160,
+    "fromPokemonProfileKey": "319",
+    "toPokemonProfileKey": "319-sharpedo-mega",
+    "label": "Mega Evolution (Sharpedonite)",
+    "tooltip": "Mega Evolution (Sharpedonite)",
+    "sortOrder": 1
+  },
+  {
     "sourceChainId": 161,
     "fromPokemonProfileKey": "320",
     "toPokemonProfileKey": "321",
@@ -1622,6 +1950,14 @@
     "label": "Level 33",
     "tooltip": "Level 33",
     "sortOrder": 0
+  },
+  {
+    "sourceChainId": 162,
+    "fromPokemonProfileKey": "323",
+    "toPokemonProfileKey": "323-camerupt-mega",
+    "label": "Mega Evolution (Cameruptite)",
+    "tooltip": "Mega Evolution (Cameruptite)",
+    "sortOrder": 1
   },
   {
     "sourceChainId": 164,
@@ -1662,6 +1998,14 @@
     "label": "Level 35",
     "tooltip": "Level 35",
     "sortOrder": 0
+  },
+  {
+    "sourceChainId": 168,
+    "fromPokemonProfileKey": "334",
+    "toPokemonProfileKey": "334-altaria-mega",
+    "label": "Mega Evolution (Altarianite)",
+    "tooltip": "Mega Evolution (Altarianite)",
+    "sortOrder": 1
   },
   {
     "sourceChainId": 173,
@@ -1720,6 +2064,14 @@
     "sortOrder": 0
   },
   {
+    "sourceChainId": 181,
+    "fromPokemonProfileKey": "354",
+    "toPokemonProfileKey": "354-banette-mega",
+    "label": "Mega Evolution (Banettite)",
+    "tooltip": "Mega Evolution (Banettite)",
+    "sortOrder": 1
+  },
+  {
     "sourceChainId": 182,
     "fromPokemonProfileKey": "355",
     "toPokemonProfileKey": "356",
@@ -1744,6 +2096,30 @@
     "sortOrder": 0
   },
   {
+    "sourceChainId": 184,
+    "fromPokemonProfileKey": "358",
+    "toPokemonProfileKey": "358-chimecho-mega",
+    "label": "Mega Evolution (Mega Stone)",
+    "tooltip": "Mega Evolution (Mega Stone)",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 185,
+    "fromPokemonProfileKey": "359",
+    "toPokemonProfileKey": "359-absol-mega",
+    "label": "Mega Evolution (Absolite)",
+    "tooltip": "Mega Evolution (Absolite)",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 185,
+    "fromPokemonProfileKey": "359",
+    "toPokemonProfileKey": "359-absol-mega-z",
+    "label": "Mega Evolution (Absolite)",
+    "tooltip": "Mega Evolution (Absolite)",
+    "sortOrder": 1
+  },
+  {
     "sourceChainId": 186,
     "fromPokemonProfileKey": "361",
     "toPokemonProfileKey": "362",
@@ -1758,6 +2134,22 @@
     "label": "Use Dawn Stone",
     "tooltip": "Use Dawn Stone; Female",
     "sortOrder": 1
+  },
+  {
+    "sourceChainId": 186,
+    "fromPokemonProfileKey": "362",
+    "toPokemonProfileKey": "362-glalie-mega",
+    "label": "Mega Evolution (Glalitite)",
+    "tooltip": "Mega Evolution (Glalitite)",
+    "sortOrder": 2
+  },
+  {
+    "sourceChainId": 186,
+    "fromPokemonProfileKey": "478",
+    "toPokemonProfileKey": "478-froslass-mega",
+    "label": "Mega Evolution (Mega Stone)",
+    "tooltip": "Mega Evolution (Mega Stone)",
+    "sortOrder": 3
   },
   {
     "sourceChainId": 187,
@@ -1808,6 +2200,14 @@
     "sortOrder": 1
   },
   {
+    "sourceChainId": 191,
+    "fromPokemonProfileKey": "373",
+    "toPokemonProfileKey": "373-salamence-mega",
+    "label": "Mega Evolution (Salamencite)",
+    "tooltip": "Mega Evolution (Salamencite)",
+    "sortOrder": 2
+  },
+  {
     "sourceChainId": 192,
     "fromPokemonProfileKey": "374",
     "toPokemonProfileKey": "375",
@@ -1822,6 +2222,54 @@
     "label": "Level 45",
     "tooltip": "Level 45",
     "sortOrder": 1
+  },
+  {
+    "sourceChainId": 192,
+    "fromPokemonProfileKey": "376",
+    "toPokemonProfileKey": "376-metagross-mega",
+    "label": "Mega Evolution (Metagrossite)",
+    "tooltip": "Mega Evolution (Metagrossite)",
+    "sortOrder": 2
+  },
+  {
+    "sourceChainId": 196,
+    "fromPokemonProfileKey": "380",
+    "toPokemonProfileKey": "380-latias-mega",
+    "label": "Mega Evolution (Latiasite)",
+    "tooltip": "Mega Evolution (Latiasite)",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 197,
+    "fromPokemonProfileKey": "381",
+    "toPokemonProfileKey": "381-latios-mega",
+    "label": "Mega Evolution (Latiosite)",
+    "tooltip": "Mega Evolution (Latiosite)",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 198,
+    "fromPokemonProfileKey": "382",
+    "toPokemonProfileKey": "382-kyogre-primal",
+    "label": "Primal Reversion (Blue Orb)",
+    "tooltip": "Primal Reversion (Blue Orb)",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 199,
+    "fromPokemonProfileKey": "383",
+    "toPokemonProfileKey": "383-groudon-primal",
+    "label": "Primal Reversion (Red Orb)",
+    "tooltip": "Primal Reversion (Red Orb)",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 200,
+    "fromPokemonProfileKey": "384",
+    "toPokemonProfileKey": "384-rayquaza-mega",
+    "label": "Mega Evolution (Dragon Ascent)",
+    "tooltip": "Mega Evolution (Dragon Ascent)",
+    "sortOrder": 0
   },
   {
     "sourceChainId": 203,
@@ -1886,6 +2334,14 @@
     "label": "Level 34",
     "tooltip": "Level 34",
     "sortOrder": 1
+  },
+  {
+    "sourceChainId": 206,
+    "fromPokemonProfileKey": "398",
+    "toPokemonProfileKey": "398-staraptor-mega",
+    "label": "Mega Evolution (Mega Stone)",
+    "tooltip": "Mega Evolution (Mega Stone)",
+    "sortOrder": 2
   },
   {
     "sourceChainId": 207,
@@ -2000,6 +2456,14 @@
     "sortOrder": 0
   },
   {
+    "sourceChainId": 220,
+    "fromPokemonProfileKey": "428",
+    "toPokemonProfileKey": "428-lopunny-mega",
+    "label": "Mega Evolution (Lopunnite)",
+    "tooltip": "Mega Evolution (Lopunnite)",
+    "sortOrder": 1
+  },
+  {
     "sourceChainId": 221,
     "fromPokemonProfileKey": "431",
     "toPokemonProfileKey": "432",
@@ -2040,12 +2504,44 @@
     "sortOrder": 1
   },
   {
+    "sourceChainId": 230,
+    "fromPokemonProfileKey": "445",
+    "toPokemonProfileKey": "445-garchomp-mega",
+    "label": "Mega Evolution (Garchompite)",
+    "tooltip": "Mega Evolution (Garchompite)",
+    "sortOrder": 2
+  },
+  {
+    "sourceChainId": 230,
+    "fromPokemonProfileKey": "445",
+    "toPokemonProfileKey": "445-garchomp-mega-z",
+    "label": "Mega Evolution (Garchompite)",
+    "tooltip": "Mega Evolution (Garchompite)",
+    "sortOrder": 3
+  },
+  {
     "sourceChainId": 232,
     "fromPokemonProfileKey": "447",
     "toPokemonProfileKey": "448",
     "label": "High Friendship (Day)",
     "tooltip": "Level up with high friendship during day.",
     "sortOrder": 0
+  },
+  {
+    "sourceChainId": 232,
+    "fromPokemonProfileKey": "448",
+    "toPokemonProfileKey": "448-lucario-mega",
+    "label": "Mega Evolution (Lucarionite)",
+    "tooltip": "Mega Evolution (Lucarionite)",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 232,
+    "fromPokemonProfileKey": "448",
+    "toPokemonProfileKey": "448-lucario-mega-z",
+    "label": "Mega Evolution (Lucarionite)",
+    "tooltip": "Mega Evolution (Lucarionite)",
+    "sortOrder": 2
   },
   {
     "sourceChainId": 233,
@@ -2088,11 +2584,35 @@
     "sortOrder": 0
   },
   {
+    "sourceChainId": 239,
+    "fromPokemonProfileKey": "460",
+    "toPokemonProfileKey": "460-abomasnow-mega",
+    "label": "Mega Evolution (Abomasite)",
+    "tooltip": "Mega Evolution (Abomasite)",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 246,
+    "fromPokemonProfileKey": "485",
+    "toPokemonProfileKey": "485-heatran-mega",
+    "label": "Mega Evolution (Mega Stone)",
+    "tooltip": "Mega Evolution (Mega Stone)",
+    "sortOrder": 0
+  },
+  {
     "sourceChainId": 250,
     "fromPokemonProfileKey": "489",
     "toPokemonProfileKey": "490",
     "label": "Special condition",
     "tooltip": null,
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 252,
+    "fromPokemonProfileKey": "491",
+    "toPokemonProfileKey": "491-darkrai-mega",
+    "label": "Mega Evolution (Mega Stone)",
+    "tooltip": "Mega Evolution (Mega Stone)",
     "sortOrder": 0
   },
   {
@@ -2126,6 +2646,14 @@
     "label": "Level 36",
     "tooltip": "Level 36",
     "sortOrder": 1
+  },
+  {
+    "sourceChainId": 257,
+    "fromPokemonProfileKey": "500",
+    "toPokemonProfileKey": "500-emboar-mega",
+    "label": "Mega Evolution (Mega Stone)",
+    "tooltip": "Mega Evolution (Mega Stone)",
+    "sortOrder": 2
   },
   {
     "sourceChainId": 258,
@@ -2264,6 +2792,22 @@
     "sortOrder": 0
   },
   {
+    "sourceChainId": 270,
+    "fromPokemonProfileKey": "530",
+    "toPokemonProfileKey": "530-excadrill-mega",
+    "label": "Mega Evolution (Mega Stone)",
+    "tooltip": "Mega Evolution (Mega Stone)",
+    "sortOrder": 1
+  },
+  {
+    "sourceChainId": 271,
+    "fromPokemonProfileKey": "531",
+    "toPokemonProfileKey": "531-audino-mega",
+    "label": "Mega Evolution (Audinite)",
+    "tooltip": "Mega Evolution (Audinite)",
+    "sortOrder": 0
+  },
+  {
     "sourceChainId": 272,
     "fromPokemonProfileKey": "532",
     "toPokemonProfileKey": "533",
@@ -2328,6 +2872,14 @@
     "sortOrder": 1
   },
   {
+    "sourceChainId": 277,
+    "fromPokemonProfileKey": "545",
+    "toPokemonProfileKey": "545-scolipede-mega",
+    "label": "Mega Evolution (Mega Stone)",
+    "tooltip": "Mega Evolution (Mega Stone)",
+    "sortOrder": 2
+  },
+  {
     "sourceChainId": 278,
     "fromPokemonProfileKey": "546",
     "toPokemonProfileKey": "547",
@@ -2390,6 +2942,14 @@
     "label": "Level 39",
     "tooltip": "Level 39",
     "sortOrder": 0
+  },
+  {
+    "sourceChainId": 285,
+    "fromPokemonProfileKey": "560",
+    "toPokemonProfileKey": "560-scrafty-mega",
+    "label": "Mega Evolution (Mega Stone)",
+    "tooltip": "Mega Evolution (Mega Stone)",
+    "sortOrder": 1
   },
   {
     "sourceChainId": 287,
@@ -2584,6 +3144,14 @@
     "sortOrder": 1
   },
   {
+    "sourceChainId": 306,
+    "fromPokemonProfileKey": "604",
+    "toPokemonProfileKey": "604-eelektross-mega",
+    "label": "Mega Evolution (Mega Stone)",
+    "tooltip": "Mega Evolution (Mega Stone)",
+    "sortOrder": 2
+  },
+  {
     "sourceChainId": 307,
     "fromPokemonProfileKey": "605",
     "toPokemonProfileKey": "606",
@@ -2606,6 +3174,14 @@
     "label": "Use Dusk Stone",
     "tooltip": "Use Dusk Stone",
     "sortOrder": 1
+  },
+  {
+    "sourceChainId": 308,
+    "fromPokemonProfileKey": "609",
+    "toPokemonProfileKey": "609-chandelure-mega",
+    "label": "Mega Evolution (Mega Stone)",
+    "tooltip": "Mega Evolution (Mega Stone)",
+    "sortOrder": 2
   },
   {
     "sourceChainId": 309,
@@ -2654,6 +3230,14 @@
     "label": "Level 43",
     "tooltip": "Level 43",
     "sortOrder": 0
+  },
+  {
+    "sourceChainId": 316,
+    "fromPokemonProfileKey": "623",
+    "toPokemonProfileKey": "623-golurk-mega",
+    "label": "Mega Evolution (Mega Stone)",
+    "tooltip": "Mega Evolution (Mega Stone)",
+    "sortOrder": 1
   },
   {
     "sourceChainId": 317,
@@ -2728,6 +3312,14 @@
     "sortOrder": 1
   },
   {
+    "sourceChainId": 337,
+    "fromPokemonProfileKey": "652",
+    "toPokemonProfileKey": "652-chesnaught-mega",
+    "label": "Mega Evolution (Mega Stone)",
+    "tooltip": "Mega Evolution (Mega Stone)",
+    "sortOrder": 2
+  },
+  {
     "sourceChainId": 338,
     "fromPokemonProfileKey": "653",
     "toPokemonProfileKey": "654",
@@ -2744,6 +3336,14 @@
     "sortOrder": 1
   },
   {
+    "sourceChainId": 338,
+    "fromPokemonProfileKey": "655",
+    "toPokemonProfileKey": "655-delphox-mega",
+    "label": "Mega Evolution (Mega Stone)",
+    "tooltip": "Mega Evolution (Mega Stone)",
+    "sortOrder": 2
+  },
+  {
     "sourceChainId": 339,
     "fromPokemonProfileKey": "656",
     "toPokemonProfileKey": "657",
@@ -2758,6 +3358,14 @@
     "label": "Level 36",
     "tooltip": "Level 36",
     "sortOrder": 1
+  },
+  {
+    "sourceChainId": 339,
+    "fromPokemonProfileKey": "658",
+    "toPokemonProfileKey": "658-greninja-mega",
+    "label": "Mega Evolution (Mega Stone)",
+    "tooltip": "Mega Evolution (Mega Stone)",
+    "sortOrder": 2
   },
   {
     "sourceChainId": 340,
@@ -2808,6 +3416,14 @@
     "sortOrder": 0
   },
   {
+    "sourceChainId": 343,
+    "fromPokemonProfileKey": "668",
+    "toPokemonProfileKey": "668-pyroar-mega",
+    "label": "Mega Evolution (Mega Stone)",
+    "tooltip": "Mega Evolution (Mega Stone)",
+    "sortOrder": 1
+  },
+  {
     "sourceChainId": 344,
     "fromPokemonProfileKey": "669",
     "toPokemonProfileKey": "670",
@@ -2822,6 +3438,14 @@
     "label": "Use Shiny Stone",
     "tooltip": "Use Shiny Stone",
     "sortOrder": 1
+  },
+  {
+    "sourceChainId": 344,
+    "fromPokemonProfileKey": "670",
+    "toPokemonProfileKey": "670-floette-mega",
+    "label": "Mega Evolution (Mega Stone)",
+    "tooltip": "Mega Evolution (Mega Stone)",
+    "sortOrder": 2
   },
   {
     "sourceChainId": 345,
@@ -2846,6 +3470,14 @@
     "label": "Level 25",
     "tooltip": "Level 25",
     "sortOrder": 0
+  },
+  {
+    "sourceChainId": 348,
+    "fromPokemonProfileKey": "678",
+    "toPokemonProfileKey": "678-meowstic-mega",
+    "label": "Mega Evolution (Mega Stone)",
+    "tooltip": "Mega Evolution (Mega Stone)",
+    "sortOrder": 1
   },
   {
     "sourceChainId": 349,
@@ -2888,6 +3520,14 @@
     "sortOrder": 0
   },
   {
+    "sourceChainId": 352,
+    "fromPokemonProfileKey": "687",
+    "toPokemonProfileKey": "687-malamar-mega",
+    "label": "Mega Evolution (Mega Stone)",
+    "tooltip": "Mega Evolution (Mega Stone)",
+    "sortOrder": 1
+  },
+  {
     "sourceChainId": 353,
     "fromPokemonProfileKey": "688",
     "toPokemonProfileKey": "689",
@@ -2896,12 +3536,28 @@
     "sortOrder": 0
   },
   {
+    "sourceChainId": 353,
+    "fromPokemonProfileKey": "689",
+    "toPokemonProfileKey": "689-barbaracle-mega",
+    "label": "Mega Evolution (Mega Stone)",
+    "tooltip": "Mega Evolution (Mega Stone)",
+    "sortOrder": 1
+  },
+  {
     "sourceChainId": 354,
     "fromPokemonProfileKey": "690",
     "toPokemonProfileKey": "691",
     "label": "Level 48",
     "tooltip": "Level 48",
     "sortOrder": 0
+  },
+  {
+    "sourceChainId": 354,
+    "fromPokemonProfileKey": "691",
+    "toPokemonProfileKey": "691-dragalge-mega",
+    "label": "Mega Evolution (Mega Stone)",
+    "tooltip": "Mega Evolution (Mega Stone)",
+    "sortOrder": 1
   },
   {
     "sourceChainId": 355,
@@ -2933,6 +3589,14 @@
     "toPokemonProfileKey": "699",
     "label": "Level 39",
     "tooltip": "Level 39; Time: Night",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 359,
+    "fromPokemonProfileKey": "701",
+    "toPokemonProfileKey": "701-hawlucha-mega",
+    "label": "Mega Evolution (Mega Stone)",
+    "tooltip": "Mega Evolution (Mega Stone)",
     "sortOrder": 0
   },
   {
@@ -2981,6 +3645,22 @@
     "toPokemonProfileKey": "715",
     "label": "Level 48",
     "tooltip": "Level 48",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 370,
+    "fromPokemonProfileKey": "718",
+    "toPokemonProfileKey": "718-zygarde-mega",
+    "label": "Mega Evolution (Mega Stone)",
+    "tooltip": "Mega Evolution (Mega Stone)",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 371,
+    "fromPokemonProfileKey": "719",
+    "toPokemonProfileKey": "719-diancie-mega",
+    "label": "Mega Evolution (Diancite)",
+    "tooltip": "Mega Evolution (Diancite)",
     "sortOrder": 0
   },
   {
@@ -3080,6 +3760,14 @@
     "sortOrder": 0
   },
   {
+    "sourceChainId": 380,
+    "fromPokemonProfileKey": "740",
+    "toPokemonProfileKey": "740-crabominable-mega",
+    "label": "Mega Evolution (Mega Stone)",
+    "tooltip": "Mega Evolution (Mega Stone)",
+    "sortOrder": 1
+  },
+  {
     "sourceChainId": 382,
     "fromPokemonProfileKey": "742",
     "toPokemonProfileKey": "743",
@@ -3176,6 +3864,14 @@
     "sortOrder": 0
   },
   {
+    "sourceChainId": 396,
+    "fromPokemonProfileKey": "768",
+    "toPokemonProfileKey": "768-golisopod-mega",
+    "label": "Mega Evolution (Mega Stone)",
+    "tooltip": "Mega Evolution (Mega Stone)",
+    "sortOrder": 1
+  },
+  {
     "sourceChainId": 397,
     "fromPokemonProfileKey": "769",
     "toPokemonProfileKey": "770",
@@ -3189,6 +3885,14 @@
     "toPokemonProfileKey": "773",
     "label": "Level up (High Friendship)",
     "tooltip": "Level up: High Friendship",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 406,
+    "fromPokemonProfileKey": "780",
+    "toPokemonProfileKey": "780-drampa-mega",
+    "label": "Mega Evolution (Mega Stone)",
+    "tooltip": "Mega Evolution (Mega Stone)",
     "sortOrder": 0
   },
   {
@@ -3232,11 +3936,27 @@
     "sortOrder": 2
   },
   {
+    "sourceChainId": 422,
+    "fromPokemonProfileKey": "801",
+    "toPokemonProfileKey": "801-magearna-mega",
+    "label": "Mega Evolution (Mega Stone)",
+    "tooltip": "Mega Evolution (Mega Stone)",
+    "sortOrder": 0
+  },
+  {
     "sourceChainId": 424,
     "fromPokemonProfileKey": "803",
     "toPokemonProfileKey": "804",
     "label": "Level up (Know Dragon Pulse)",
     "tooltip": "Level up: Know Dragon Pulse",
+    "sortOrder": 0
+  },
+  {
+    "sourceChainId": 427,
+    "fromPokemonProfileKey": "807",
+    "toPokemonProfileKey": "807-zeraora-mega",
+    "label": "Mega Evolution (Mega Stone)",
+    "tooltip": "Mega Evolution (Mega Stone)",
     "sortOrder": 0
   },
   {
@@ -3504,6 +4224,14 @@
     "sortOrder": 0
   },
   {
+    "sourceChainId": 453,
+    "fromPokemonProfileKey": "870",
+    "toPokemonProfileKey": "870-falinks-mega",
+    "label": "Mega Evolution (Mega Stone)",
+    "tooltip": "Mega Evolution (Mega Stone)",
+    "sortOrder": 0
+  },
+  {
     "sourceChainId": 455,
     "fromPokemonProfileKey": "872",
     "toPokemonProfileKey": "873",
@@ -3760,6 +4488,14 @@
     "sortOrder": 0
   },
   {
+    "sourceChainId": 498,
+    "fromPokemonProfileKey": "952",
+    "toPokemonProfileKey": "952-scovillain-mega",
+    "label": "Mega Evolution (Mega Stone)",
+    "tooltip": "Mega Evolution (Mega Stone)",
+    "sortOrder": 1
+  },
+  {
     "sourceChainId": 499,
     "fromPokemonProfileKey": "953",
     "toPokemonProfileKey": "954",
@@ -3824,6 +4560,14 @@
     "sortOrder": 0
   },
   {
+    "sourceChainId": 508,
+    "fromPokemonProfileKey": "970",
+    "toPokemonProfileKey": "970-glimmora-mega",
+    "label": "Mega Evolution (Mega Stone)",
+    "tooltip": "Mega Evolution (Mega Stone)",
+    "sortOrder": 1
+  },
+  {
     "sourceChainId": 509,
     "fromPokemonProfileKey": "971",
     "toPokemonProfileKey": "972",
@@ -3854,6 +4598,14 @@
     "label": "Level 54",
     "tooltip": "Level 54",
     "sortOrder": 1
+  },
+  {
+    "sourceChainId": 527,
+    "fromPokemonProfileKey": "998",
+    "toPokemonProfileKey": "998-baxcalibur-mega",
+    "label": "Mega Evolution (Mega Stone)",
+    "tooltip": "Mega Evolution (Mega Stone)",
+    "sortOrder": 2
   },
   {
     "sourceChainId": 528,

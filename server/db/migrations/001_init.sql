@@ -24,13 +24,15 @@ CREATE TABLE IF NOT EXISTS battleex.pokemon (
   sprite_url TEXT,
   description_short TEXT,
   generation INT,
-  introduced_in_game VARCHAR(40)
+  introduced_in_game VARCHAR(40),
+  obtain_methods JSONB NOT NULL DEFAULT '[]'::jsonb
 );
 
 ALTER TABLE battleex.pokemon
   ADD COLUMN IF NOT EXISTS profile_key VARCHAR(120),
   ADD COLUMN IF NOT EXISTS form_name VARCHAR(60),
-  ADD COLUMN IF NOT EXISTS is_regional_variant BOOLEAN NOT NULL DEFAULT FALSE;
+  ADD COLUMN IF NOT EXISTS is_regional_variant BOOLEAN NOT NULL DEFAULT FALSE,
+  ADD COLUMN IF NOT EXISTS obtain_methods JSONB NOT NULL DEFAULT '[]'::jsonb;
 
 UPDATE battleex.pokemon
 SET profile_key = COALESCE(profile_key, national_dex_number::text)

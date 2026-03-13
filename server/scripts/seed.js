@@ -122,11 +122,12 @@ const seed = async () => {
             sprite_url,
             description_short,
             generation,
-            introduced_in_game
+            introduced_in_game,
+            obtain_methods
           )
           VALUES (
             $1, $2, $3, $4, $5, $6, $7, $8,
-            $9, $10, $11, $12, $13, $14, $15, $16, $17, $18
+            $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19
           )
           RETURNING id
         `,
@@ -149,6 +150,7 @@ const seed = async () => {
           entry.descriptionShort,
           entry.generation,
           entry.introducedInGame,
+          JSON.stringify(entry.obtainMethodsByGame ?? []),
         ],
       );
 

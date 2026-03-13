@@ -8,7 +8,7 @@ const groups = [
   ["types", "Types"],
 ];
 
-export const SearchBar = ({ onSelect }) => {
+export const SearchBar = ({ onSelect, inputId = "global-navbar-search" }) => {
   const [value, setValue] = useState("");
   const [results, setResults] = useState(null);
   const [open, setOpen] = useState(false);
@@ -37,6 +37,7 @@ export const SearchBar = ({ onSelect }) => {
   return (
     <div className="relative">
       <input
+        id={inputId}
         value={value}
         onChange={(event) => setValue(event.target.value)}
         onFocus={() => setOpen(true)}

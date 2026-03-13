@@ -119,6 +119,7 @@ export const createPokemonRepository = (db) => ({
           GROUP BY p.id, t1.name, t2.name
           ORDER BY
             CASE WHEN p.id = $1 THEN 0 ELSE 1 END,
+            CASE WHEN p.form_name IS NULL THEN 0 ELSE 1 END,
             p.is_regional_variant ASC,
             p.id ASC
           LIMIT 1
@@ -194,6 +195,19 @@ export const createPokemonRepository = (db) => ({
     return result.rows;
   },
 
+  async getPokemonObtainMethods(pokemonId) {
+    const query = `
+      SELECT COALESCE(p.obtain_methods, '[]'::jsonb) AS obtain_methods
+      FROM battleex.pokemon p
+      WHERE p.id = $1
+      LIMIT 1
+    `;
+
+    const result = await db.query(query, [pokemonId]);
+    const methods = result.rows[0]?.obtain_methods;
+    return Array.isArray(methods) ? methods : [];
+  },
+
   async getPokemonSummaryById(pokemonId) {
     const query = `
       SELECT
@@ -221,6 +235,7 @@ export const createPokemonRepository = (db) => ({
         p.profile_key,
         p.national_dex_number,
         p.name,
+        p.form_name,
         p.is_regional_variant,
         p.sprite_url,
         t1.name AS primary_type,
@@ -230,7 +245,9 @@ export const createPokemonRepository = (db) => ({
       LEFT JOIN battleex.types t2 ON t2.id = p.secondary_type_id
       WHERE p.national_dex_number = $1
         AND p.is_regional_variant = FALSE
-      ORDER BY p.id ASC
+      ORDER BY
+        CASE WHEN p.form_name IS NULL THEN 0 ELSE 1 END,
+        p.id ASC
       LIMIT 1
     `;
 

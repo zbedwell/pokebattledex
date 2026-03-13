@@ -36,6 +36,12 @@
     "slotType": "hidden"
   },
   {
+    "pokemonProfileKey": "3-venusaur-mega",
+    "abilitySlug": "thick-fat",
+    "abilityName": "Thick Fat",
+    "slotType": "primary"
+  },
+  {
     "pokemonProfileKey": "4",
     "abilitySlug": "blaze",
     "abilityName": "Blaze",
@@ -72,6 +78,18 @@
     "slotType": "hidden"
   },
   {
+    "pokemonProfileKey": "6-charizard-mega-x",
+    "abilitySlug": "tough-claws",
+    "abilityName": "Tough Claws",
+    "slotType": "primary"
+  },
+  {
+    "pokemonProfileKey": "6-charizard-mega-y",
+    "abilitySlug": "drought",
+    "abilityName": "Drought",
+    "slotType": "primary"
+  },
+  {
     "pokemonProfileKey": "7",
     "abilitySlug": "torrent",
     "abilityName": "Torrent",
@@ -106,6 +124,12 @@
     "abilitySlug": "rain-dish",
     "abilityName": "Rain Dish",
     "slotType": "hidden"
+  },
+  {
+    "pokemonProfileKey": "9-blastoise-mega",
+    "abilitySlug": "mega-launcher",
+    "abilityName": "Mega Launcher",
+    "slotType": "primary"
   },
   {
     "pokemonProfileKey": "10",
@@ -168,6 +192,12 @@
     "slotType": "hidden"
   },
   {
+    "pokemonProfileKey": "15-beedrill-mega",
+    "abilitySlug": "adaptability",
+    "abilityName": "Adaptability",
+    "slotType": "primary"
+  },
+  {
     "pokemonProfileKey": "16",
     "abilitySlug": "keen-eye",
     "abilityName": "Keen Eye",
@@ -220,6 +250,12 @@
     "abilitySlug": "big-pecks",
     "abilityName": "Big Pecks",
     "slotType": "hidden"
+  },
+  {
+    "pokemonProfileKey": "18-pidgeot-mega",
+    "abilitySlug": "no-guard",
+    "abilityName": "No Guard",
+    "slotType": "primary"
   },
   {
     "pokemonProfileKey": "19",
@@ -394,6 +430,30 @@
     "abilitySlug": "surge-surfer",
     "abilityName": "Surge Surfer",
     "slotType": "primary"
+  },
+  {
+    "pokemonProfileKey": "26-raichu-mega-x",
+    "abilitySlug": "static",
+    "abilityName": "Static",
+    "slotType": "primary"
+  },
+  {
+    "pokemonProfileKey": "26-raichu-mega-x",
+    "abilitySlug": "lightning-rod",
+    "abilityName": "Lightning Rod",
+    "slotType": "hidden"
+  },
+  {
+    "pokemonProfileKey": "26-raichu-mega-y",
+    "abilitySlug": "static",
+    "abilityName": "Static",
+    "slotType": "primary"
+  },
+  {
+    "pokemonProfileKey": "26-raichu-mega-y",
+    "abilitySlug": "lightning-rod",
+    "abilityName": "Lightning Rod",
+    "slotType": "hidden"
   },
   {
     "pokemonProfileKey": "27",
@@ -583,6 +643,24 @@
   },
   {
     "pokemonProfileKey": "36",
+    "abilitySlug": "unaware",
+    "abilityName": "Unaware",
+    "slotType": "hidden"
+  },
+  {
+    "pokemonProfileKey": "36-clefable-mega",
+    "abilitySlug": "cute-charm",
+    "abilityName": "Cute Charm",
+    "slotType": "primary"
+  },
+  {
+    "pokemonProfileKey": "36-clefable-mega",
+    "abilitySlug": "magic-guard",
+    "abilityName": "Magic Guard",
+    "slotType": "secondary"
+  },
+  {
+    "pokemonProfileKey": "36-clefable-mega",
     "abilitySlug": "unaware",
     "abilityName": "Unaware",
     "slotType": "hidden"
@@ -1218,6 +1296,12 @@
     "slotType": "hidden"
   },
   {
+    "pokemonProfileKey": "65-alakazam-mega",
+    "abilitySlug": "trace",
+    "abilityName": "Trace",
+    "slotType": "primary"
+  },
+  {
     "pokemonProfileKey": "66",
     "abilitySlug": "guts",
     "abilityName": "Guts",
@@ -1303,6 +1387,18 @@
   },
   {
     "pokemonProfileKey": "71",
+    "abilitySlug": "gluttony",
+    "abilityName": "Gluttony",
+    "slotType": "hidden"
+  },
+  {
+    "pokemonProfileKey": "71-victreebel-mega",
+    "abilitySlug": "chlorophyll",
+    "abilityName": "Chlorophyll",
+    "slotType": "primary"
+  },
+  {
+    "pokemonProfileKey": "71-victreebel-mega",
     "abilitySlug": "gluttony",
     "abilityName": "Gluttony",
     "slotType": "hidden"
@@ -1576,6 +1672,12 @@
     "abilitySlug": "regenerator",
     "abilityName": "Regenerator",
     "slotType": "hidden"
+  },
+  {
+    "pokemonProfileKey": "80-slowbro-mega",
+    "abilitySlug": "shell-armor",
+    "abilityName": "Shell Armor",
+    "slotType": "primary"
   },
   {
     "pokemonProfileKey": "80-slowbro-galar",
@@ -1857,6 +1959,12 @@
     "pokemonProfileKey": "94",
     "abilitySlug": "cursed-body",
     "abilityName": "Cursed Body",
+    "slotType": "primary"
+  },
+  {
+    "pokemonProfileKey": "94-gengar-mega",
+    "abilitySlug": "shadow-tag",
+    "abilityName": "Shadow Tag",
     "slotType": "primary"
   },
   {
@@ -2310,6 +2418,12 @@
     "slotType": "hidden"
   },
   {
+    "pokemonProfileKey": "115-kangaskhan-mega",
+    "abilitySlug": "parental-bond",
+    "abilityName": "Parental Bond",
+    "slotType": "primary"
+  },
+  {
     "pokemonProfileKey": "116",
     "abilitySlug": "swift-swim",
     "abilityName": "Swift Swim",
@@ -2413,6 +2527,24 @@
   },
   {
     "pokemonProfileKey": "121",
+    "abilitySlug": "analytic",
+    "abilityName": "Analytic",
+    "slotType": "hidden"
+  },
+  {
+    "pokemonProfileKey": "121-starmie-mega",
+    "abilitySlug": "illuminate",
+    "abilityName": "Illuminate",
+    "slotType": "primary"
+  },
+  {
+    "pokemonProfileKey": "121-starmie-mega",
+    "abilitySlug": "natural-cure",
+    "abilityName": "Natural Cure",
+    "slotType": "secondary"
+  },
+  {
+    "pokemonProfileKey": "121-starmie-mega",
     "abilitySlug": "analytic",
     "abilityName": "Analytic",
     "slotType": "hidden"
@@ -2532,6 +2664,12 @@
     "slotType": "hidden"
   },
   {
+    "pokemonProfileKey": "127-pinsir-mega",
+    "abilitySlug": "aerilate",
+    "abilityName": "Aerilate",
+    "slotType": "primary"
+  },
+  {
     "pokemonProfileKey": "128",
     "abilitySlug": "intimidate",
     "abilityName": "Intimidate",
@@ -2626,6 +2764,12 @@
     "abilitySlug": "moxie",
     "abilityName": "Moxie",
     "slotType": "hidden"
+  },
+  {
+    "pokemonProfileKey": "130-gyarados-mega",
+    "abilitySlug": "mold-breaker",
+    "abilityName": "Mold Breaker",
+    "slotType": "primary"
   },
   {
     "pokemonProfileKey": "131",
@@ -2820,6 +2964,12 @@
     "slotType": "hidden"
   },
   {
+    "pokemonProfileKey": "142-aerodactyl-mega",
+    "abilitySlug": "tough-claws",
+    "abilityName": "Tough Claws",
+    "slotType": "primary"
+  },
+  {
     "pokemonProfileKey": "143",
     "abilitySlug": "immunity",
     "abilityName": "Immunity",
@@ -2928,6 +3078,18 @@
     "slotType": "hidden"
   },
   {
+    "pokemonProfileKey": "149-dragonite-mega",
+    "abilitySlug": "inner-focus",
+    "abilityName": "Inner Focus",
+    "slotType": "primary"
+  },
+  {
+    "pokemonProfileKey": "149-dragonite-mega",
+    "abilitySlug": "multiscale",
+    "abilityName": "Multiscale",
+    "slotType": "hidden"
+  },
+  {
     "pokemonProfileKey": "150",
     "abilitySlug": "pressure",
     "abilityName": "Pressure",
@@ -2938,6 +3100,18 @@
     "abilitySlug": "unnerve",
     "abilityName": "Unnerve",
     "slotType": "hidden"
+  },
+  {
+    "pokemonProfileKey": "150-mewtwo-mega-x",
+    "abilitySlug": "steadfast",
+    "abilityName": "Steadfast",
+    "slotType": "primary"
+  },
+  {
+    "pokemonProfileKey": "150-mewtwo-mega-y",
+    "abilitySlug": "insomnia",
+    "abilityName": "Insomnia",
+    "slotType": "primary"
   },
   {
     "pokemonProfileKey": "151",
@@ -2977,6 +3151,18 @@
   },
   {
     "pokemonProfileKey": "154",
+    "abilitySlug": "leaf-guard",
+    "abilityName": "Leaf Guard",
+    "slotType": "hidden"
+  },
+  {
+    "pokemonProfileKey": "154-meganium-mega",
+    "abilitySlug": "overgrow",
+    "abilityName": "Overgrow",
+    "slotType": "primary"
+  },
+  {
+    "pokemonProfileKey": "154-meganium-mega",
     "abilitySlug": "leaf-guard",
     "abilityName": "Leaf Guard",
     "slotType": "hidden"
@@ -3061,6 +3247,18 @@
   },
   {
     "pokemonProfileKey": "160",
+    "abilitySlug": "sheer-force",
+    "abilityName": "Sheer Force",
+    "slotType": "hidden"
+  },
+  {
+    "pokemonProfileKey": "160-feraligatr-mega",
+    "abilitySlug": "torrent",
+    "abilityName": "Torrent",
+    "slotType": "primary"
+  },
+  {
+    "pokemonProfileKey": "160-feraligatr-mega",
     "abilitySlug": "sheer-force",
     "abilityName": "Sheer Force",
     "slotType": "hidden"
@@ -3412,6 +3610,12 @@
     "abilitySlug": "plus",
     "abilityName": "Plus",
     "slotType": "hidden"
+  },
+  {
+    "pokemonProfileKey": "181-ampharos-mega",
+    "abilitySlug": "mold-breaker",
+    "abilityName": "Mold Breaker",
+    "slotType": "primary"
   },
   {
     "pokemonProfileKey": "182",
@@ -3876,6 +4080,12 @@
     "slotType": "hidden"
   },
   {
+    "pokemonProfileKey": "208-steelix-mega",
+    "abilitySlug": "sand-force",
+    "abilityName": "Sand Force",
+    "slotType": "primary"
+  },
+  {
     "pokemonProfileKey": "209",
     "abilitySlug": "intimidate",
     "abilityName": "Intimidate",
@@ -3966,6 +4176,12 @@
     "slotType": "hidden"
   },
   {
+    "pokemonProfileKey": "212-scizor-mega",
+    "abilitySlug": "technician",
+    "abilityName": "Technician",
+    "slotType": "primary"
+  },
+  {
     "pokemonProfileKey": "213",
     "abilitySlug": "sturdy",
     "abilityName": "Sturdy",
@@ -4000,6 +4216,12 @@
     "abilitySlug": "moxie",
     "abilityName": "Moxie",
     "slotType": "hidden"
+  },
+  {
+    "pokemonProfileKey": "214-heracross-mega",
+    "abilitySlug": "skill-link",
+    "abilityName": "Skill Link",
+    "slotType": "primary"
   },
   {
     "pokemonProfileKey": "215",
@@ -4266,6 +4488,24 @@
     "slotType": "hidden"
   },
   {
+    "pokemonProfileKey": "227-skarmory-mega",
+    "abilitySlug": "keen-eye",
+    "abilityName": "Keen Eye",
+    "slotType": "primary"
+  },
+  {
+    "pokemonProfileKey": "227-skarmory-mega",
+    "abilitySlug": "sturdy",
+    "abilityName": "Sturdy",
+    "slotType": "secondary"
+  },
+  {
+    "pokemonProfileKey": "227-skarmory-mega",
+    "abilitySlug": "weak-armor",
+    "abilityName": "Weak Armor",
+    "slotType": "hidden"
+  },
+  {
     "pokemonProfileKey": "228",
     "abilitySlug": "early-bird",
     "abilityName": "Early Bird",
@@ -4300,6 +4540,12 @@
     "abilitySlug": "unnerve",
     "abilityName": "Unnerve",
     "slotType": "hidden"
+  },
+  {
+    "pokemonProfileKey": "229-houndoom-mega",
+    "abilitySlug": "solar-power",
+    "abilityName": "Solar Power",
+    "slotType": "primary"
   },
   {
     "pokemonProfileKey": "230",
@@ -4578,6 +4824,12 @@
     "slotType": "hidden"
   },
   {
+    "pokemonProfileKey": "248-tyranitar-mega",
+    "abilitySlug": "sand-stream",
+    "abilityName": "Sand Stream",
+    "slotType": "primary"
+  },
+  {
     "pokemonProfileKey": "249",
     "abilitySlug": "pressure",
     "abilityName": "Pressure",
@@ -4644,6 +4896,12 @@
     "slotType": "hidden"
   },
   {
+    "pokemonProfileKey": "254-sceptile-mega",
+    "abilitySlug": "lightning-rod",
+    "abilityName": "Lightning Rod",
+    "slotType": "primary"
+  },
+  {
     "pokemonProfileKey": "255",
     "abilitySlug": "blaze",
     "abilityName": "Blaze",
@@ -4680,6 +4938,12 @@
     "slotType": "hidden"
   },
   {
+    "pokemonProfileKey": "257-blaziken-mega",
+    "abilitySlug": "speed-boost",
+    "abilityName": "Speed Boost",
+    "slotType": "primary"
+  },
+  {
     "pokemonProfileKey": "258",
     "abilitySlug": "torrent",
     "abilityName": "Torrent",
@@ -4714,6 +4978,12 @@
     "abilitySlug": "damp",
     "abilityName": "Damp",
     "slotType": "hidden"
+  },
+  {
+    "pokemonProfileKey": "260-swampert-mega",
+    "abilitySlug": "swift-swim",
+    "abilityName": "Swift Swim",
+    "slotType": "primary"
   },
   {
     "pokemonProfileKey": "261",
@@ -5094,6 +5364,12 @@
     "slotType": "hidden"
   },
   {
+    "pokemonProfileKey": "282-gardevoir-mega",
+    "abilitySlug": "pixilate",
+    "abilityName": "Pixilate",
+    "slotType": "primary"
+  },
+  {
     "pokemonProfileKey": "283",
     "abilitySlug": "swift-swim",
     "abilityName": "Swift Swim",
@@ -5364,6 +5640,12 @@
     "slotType": "hidden"
   },
   {
+    "pokemonProfileKey": "302-sableye-mega",
+    "abilitySlug": "magic-bounce",
+    "abilityName": "Magic Bounce",
+    "slotType": "primary"
+  },
+  {
     "pokemonProfileKey": "303",
     "abilitySlug": "hyper-cutter",
     "abilityName": "Hyper Cutter",
@@ -5382,6 +5664,12 @@
     "slotType": "hidden"
   },
   {
+    "pokemonProfileKey": "303-mawile-mega",
+    "abilitySlug": "huge-power",
+    "abilityName": "Huge Power",
+    "slotType": "primary"
+  },
+  {
     "pokemonProfileKey": "304",
     "abilitySlug": "sturdy",
     "abilityName": "Sturdy",
@@ -5434,6 +5722,12 @@
     "abilitySlug": "heavy-metal",
     "abilityName": "Heavy Metal",
     "slotType": "hidden"
+  },
+  {
+    "pokemonProfileKey": "306-aggron-mega",
+    "abilitySlug": "filter",
+    "abilityName": "Filter",
+    "slotType": "primary"
   },
   {
     "pokemonProfileKey": "307",
@@ -5458,6 +5752,12 @@
     "abilitySlug": "telepathy",
     "abilityName": "Telepathy",
     "slotType": "hidden"
+  },
+  {
+    "pokemonProfileKey": "308-medicham-mega",
+    "abilitySlug": "pure-power",
+    "abilityName": "Pure Power",
+    "slotType": "primary"
   },
   {
     "pokemonProfileKey": "309",
@@ -5494,6 +5794,12 @@
     "abilitySlug": "minus",
     "abilityName": "Minus",
     "slotType": "hidden"
+  },
+  {
+    "pokemonProfileKey": "310-manectric-mega",
+    "abilitySlug": "intimidate",
+    "abilityName": "Intimidate",
+    "slotType": "primary"
   },
   {
     "pokemonProfileKey": "311",
@@ -5634,6 +5940,12 @@
     "slotType": "hidden"
   },
   {
+    "pokemonProfileKey": "319-sharpedo-mega",
+    "abilitySlug": "strong-jaw",
+    "abilityName": "Strong Jaw",
+    "slotType": "primary"
+  },
+  {
     "pokemonProfileKey": "320",
     "abilitySlug": "water-veil",
     "abilityName": "Water Veil",
@@ -5704,6 +6016,12 @@
     "abilitySlug": "anger-point",
     "abilityName": "Anger Point",
     "slotType": "hidden"
+  },
+  {
+    "pokemonProfileKey": "323-camerupt-mega",
+    "abilitySlug": "sheer-force",
+    "abilityName": "Sheer Force",
+    "slotType": "primary"
   },
   {
     "pokemonProfileKey": "324",
@@ -5854,6 +6172,12 @@
     "abilitySlug": "cloud-nine",
     "abilityName": "Cloud Nine",
     "slotType": "hidden"
+  },
+  {
+    "pokemonProfileKey": "334-altaria-mega",
+    "abilitySlug": "pixilate",
+    "abilityName": "Pixilate",
+    "slotType": "primary"
   },
   {
     "pokemonProfileKey": "335",
@@ -6114,6 +6438,12 @@
     "slotType": "hidden"
   },
   {
+    "pokemonProfileKey": "354-banette-mega",
+    "abilitySlug": "prankster",
+    "abilityName": "Prankster",
+    "slotType": "primary"
+  },
+  {
     "pokemonProfileKey": "355",
     "abilitySlug": "levitate",
     "abilityName": "Levitate",
@@ -6162,6 +6492,12 @@
     "slotType": "primary"
   },
   {
+    "pokemonProfileKey": "358-chimecho-mega",
+    "abilitySlug": "levitate",
+    "abilityName": "Levitate",
+    "slotType": "primary"
+  },
+  {
     "pokemonProfileKey": "359",
     "abilitySlug": "pressure",
     "abilityName": "Pressure",
@@ -6175,6 +6511,30 @@
   },
   {
     "pokemonProfileKey": "359",
+    "abilitySlug": "justified",
+    "abilityName": "Justified",
+    "slotType": "hidden"
+  },
+  {
+    "pokemonProfileKey": "359-absol-mega",
+    "abilitySlug": "magic-bounce",
+    "abilityName": "Magic Bounce",
+    "slotType": "primary"
+  },
+  {
+    "pokemonProfileKey": "359-absol-mega-z",
+    "abilitySlug": "pressure",
+    "abilityName": "Pressure",
+    "slotType": "primary"
+  },
+  {
+    "pokemonProfileKey": "359-absol-mega-z",
+    "abilitySlug": "super-luck",
+    "abilityName": "Super Luck",
+    "slotType": "secondary"
+  },
+  {
+    "pokemonProfileKey": "359-absol-mega-z",
     "abilitySlug": "justified",
     "abilityName": "Justified",
     "slotType": "hidden"
@@ -6226,6 +6586,12 @@
     "abilitySlug": "moody",
     "abilityName": "Moody",
     "slotType": "hidden"
+  },
+  {
+    "pokemonProfileKey": "362-glalie-mega",
+    "abilitySlug": "refrigerate",
+    "abilityName": "Refrigerate",
+    "slotType": "primary"
   },
   {
     "pokemonProfileKey": "363",
@@ -6384,6 +6750,12 @@
     "slotType": "hidden"
   },
   {
+    "pokemonProfileKey": "373-salamence-mega",
+    "abilitySlug": "aerilate",
+    "abilityName": "Aerilate",
+    "slotType": "primary"
+  },
+  {
     "pokemonProfileKey": "374",
     "abilitySlug": "clear-body",
     "abilityName": "Clear Body",
@@ -6418,6 +6790,12 @@
     "abilitySlug": "light-metal",
     "abilityName": "Light Metal",
     "slotType": "hidden"
+  },
+  {
+    "pokemonProfileKey": "376-metagross-mega",
+    "abilitySlug": "tough-claws",
+    "abilityName": "Tough Claws",
+    "slotType": "primary"
   },
   {
     "pokemonProfileKey": "377",
@@ -6462,7 +6840,19 @@
     "slotType": "primary"
   },
   {
+    "pokemonProfileKey": "380-latias-mega",
+    "abilitySlug": "levitate",
+    "abilityName": "Levitate",
+    "slotType": "primary"
+  },
+  {
     "pokemonProfileKey": "381",
+    "abilitySlug": "levitate",
+    "abilityName": "Levitate",
+    "slotType": "primary"
+  },
+  {
+    "pokemonProfileKey": "381-latios-mega",
     "abilitySlug": "levitate",
     "abilityName": "Levitate",
     "slotType": "primary"
@@ -6474,15 +6864,33 @@
     "slotType": "primary"
   },
   {
+    "pokemonProfileKey": "382-kyogre-primal",
+    "abilitySlug": "primordial-sea",
+    "abilityName": "Primordial Sea",
+    "slotType": "primary"
+  },
+  {
     "pokemonProfileKey": "383",
     "abilitySlug": "drought",
     "abilityName": "Drought",
     "slotType": "primary"
   },
   {
+    "pokemonProfileKey": "383-groudon-primal",
+    "abilitySlug": "desolate-land",
+    "abilityName": "Desolate Land",
+    "slotType": "primary"
+  },
+  {
     "pokemonProfileKey": "384",
     "abilitySlug": "air-lock",
     "abilityName": "Air Lock",
+    "slotType": "primary"
+  },
+  {
+    "pokemonProfileKey": "384-rayquaza-mega",
+    "abilitySlug": "delta-stream",
+    "abilityName": "Delta Stream",
     "slotType": "primary"
   },
   {
@@ -6637,6 +7045,18 @@
   },
   {
     "pokemonProfileKey": "398",
+    "abilitySlug": "reckless",
+    "abilityName": "Reckless",
+    "slotType": "hidden"
+  },
+  {
+    "pokemonProfileKey": "398-staraptor-mega",
+    "abilitySlug": "intimidate",
+    "abilityName": "Intimidate",
+    "slotType": "primary"
+  },
+  {
+    "pokemonProfileKey": "398-staraptor-mega",
     "abilitySlug": "reckless",
     "abilityName": "Reckless",
     "slotType": "hidden"
@@ -7080,6 +7500,12 @@
     "slotType": "hidden"
   },
   {
+    "pokemonProfileKey": "428-lopunny-mega",
+    "abilitySlug": "scrappy",
+    "abilityName": "Scrappy",
+    "slotType": "primary"
+  },
+  {
     "pokemonProfileKey": "429",
     "abilitySlug": "levitate",
     "abilityName": "Levitate",
@@ -7338,6 +7764,24 @@
     "slotType": "hidden"
   },
   {
+    "pokemonProfileKey": "445-garchomp-mega",
+    "abilitySlug": "sand-force",
+    "abilityName": "Sand Force",
+    "slotType": "primary"
+  },
+  {
+    "pokemonProfileKey": "445-garchomp-mega-z",
+    "abilitySlug": "sand-veil",
+    "abilityName": "Sand Veil",
+    "slotType": "primary"
+  },
+  {
+    "pokemonProfileKey": "445-garchomp-mega-z",
+    "abilitySlug": "rough-skin",
+    "abilityName": "Rough Skin",
+    "slotType": "hidden"
+  },
+  {
     "pokemonProfileKey": "446",
     "abilitySlug": "pickup",
     "abilityName": "Pickup",
@@ -7387,6 +7831,30 @@
   },
   {
     "pokemonProfileKey": "448",
+    "abilitySlug": "justified",
+    "abilityName": "Justified",
+    "slotType": "hidden"
+  },
+  {
+    "pokemonProfileKey": "448-lucario-mega",
+    "abilitySlug": "adaptability",
+    "abilityName": "Adaptability",
+    "slotType": "primary"
+  },
+  {
+    "pokemonProfileKey": "448-lucario-mega-z",
+    "abilitySlug": "steadfast",
+    "abilityName": "Steadfast",
+    "slotType": "primary"
+  },
+  {
+    "pokemonProfileKey": "448-lucario-mega-z",
+    "abilitySlug": "inner-focus",
+    "abilityName": "Inner Focus",
+    "slotType": "secondary"
+  },
+  {
+    "pokemonProfileKey": "448-lucario-mega-z",
     "abilitySlug": "justified",
     "abilityName": "Justified",
     "slotType": "hidden"
@@ -7570,6 +8038,12 @@
     "abilitySlug": "soundproof",
     "abilityName": "Soundproof",
     "slotType": "hidden"
+  },
+  {
+    "pokemonProfileKey": "460-abomasnow-mega",
+    "abilitySlug": "snow-warning",
+    "abilityName": "Snow Warning",
+    "slotType": "primary"
   },
   {
     "pokemonProfileKey": "461",
@@ -7812,6 +8286,12 @@
     "slotType": "hidden"
   },
   {
+    "pokemonProfileKey": "475-gallade-mega",
+    "abilitySlug": "inner-focus",
+    "abilityName": "Inner Focus",
+    "slotType": "primary"
+  },
+  {
     "pokemonProfileKey": "476",
     "abilitySlug": "sturdy",
     "abilityName": "Sturdy",
@@ -7849,6 +8329,18 @@
   },
   {
     "pokemonProfileKey": "478",
+    "abilitySlug": "cursed-body",
+    "abilityName": "Cursed Body",
+    "slotType": "hidden"
+  },
+  {
+    "pokemonProfileKey": "478-froslass-mega",
+    "abilitySlug": "snow-cloak",
+    "abilityName": "Snow Cloak",
+    "slotType": "primary"
+  },
+  {
+    "pokemonProfileKey": "478-froslass-mega",
     "abilitySlug": "cursed-body",
     "abilityName": "Cursed Body",
     "slotType": "hidden"
@@ -7914,6 +8406,18 @@
     "slotType": "hidden"
   },
   {
+    "pokemonProfileKey": "485-heatran-mega",
+    "abilitySlug": "flash-fire",
+    "abilityName": "Flash Fire",
+    "slotType": "primary"
+  },
+  {
+    "pokemonProfileKey": "485-heatran-mega",
+    "abilitySlug": "flame-body",
+    "abilityName": "Flame Body",
+    "slotType": "hidden"
+  },
+  {
     "pokemonProfileKey": "486",
     "abilitySlug": "slow-start",
     "abilityName": "Slow Start",
@@ -7951,6 +8455,12 @@
   },
   {
     "pokemonProfileKey": "491",
+    "abilitySlug": "bad-dreams",
+    "abilityName": "Bad Dreams",
+    "slotType": "primary"
+  },
+  {
+    "pokemonProfileKey": "491-darkrai-mega",
     "abilitySlug": "bad-dreams",
     "abilityName": "Bad Dreams",
     "slotType": "primary"
@@ -8041,6 +8551,18 @@
   },
   {
     "pokemonProfileKey": "500",
+    "abilitySlug": "reckless",
+    "abilityName": "Reckless",
+    "slotType": "hidden"
+  },
+  {
+    "pokemonProfileKey": "500-emboar-mega",
+    "abilitySlug": "blaze",
+    "abilityName": "Blaze",
+    "slotType": "primary"
+  },
+  {
+    "pokemonProfileKey": "500-emboar-mega",
     "abilitySlug": "reckless",
     "abilityName": "Reckless",
     "slotType": "hidden"
@@ -8544,6 +9066,24 @@
     "slotType": "hidden"
   },
   {
+    "pokemonProfileKey": "530-excadrill-mega",
+    "abilitySlug": "sand-rush",
+    "abilityName": "Sand Rush",
+    "slotType": "primary"
+  },
+  {
+    "pokemonProfileKey": "530-excadrill-mega",
+    "abilitySlug": "sand-force",
+    "abilityName": "Sand Force",
+    "slotType": "secondary"
+  },
+  {
+    "pokemonProfileKey": "530-excadrill-mega",
+    "abilitySlug": "mold-breaker",
+    "abilityName": "Mold Breaker",
+    "slotType": "hidden"
+  },
+  {
     "pokemonProfileKey": "531",
     "abilitySlug": "healer",
     "abilityName": "Healer",
@@ -8560,6 +9100,12 @@
     "abilitySlug": "klutz",
     "abilityName": "Klutz",
     "slotType": "hidden"
+  },
+  {
+    "pokemonProfileKey": "531-audino-mega",
+    "abilitySlug": "healer",
+    "abilityName": "Healer",
+    "slotType": "primary"
   },
   {
     "pokemonProfileKey": "532",
@@ -8809,6 +9355,24 @@
   },
   {
     "pokemonProfileKey": "545",
+    "abilitySlug": "speed-boost",
+    "abilityName": "Speed Boost",
+    "slotType": "hidden"
+  },
+  {
+    "pokemonProfileKey": "545-scolipede-mega",
+    "abilitySlug": "poison-point",
+    "abilityName": "Poison Point",
+    "slotType": "primary"
+  },
+  {
+    "pokemonProfileKey": "545-scolipede-mega",
+    "abilitySlug": "swarm",
+    "abilityName": "Swarm",
+    "slotType": "secondary"
+  },
+  {
+    "pokemonProfileKey": "545-scolipede-mega",
     "abilitySlug": "speed-boost",
     "abilityName": "Speed Boost",
     "slotType": "hidden"
@@ -9121,6 +9685,24 @@
   },
   {
     "pokemonProfileKey": "560",
+    "abilitySlug": "intimidate",
+    "abilityName": "Intimidate",
+    "slotType": "hidden"
+  },
+  {
+    "pokemonProfileKey": "560-scrafty-mega",
+    "abilitySlug": "shed-skin",
+    "abilityName": "Shed Skin",
+    "slotType": "primary"
+  },
+  {
+    "pokemonProfileKey": "560-scrafty-mega",
+    "abilitySlug": "moxie",
+    "abilityName": "Moxie",
+    "slotType": "secondary"
+  },
+  {
+    "pokemonProfileKey": "560-scrafty-mega",
     "abilitySlug": "intimidate",
     "abilityName": "Intimidate",
     "slotType": "hidden"
@@ -9792,6 +10374,12 @@
     "slotType": "primary"
   },
   {
+    "pokemonProfileKey": "604-eelektross-mega",
+    "abilitySlug": "levitate",
+    "abilityName": "Levitate",
+    "slotType": "primary"
+  },
+  {
     "pokemonProfileKey": "605",
     "abilitySlug": "telepathy",
     "abilityName": "Telepathy",
@@ -9877,6 +10465,24 @@
   },
   {
     "pokemonProfileKey": "609",
+    "abilitySlug": "infiltrator",
+    "abilityName": "Infiltrator",
+    "slotType": "hidden"
+  },
+  {
+    "pokemonProfileKey": "609-chandelure-mega",
+    "abilitySlug": "flash-fire",
+    "abilityName": "Flash Fire",
+    "slotType": "primary"
+  },
+  {
+    "pokemonProfileKey": "609-chandelure-mega",
+    "abilitySlug": "flame-body",
+    "abilityName": "Flame Body",
+    "slotType": "secondary"
+  },
+  {
+    "pokemonProfileKey": "609-chandelure-mega",
     "abilitySlug": "infiltrator",
     "abilityName": "Infiltrator",
     "slotType": "hidden"
@@ -10123,6 +10729,24 @@
   },
   {
     "pokemonProfileKey": "623",
+    "abilitySlug": "no-guard",
+    "abilityName": "No Guard",
+    "slotType": "hidden"
+  },
+  {
+    "pokemonProfileKey": "623-golurk-mega",
+    "abilitySlug": "iron-fist",
+    "abilityName": "Iron Fist",
+    "slotType": "primary"
+  },
+  {
+    "pokemonProfileKey": "623-golurk-mega",
+    "abilitySlug": "klutz",
+    "abilityName": "Klutz",
+    "slotType": "secondary"
+  },
+  {
+    "pokemonProfileKey": "623-golurk-mega",
     "abilitySlug": "no-guard",
     "abilityName": "No Guard",
     "slotType": "hidden"
@@ -10476,6 +11100,18 @@
     "slotType": "hidden"
   },
   {
+    "pokemonProfileKey": "652-chesnaught-mega",
+    "abilitySlug": "overgrow",
+    "abilityName": "Overgrow",
+    "slotType": "primary"
+  },
+  {
+    "pokemonProfileKey": "652-chesnaught-mega",
+    "abilitySlug": "bulletproof",
+    "abilityName": "Bulletproof",
+    "slotType": "hidden"
+  },
+  {
     "pokemonProfileKey": "653",
     "abilitySlug": "blaze",
     "abilityName": "Blaze",
@@ -10512,6 +11148,18 @@
     "slotType": "hidden"
   },
   {
+    "pokemonProfileKey": "655-delphox-mega",
+    "abilitySlug": "blaze",
+    "abilityName": "Blaze",
+    "slotType": "primary"
+  },
+  {
+    "pokemonProfileKey": "655-delphox-mega",
+    "abilitySlug": "magician",
+    "abilityName": "Magician",
+    "slotType": "hidden"
+  },
+  {
     "pokemonProfileKey": "656",
     "abilitySlug": "torrent",
     "abilityName": "Torrent",
@@ -10543,6 +11191,18 @@
   },
   {
     "pokemonProfileKey": "658",
+    "abilitySlug": "protean",
+    "abilityName": "Protean",
+    "slotType": "hidden"
+  },
+  {
+    "pokemonProfileKey": "658-greninja-mega",
+    "abilitySlug": "torrent",
+    "abilityName": "Torrent",
+    "slotType": "primary"
+  },
+  {
+    "pokemonProfileKey": "658-greninja-mega",
     "abilitySlug": "protean",
     "abilityName": "Protean",
     "slotType": "hidden"
@@ -10704,6 +11364,24 @@
     "slotType": "hidden"
   },
   {
+    "pokemonProfileKey": "668-pyroar-mega",
+    "abilitySlug": "rivalry",
+    "abilityName": "Rivalry",
+    "slotType": "primary"
+  },
+  {
+    "pokemonProfileKey": "668-pyroar-mega",
+    "abilitySlug": "unnerve",
+    "abilityName": "Unnerve",
+    "slotType": "secondary"
+  },
+  {
+    "pokemonProfileKey": "668-pyroar-mega",
+    "abilitySlug": "moxie",
+    "abilityName": "Moxie",
+    "slotType": "hidden"
+  },
+  {
     "pokemonProfileKey": "669",
     "abilitySlug": "flower-veil",
     "abilityName": "Flower Veil",
@@ -10723,6 +11401,18 @@
   },
   {
     "pokemonProfileKey": "670",
+    "abilitySlug": "symbiosis",
+    "abilityName": "Symbiosis",
+    "slotType": "hidden"
+  },
+  {
+    "pokemonProfileKey": "670-floette-mega",
+    "abilitySlug": "flower-veil",
+    "abilityName": "Flower Veil",
+    "slotType": "primary"
+  },
+  {
+    "pokemonProfileKey": "670-floette-mega",
     "abilitySlug": "symbiosis",
     "abilityName": "Symbiosis",
     "slotType": "hidden"
@@ -10842,6 +11532,24 @@
     "slotType": "hidden"
   },
   {
+    "pokemonProfileKey": "678-meowstic-mega",
+    "abilitySlug": "keen-eye",
+    "abilityName": "Keen Eye",
+    "slotType": "primary"
+  },
+  {
+    "pokemonProfileKey": "678-meowstic-mega",
+    "abilitySlug": "infiltrator",
+    "abilityName": "Infiltrator",
+    "slotType": "secondary"
+  },
+  {
+    "pokemonProfileKey": "678-meowstic-mega",
+    "abilitySlug": "prankster",
+    "abilityName": "Prankster",
+    "slotType": "hidden"
+  },
+  {
     "pokemonProfileKey": "679",
     "abilitySlug": "no-guard",
     "abilityName": "No Guard",
@@ -10944,6 +11652,24 @@
     "slotType": "hidden"
   },
   {
+    "pokemonProfileKey": "687-malamar-mega",
+    "abilitySlug": "contrary",
+    "abilityName": "Contrary",
+    "slotType": "primary"
+  },
+  {
+    "pokemonProfileKey": "687-malamar-mega",
+    "abilitySlug": "suction-cups",
+    "abilityName": "Suction Cups",
+    "slotType": "secondary"
+  },
+  {
+    "pokemonProfileKey": "687-malamar-mega",
+    "abilitySlug": "infiltrator",
+    "abilityName": "Infiltrator",
+    "slotType": "hidden"
+  },
+  {
     "pokemonProfileKey": "688",
     "abilitySlug": "tough-claws",
     "abilityName": "Tough Claws",
@@ -10975,6 +11701,24 @@
   },
   {
     "pokemonProfileKey": "689",
+    "abilitySlug": "pickpocket",
+    "abilityName": "Pickpocket",
+    "slotType": "hidden"
+  },
+  {
+    "pokemonProfileKey": "689-barbaracle-mega",
+    "abilitySlug": "tough-claws",
+    "abilityName": "Tough Claws",
+    "slotType": "primary"
+  },
+  {
+    "pokemonProfileKey": "689-barbaracle-mega",
+    "abilitySlug": "sniper",
+    "abilityName": "Sniper",
+    "slotType": "secondary"
+  },
+  {
+    "pokemonProfileKey": "689-barbaracle-mega",
     "abilitySlug": "pickpocket",
     "abilityName": "Pickpocket",
     "slotType": "hidden"
@@ -11011,6 +11755,24 @@
   },
   {
     "pokemonProfileKey": "691",
+    "abilitySlug": "adaptability",
+    "abilityName": "Adaptability",
+    "slotType": "hidden"
+  },
+  {
+    "pokemonProfileKey": "691-dragalge-mega",
+    "abilitySlug": "poison-point",
+    "abilityName": "Poison Point",
+    "slotType": "primary"
+  },
+  {
+    "pokemonProfileKey": "691-dragalge-mega",
+    "abilitySlug": "poison-touch",
+    "abilityName": "Poison Touch",
+    "slotType": "secondary"
+  },
+  {
+    "pokemonProfileKey": "691-dragalge-mega",
     "abilitySlug": "adaptability",
     "abilityName": "Adaptability",
     "slotType": "hidden"
@@ -11137,6 +11899,24 @@
   },
   {
     "pokemonProfileKey": "701",
+    "abilitySlug": "mold-breaker",
+    "abilityName": "Mold Breaker",
+    "slotType": "hidden"
+  },
+  {
+    "pokemonProfileKey": "701-hawlucha-mega",
+    "abilitySlug": "limber",
+    "abilityName": "Limber",
+    "slotType": "primary"
+  },
+  {
+    "pokemonProfileKey": "701-hawlucha-mega",
+    "abilitySlug": "unburden",
+    "abilityName": "Unburden",
+    "slotType": "secondary"
+  },
+  {
+    "pokemonProfileKey": "701-hawlucha-mega",
     "abilitySlug": "mold-breaker",
     "abilityName": "Mold Breaker",
     "slotType": "hidden"
@@ -11454,9 +12234,21 @@
     "slotType": "primary"
   },
   {
+    "pokemonProfileKey": "718-zygarde-mega",
+    "abilitySlug": "aura-break",
+    "abilityName": "Aura Break",
+    "slotType": "primary"
+  },
+  {
     "pokemonProfileKey": "719",
     "abilitySlug": "clear-body",
     "abilityName": "Clear Body",
+    "slotType": "primary"
+  },
+  {
+    "pokemonProfileKey": "719-diancie-mega",
+    "abilitySlug": "magic-bounce",
+    "abilityName": "Magic Bounce",
     "slotType": "primary"
   },
   {
@@ -11731,6 +12523,24 @@
   },
   {
     "pokemonProfileKey": "740",
+    "abilitySlug": "anger-point",
+    "abilityName": "Anger Point",
+    "slotType": "hidden"
+  },
+  {
+    "pokemonProfileKey": "740-crabominable-mega",
+    "abilitySlug": "hyper-cutter",
+    "abilityName": "Hyper Cutter",
+    "slotType": "primary"
+  },
+  {
+    "pokemonProfileKey": "740-crabominable-mega",
+    "abilitySlug": "iron-fist",
+    "abilityName": "Iron Fist",
+    "slotType": "secondary"
+  },
+  {
+    "pokemonProfileKey": "740-crabominable-mega",
     "abilitySlug": "anger-point",
     "abilityName": "Anger Point",
     "slotType": "hidden"
@@ -12150,6 +12960,12 @@
     "slotType": "primary"
   },
   {
+    "pokemonProfileKey": "768-golisopod-mega",
+    "abilitySlug": "emergency-exit",
+    "abilityName": "Emergency Exit",
+    "slotType": "primary"
+  },
+  {
     "pokemonProfileKey": "769",
     "abilitySlug": "water-compaction",
     "abilityName": "Water Compaction",
@@ -12271,6 +13087,24 @@
   },
   {
     "pokemonProfileKey": "780",
+    "abilitySlug": "cloud-nine",
+    "abilityName": "Cloud Nine",
+    "slotType": "hidden"
+  },
+  {
+    "pokemonProfileKey": "780-drampa-mega",
+    "abilitySlug": "berserk",
+    "abilityName": "Berserk",
+    "slotType": "primary"
+  },
+  {
+    "pokemonProfileKey": "780-drampa-mega",
+    "abilitySlug": "sap-sipper",
+    "abilityName": "Sap Sipper",
+    "slotType": "secondary"
+  },
+  {
+    "pokemonProfileKey": "780-drampa-mega",
     "abilitySlug": "cloud-nine",
     "abilityName": "Cloud Nine",
     "slotType": "hidden"
@@ -12462,6 +13296,12 @@
     "slotType": "primary"
   },
   {
+    "pokemonProfileKey": "801-magearna-mega",
+    "abilitySlug": "soul-heart",
+    "abilityName": "Soul Heart",
+    "slotType": "primary"
+  },
+  {
     "pokemonProfileKey": "802",
     "abilitySlug": "technician",
     "abilityName": "Technician",
@@ -12493,6 +13333,12 @@
   },
   {
     "pokemonProfileKey": "807",
+    "abilitySlug": "volt-absorb",
+    "abilityName": "Volt Absorb",
+    "slotType": "primary"
+  },
+  {
+    "pokemonProfileKey": "807-zeraora-mega",
     "abilitySlug": "volt-absorb",
     "abilityName": "Volt Absorb",
     "slotType": "primary"
@@ -13435,6 +14281,18 @@
   },
   {
     "pokemonProfileKey": "870",
+    "abilitySlug": "defiant",
+    "abilityName": "Defiant",
+    "slotType": "hidden"
+  },
+  {
+    "pokemonProfileKey": "870-falinks-mega",
+    "abilitySlug": "battle-armor",
+    "abilityName": "Battle Armor",
+    "slotType": "primary"
+  },
+  {
+    "pokemonProfileKey": "870-falinks-mega",
     "abilitySlug": "defiant",
     "abilityName": "Defiant",
     "slotType": "hidden"
@@ -14550,6 +15408,24 @@
     "slotType": "hidden"
   },
   {
+    "pokemonProfileKey": "952-scovillain-mega",
+    "abilitySlug": "chlorophyll",
+    "abilityName": "Chlorophyll",
+    "slotType": "primary"
+  },
+  {
+    "pokemonProfileKey": "952-scovillain-mega",
+    "abilitySlug": "insomnia",
+    "abilityName": "Insomnia",
+    "slotType": "secondary"
+  },
+  {
+    "pokemonProfileKey": "952-scovillain-mega",
+    "abilitySlug": "moody",
+    "abilityName": "Moody",
+    "slotType": "hidden"
+  },
+  {
     "pokemonProfileKey": "953",
     "abilitySlug": "compound-eyes",
     "abilityName": "Compound Eyes",
@@ -14797,6 +15673,18 @@
   },
   {
     "pokemonProfileKey": "970",
+    "abilitySlug": "corrosion",
+    "abilityName": "Corrosion",
+    "slotType": "hidden"
+  },
+  {
+    "pokemonProfileKey": "970-glimmora-mega",
+    "abilitySlug": "toxic-debris",
+    "abilityName": "Toxic Debris",
+    "slotType": "primary"
+  },
+  {
+    "pokemonProfileKey": "970-glimmora-mega",
     "abilitySlug": "corrosion",
     "abilityName": "Corrosion",
     "slotType": "hidden"
@@ -15115,6 +16003,18 @@
   },
   {
     "pokemonProfileKey": "998",
+    "abilitySlug": "ice-body",
+    "abilityName": "Ice Body",
+    "slotType": "hidden"
+  },
+  {
+    "pokemonProfileKey": "998-baxcalibur-mega",
+    "abilitySlug": "thermal-exchange",
+    "abilityName": "Thermal Exchange",
+    "slotType": "primary"
+  },
+  {
+    "pokemonProfileKey": "998-baxcalibur-mega",
     "abilitySlug": "ice-body",
     "abilityName": "Ice Body",
     "slotType": "hidden"

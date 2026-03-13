@@ -40,9 +40,31 @@ All routes are under `/api`:
 4. Start dev mode:
    - `npm run dev`
 
+## Deploy on Vercel
+This repo is configured for a single Vercel project that serves both frontend and API.
+
+1. Import the repository in Vercel.
+2. Keep project root at the repo root (the included `vercel.json` sets install/build/output).
+3. Set environment variables in Vercel:
+   - `NODE_ENV=production`
+   - `DATABASE_URL=<your managed postgres connection string>`
+   - `DB_USE_SSH_TUNNEL=false`
+   - `PGSSL=true` (recommended for managed Postgres)
+   - `PGSSL_REJECT_UNAUTHORIZED=false` (use provider guidance)
+4. Ensure migrations and seed data are applied before production traffic.
+   - Run from this repo: `npm run setup` (or your CI/deployment equivalent).
+5. Deploy and verify:
+   - API: `/api/health/data`
+   - SPA routes: `/about`, `/pokemon/6`
+
+Notes:
+- Vercel runtime should use direct `DATABASE_URL` access, not SSH tunneling.
+- The API remains under `/api/*`; no frontend API base URL changes are required.
+
 ## Useful Commands
 - Regenerate normalized data (Gen 1 default): `npm run generate:data`
-- Regenerate normalized data for all generations: `npm run generate:data:all`
+- Regenerate normalized data for Generations 7-9 only: `npm run generate:data:gen7-9`
+- Regenerate normalized data for all available generations (latest from PokeAPI): `npm run generate:data:all`
 - Regenerate normalized data for selected generations: `node scripts/generate-normalized-data.mjs --gens=1,2,3` or `--max-gen=3`
 - Create database only: `npm run create-db`
 - Run migration + seed only: `npm run setup`

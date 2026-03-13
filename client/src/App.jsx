@@ -10,6 +10,7 @@ import { AbilitiesDirectoryPage } from "./pages/AbilitiesDirectoryPage.jsx";
 import { AbilityDetailPage } from "./pages/AbilityDetailPage.jsx";
 import { TypeToolPage } from "./pages/TypeToolPage.jsx";
 import { ComparePage } from "./pages/ComparePage.jsx";
+import { AboutPage } from "./pages/AboutPage.jsx";
 import { NotFoundPage } from "./pages/NotFoundPage.jsx";
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
           <Route path="/abilities/:id" element={<AbilityDetailPage />} />
           <Route path="/types" element={<TypeToolPage />} />
           <Route path="/compare" element={<ComparePage />} />
+          <Route path="/about" element={<AboutPage />} />
           <Route path="/home" element={<Navigate to="/" replace />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>

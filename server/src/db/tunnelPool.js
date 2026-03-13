@@ -18,12 +18,24 @@ const getPrivateKey = () => {
 };
 
 const createPool = () => {
+  const ssl = env.databaseSsl
+    ? { rejectUnauthorized: env.databaseSslRejectUnauthorized }
+    : undefined;
+
+  if (env.databaseUrl) {
+    return new Pool({
+      connectionString: env.databaseUrl,
+      ...(ssl ? { ssl } : {}),
+    });
+  }
+
   return new Pool({
     host: env.localHost,
     port: env.localPort,
     database: env.databaseName,
     user: env.databaseUser,
     password: env.databasePassword,
+    ...(ssl ? { ssl } : {}),
   });
 };
 

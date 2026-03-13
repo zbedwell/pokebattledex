@@ -78,6 +78,24 @@ describe("API integration", () => {
     });
   });
 
+  it("includes mega and primal forms in pokemon list and option search", async () => {
+    const app = buildTestApp();
+
+    const megaList = await request(app).get("/api/pokemon?q=mega&limit=10");
+    expect(megaList.status).toBe(200);
+    expect(megaList.body.data.map((entry) => entry.name)).toEqual(
+      expect.arrayContaining(["Charizard (Mega X)", "Charizard (Mega Y)"]),
+    );
+
+    const primalList = await request(app).get("/api/pokemon?q=primal&limit=10");
+    expect(primalList.status).toBe(200);
+    expect(primalList.body.data.map((entry) => entry.name)).toContain("Groudon (Primal)");
+
+    const options = await request(app).get("/api/pokemon/options?q=primal&limit=10");
+    expect(options.status).toBe(200);
+    expect(options.body.map((entry) => entry.name)).toContain("Groudon (Primal)");
+  });
+
   it("validates pokemon options query constraints", async () => {
     const app = buildTestApp();
     const response = await request(app).get("/api/pokemon/options?q=a&limit=99");
@@ -208,17 +226,159 @@ describe("API integration", () => {
     ]);
   });
 
+  it("adds mega and primal transformation branches to evolution payloads", async () => {
+    const app = buildTestApp();
+
+    const mega = await request(app).get("/api/pokemon/6/evolution");
+    expect(mega.status).toBe(200);
+    expect(mega.body.nodes.map((node) => node.name)).toEqual(
+      expect.arrayContaining(["Charizard (Mega X)", "Charizard (Mega Y)"]),
+    );
+    expect(mega.body.edges).toEqual(
+      expect.arrayContaining([
+        expect.objectContaining({
+          from_pokemon_id: 6,
+          to_pokemon_id: 6006,
+          label: "Mega Evolution (Charizardite X)",
+        }),
+        expect.objectContaining({
+          from_pokemon_id: 6,
+          to_pokemon_id: 6007,
+          label: "Mega Evolution (Charizardite Y)",
+        }),
+      ]),
+    );
+
+    const primal = await request(app).get("/api/pokemon/383/evolution");
+    expect(primal.status).toBe(200);
+    expect(primal.body.nodes.map((node) => node.name)).toEqual(["Groudon", "Groudon (Primal)"]);
+    expect(primal.body.edges).toEqual([
+      expect.objectContaining({
+        from_pokemon_id: 383,
+        to_pokemon_id: 7001,
+        label: "Primal Reversion (Red Orb)",
+      }),
+    ]);
+  });
+
   it("embeds evolution_line in pokemon detail payload", async () => {
     const app = buildTestApp();
     const response = await request(app).get("/api/pokemon/6");
 
     expect(response.status).toBe(200);
     expect(response.body).toHaveProperty("evolution_line");
+    expect(response.body).toHaveProperty("obtain_methods_by_game");
+    expect(response.body.obtain_methods_by_game).toHaveLength(38);
+    expect(response.body.obtain_methods_by_game).toEqual(
+      expect.arrayContaining([
+        expect.objectContaining({
+          game: "Red",
+          methods: ["Evolve"],
+          locations: [{ location: "Evolution", methods: ["Evolve"] }],
+        }),
+        expect.objectContaining({
+          game: "Sun",
+          methods: ["Gift"],
+          locations: [
+            { location: "Route 3", methods: ["Gift"] },
+            { location: "Route 12", methods: ["Gift"] },
+          ],
+        }),
+        expect.objectContaining({
+          game: "Sword",
+          methods: ["Static Encounter"],
+          locations: [{ location: "Lake of Outrage", methods: ["Static Encounter"] }],
+        }),
+        expect.objectContaining({
+          game: "Moon",
+          methods: ["Not obtainable"],
+          locations: [],
+        }),
+        expect.objectContaining({
+          game: "Legends: Z-A",
+          methods: ["Not obtainable"],
+          locations: [],
+        }),
+      ]),
+    );
     expect(response.body.evolution_line.nodes.map((node) => node.name)).toEqual([
       "Charmander",
       "Charmeleon",
       "Charizard",
+      "Charizard (Mega X)",
+      "Charizard (Mega Y)",
     ]);
+  });
+
+  it("keeps mega detail obtain data as battle-only and skips evolve backfill", async () => {
+    const app = buildTestApp();
+    const response = await request(app).get("/api/pokemon/6006");
+
+    expect(response.status).toBe(200);
+    expect(response.body.name).toBe("Charizard (Mega X)");
+    expect(response.body.obtain_methods_by_game).toHaveLength(38);
+    expect(response.body.obtain_methods_by_game).toEqual(
+      expect.arrayContaining([
+        expect.objectContaining({
+          game: "X",
+          methods: ["Mega Evolution"],
+          locations: [{ location: "Battle Transformation", methods: ["Mega Evolution"] }],
+        }),
+        expect.objectContaining({
+          game: "Red",
+          methods: ["Not obtainable"],
+          locations: [],
+        }),
+      ]),
+    );
+    expect(
+      response.body.obtain_methods_by_game.some((entry) => (entry.methods || []).includes("Evolve")),
+    ).toBe(false);
+  });
+
+  it("keeps mega/primal type and ability overrides while inheriting base move lists", async () => {
+    const app = buildTestApp();
+    const [charizard, megaX, megaY, primal] = await Promise.all([
+      request(app).get("/api/pokemon/6"),
+      request(app).get("/api/pokemon/6006"),
+      request(app).get("/api/pokemon/6007"),
+      request(app).get("/api/pokemon/7001"),
+    ]);
+
+    expect(charizard.status).toBe(200);
+    expect(megaX.status).toBe(200);
+    expect(megaY.status).toBe(200);
+    expect(primal.status).toBe(200);
+
+    expect([megaX.body.primary_type, megaX.body.secondary_type].filter(Boolean)).toEqual(["Fire", "Dragon"]);
+    expect(megaX.body.abilities.map((entry) => entry.name)).toEqual(["Tough Claws"]);
+    expect([megaY.body.primary_type, megaY.body.secondary_type].filter(Boolean)).toEqual(["Fire", "Flying"]);
+    expect(megaY.body.abilities.map((entry) => entry.name)).toEqual(["Drought"]);
+    expect([primal.body.primary_type, primal.body.secondary_type].filter(Boolean)).toEqual(["Ground", "Fire"]);
+    expect(primal.body.abilities.map((entry) => entry.name)).toEqual(["Desolate Land"]);
+
+    const [baseMoves, megaXMoves, megaYMoves] = await Promise.all([
+      request(app).get("/api/pokemon/6/moves"),
+      request(app).get("/api/pokemon/6006/moves"),
+      request(app).get("/api/pokemon/6007/moves"),
+    ]);
+
+    expect(baseMoves.status).toBe(200);
+    expect(megaXMoves.status).toBe(200);
+    expect(megaYMoves.status).toBe(200);
+
+    const baseMoveNames = baseMoves.body.moves.map((entry) => entry.name);
+    expect(megaXMoves.body.moves.map((entry) => entry.name)).toEqual(baseMoveNames);
+    expect(megaYMoves.body.moves.map((entry) => entry.name)).toEqual(baseMoveNames);
+  });
+
+  it("keeps dex numeric lookups pinned to base form when battle-only forms share dex", async () => {
+    const app = buildTestApp();
+    const response = await request(app).get("/api/pokemon/6");
+
+    expect(response.status).toBe(200);
+    expect(response.body.id).toBe(6);
+    expect(response.body.name).toBe("Charizard");
   });
 
   it("returns graceful no-evolution payload when no family rows exist", async () => {

@@ -24,6 +24,14 @@
     "displayName": "Venusaur"
   },
   {
+    "sourceChainId": 1,
+    "pokemonProfileKey": "3-venusaur-mega",
+    "depth": 3,
+    "displayOrder": 3,
+    "pathKey": "0.1.1.battle.3",
+    "displayName": "Venusaur (Mega)"
+  },
+  {
     "sourceChainId": 2,
     "pokemonProfileKey": "4",
     "depth": 0,
@@ -48,6 +56,22 @@
     "displayName": "Charizard"
   },
   {
+    "sourceChainId": 2,
+    "pokemonProfileKey": "6-charizard-mega-x",
+    "depth": 3,
+    "displayOrder": 3,
+    "pathKey": "0.1.1.battle.3",
+    "displayName": "Charizard (Mega X)"
+  },
+  {
+    "sourceChainId": 2,
+    "pokemonProfileKey": "6-charizard-mega-y",
+    "depth": 3,
+    "displayOrder": 4,
+    "pathKey": "0.1.1.battle.4",
+    "displayName": "Charizard (Mega Y)"
+  },
+  {
     "sourceChainId": 3,
     "pokemonProfileKey": "7",
     "depth": 0,
@@ -70,6 +94,14 @@
     "displayOrder": 2,
     "pathKey": "0.1.1",
     "displayName": "Blastoise"
+  },
+  {
+    "sourceChainId": 3,
+    "pokemonProfileKey": "9-blastoise-mega",
+    "depth": 3,
+    "displayOrder": 3,
+    "pathKey": "0.1.1.battle.3",
+    "displayName": "Blastoise (Mega)"
   },
   {
     "sourceChainId": 4,
@@ -120,6 +152,14 @@
     "displayName": "Beedrill"
   },
   {
+    "sourceChainId": 5,
+    "pokemonProfileKey": "15-beedrill-mega",
+    "depth": 3,
+    "displayOrder": 3,
+    "pathKey": "0.1.1.battle.3",
+    "displayName": "Beedrill (Mega)"
+  },
+  {
     "sourceChainId": 6,
     "pokemonProfileKey": "16",
     "depth": 0,
@@ -142,6 +182,14 @@
     "displayOrder": 2,
     "pathKey": "0.1.1",
     "displayName": "Pidgeot"
+  },
+  {
+    "sourceChainId": 6,
+    "pokemonProfileKey": "18-pidgeot-mega",
+    "depth": 3,
+    "displayOrder": 3,
+    "pathKey": "0.1.1.battle.3",
+    "displayName": "Pidgeot (Mega)"
   },
   {
     "sourceChainId": 7,
@@ -214,6 +262,22 @@
     "displayOrder": 2,
     "pathKey": "0.1.1",
     "displayName": "Raichu"
+  },
+  {
+    "sourceChainId": 10,
+    "pokemonProfileKey": "26-raichu-mega-x",
+    "depth": 3,
+    "displayOrder": 3,
+    "pathKey": "0.1.1.battle.3",
+    "displayName": "Raichu (Mega X)"
+  },
+  {
+    "sourceChainId": 10,
+    "pokemonProfileKey": "26-raichu-mega-y",
+    "depth": 3,
+    "displayOrder": 4,
+    "pathKey": "0.1.1.battle.4",
+    "displayName": "Raichu (Mega Y)"
   },
   {
     "sourceChainId": 11,
@@ -302,6 +366,14 @@
     "displayOrder": 2,
     "pathKey": "0.1.1",
     "displayName": "Clefable"
+  },
+  {
+    "sourceChainId": 14,
+    "pokemonProfileKey": "36-clefable-mega",
+    "depth": 3,
+    "displayOrder": 3,
+    "pathKey": "0.1.1.battle.3",
+    "displayName": "Clefable (Mega)"
   },
   {
     "sourceChainId": 15,
@@ -584,6 +656,14 @@
     "displayName": "Alakazam"
   },
   {
+    "sourceChainId": 27,
+    "pokemonProfileKey": "65-alakazam-mega",
+    "depth": 3,
+    "displayOrder": 3,
+    "pathKey": "0.1.1.battle.3",
+    "displayName": "Alakazam (Mega)"
+  },
+  {
     "sourceChainId": 28,
     "pokemonProfileKey": "66",
     "depth": 0,
@@ -630,6 +710,14 @@
     "displayOrder": 2,
     "pathKey": "0.1.1",
     "displayName": "Victreebel"
+  },
+  {
+    "sourceChainId": 29,
+    "pokemonProfileKey": "71-victreebel-mega",
+    "depth": 3,
+    "displayOrder": 3,
+    "pathKey": "0.1.1.battle.3",
+    "displayName": "Victreebel (Mega)"
   },
   {
     "sourceChainId": 30,
@@ -710,6 +798,14 @@
     "displayOrder": 2,
     "pathKey": "0.2",
     "displayName": "Slowking"
+  },
+  {
+    "sourceChainId": 33,
+    "pokemonProfileKey": "80-slowbro-mega",
+    "depth": 2,
+    "displayOrder": 3,
+    "pathKey": "0.1.battle.3",
+    "displayName": "Slowbro (Mega)"
   },
   {
     "sourceChainId": 34,
@@ -840,6 +936,14 @@
     "displayName": "Gengar"
   },
   {
+    "sourceChainId": 40,
+    "pokemonProfileKey": "94-gengar-mega",
+    "depth": 3,
+    "displayOrder": 3,
+    "pathKey": "0.1.1.battle.3",
+    "displayName": "Gengar (Mega)"
+  },
+  {
     "sourceChainId": 41,
     "pokemonProfileKey": "95",
     "depth": 0,
@@ -854,6 +958,14 @@
     "displayOrder": 1,
     "pathKey": "0.1",
     "displayName": "Steelix"
+  },
+  {
+    "sourceChainId": 41,
+    "pokemonProfileKey": "208-steelix-mega",
+    "depth": 2,
+    "displayOrder": 2,
+    "pathKey": "0.1.battle.2",
+    "displayName": "Steelix (Mega)"
   },
   {
     "sourceChainId": 42,
@@ -1072,6 +1184,14 @@
     "displayName": "Kangaskhan"
   },
   {
+    "sourceChainId": 53,
+    "pokemonProfileKey": "115-kangaskhan-mega",
+    "depth": 1,
+    "displayOrder": 1,
+    "pathKey": "0.battle.1",
+    "displayName": "Kangaskhan (Mega)"
+  },
+  {
     "sourceChainId": 54,
     "pokemonProfileKey": "116",
     "depth": 0,
@@ -1128,6 +1248,14 @@
     "displayName": "Starmie"
   },
   {
+    "sourceChainId": 56,
+    "pokemonProfileKey": "121-starmie-mega",
+    "depth": 2,
+    "displayOrder": 2,
+    "pathKey": "0.1.battle.2",
+    "displayName": "Starmie (Mega)"
+  },
+  {
     "sourceChainId": 57,
     "pokemonProfileKey": "439",
     "depth": 0,
@@ -1174,6 +1302,14 @@
     "displayOrder": 2,
     "pathKey": "0.2",
     "displayName": "Kleavor"
+  },
+  {
+    "sourceChainId": 58,
+    "pokemonProfileKey": "212-scizor-mega",
+    "depth": 2,
+    "displayOrder": 3,
+    "pathKey": "0.1.battle.3",
+    "displayName": "Scizor (Mega)"
   },
   {
     "sourceChainId": 59,
@@ -1248,6 +1384,14 @@
     "displayName": "Pinsir"
   },
   {
+    "sourceChainId": 62,
+    "pokemonProfileKey": "127-pinsir-mega",
+    "depth": 1,
+    "displayOrder": 1,
+    "pathKey": "0.battle.1",
+    "displayName": "Pinsir (Mega)"
+  },
+  {
     "sourceChainId": 63,
     "pokemonProfileKey": "128",
     "depth": 0,
@@ -1270,6 +1414,14 @@
     "displayOrder": 1,
     "pathKey": "0.1",
     "displayName": "Gyarados"
+  },
+  {
+    "sourceChainId": 64,
+    "pokemonProfileKey": "130-gyarados-mega",
+    "depth": 2,
+    "displayOrder": 2,
+    "pathKey": "0.1.battle.2",
+    "displayName": "Gyarados (Mega)"
   },
   {
     "sourceChainId": 65,
@@ -1424,6 +1576,14 @@
     "displayName": "Aerodactyl"
   },
   {
+    "sourceChainId": 71,
+    "pokemonProfileKey": "142-aerodactyl-mega",
+    "depth": 1,
+    "displayOrder": 1,
+    "pathKey": "0.battle.1",
+    "displayName": "Aerodactyl (Mega)"
+  },
+  {
     "sourceChainId": 72,
     "pokemonProfileKey": "446",
     "depth": 0,
@@ -1488,12 +1648,36 @@
     "displayName": "Dragonite"
   },
   {
+    "sourceChainId": 76,
+    "pokemonProfileKey": "149-dragonite-mega",
+    "depth": 3,
+    "displayOrder": 3,
+    "pathKey": "0.1.1.battle.3",
+    "displayName": "Dragonite (Mega)"
+  },
+  {
     "sourceChainId": 77,
     "pokemonProfileKey": "150",
     "depth": 0,
     "displayOrder": 0,
     "pathKey": "0",
     "displayName": "Mewtwo"
+  },
+  {
+    "sourceChainId": 77,
+    "pokemonProfileKey": "150-mewtwo-mega-x",
+    "depth": 1,
+    "displayOrder": 1,
+    "pathKey": "0.battle.1",
+    "displayName": "Mewtwo (Mega X)"
+  },
+  {
+    "sourceChainId": 77,
+    "pokemonProfileKey": "150-mewtwo-mega-y",
+    "depth": 1,
+    "displayOrder": 2,
+    "pathKey": "0.battle.2",
+    "displayName": "Mewtwo (Mega Y)"
   },
   {
     "sourceChainId": 78,
@@ -1526,6 +1710,14 @@
     "displayOrder": 2,
     "pathKey": "0.1.1",
     "displayName": "Meganium"
+  },
+  {
+    "sourceChainId": 79,
+    "pokemonProfileKey": "154-meganium-mega",
+    "depth": 3,
+    "displayOrder": 3,
+    "pathKey": "0.1.1.battle.3",
+    "displayName": "Meganium (Mega)"
   },
   {
     "sourceChainId": 80,
@@ -1574,6 +1766,14 @@
     "displayOrder": 2,
     "pathKey": "0.1.1",
     "displayName": "Feraligatr"
+  },
+  {
+    "sourceChainId": 81,
+    "pokemonProfileKey": "160-feraligatr-mega",
+    "depth": 3,
+    "displayOrder": 3,
+    "pathKey": "0.1.1.battle.3",
+    "displayName": "Feraligatr (Mega)"
   },
   {
     "sourceChainId": 82,
@@ -1718,6 +1918,14 @@
     "displayOrder": 2,
     "pathKey": "0.1.1",
     "displayName": "Ampharos"
+  },
+  {
+    "sourceChainId": 89,
+    "pokemonProfileKey": "181-ampharos-mega",
+    "depth": 3,
+    "displayOrder": 3,
+    "pathKey": "0.1.1.battle.3",
+    "displayName": "Ampharos (Mega)"
   },
   {
     "sourceChainId": 90,
@@ -2024,6 +2232,14 @@
     "displayName": "Heracross"
   },
   {
+    "sourceChainId": 108,
+    "pokemonProfileKey": "214-heracross-mega",
+    "depth": 1,
+    "displayOrder": 1,
+    "pathKey": "0.battle.1",
+    "displayName": "Heracross (Mega)"
+  },
+  {
     "sourceChainId": 109,
     "pokemonProfileKey": "215",
     "depth": 0,
@@ -2176,6 +2392,14 @@
     "displayName": "Skarmory"
   },
   {
+    "sourceChainId": 117,
+    "pokemonProfileKey": "227-skarmory-mega",
+    "depth": 1,
+    "displayOrder": 1,
+    "pathKey": "0.battle.1",
+    "displayName": "Skarmory (Mega)"
+  },
+  {
     "sourceChainId": 118,
     "pokemonProfileKey": "228",
     "depth": 0,
@@ -2190,6 +2414,14 @@
     "displayOrder": 1,
     "pathKey": "0.1",
     "displayName": "Houndoom"
+  },
+  {
+    "sourceChainId": 118,
+    "pokemonProfileKey": "229-houndoom-mega",
+    "depth": 2,
+    "displayOrder": 2,
+    "pathKey": "0.1.battle.2",
+    "displayName": "Houndoom (Mega)"
   },
   {
     "sourceChainId": 119,
@@ -2288,6 +2520,14 @@
     "displayName": "Tyranitar"
   },
   {
+    "sourceChainId": 126,
+    "pokemonProfileKey": "248-tyranitar-mega",
+    "depth": 3,
+    "displayOrder": 3,
+    "pathKey": "0.1.1.battle.3",
+    "displayName": "Tyranitar (Mega)"
+  },
+  {
     "sourceChainId": 127,
     "pokemonProfileKey": "249",
     "depth": 0,
@@ -2336,6 +2576,14 @@
     "displayName": "Sceptile"
   },
   {
+    "sourceChainId": 130,
+    "pokemonProfileKey": "254-sceptile-mega",
+    "depth": 3,
+    "displayOrder": 3,
+    "pathKey": "0.1.1.battle.3",
+    "displayName": "Sceptile (Mega)"
+  },
+  {
     "sourceChainId": 131,
     "pokemonProfileKey": "255",
     "depth": 0,
@@ -2360,6 +2608,14 @@
     "displayName": "Blaziken"
   },
   {
+    "sourceChainId": 131,
+    "pokemonProfileKey": "257-blaziken-mega",
+    "depth": 3,
+    "displayOrder": 3,
+    "pathKey": "0.1.1.battle.3",
+    "displayName": "Blaziken (Mega)"
+  },
+  {
     "sourceChainId": 132,
     "pokemonProfileKey": "258",
     "depth": 0,
@@ -2382,6 +2638,14 @@
     "displayOrder": 2,
     "pathKey": "0.1.1",
     "displayName": "Swampert"
+  },
+  {
+    "sourceChainId": 132,
+    "pokemonProfileKey": "260-swampert-mega",
+    "depth": 3,
+    "displayOrder": 3,
+    "pathKey": "0.1.1.battle.3",
+    "displayName": "Swampert (Mega)"
   },
   {
     "sourceChainId": 133,
@@ -2576,6 +2840,22 @@
     "displayName": "Gallade"
   },
   {
+    "sourceChainId": 140,
+    "pokemonProfileKey": "282-gardevoir-mega",
+    "depth": 3,
+    "displayOrder": 4,
+    "pathKey": "0.1.1.battle.4",
+    "displayName": "Gardevoir (Mega)"
+  },
+  {
+    "sourceChainId": 140,
+    "pokemonProfileKey": "475-gallade-mega",
+    "depth": 3,
+    "displayOrder": 5,
+    "pathKey": "0.1.2.battle.5",
+    "displayName": "Gallade (Mega)"
+  },
+  {
     "sourceChainId": 141,
     "pokemonProfileKey": "283",
     "depth": 0,
@@ -2736,12 +3016,28 @@
     "displayName": "Sableye"
   },
   {
+    "sourceChainId": 149,
+    "pokemonProfileKey": "302-sableye-mega",
+    "depth": 1,
+    "displayOrder": 1,
+    "pathKey": "0.battle.1",
+    "displayName": "Sableye (Mega)"
+  },
+  {
     "sourceChainId": 150,
     "pokemonProfileKey": "303",
     "depth": 0,
     "displayOrder": 0,
     "pathKey": "0",
     "displayName": "Mawile"
+  },
+  {
+    "sourceChainId": 150,
+    "pokemonProfileKey": "303-mawile-mega",
+    "depth": 1,
+    "displayOrder": 1,
+    "pathKey": "0.battle.1",
+    "displayName": "Mawile (Mega)"
   },
   {
     "sourceChainId": 151,
@@ -2768,6 +3064,14 @@
     "displayName": "Aggron"
   },
   {
+    "sourceChainId": 151,
+    "pokemonProfileKey": "306-aggron-mega",
+    "depth": 3,
+    "displayOrder": 3,
+    "pathKey": "0.1.1.battle.3",
+    "displayName": "Aggron (Mega)"
+  },
+  {
     "sourceChainId": 152,
     "pokemonProfileKey": "307",
     "depth": 0,
@@ -2784,6 +3088,14 @@
     "displayName": "Medicham"
   },
   {
+    "sourceChainId": 152,
+    "pokemonProfileKey": "308-medicham-mega",
+    "depth": 2,
+    "displayOrder": 2,
+    "pathKey": "0.1.battle.2",
+    "displayName": "Medicham (Mega)"
+  },
+  {
     "sourceChainId": 153,
     "pokemonProfileKey": "309",
     "depth": 0,
@@ -2798,6 +3110,14 @@
     "displayOrder": 1,
     "pathKey": "0.1",
     "displayName": "Manectric"
+  },
+  {
+    "sourceChainId": 153,
+    "pokemonProfileKey": "310-manectric-mega",
+    "depth": 2,
+    "displayOrder": 2,
+    "pathKey": "0.1.battle.2",
+    "displayName": "Manectric (Mega)"
   },
   {
     "sourceChainId": 154,
@@ -2888,6 +3208,14 @@
     "displayName": "Sharpedo"
   },
   {
+    "sourceChainId": 160,
+    "pokemonProfileKey": "319-sharpedo-mega",
+    "depth": 2,
+    "displayOrder": 2,
+    "pathKey": "0.1.battle.2",
+    "displayName": "Sharpedo (Mega)"
+  },
+  {
     "sourceChainId": 161,
     "pokemonProfileKey": "320",
     "depth": 0,
@@ -2918,6 +3246,14 @@
     "displayOrder": 1,
     "pathKey": "0.1",
     "displayName": "Camerupt"
+  },
+  {
+    "sourceChainId": 162,
+    "pokemonProfileKey": "323-camerupt-mega",
+    "depth": 2,
+    "displayOrder": 2,
+    "pathKey": "0.1.battle.2",
+    "displayName": "Camerupt (Mega)"
   },
   {
     "sourceChainId": 163,
@@ -3006,6 +3342,14 @@
     "displayOrder": 1,
     "pathKey": "0.1",
     "displayName": "Altaria"
+  },
+  {
+    "sourceChainId": 168,
+    "pokemonProfileKey": "334-altaria-mega",
+    "depth": 2,
+    "displayOrder": 2,
+    "pathKey": "0.1.battle.2",
+    "displayName": "Altaria (Mega)"
   },
   {
     "sourceChainId": 169,
@@ -3168,6 +3512,14 @@
     "displayName": "Banette"
   },
   {
+    "sourceChainId": 181,
+    "pokemonProfileKey": "354-banette-mega",
+    "depth": 2,
+    "displayOrder": 2,
+    "pathKey": "0.1.battle.2",
+    "displayName": "Banette (Mega)"
+  },
+  {
     "sourceChainId": 182,
     "pokemonProfileKey": "355",
     "depth": 0,
@@ -3216,12 +3568,36 @@
     "displayName": "Chimecho"
   },
   {
+    "sourceChainId": 184,
+    "pokemonProfileKey": "358-chimecho-mega",
+    "depth": 2,
+    "displayOrder": 2,
+    "pathKey": "0.1.battle.2",
+    "displayName": "Chimecho (Mega)"
+  },
+  {
     "sourceChainId": 185,
     "pokemonProfileKey": "359",
     "depth": 0,
     "displayOrder": 0,
     "pathKey": "0",
     "displayName": "Absol"
+  },
+  {
+    "sourceChainId": 185,
+    "pokemonProfileKey": "359-absol-mega",
+    "depth": 1,
+    "displayOrder": 1,
+    "pathKey": "0.battle.1",
+    "displayName": "Absol (Mega)"
+  },
+  {
+    "sourceChainId": 185,
+    "pokemonProfileKey": "359-absol-mega-z",
+    "depth": 1,
+    "displayOrder": 2,
+    "pathKey": "0.battle.2",
+    "displayName": "Absol (Mega Z)"
   },
   {
     "sourceChainId": 186,
@@ -3246,6 +3622,22 @@
     "displayOrder": 2,
     "pathKey": "0.2",
     "displayName": "Froslass"
+  },
+  {
+    "sourceChainId": 186,
+    "pokemonProfileKey": "362-glalie-mega",
+    "depth": 2,
+    "displayOrder": 3,
+    "pathKey": "0.1.battle.3",
+    "displayName": "Glalie (Mega)"
+  },
+  {
+    "sourceChainId": 186,
+    "pokemonProfileKey": "478-froslass-mega",
+    "depth": 2,
+    "displayOrder": 4,
+    "pathKey": "0.2.battle.4",
+    "displayName": "Froslass (Mega)"
   },
   {
     "sourceChainId": 187,
@@ -3336,6 +3728,14 @@
     "displayName": "Salamence"
   },
   {
+    "sourceChainId": 191,
+    "pokemonProfileKey": "373-salamence-mega",
+    "depth": 3,
+    "displayOrder": 3,
+    "pathKey": "0.1.1.battle.3",
+    "displayName": "Salamence (Mega)"
+  },
+  {
     "sourceChainId": 192,
     "pokemonProfileKey": "374",
     "depth": 0,
@@ -3358,6 +3758,14 @@
     "displayOrder": 2,
     "pathKey": "0.1.1",
     "displayName": "Metagross"
+  },
+  {
+    "sourceChainId": 192,
+    "pokemonProfileKey": "376-metagross-mega",
+    "depth": 3,
+    "displayOrder": 3,
+    "pathKey": "0.1.1.battle.3",
+    "displayName": "Metagross (Mega)"
   },
   {
     "sourceChainId": 193,
@@ -3392,12 +3800,28 @@
     "displayName": "Latias"
   },
   {
+    "sourceChainId": 196,
+    "pokemonProfileKey": "380-latias-mega",
+    "depth": 1,
+    "displayOrder": 1,
+    "pathKey": "0.battle.1",
+    "displayName": "Latias (Mega)"
+  },
+  {
     "sourceChainId": 197,
     "pokemonProfileKey": "381",
     "depth": 0,
     "displayOrder": 0,
     "pathKey": "0",
     "displayName": "Latios"
+  },
+  {
+    "sourceChainId": 197,
+    "pokemonProfileKey": "381-latios-mega",
+    "depth": 1,
+    "displayOrder": 1,
+    "pathKey": "0.battle.1",
+    "displayName": "Latios (Mega)"
   },
   {
     "sourceChainId": 198,
@@ -3408,6 +3832,14 @@
     "displayName": "Kyogre"
   },
   {
+    "sourceChainId": 198,
+    "pokemonProfileKey": "382-kyogre-primal",
+    "depth": 1,
+    "displayOrder": 1,
+    "pathKey": "0.battle.1",
+    "displayName": "Kyogre (Primal)"
+  },
+  {
     "sourceChainId": 199,
     "pokemonProfileKey": "383",
     "depth": 0,
@@ -3416,12 +3848,28 @@
     "displayName": "Groudon"
   },
   {
+    "sourceChainId": 199,
+    "pokemonProfileKey": "383-groudon-primal",
+    "depth": 1,
+    "displayOrder": 1,
+    "pathKey": "0.battle.1",
+    "displayName": "Groudon (Primal)"
+  },
+  {
     "sourceChainId": 200,
     "pokemonProfileKey": "384",
     "depth": 0,
     "displayOrder": 0,
     "pathKey": "0",
     "displayName": "Rayquaza"
+  },
+  {
+    "sourceChainId": 200,
+    "pokemonProfileKey": "384-rayquaza-mega",
+    "depth": 1,
+    "displayOrder": 1,
+    "pathKey": "0.battle.1",
+    "displayName": "Rayquaza (Mega)"
   },
   {
     "sourceChainId": 201,
@@ -3534,6 +3982,14 @@
     "displayOrder": 2,
     "pathKey": "0.1.1",
     "displayName": "Staraptor"
+  },
+  {
+    "sourceChainId": 206,
+    "pokemonProfileKey": "398-staraptor-mega",
+    "depth": 3,
+    "displayOrder": 3,
+    "pathKey": "0.1.1.battle.3",
+    "displayName": "Staraptor (Mega)"
   },
   {
     "sourceChainId": 207,
@@ -3752,6 +4208,14 @@
     "displayName": "Lopunny"
   },
   {
+    "sourceChainId": 220,
+    "pokemonProfileKey": "428-lopunny-mega",
+    "depth": 2,
+    "displayOrder": 2,
+    "pathKey": "0.1.battle.2",
+    "displayName": "Lopunny (Mega)"
+  },
+  {
     "sourceChainId": 221,
     "pokemonProfileKey": "431",
     "depth": 0,
@@ -3840,6 +4304,22 @@
     "displayName": "Garchomp"
   },
   {
+    "sourceChainId": 230,
+    "pokemonProfileKey": "445-garchomp-mega",
+    "depth": 3,
+    "displayOrder": 3,
+    "pathKey": "0.1.1.battle.3",
+    "displayName": "Garchomp (Mega)"
+  },
+  {
+    "sourceChainId": 230,
+    "pokemonProfileKey": "445-garchomp-mega-z",
+    "depth": 3,
+    "displayOrder": 4,
+    "pathKey": "0.1.1.battle.4",
+    "displayName": "Garchomp (Mega Z)"
+  },
+  {
     "sourceChainId": 232,
     "pokemonProfileKey": "447",
     "depth": 0,
@@ -3854,6 +4334,22 @@
     "displayOrder": 1,
     "pathKey": "0.1",
     "displayName": "Lucario"
+  },
+  {
+    "sourceChainId": 232,
+    "pokemonProfileKey": "448-lucario-mega",
+    "depth": 2,
+    "displayOrder": 2,
+    "pathKey": "0.1.battle.2",
+    "displayName": "Lucario (Mega)"
+  },
+  {
+    "sourceChainId": 232,
+    "pokemonProfileKey": "448-lucario-mega-z",
+    "depth": 2,
+    "displayOrder": 3,
+    "pathKey": "0.1.battle.3",
+    "displayName": "Lucario (Mega Z)"
   },
   {
     "sourceChainId": 233,
@@ -3944,6 +4440,14 @@
     "displayName": "Abomasnow"
   },
   {
+    "sourceChainId": 239,
+    "pokemonProfileKey": "460-abomasnow-mega",
+    "depth": 2,
+    "displayOrder": 2,
+    "pathKey": "0.1.battle.2",
+    "displayName": "Abomasnow (Mega)"
+  },
+  {
     "sourceChainId": 240,
     "pokemonProfileKey": "479",
     "depth": 0,
@@ -4000,6 +4504,14 @@
     "displayName": "Heatran"
   },
   {
+    "sourceChainId": 246,
+    "pokemonProfileKey": "485-heatran-mega",
+    "depth": 1,
+    "displayOrder": 1,
+    "pathKey": "0.battle.1",
+    "displayName": "Heatran (Mega)"
+  },
+  {
     "sourceChainId": 247,
     "pokemonProfileKey": "486",
     "depth": 0,
@@ -4046,6 +4558,14 @@
     "displayOrder": 0,
     "pathKey": "0",
     "displayName": "Darkrai"
+  },
+  {
+    "sourceChainId": 252,
+    "pokemonProfileKey": "491-darkrai-mega",
+    "depth": 1,
+    "displayOrder": 1,
+    "pathKey": "0.battle.1",
+    "displayName": "Darkrai (Mega)"
   },
   {
     "sourceChainId": 253,
@@ -4118,6 +4638,14 @@
     "displayOrder": 2,
     "pathKey": "0.1.1",
     "displayName": "Emboar"
+  },
+  {
+    "sourceChainId": 257,
+    "pokemonProfileKey": "500-emboar-mega",
+    "depth": 3,
+    "displayOrder": 3,
+    "pathKey": "0.1.1.battle.3",
+    "displayName": "Emboar (Mega)"
   },
   {
     "sourceChainId": 258,
@@ -4360,12 +4888,28 @@
     "displayName": "Excadrill"
   },
   {
+    "sourceChainId": 270,
+    "pokemonProfileKey": "530-excadrill-mega",
+    "depth": 2,
+    "displayOrder": 2,
+    "pathKey": "0.1.battle.2",
+    "displayName": "Excadrill (Mega)"
+  },
+  {
     "sourceChainId": 271,
     "pokemonProfileKey": "531",
     "depth": 0,
     "displayOrder": 0,
     "pathKey": "0",
     "displayName": "Audino"
+  },
+  {
+    "sourceChainId": 271,
+    "pokemonProfileKey": "531-audino-mega",
+    "depth": 1,
+    "displayOrder": 1,
+    "pathKey": "0.battle.1",
+    "displayName": "Audino (Mega)"
   },
   {
     "sourceChainId": 272,
@@ -4478,6 +5022,14 @@
     "displayOrder": 2,
     "pathKey": "0.1.1",
     "displayName": "Scolipede"
+  },
+  {
+    "sourceChainId": 277,
+    "pokemonProfileKey": "545-scolipede-mega",
+    "depth": 3,
+    "displayOrder": 3,
+    "pathKey": "0.1.1.battle.3",
+    "displayName": "Scolipede (Mega)"
   },
   {
     "sourceChainId": 278,
@@ -4606,6 +5158,14 @@
     "displayOrder": 1,
     "pathKey": "0.1",
     "displayName": "Scrafty"
+  },
+  {
+    "sourceChainId": 285,
+    "pokemonProfileKey": "560-scrafty-mega",
+    "depth": 2,
+    "displayOrder": 2,
+    "pathKey": "0.1.battle.2",
+    "displayName": "Scrafty (Mega)"
   },
   {
     "sourceChainId": 286,
@@ -4976,6 +5536,14 @@
     "displayName": "Eelektross"
   },
   {
+    "sourceChainId": 306,
+    "pokemonProfileKey": "604-eelektross-mega",
+    "depth": 3,
+    "displayOrder": 3,
+    "pathKey": "0.1.1.battle.3",
+    "displayName": "Eelektross (Mega)"
+  },
+  {
     "sourceChainId": 307,
     "pokemonProfileKey": "605",
     "depth": 0,
@@ -5014,6 +5582,14 @@
     "displayOrder": 2,
     "pathKey": "0.1.1",
     "displayName": "Chandelure"
+  },
+  {
+    "sourceChainId": 308,
+    "pokemonProfileKey": "609-chandelure-mega",
+    "depth": 3,
+    "displayOrder": 3,
+    "pathKey": "0.1.1.battle.3",
+    "displayName": "Chandelure (Mega)"
   },
   {
     "sourceChainId": 309,
@@ -5126,6 +5702,14 @@
     "displayOrder": 1,
     "pathKey": "0.1",
     "displayName": "Golurk"
+  },
+  {
+    "sourceChainId": 316,
+    "pokemonProfileKey": "623-golurk-mega",
+    "depth": 2,
+    "displayOrder": 2,
+    "pathKey": "0.1.battle.2",
+    "displayName": "Golurk (Mega)"
   },
   {
     "sourceChainId": 317,
@@ -5368,6 +5952,14 @@
     "displayName": "Chesnaught"
   },
   {
+    "sourceChainId": 337,
+    "pokemonProfileKey": "652-chesnaught-mega",
+    "depth": 3,
+    "displayOrder": 3,
+    "pathKey": "0.1.1.battle.3",
+    "displayName": "Chesnaught (Mega)"
+  },
+  {
     "sourceChainId": 338,
     "pokemonProfileKey": "653",
     "depth": 0,
@@ -5392,6 +5984,14 @@
     "displayName": "Delphox"
   },
   {
+    "sourceChainId": 338,
+    "pokemonProfileKey": "655-delphox-mega",
+    "depth": 3,
+    "displayOrder": 3,
+    "pathKey": "0.1.1.battle.3",
+    "displayName": "Delphox (Mega)"
+  },
+  {
     "sourceChainId": 339,
     "pokemonProfileKey": "656",
     "depth": 0,
@@ -5414,6 +6014,14 @@
     "displayOrder": 2,
     "pathKey": "0.1.1",
     "displayName": "Greninja"
+  },
+  {
+    "sourceChainId": 339,
+    "pokemonProfileKey": "658-greninja-mega",
+    "depth": 3,
+    "displayOrder": 3,
+    "pathKey": "0.1.1.battle.3",
+    "displayName": "Greninja (Mega)"
   },
   {
     "sourceChainId": 340,
@@ -5496,6 +6104,14 @@
     "displayName": "Pyroar"
   },
   {
+    "sourceChainId": 343,
+    "pokemonProfileKey": "668-pyroar-mega",
+    "depth": 2,
+    "displayOrder": 2,
+    "pathKey": "0.1.battle.2",
+    "displayName": "Pyroar (Mega)"
+  },
+  {
     "sourceChainId": 344,
     "pokemonProfileKey": "669",
     "depth": 0,
@@ -5518,6 +6134,14 @@
     "displayOrder": 2,
     "pathKey": "0.1.1",
     "displayName": "Florges"
+  },
+  {
+    "sourceChainId": 344,
+    "pokemonProfileKey": "670-floette-mega",
+    "depth": 2,
+    "displayOrder": 3,
+    "pathKey": "0.1.battle.3",
+    "displayName": "Floette (Mega)"
   },
   {
     "sourceChainId": 345,
@@ -5574,6 +6198,14 @@
     "displayOrder": 1,
     "pathKey": "0.1",
     "displayName": "Meowstic"
+  },
+  {
+    "sourceChainId": 348,
+    "pokemonProfileKey": "678-meowstic-mega",
+    "depth": 2,
+    "displayOrder": 2,
+    "pathKey": "0.1.battle.2",
+    "displayName": "Meowstic (Mega)"
   },
   {
     "sourceChainId": 349,
@@ -5648,6 +6280,14 @@
     "displayName": "Malamar"
   },
   {
+    "sourceChainId": 352,
+    "pokemonProfileKey": "687-malamar-mega",
+    "depth": 2,
+    "displayOrder": 2,
+    "pathKey": "0.1.battle.2",
+    "displayName": "Malamar (Mega)"
+  },
+  {
     "sourceChainId": 353,
     "pokemonProfileKey": "688",
     "depth": 0,
@@ -5664,6 +6304,14 @@
     "displayName": "Barbaracle"
   },
   {
+    "sourceChainId": 353,
+    "pokemonProfileKey": "689-barbaracle-mega",
+    "depth": 2,
+    "displayOrder": 2,
+    "pathKey": "0.1.battle.2",
+    "displayName": "Barbaracle (Mega)"
+  },
+  {
     "sourceChainId": 354,
     "pokemonProfileKey": "690",
     "depth": 0,
@@ -5678,6 +6326,14 @@
     "displayOrder": 1,
     "pathKey": "0.1",
     "displayName": "Dragalge"
+  },
+  {
+    "sourceChainId": 354,
+    "pokemonProfileKey": "691-dragalge-mega",
+    "depth": 2,
+    "displayOrder": 2,
+    "pathKey": "0.1.battle.2",
+    "displayName": "Dragalge (Mega)"
   },
   {
     "sourceChainId": 355,
@@ -5750,6 +6406,14 @@
     "displayOrder": 0,
     "pathKey": "0",
     "displayName": "Hawlucha"
+  },
+  {
+    "sourceChainId": 359,
+    "pokemonProfileKey": "701-hawlucha-mega",
+    "depth": 1,
+    "displayOrder": 1,
+    "pathKey": "0.battle.1",
+    "displayName": "Hawlucha (Mega)"
   },
   {
     "sourceChainId": 360,
@@ -5888,12 +6552,28 @@
     "displayName": "Zygarde"
   },
   {
+    "sourceChainId": 370,
+    "pokemonProfileKey": "718-zygarde-mega",
+    "depth": 1,
+    "displayOrder": 1,
+    "pathKey": "0.battle.1",
+    "displayName": "Zygarde (Mega)"
+  },
+  {
     "sourceChainId": 371,
     "pokemonProfileKey": "719",
     "depth": 0,
     "displayOrder": 0,
     "pathKey": "0",
     "displayName": "Diancie"
+  },
+  {
+    "sourceChainId": 371,
+    "pokemonProfileKey": "719-diancie-mega",
+    "depth": 1,
+    "displayOrder": 1,
+    "pathKey": "0.battle.1",
+    "displayName": "Diancie (Mega)"
   },
   {
     "sourceChainId": 372,
@@ -6062,6 +6742,14 @@
     "displayOrder": 1,
     "pathKey": "0.1",
     "displayName": "Crabominable"
+  },
+  {
+    "sourceChainId": 380,
+    "pokemonProfileKey": "740-crabominable-mega",
+    "depth": 2,
+    "displayOrder": 2,
+    "pathKey": "0.1.battle.2",
+    "displayName": "Crabominable (Mega)"
   },
   {
     "sourceChainId": 381,
@@ -6288,6 +6976,14 @@
     "displayName": "Golisopod"
   },
   {
+    "sourceChainId": 396,
+    "pokemonProfileKey": "768-golisopod-mega",
+    "depth": 2,
+    "displayOrder": 2,
+    "pathKey": "0.1.battle.2",
+    "displayName": "Golisopod (Mega)"
+  },
+  {
     "sourceChainId": 397,
     "pokemonProfileKey": "769",
     "depth": 0,
@@ -6382,6 +7078,14 @@
     "displayOrder": 0,
     "pathKey": "0",
     "displayName": "Drampa"
+  },
+  {
+    "sourceChainId": 406,
+    "pokemonProfileKey": "780-drampa-mega",
+    "depth": 1,
+    "displayOrder": 1,
+    "pathKey": "0.battle.1",
+    "displayName": "Drampa (Mega)"
   },
   {
     "sourceChainId": 407,
@@ -6552,6 +7256,14 @@
     "displayName": "Magearna"
   },
   {
+    "sourceChainId": 422,
+    "pokemonProfileKey": "801-magearna-mega",
+    "depth": 1,
+    "displayOrder": 1,
+    "pathKey": "0.battle.1",
+    "displayName": "Magearna (Mega)"
+  },
+  {
     "sourceChainId": 423,
     "pokemonProfileKey": "802",
     "depth": 0,
@@ -6598,6 +7310,14 @@
     "displayOrder": 0,
     "pathKey": "0",
     "displayName": "Zeraora"
+  },
+  {
+    "sourceChainId": 427,
+    "pokemonProfileKey": "807-zeraora-mega",
+    "depth": 1,
+    "displayOrder": 1,
+    "pathKey": "0.battle.1",
+    "displayName": "Zeraora (Mega)"
   },
   {
     "sourceChainId": 428,
@@ -7070,6 +7790,14 @@
     "displayOrder": 0,
     "pathKey": "0",
     "displayName": "Falinks"
+  },
+  {
+    "sourceChainId": 453,
+    "pokemonProfileKey": "870-falinks-mega",
+    "depth": 1,
+    "displayOrder": 1,
+    "pathKey": "0.battle.1",
+    "displayName": "Falinks (Mega)"
   },
   {
     "sourceChainId": 454,
@@ -7688,6 +8416,14 @@
     "displayName": "Scovillain"
   },
   {
+    "sourceChainId": 498,
+    "pokemonProfileKey": "952-scovillain-mega",
+    "depth": 2,
+    "displayOrder": 2,
+    "pathKey": "0.1.battle.2",
+    "displayName": "Scovillain (Mega)"
+  },
+  {
     "sourceChainId": 499,
     "pokemonProfileKey": "953",
     "depth": 0,
@@ -7830,6 +8566,14 @@
     "displayOrder": 1,
     "pathKey": "0.1",
     "displayName": "Glimmora"
+  },
+  {
+    "sourceChainId": 508,
+    "pokemonProfileKey": "970-glimmora-mega",
+    "depth": 2,
+    "displayOrder": 2,
+    "pathKey": "0.1.battle.2",
+    "displayName": "Glimmora (Mega)"
   },
   {
     "sourceChainId": 509,
@@ -8014,6 +8758,14 @@
     "displayOrder": 2,
     "pathKey": "0.1.1",
     "displayName": "Baxcalibur"
+  },
+  {
+    "sourceChainId": 527,
+    "pokemonProfileKey": "998-baxcalibur-mega",
+    "depth": 3,
+    "displayOrder": 3,
+    "pathKey": "0.1.1.battle.3",
+    "displayName": "Baxcalibur (Mega)"
   },
   {
     "sourceChainId": 528,

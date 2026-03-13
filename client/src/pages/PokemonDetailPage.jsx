@@ -93,6 +93,35 @@ export const PokemonDetailPage = () => {
         <EvolutionLine data={data.evolution_line} />
       </SectionCard>
 
+      <SectionCard title="Obtain Methods By Game">
+        {(data.obtain_methods_by_game || []).length === 0 ? (
+          <EmptyState
+            title="No obtain data"
+            message="No per-game encounter methods are currently available for this profile."
+          />
+        ) : (
+          <div className="grid gap-3 md:grid-cols-2">
+            {(data.obtain_methods_by_game || []).map((entry) => (
+              <div key={entry.game} className="rounded-xl bg-slate-50 p-3">
+                <p className="font-semibold text-ink">{entry.game}</p>
+                {(entry.locations || []).length > 0 ? (
+                  <div className="mt-2 space-y-1">
+                    {(entry.locations || []).map((locationEntry) => (
+                      <p key={`${entry.game}-${locationEntry.location}`} className="text-sm text-slate-700">
+                        <span className="font-semibold text-slate-800">{locationEntry.location}</span>:{" "}
+                        {(locationEntry.methods || []).join(", ")}
+                      </p>
+                    ))}
+                  </div>
+                ) : (
+                  <p className="mt-1 text-sm text-slate-700">{(entry.methods || []).join(", ")}</p>
+                )}
+              </div>
+            ))}
+          </div>
+        )}
+      </SectionCard>
+
       <div className="grid gap-4 lg:grid-cols-2">
         <SectionCard title="Base Stats">
           <div className="space-y-3">

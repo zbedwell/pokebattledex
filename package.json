@@ -15,7 +15,8 @@
     "setup": "npm run migrate && npm run seed",
     "setup:fresh": "npm run create-db && npm run setup",
     "generate:data": "node scripts/generate-normalized-data.mjs",
-    "generate:data:all": "node scripts/generate-normalized-data.mjs --max-gen=9",
+    "generate:data:gen7-9": "node scripts/generate-normalized-data.mjs --gens=7-9",
+    "generate:data:all": "node scripts/generate-normalized-data.mjs --max-gen=latest",
     "start": "cross-env NODE_ENV=production npm --prefix server run start",
     "test": "npm --prefix server run test"
   },

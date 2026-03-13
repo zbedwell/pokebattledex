@@ -12,7 +12,6 @@ const __dirname = path.dirname(__filename);
 
 const API_BASE = "https://pokeapi.co/api/v2";
 const TYPE_IDS = Array.from({ length: 18 }, (_, index) => index + 1);
-const MAX_SUPPORTED_GENERATION = 9;
 
 const SPECIAL_NAME_MAP = new Map([
   ["nidoran-f", "Nidoran F"],
@@ -53,14 +52,241 @@ const GENERATION_VERSION_GROUP_PRIORITY = {
   9: ["scarlet-violet"],
 };
 
+const GAME_VERSION_SEQUENCE = [
+  "red",
+  "blue",
+  "yellow",
+  "gold",
+  "silver",
+  "crystal",
+  "ruby",
+  "sapphire",
+  "emerald",
+  "firered",
+  "leafgreen",
+  "diamond",
+  "pearl",
+  "platinum",
+  "heartgold",
+  "soulsilver",
+  "black",
+  "white",
+  "black-2",
+  "white-2",
+  "x",
+  "y",
+  "omega-ruby",
+  "alpha-sapphire",
+  "sun",
+  "moon",
+  "ultra-sun",
+  "ultra-moon",
+  "lets-go-pikachu",
+  "lets-go-eevee",
+  "sword",
+  "shield",
+  "brilliant-diamond",
+  "shining-pearl",
+  "legends-arceus",
+  "legends-z-a",
+  "scarlet",
+  "violet",
+];
+
+const GAME_VERSION_ORDER = new Map(
+  GAME_VERSION_SEQUENCE.map((versionSlug, index) => [versionSlug, index]),
+);
+
+const GAME_NAME_OVERRIDES = new Map([
+  ["firered", "FireRed"],
+  ["leafgreen", "LeafGreen"],
+  ["heartgold", "HeartGold"],
+  ["soulsilver", "SoulSilver"],
+  ["omega-ruby", "Omega Ruby"],
+  ["alpha-sapphire", "Alpha Sapphire"],
+  ["lets-go-pikachu", "Let's Go Pikachu"],
+  ["lets-go-eevee", "Let's Go Eevee"],
+  ["legends-arceus", "Legends: Arceus"],
+  ["legends-z-a", "Legends: Z-A"],
+]);
+
+const ENCOUNTER_METHOD_LABELS = new Map([
+  ["walk", "Grass/Cave Walk"],
+  ["old-rod", "Fishing (Old Rod)"],
+  ["good-rod", "Fishing (Good Rod)"],
+  ["super-rod", "Fishing (Super Rod)"],
+  ["surf", "Surf"],
+  ["gift", "Gift"],
+  ["trade", "Trade"],
+  ["only-one", "Static Encounter"],
+]);
+
+const MODERN_DEX_FALLBACK_SOURCES = [
+  {
+    pokedexSlug: "letsgo-kanto",
+    versionSlugs: ["lets-go-pikachu", "lets-go-eevee"],
+    locationLabel: "Kanto Dex",
+    methodLabel: "Regional Dex",
+  },
+  {
+    pokedexSlug: "galar",
+    versionSlugs: ["sword", "shield"],
+    locationLabel: "Galar Dex",
+    methodLabel: "Regional Dex",
+  },
+  {
+    pokedexSlug: "isle-of-armor",
+    versionSlugs: ["sword", "shield"],
+    locationLabel: "Isle of Armor Dex",
+    methodLabel: "DLC Dex",
+  },
+  {
+    pokedexSlug: "crown-tundra",
+    versionSlugs: ["sword", "shield"],
+    locationLabel: "Crown Tundra Dex",
+    methodLabel: "DLC Dex",
+  },
+  {
+    pokedexSlug: "original-sinnoh",
+    versionSlugs: ["brilliant-diamond", "shining-pearl"],
+    locationLabel: "Sinnoh Dex",
+    methodLabel: "Regional Dex",
+  },
+  {
+    pokedexSlug: "hisui",
+    versionSlugs: ["legends-arceus"],
+    locationLabel: "Hisui Dex",
+    methodLabel: "Regional Dex",
+  },
+  {
+    pokedexSlug: "paldea",
+    versionSlugs: ["scarlet", "violet"],
+    locationLabel: "Paldea Dex",
+    methodLabel: "Regional Dex",
+  },
+  {
+    pokedexSlug: "kitakami",
+    versionSlugs: ["scarlet", "violet"],
+    locationLabel: "Kitakami Dex",
+    methodLabel: "DLC Dex",
+  },
+  {
+    pokedexSlug: "blueberry",
+    versionSlugs: ["scarlet", "violet"],
+    locationLabel: "Blueberry Dex",
+    methodLabel: "DLC Dex",
+  },
+];
+
+const MODERN_VERSION_GROUP_FALLBACK_SOURCES = [
+  {
+    versionGroupSlug: "sword-shield",
+    versionSlugs: ["sword", "shield"],
+    locationLabel: "Sword/Shield Game Data",
+    methodLabel: "Game Compatibility",
+  },
+  {
+    versionGroupSlug: "brilliant-diamond-shining-pearl",
+    versionSlugs: ["brilliant-diamond", "shining-pearl"],
+    locationLabel: "BDSP Game Data",
+    methodLabel: "Game Compatibility",
+  },
+  {
+    versionGroupSlug: "legends-arceus",
+    versionSlugs: ["legends-arceus"],
+    locationLabel: "Legends Arceus Game Data",
+    methodLabel: "Game Compatibility",
+  },
+  {
+    versionGroupSlug: "scarlet-violet",
+    versionSlugs: ["scarlet", "violet"],
+    locationLabel: "Scarlet/Violet Game Data",
+    methodLabel: "Game Compatibility",
+  },
+];
+
 const REGIONAL_FORM_RULES = [
   { token: "alola", label: "Alolan", introducedGeneration: 7 },
   { token: "galar", label: "Galarian", introducedGeneration: 8 },
   { token: "hisui", label: "Hisuian", introducedGeneration: 8 },
   { token: "paldea", label: "Paldean", introducedGeneration: 9 },
 ];
+const BATTLE_ONLY_FORM_RULES = [
+  { token: "mega", label: "Mega", kind: "mega", introducedGeneration: 6 },
+  { token: "primal", label: "Primal", kind: "primal", introducedGeneration: 6 },
+];
+const BATTLE_ONLY_FORM_VERSION_SLUGS = [
+  "x",
+  "y",
+  "omega-ruby",
+  "alpha-sapphire",
+  "sun",
+  "moon",
+  "ultra-sun",
+  "ultra-moon",
+  "lets-go-pikachu",
+  "lets-go-eevee",
+  "legends-z-a",
+];
+const BATTLE_TRANSFORMATION_LOCATION = "Battle Transformation";
+const MEGA_REQUIREMENT_BY_SPECIES = new Map([
+  ["abomasnow", "Abomasite"],
+  ["absol", "Absolite"],
+  ["aerodactyl", "Aerodactylite"],
+  ["aggron", "Aggronite"],
+  ["alakazam", "Alakazite"],
+  ["altaria", "Altarianite"],
+  ["ampharos", "Ampharosite"],
+  ["audino", "Audinite"],
+  ["banette", "Banettite"],
+  ["beedrill", "Beedrillite"],
+  ["blastoise", "Blastoisinite"],
+  ["blaziken", "Blazikenite"],
+  ["camerupt", "Cameruptite"],
+  ["charizard", "Charizardite"],
+  ["diancie", "Diancite"],
+  ["gallade", "Galladite"],
+  ["garchomp", "Garchompite"],
+  ["gardevoir", "Gardevoirite"],
+  ["gengar", "Gengarite"],
+  ["glalie", "Glalitite"],
+  ["gyarados", "Gyaradosite"],
+  ["heracross", "Heracronite"],
+  ["houndoom", "Houndoominite"],
+  ["kangaskhan", "Kangaskhanite"],
+  ["latias", "Latiasite"],
+  ["latios", "Latiosite"],
+  ["lopunny", "Lopunnite"],
+  ["lucario", "Lucarionite"],
+  ["manectric", "Manectite"],
+  ["mawile", "Mawilite"],
+  ["medicham", "Medichamite"],
+  ["metagross", "Metagrossite"],
+  ["mewtwo", "Mewtwonite"],
+  ["pidgeot", "Pidgeotite"],
+  ["pinsir", "Pinsirite"],
+  ["rayquaza", "Dragon Ascent"],
+  ["sableye", "Sablenite"],
+  ["salamence", "Salamencite"],
+  ["sceptile", "Sceptilite"],
+  ["scizor", "Scizorite"],
+  ["sharpedo", "Sharpedonite"],
+  ["slowbro", "Slowbronite"],
+  ["steelix", "Steelixite"],
+  ["swampert", "Swampertite"],
+  ["tyranitar", "Tyranitarite"],
+  ["venusaur", "Venusaurite"],
+]);
+const PRIMAL_REQUIREMENT_BY_SPECIES = new Map([
+  ["groudon", "Red Orb"],
+  ["kyogre", "Blue Orb"],
+]);
 
 const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+const LOCATION_SORT_COLLATOR = new Intl.Collator("en", {
+  numeric: true,
+  sensitivity: "base",
+});
 
 const toAsciiText = (value) => {
   if (value === null || value === undefined) {
@@ -116,6 +342,65 @@ const parseRegionalVariantInfo = (slug) => {
   };
 };
 
+const parseBattleOnlyFormInfo = (speciesSlug, slug) => {
+  const normalizedSpecies = String(speciesSlug || "").toLowerCase();
+  const normalizedSlug = String(slug || "").toLowerCase();
+
+  for (const rule of BATTLE_ONLY_FORM_RULES) {
+    const expectedPrefix = `${normalizedSpecies}-${rule.token}`;
+    if (!normalizedSlug.startsWith(expectedPrefix)) {
+      continue;
+    }
+
+    const suffix = normalizedSlug.slice(expectedPrefix.length).replace(/^-+/, "");
+    const suffixLabel = suffix ? toDisplayName(suffix).trim() : "";
+    const formName = suffixLabel ? `${rule.label} ${suffixLabel}` : rule.label;
+
+    return {
+      isBattleOnlyForm: true,
+      formName,
+      introducedGeneration: rule.introducedGeneration,
+      kind: rule.kind,
+      expectedPrefix,
+    };
+  }
+
+  return {
+    isBattleOnlyForm: false,
+    formName: null,
+    introducedGeneration: null,
+    kind: null,
+    expectedPrefix: null,
+  };
+};
+
+const resolveMegaRequirementText = ({ speciesSlug, pokemonSlug }) => {
+  const normalizedSpecies = String(speciesSlug || "").toLowerCase();
+  const normalizedSlug = String(pokemonSlug || "").toLowerCase();
+  const baseRequirement = MEGA_REQUIREMENT_BY_SPECIES.get(normalizedSpecies) || "Mega Stone";
+
+  if (baseRequirement === "Dragon Ascent") {
+    return baseRequirement;
+  }
+
+  const megaPrefix = `${normalizedSpecies}-mega`;
+  if (!normalizedSlug.startsWith(megaPrefix)) {
+    return baseRequirement;
+  }
+
+  const suffix = normalizedSlug.slice(megaPrefix.length).replace(/^-+/, "");
+  if (suffix === "x" || suffix === "y") {
+    return `${baseRequirement} ${suffix.toUpperCase()}`;
+  }
+
+  return baseRequirement;
+};
+
+const resolvePrimalRequirementText = ({ speciesSlug }) => {
+  const normalizedSpecies = String(speciesSlug || "").toLowerCase();
+  return PRIMAL_REQUIREMENT_BY_SPECIES.get(normalizedSpecies) || "Primal Orb";
+};
+
 const toDisplayName = (slug) => {
   if (SPECIAL_NAME_MAP.has(slug)) {
     return SPECIAL_NAME_MAP.get(slug);
@@ -125,6 +410,67 @@ const toDisplayName = (slug) => {
     .split("-")
     .map((segment) => segment.charAt(0).toUpperCase() + segment.slice(1))
     .join(" ");
+};
+
+const toDisplayGameName = (slug) => {
+  if (GAME_NAME_OVERRIDES.has(slug)) {
+    return GAME_NAME_OVERRIDES.get(slug);
+  }
+
+  return toDisplayName(slug);
+};
+
+const toDisplayLocationName = (slug) => {
+  if (!slug) {
+    return "Unknown Location";
+  }
+
+  const normalized = String(slug).endsWith("-area") ? String(slug).slice(0, -5) : String(slug);
+  return toDisplayName(normalized);
+};
+
+const toDisplayEncounterMethod = (slug) => {
+  if (!slug) {
+    return "Encounter";
+  }
+
+  return ENCOUNTER_METHOD_LABELS.get(slug) || toDisplayName(slug);
+};
+
+const parseLocationSortHint = (locationName) => {
+  const value = String(locationName || "").trim();
+
+  const routeMatch = value.match(/\b(?:Sea\s+)?Route\s+(\d+)\b/i);
+  if (routeMatch) {
+    return {
+      kind: "route",
+      number: Number(routeMatch[1]),
+    };
+  }
+
+  const areaMatch = value.match(/\b(?:Area|Zone)\s+(\d+)\b/i);
+  if (areaMatch) {
+    return {
+      kind: "area",
+      number: Number(areaMatch[1]),
+    };
+  }
+
+  return {
+    kind: "name",
+    number: Number.MAX_SAFE_INTEGER,
+  };
+};
+
+const compareLocationNamesChronologically = (a, b) => {
+  const aHint = parseLocationSortHint(a);
+  const bHint = parseLocationSortHint(b);
+
+  if (aHint.kind === bHint.kind && aHint.kind !== "name" && aHint.number !== bHint.number) {
+    return aHint.number - bHint.number;
+  }
+
+  return LOCATION_SORT_COLLATOR.compare(String(a), String(b));
 };
 
 const pickEnglish = (entries, key) => {
@@ -164,7 +510,23 @@ const runWithConcurrency = async (items, concurrency, worker) => {
   return results;
 };
 
-const normalizeGenerationList = (args) => {
+const fetchAvailableGenerations = async () => {
+  const payload = await fetchJson(`${API_BASE}/generation?limit=1000`);
+  const generationIds = (payload.results || [])
+    .map((entry) => parseTrailingId(entry.url))
+    .filter((id) => Number.isInteger(id))
+    .sort((a, b) => a - b);
+
+  if (generationIds.length === 0) {
+    throw new Error("Unable to determine supported generations from PokeAPI.");
+  }
+
+  return generationIds;
+};
+
+const normalizeGenerationList = (args, availableGenerations) => {
+  const supportedSet = new Set(availableGenerations);
+  const maxSupportedGeneration = availableGenerations[availableGenerations.length - 1];
   const gensArg = args.find((arg) => arg.startsWith("--gens="));
   const maxGenArg = args.find((arg) => arg.startsWith("--max-gen="));
 
@@ -204,22 +566,25 @@ const normalizeGenerationList = (args) => {
     }
 
     for (const generation of normalized) {
-      if (generation < 1 || generation > MAX_SUPPORTED_GENERATION) {
-        throw new Error(
-          `Generation ${generation} is out of supported range (1-${MAX_SUPPORTED_GENERATION}).`,
-        );
+      if (!supportedSet.has(generation)) {
+        throw new Error(`Generation ${generation} is not available in PokeAPI.`);
       }
     }
 
     return normalized;
   }
 
-  const maxGen = Number(maxGenArg.split("=")[1]);
-  if (!Number.isInteger(maxGen) || maxGen < 1 || maxGen > MAX_SUPPORTED_GENERATION) {
-    throw new Error(`Invalid --max-gen value. Supported range is 1-${MAX_SUPPORTED_GENERATION}.`);
+  const maxGenRaw = String(maxGenArg.split("=")[1] || "").trim().toLowerCase();
+  if (maxGenRaw === "latest") {
+    return availableGenerations;
   }
 
-  return Array.from({ length: maxGen }, (_, index) => index + 1);
+  const maxGen = Number(maxGenRaw);
+  if (!Number.isInteger(maxGen) || maxGen < 1 || maxGen > maxSupportedGeneration) {
+    throw new Error(`Invalid --max-gen value. Supported range is 1-${maxSupportedGeneration}, or "latest".`);
+  }
+
+  return availableGenerations.filter((generation) => generation <= maxGen);
 };
 
 const buildPokemonIndexForGenerations = async (generations) => {
@@ -303,6 +668,116 @@ const buildTypeData = async () => {
   };
 };
 
+const buildModernDexFallbackBySpecies = async () => {
+  console.log("Fetching modern availability fallback from Pokedex resources...");
+
+  const pokedexPayloads = await runWithConcurrency(MODERN_DEX_FALLBACK_SOURCES, 4, async (source) => {
+    const data = await fetchJson(`${API_BASE}/pokedex/${source.pokedexSlug}`);
+    await delay(25);
+    return {
+      source,
+      data,
+    };
+  });
+
+  const fallbackBySpecies = new Map();
+
+  for (const { source, data } of pokedexPayloads) {
+    for (const entry of data.pokemon_entries || []) {
+      const speciesSlug = entry?.pokemon_species?.name;
+      if (!speciesSlug) {
+        continue;
+      }
+
+      const byVersion = fallbackBySpecies.get(speciesSlug) || new Map();
+
+      for (const versionSlug of source.versionSlugs) {
+        const byLocation = byVersion.get(versionSlug) || new Map();
+        const methods = byLocation.get(source.locationLabel) || new Set();
+        methods.add(source.methodLabel);
+        byLocation.set(source.locationLabel, methods);
+        byVersion.set(versionSlug, byLocation);
+      }
+
+      fallbackBySpecies.set(speciesSlug, byVersion);
+    }
+  }
+
+  return fallbackBySpecies;
+};
+
+const cloneLocationMethodMap = (locationMap) => {
+  const cloned = new Map();
+  if (!(locationMap instanceof Map)) {
+    return cloned;
+  }
+
+  for (const [locationName, methods] of locationMap.entries()) {
+    if (!locationName || !(methods instanceof Set)) {
+      continue;
+    }
+
+    cloned.set(locationName, new Set(methods));
+  }
+
+  return cloned;
+};
+
+const mergeFallbackByVersion = (primary = new Map(), secondary = new Map()) => {
+  const merged = new Map();
+
+  if (primary instanceof Map) {
+    for (const [versionSlug, locationMap] of primary.entries()) {
+      if (!versionSlug) {
+        continue;
+      }
+      merged.set(versionSlug, cloneLocationMethodMap(locationMap));
+    }
+  }
+
+  if (secondary instanceof Map) {
+    for (const [versionSlug, locationMap] of secondary.entries()) {
+      if (!versionSlug || merged.has(versionSlug)) {
+        continue;
+      }
+      merged.set(versionSlug, cloneLocationMethodMap(locationMap));
+    }
+  }
+
+  return merged;
+};
+
+const buildVersionGroupFallbackByVersion = (pokemonMoveEntries = []) => {
+  const versionGroups = new Set();
+
+  for (const moveEntry of pokemonMoveEntries || []) {
+    for (const detail of moveEntry?.version_group_details || []) {
+      const groupName = detail?.version_group?.name;
+      if (groupName) {
+        versionGroups.add(groupName);
+      }
+    }
+  }
+
+  const fallbackByVersion = new Map();
+
+  for (const source of MODERN_VERSION_GROUP_FALLBACK_SOURCES) {
+    if (!versionGroups.has(source.versionGroupSlug)) {
+      continue;
+    }
+
+    for (const versionSlug of source.versionSlugs) {
+      const byLocation = fallbackByVersion.get(versionSlug) || new Map();
+      const methods = byLocation.get(source.locationLabel) || new Set();
+      methods.add(source.methodLabel);
+      byLocation.set(source.locationLabel, methods);
+      fallbackByVersion.set(versionSlug, byLocation);
+    }
+  }
+
+  return fallbackByVersion;
+};
+
 const selectNotableMoves = (pokemonMoveEntries, generation) => {
   const preferredGroups = GENERATION_VERSION_GROUP_PRIORITY[generation] ?? [];
   const versionGroupPriority = new Map(preferredGroups.map((group, index) => [group, index]));
@@ -356,8 +831,146 @@ const selectNotableMoves = (pokemonMoveEntries, generation) => {
     .slice(0, 14);
 };
 
+const buildObtainMethodsByGame = (encounterRows, dexFallbackByVersion = new Map()) => {
+  const hasEncounterRows = Array.isArray(encounterRows) && encounterRows.length > 0;
+  const hasDexFallback = dexFallbackByVersion instanceof Map && dexFallbackByVersion.size > 0;
+
+  if (!hasEncounterRows && !hasDexFallback) {
+    return [];
+  }
+
+  const locationsByVersion = new Map();
+
+  if (hasEncounterRows) {
+    for (const row of encounterRows) {
+      const locationName = toDisplayLocationName(row?.location_area?.name);
+      const versionDetails = Array.isArray(row?.version_details) ? row.version_details : [];
+      for (const versionDetail of versionDetails) {
+        const versionSlug = versionDetail?.version?.name;
+        if (!versionSlug) {
+          continue;
+        }
+
+        const locationMap = locationsByVersion.get(versionSlug) || new Map();
+        const methods = locationMap.get(locationName) || new Set();
+        const encounterDetails = Array.isArray(versionDetail?.encounter_details)
+          ? versionDetail.encounter_details
+          : [];
+
+        for (const detail of encounterDetails) {
+          const methodSlug = detail?.method?.name;
+          if (!methodSlug) {
+            continue;
+          }
+
+          methods.add(toDisplayEncounterMethod(methodSlug));
+        }
+
+        if (methods.size === 0) {
+          methods.add("Encounter");
+        }
+
+        locationMap.set(locationName, methods);
+        locationsByVersion.set(versionSlug, locationMap);
+      }
+    }
+  }
+
+  if (hasDexFallback) {
+    for (const [versionSlug, locationFallbackMap] of dexFallbackByVersion.entries()) {
+      if (!versionSlug || !(locationFallbackMap instanceof Map)) {
+        continue;
+      }
+
+      // Preserve explicit encounter data when available; fallback is only for
+      // version gaps where PokeAPI encounter coverage is missing.
+      if (locationsByVersion.has(versionSlug)) {
+        continue;
+      }
+
+      const locationMap = locationsByVersion.get(versionSlug) || new Map();
+
+      for (const [locationName, fallbackMethods] of locationFallbackMap.entries()) {
+        if (!locationName || !(fallbackMethods instanceof Set)) {
+          continue;
+        }
+
+        const methods = locationMap.get(locationName) || new Set();
+        for (const method of fallbackMethods) {
+          if (typeof method === "string" && method.trim().length > 0) {
+            methods.add(method.trim());
+          }
+        }
+        if (methods.size > 0) {
+          locationMap.set(locationName, methods);
+        }
+      }
+
+      if (locationMap.size > 0) {
+        locationsByVersion.set(versionSlug, locationMap);
+      }
+    }
+  }
+
+  return [...locationsByVersion.entries()]
+    .map(([versionSlug, locationMap]) => {
+      const locations = [...locationMap.entries()]
+        .map(([location, methodSet]) => ({
+          location,
+          methods: [...methodSet].sort((a, b) => a.localeCompare(b)),
+        }))
+        .sort((a, b) => compareLocationNamesChronologically(a.location, b.location));
+
+      const methods = [
+        ...new Set(locations.flatMap((entry) => entry.methods)),
+      ].sort((a, b) => a.localeCompare(b));
+
+      return {
+        versionSlug,
+        game: toDisplayGameName(versionSlug),
+        methods,
+        locations,
+      };
+    })
+    .sort((a, b) => {
+      const orderA = GAME_VERSION_ORDER.has(a.versionSlug)
+        ? GAME_VERSION_ORDER.get(a.versionSlug)
+        : Number.MAX_SAFE_INTEGER;
+      const orderB = GAME_VERSION_ORDER.has(b.versionSlug)
+        ? GAME_VERSION_ORDER.get(b.versionSlug)
+        : Number.MAX_SAFE_INTEGER;
+
+      if (orderA !== orderB) {
+        return orderA - orderB;
+      }
+
+      return a.game.localeCompare(b.game);
+    })
+    .map(({ game, methods, locations }) => ({ game, methods, locations }));
+};
+
+const buildBattleOnlyFormObtainMethodsByGame = (kind) => {
+  const methodLabel = kind === "primal" ? "Primal Reversion" : "Mega Evolution";
+
+  return BATTLE_ONLY_FORM_VERSION_SLUGS.map((versionSlug) => {
+    const game = toDisplayGameName(versionSlug);
+
+    return {
+      game,
+      methods: [methodLabel],
+      locations: [
+        {
+          location: BATTLE_TRANSFORMATION_LOCATION,
+          methods: [methodLabel],
+        },
+      ],
+    };
+  });
+};
+
 const buildPokemonData = async (generations) => {
   const { pokemonIds, pokemonGenerationMap } = await buildPokemonIndexForGenerations(generations);
+  const modernDexFallbackBySpecies = await buildModernDexFallbackBySpecies();
 
   console.log(
     `Fetching Pokemon data for generations ${generations.join(", ")} (${pokemonIds.length} species)...`,
@@ -380,7 +993,7 @@ const buildPokemonData = async (generations) => {
     const defaultVariety = species.varieties.find((entry) => entry.is_default) || species.varieties[0];
     const seenVarieties = new Set();
 
-    const addVariety = (variety, isDefaultSelection) => {
+    const addVariety = (variety, isDefaultSelection, formInfo = null) => {
       if (!variety?.pokemon?.name || seenVarieties.has(variety.pokemon.name)) {
         return;
       }
@@ -388,14 +1001,23 @@ const buildPokemonData = async (generations) => {
       seenVarieties.add(variety.pokemon.name);
 
       const slug = variety.pokemon.name;
-      const regionalInfo = parseRegionalVariantInfo(slug);
+      const regionalInfo = formInfo?.regionalInfo || parseRegionalVariantInfo(slug);
+      const battleFormInfo =
+        formInfo?.battleFormInfo || parseBattleOnlyFormInfo(speciesSlug, slug);
       const isRegionalVariant = !isDefaultSelection && regionalInfo.isRegional;
+      const isBattleOnlyForm = !isDefaultSelection && battleFormInfo.isBattleOnlyForm;
       const profileKey = isDefaultSelection ? String(speciesDex) : `${speciesDex}-${slug}`;
-      const formName = isRegionalVariant ? regionalInfo.formName : null;
-      const displayName = isRegionalVariant ? `${baseName} (${formName})` : baseName;
+      const formName = isRegionalVariant
+        ? regionalInfo.formName
+        : isBattleOnlyForm
+          ? battleFormInfo.formName
+          : null;
+      const displayName = formName ? `${baseName} (${formName})` : baseName;
       const generation = isRegionalVariant
         ? regionalInfo.introducedGeneration
-        : pokemonGenerationMap.get(speciesDex) || null;
+        : isBattleOnlyForm
+          ? battleFormInfo.introducedGeneration
+          : pokemonGenerationMap.get(speciesDex) || null;
 
       selectedProfiles.push({
         speciesDex,
@@ -406,6 +1028,8 @@ const buildPokemonData = async (generations) => {
         name: displayName,
         formName,
         isRegionalVariant,
+        isBattleOnlyForm,
+        battleFormKind: isBattleOnlyForm ? battleFormInfo.kind : null,
         generation,
         introducedInGame: generation ? GENERATION_LABELS[generation] || null : null,
       });
@@ -414,7 +1038,12 @@ const buildPokemonData = async (generations) => {
         profileKey,
         speciesDex,
         speciesSlug,
+        pokemonSlug: slug,
         name: displayName,
+        formName,
+        isRegionalVariant,
+        isBattleOnlyForm,
+        battleFormKind: isBattleOnlyForm ? battleFormInfo.kind : null,
       });
     };
 
@@ -427,16 +1056,27 @@ const buildPokemonData = async (generations) => {
 
       const slug = variety.pokemon.name;
       const regionalInfo = parseRegionalVariantInfo(slug);
-      if (!regionalInfo.isRegional) {
+      const battleFormInfo = parseBattleOnlyFormInfo(speciesSlug, slug);
+
+      if (!regionalInfo.isRegional && !battleFormInfo.isBattleOnlyForm) {
         continue;
       }
 
-      const expectedPrefix = `${speciesSlug}-${regionalInfo.token}`;
-      if (!slug.startsWith(expectedPrefix)) {
-        continue;
+      if (regionalInfo.isRegional) {
+        const expectedPrefix = `${speciesSlug}-${regionalInfo.token}`;
+        if (!slug.startsWith(expectedPrefix)) {
+          continue;
+        }
       }
 
-      addVariety(variety, false);
+      if (battleFormInfo.isBattleOnlyForm) {
+        const expectedPrefix = battleFormInfo.expectedPrefix;
+        if (!expectedPrefix || !slug.startsWith(expectedPrefix)) {
+          continue;
+        }
+      }
+
+      addVariety(variety, false, { regionalInfo, battleFormInfo });
     }
 
     speciesProfileMap.set(speciesSlug, {
@@ -450,17 +1090,40 @@ const buildPokemonData = async (generations) => {
   console.log(`Fetching profile payloads (${selectedProfiles.length})...`);
   const pokemonPayloads = await runWithConcurrency(selectedProfiles, 8, async (profile) => {
     const data = await fetchJson(profile.pokemonUrl);
-    await delay(20);
-    return { profile, data };
+    await delay(15);
+    const encounters = data.location_area_encounters
+      ? await fetchJson(data.location_area_encounters)
+      : [];
+    await delay(15);
+    return { profile, data, encounters };
   });
+  const payloadByProfileKey = new Map(
+    pokemonPayloads.map(({ profile, data }) => [String(profile.profileKey), data]),
+  );
 
   const pokemon = [];
   const pokemonAbilities = [];
   const pokemonMoves = [];
 
-  for (const { profile, data } of pokemonPayloads) {
+  for (const { profile, data, encounters } of pokemonPayloads) {
     const statLookup = Object.fromEntries(data.stats.map((stat) => [stat.stat.name, stat.base_stat]));
     const sortedTypes = [...data.types].sort((a, b) => a.slot - b.slot);
+    const defaultProfileData = payloadByProfileKey.get(String(profile.speciesDex)) || null;
+    const abilityEntries =
+      data.abilities.length > 0
+        ? data.abilities
+        : profile.isBattleOnlyForm && Array.isArray(defaultProfileData?.abilities)
+          ? defaultProfileData.abilities
+          : [];
+    const moveSourceEntries =
+      profile.isBattleOnlyForm &&
+      Array.isArray(defaultProfileData?.moves) &&
+      defaultProfileData.moves.length > 0
+        ? defaultProfileData.moves
+        : data.moves;
+    const moveGeneration = profile.isBattleOnlyForm
+      ? pokemonGenerationMap.get(profile.speciesDex) || profile.generation
+      : profile.generation || pokemonGenerationMap.get(profile.speciesDex);
 
     pokemon.push({
       profileKey: profile.profileKey,
@@ -481,9 +1144,18 @@ const buildPokemonData = async (generations) => {
       generation: profile.generation,
       introducedInGame: profile.introducedInGame,
       descriptionShort: null,
+      obtainMethodsByGame: profile.isBattleOnlyForm
+        ? buildBattleOnlyFormObtainMethodsByGame(profile.battleFormKind)
+        : buildObtainMethodsByGame(
+            encounters,
+            mergeFallbackByVersion(
+              modernDexFallbackBySpecies.get(profile.speciesSlug) || new Map(),
+              buildVersionGroupFallbackByVersion(data.moves),
+            ),
+          ),
     });
 
-    for (const ability of data.abilities) {
+    for (const ability of abilityEntries) {
       pokemonAbilities.push({
         pokemonProfileKey: profile.profileKey,
         abilitySlug: ability.ability.name,
@@ -492,10 +1164,7 @@ const buildPokemonData = async (generations) => {
       });
     }
 
-    const notableMoves = selectNotableMoves(
-      data.moves,
-      profile.generation || pokemonGenerationMap.get(profile.speciesDex),
-    );
+    const notableMoves = selectNotableMoves(moveSourceEntries, moveGeneration);
 
     for (const move of notableMoves) {
       pokemonMoves.push({
@@ -793,6 +1462,79 @@ const buildEvolutionData = async ({
 
     visitNode(chain.chain, 0, "0", null, null);
 
+    const addBattleOnlyTransformationEdges = () => {
+      const defaultNodes = [...nodesByDex.values()].filter((node) => {
+        const speciesProfile = speciesProfileMap.get(node.speciesSlug);
+        return speciesProfile && speciesProfile.defaultProfileKey === node.pokemonProfileKey;
+      });
+
+      for (const defaultNode of defaultNodes) {
+        const speciesProfile = speciesProfileMap.get(defaultNode.speciesSlug);
+        if (!speciesProfile) {
+          continue;
+        }
+
+        const battleFormMeta = (speciesProfile.profileKeys || [])
+          .map((profileKey) => profileMetaMap.get(profileKey))
+          .filter((meta) => meta?.isBattleOnlyForm);
+
+        if (battleFormMeta.length === 0) {
+          continue;
+        }
+
+        for (const battleMeta of battleFormMeta) {
+          const profileKey = String(battleMeta.profileKey);
+          if (nodesByDex.has(profileKey)) {
+            continue;
+          }
+
+          const nodeKey = buildEvolutionNodeKey(sourceChainId, profileKey);
+          const fallbackNodeKey = buildEvolutionNodeKey(sourceChainId, battleMeta.speciesDex);
+          const displayName = resolveNodeOverride(
+            overrides,
+            [nodeKey, fallbackNodeKey],
+            battleMeta.name,
+          );
+
+          nodesByDex.set(profileKey, {
+            pokemonProfileKey: profileKey,
+            pokemonDex: battleMeta.speciesDex,
+            rawDepth: Number(defaultNode.rawDepth) + 1,
+            displayOrder: nodeOrder,
+            pathKey: `${defaultNode.pathKey}.battle.${nodeOrder}`,
+            displayName,
+            speciesSlug: battleMeta.speciesSlug,
+          });
+          nodeOrder += 1;
+
+          const requirement =
+            battleMeta.battleFormKind === "primal"
+              ? resolvePrimalRequirementText({
+                  speciesSlug: battleMeta.speciesSlug,
+                })
+              : resolveMegaRequirementText({
+                  speciesSlug: battleMeta.speciesSlug,
+                  pokemonSlug: battleMeta.pokemonSlug,
+                });
+          const label =
+            battleMeta.battleFormKind === "primal"
+              ? `Primal Reversion (${requirement})`
+              : `Mega Evolution (${requirement})`;
+
+          edges.push({
+            fromPokemonProfileKey: String(defaultNode.pokemonProfileKey),
+            toPokemonProfileKey: profileKey,
+            label,
+            tooltip: label,
+            sortOrder: edgeOrder,
+          });
+          edgeOrder += 1;
+        }
+      }
+    };
+
+    addBattleOnlyTransformationEdges();
+
     for (const edge of edges) {
       const addMissingProfileNode = (profileKey) => {
         if (!profileKey || nodesByDex.has(profileKey)) {
@@ -927,7 +1669,8 @@ const writeJson = async (filePath, value) => {
 };
 
 const main = async () => {
-  const generations = normalizeGenerationList(process.argv.slice(2));
+  const availableGenerations = await fetchAvailableGenerations();
+  const generations = normalizeGenerationList(process.argv.slice(2), availableGenerations);
   console.log(`Generating normalized data for generations: ${generations.join(", ")}`);
 
   const outputDir = path.resolve(__dirname, "../data/normalized");

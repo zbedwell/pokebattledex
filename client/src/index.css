@@ -100,6 +100,45 @@ body {
   animation: evolutionFadeUp 260ms ease-out both;
 }
 
+.marketing-fade-up {
+  animation: marketingFadeUp 360ms ease-out both;
+}
+
+.marketing-stagger-1 {
+  animation-delay: 70ms;
+}
+
+.marketing-stagger-2 {
+  animation-delay: 130ms;
+}
+
+.marketing-stagger-3 {
+  animation-delay: 180ms;
+}
+
+.marketing-stagger-4 {
+  animation-delay: 230ms;
+}
+
+.marketing-stagger-5 {
+  animation-delay: 280ms;
+}
+
+.card-lift:hover {
+  transform: translateY(-2px);
+}
+
+@keyframes marketingFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @keyframes evolutionFadeUp {
   from {
     opacity: 0;
@@ -114,5 +153,13 @@ body {
 @media (prefers-reduced-motion: reduce) {
   .evolution-enter {
     animation: none;
+  }
+
+  .marketing-fade-up {
+    animation: none;
+  }
+
+  .card-lift:hover {
+    transform: none;
   }
 }

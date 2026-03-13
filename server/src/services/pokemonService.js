@@ -17,6 +17,364 @@ const normalizeAbilities = (abilities) => {
   }
 };
 
+const MAINLINE_GAMES_GEN_1_TO_9_PLUS_ZA = [
+  "Red",
+  "Blue",
+  "Yellow",
+  "Gold",
+  "Silver",
+  "Crystal",
+  "Ruby",
+  "Sapphire",
+  "Emerald",
+  "FireRed",
+  "LeafGreen",
+  "Diamond",
+  "Pearl",
+  "Platinum",
+  "HeartGold",
+  "SoulSilver",
+  "Black",
+  "White",
+  "Black 2",
+  "White 2",
+  "X",
+  "Y",
+  "Omega Ruby",
+  "Alpha Sapphire",
+  "Sun",
+  "Moon",
+  "Ultra Sun",
+  "Ultra Moon",
+  "Let's Go Pikachu",
+  "Let's Go Eevee",
+  "Sword",
+  "Shield",
+  "Brilliant Diamond",
+  "Shining Pearl",
+  "Legends: Arceus",
+  "Scarlet",
+  "Violet",
+  "Legends: Z-A",
+];
+
+const NOT_OBTAINABLE_METHOD = "Not obtainable";
+const EVOLVE_METHOD = "Evolve";
+const EVOLUTION_LOCATION = "Evolution";
+const BATTLE_ONLY_FORM_PROFILE_MARKERS = ["-mega", "-primal"];
+const BATTLE_ONLY_FORM_NAME_MARKERS = ["mega", "primal"];
+const NATURAL_COLLATOR = new Intl.Collator("en", {
+  numeric: true,
+  sensitivity: "base",
+});
+
+const normalizeMethodList = (methods) => {
+  if (!Array.isArray(methods)) {
+    return [];
+  }
+
+  const normalized = [
+    ...new Set(
+      methods
+        .filter((method) => typeof method === "string" && method.trim().length > 0)
+        .map((method) => method.trim()),
+    ),
+  ].sort((a, b) => NATURAL_COLLATOR.compare(a, b));
+
+  const withoutNotObtainable = normalized.filter(
+    (method) => method.toLowerCase() !== NOT_OBTAINABLE_METHOD.toLowerCase(),
+  );
+
+  return withoutNotObtainable.length > 0 ? withoutNotObtainable : normalized;
+};
+
+const parseLocationOrderHint = (location) => {
+  const value = String(location || "").trim();
+  const routeMatch = value.match(/\b(?:Sea\s+)?Route\s+(\d+)\b/i);
+  if (routeMatch) {
+    return { kind: "route", number: Number(routeMatch[1]) };
+  }
+
+  const areaMatch = value.match(/\b(?:Area|Zone)\s+(\d+)\b/i);
+  if (areaMatch) {
+    return { kind: "area", number: Number(areaMatch[1]) };
+  }
+
+  return { kind: "name", number: Number.MAX_SAFE_INTEGER };
+};
+
+const compareLocationEntriesChronologically = (a, b) => {
+  const aHint = parseLocationOrderHint(a.location);
+  const bHint = parseLocationOrderHint(b.location);
+
+  if (aHint.kind === bHint.kind && aHint.kind !== "name" && aHint.number !== bHint.number) {
+    return aHint.number - bHint.number;
+  }
+
+  return NATURAL_COLLATOR.compare(a.location, b.location);
+};
+
+const mergeLocationEntries = (locations = []) => {
+  const byLocation = new Map();
+
+  for (const locationEntry of locations) {
+    if (
+      !locationEntry ||
+      typeof locationEntry !== "object" ||
+      typeof locationEntry.location !== "string" ||
+      !Array.isArray(locationEntry.methods)
+    ) {
+      continue;
+    }
+
+    const location = locationEntry.location.trim();
+    if (!location) {
+      continue;
+    }
+
+    const methods = normalizeMethodList(locationEntry.methods);
+    if (methods.length === 0) {
+      continue;
+    }
+
+    const key = location.toLowerCase();
+    const existing = byLocation.get(key);
+
+    if (!existing) {
+      byLocation.set(key, {
+        location,
+        methods,
+      });
+      continue;
+    }
+
+    byLocation.set(key, {
+      location: existing.location,
+      methods: normalizeMethodList([...existing.methods, ...methods]),
+    });
+  }
+
+  return [...byLocation.values()].sort(compareLocationEntriesChronologically);
+};
+
+const collectMethodsFromLocations = (locations) =>
+  normalizeMethodList(
+    locations.flatMap((locationEntry) =>
+      Array.isArray(locationEntry.methods) ? locationEntry.methods : [],
+    ),
+  );
+
+const isObtainableEntry = (entry) => {
+  if (!entry || typeof entry !== "object") {
+    return false;
+  }
+
+  if (Array.isArray(entry.locations) && entry.locations.length > 0) {
+    return true;
+  }
+
+  const methods = Array.isArray(entry.methods) ? entry.methods : [];
+  if (methods.length === 0) {
+    return false;
+  }
+
+  return methods.some((method) => method.toLowerCase() !== NOT_OBTAINABLE_METHOD.toLowerCase());
+};
+
+const toNotObtainableEntry = (game) => ({
+  game,
+  methods: [NOT_OBTAINABLE_METHOD],
+  locations: [],
+});
+
+const normalizeObtainMethodsByGame = (rows) => {
+  if (!rows) {
+    return MAINLINE_GAMES_GEN_1_TO_9_PLUS_ZA.map((game) => toNotObtainableEntry(game));
+  }
+
+  const parsed = Array.isArray(rows)
+    ? rows
+    : (() => {
+        try {
+          return JSON.parse(rows);
+        } catch {
+          return [];
+        }
+      })();
+
+  const normalized = parsed
+    .filter(
+      (entry) =>
+        entry &&
+        typeof entry === "object" &&
+        typeof entry.game === "string" &&
+        (Array.isArray(entry.methods) || Array.isArray(entry.locations)),
+    )
+    .map((entry) => {
+      const locations = mergeLocationEntries(entry.locations || []);
+      const methods = normalizeMethodList(entry.methods || []);
+
+      return {
+        game: entry.game.trim(),
+        locations,
+        methods: methods.length > 0 ? methods : collectMethodsFromLocations(locations),
+      };
+    })
+    .filter((entry) => entry.game.length > 0 && (entry.methods.length > 0 || entry.locations.length > 0));
+
+  const byGame = new Map();
+  for (const entry of normalized) {
+    const key = entry.game.toLowerCase();
+    const existing = byGame.get(key);
+    if (!existing) {
+      byGame.set(key, entry);
+      continue;
+    }
+
+    const mergedLocations = mergeLocationEntries([...existing.locations, ...entry.locations]);
+    const mergedMethods = normalizeMethodList([
+      ...existing.methods,
+      ...entry.methods,
+      ...collectMethodsFromLocations(mergedLocations),
+    ]);
+
+    byGame.set(key, {
+      game: existing.game,
+      locations: mergedLocations,
+      methods: mergedMethods,
+    });
+  }
+
+  return MAINLINE_GAMES_GEN_1_TO_9_PLUS_ZA.map((game) => {
+    const existing = byGame.get(game.toLowerCase());
+    if (!existing || !isObtainableEntry(existing)) {
+      return toNotObtainableEntry(game);
+    }
+
+    return {
+      game,
+      methods:
+        existing.methods.length > 0
+          ? normalizeMethodList(existing.methods)
+          : collectMethodsFromLocations(existing.locations),
+      locations: mergeLocationEntries(existing.locations),
+    };
+  });
+};
+
+const collectEvolutionAncestorIds = (evolutionLine, pokemonId) => {
+  if (!evolutionLine || !Array.isArray(evolutionLine.edges)) {
+    return [];
+  }
+
+  const reverseGraph = new Map();
+  for (const edge of evolutionLine.edges) {
+    const from = Number(edge?.from_pokemon_id);
+    const to = Number(edge?.to_pokemon_id);
+    if (!Number.isFinite(from) || !Number.isFinite(to)) {
+      continue;
+    }
+
+    const parents = reverseGraph.get(to) ?? new Set();
+    parents.add(from);
+    reverseGraph.set(to, parents);
+  }
+
+  const ancestors = new Set();
+  const queue = [Number(pokemonId)];
+
+  while (queue.length > 0) {
+    const current = queue.shift();
+    const parents = reverseGraph.get(current);
+    if (!parents) {
+      continue;
+    }
+
+    for (const parent of parents) {
+      if (parent === Number(pokemonId) || ancestors.has(parent)) {
+        continue;
+      }
+
+      ancestors.add(parent);
+      queue.push(parent);
+    }
+  }
+
+  return [...ancestors];
+};
+
+const isBattleOnlyFormPokemon = (pokemon) => {
+  if (!pokemon || typeof pokemon !== "object") {
+    return false;
+  }
+
+  const profileKey = String(pokemon.profile_key || "").toLowerCase();
+  const formName = String(pokemon.form_name || "").toLowerCase();
+
+  if (BATTLE_ONLY_FORM_PROFILE_MARKERS.some((marker) => profileKey.includes(marker))) {
+    return true;
+  }
+
+  return BATTLE_ONLY_FORM_NAME_MARKERS.some((marker) => formName.includes(marker));
+};
+
+const backfillEvolutionAvailability = async ({
+  pokemon,
+  pokemonId,
+  evolutionLine,
+  obtainMethodsByGame,
+  pokemonRepository,
+}) => {
+  const normalized = normalizeObtainMethodsByGame(obtainMethodsByGame);
+
+  if (isBattleOnlyFormPokemon(pokemon)) {
+    return normalized;
+  }
+
+  const ancestorIds = collectEvolutionAncestorIds(evolutionLine, pokemonId);
+
+  if (ancestorIds.length === 0) {
+    return normalized;
+  }
+
+  try {
+    const ancestorEntriesByGame = await Promise.all(
+      ancestorIds.map(async (ancestorId) => {
+        const rows = await pokemonRepository.getPokemonObtainMethods(ancestorId);
+        return normalizeObtainMethodsByGame(rows);
+      }),
+    );
+
+    return normalized.map((entry, index) => {
+      if (isObtainableEntry(entry)) {
+        return entry;
+      }
+
+      const obtainableViaEvolution = ancestorEntriesByGame.some((ancestorEntries) =>
+        isObtainableEntry(ancestorEntries[index]),
+      );
+
+      if (!obtainableViaEvolution) {
+        return entry;
+      }
+
+      return {
+        game: entry.game,
+        methods: [EVOLVE_METHOD],
+        locations: [
+          {
+            location: EVOLUTION_LOCATION,
+            methods: [EVOLVE_METHOD],
+          },
+        ],
+      };
+    });
+  } catch (error) {
+    console.error(`Failed to backfill evolution availability for pokemon ${pokemonId}:`, error);
+    return normalized;
+  }
+};
+
 const normalizePokemon = (row) => ({
   ...row,
   national_dex_number: Number(row.national_dex_number),
@@ -790,13 +1148,14 @@ export const createPokemonService = ({ pokemonRepository, typeService }) => {
       }
 
       const pokemon = normalizePokemon(row);
-      const hydrated = await hydratePokemon(pokemon);
-      const evolutionLine = await getEvolutionLine(pokemon);
-
-      const [allPokemonRows, abilityNameRows] = await Promise.all([
-        pokemonRepository.listPokemon({}),
-        pokemonRepository.listAbilityNamesByPokemon(),
-      ]);
+      const [hydrated, evolutionLine, obtainMethodsByGame, allPokemonRows, abilityNameRows] =
+        await Promise.all([
+          hydratePokemon(pokemon),
+          getEvolutionLine(pokemon),
+          pokemonRepository.getPokemonObtainMethods(pokemon.id),
+          pokemonRepository.listPokemon({}),
+          pokemonRepository.listAbilityNamesByPokemon(),
+        ]);
 
       const allPokemon = allPokemonRows.map(normalizePokemon);
       const abilityMap = new Map();
@@ -821,9 +1180,18 @@ export const createPokemonService = ({ pokemonRepository, typeService }) => {
         role_tags: deriveRoleTags(entry),
       }));
 
+      const normalizedObtainMethodsByGame = await backfillEvolutionAvailability({
+        pokemon,
+        pokemonId: pokemon.id,
+        evolutionLine,
+        obtainMethodsByGame,
+        pokemonRepository,
+      });
+
       return {
         ...hydrated,
         evolution_line: evolutionLine,
+        obtain_methods_by_game: normalizedObtainMethodsByGame,
         similar_pokemon: similar,
       };
     },
