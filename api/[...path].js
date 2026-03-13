@@ -25,7 +25,11 @@ const initApp = async () => {
 
 const getApp = () => {
   if (!appPromise) {
-    appPromise = initApp();
+    appPromise = initApp().catch((error) => {
+      // Allow retries on the next invocation if cold-start initialization fails once.
+      appPromise = undefined;
+      throw error;
+    });
   }
   return appPromise;
 };
