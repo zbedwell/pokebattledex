@@ -325,6 +325,27 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Mission Reward",
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Complete Side Mission 22: A Call from Mable and choose Bulbasaur",
+            "methods": [
+              "Mission Reward"
+            ]
+          },
+          {
+            "location": "Wild Zone 20.",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -458,6 +479,20 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Bulbasaur",
+            "methods": [
+              "Evolve"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -588,6 +623,20 @@
             "location": "Blueberry Dex",
             "methods": [
               "DLC Dex"
+            ]
+          }
+        ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Ivysaur",
+            "methods": [
+              "Evolve"
             ]
           }
         ]
@@ -756,13 +805,13 @@
       {
         "game": "Legends: Z-A",
         "methods": [
-          "Mega Evolution"
+          "Mission Reward"
         ],
         "locations": [
           {
-            "location": "Battle Transformation",
+            "location": "Complete Main Mission 29: A Rogue Mega Venusaur",
             "methods": [
-              "Mega Evolution"
+              "Mission Reward"
             ]
           }
         ]
@@ -1131,6 +1180,27 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Mission Reward",
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Complete Side Mission 22: A Call from Mable and choose Charmander",
+            "methods": [
+              "Mission Reward"
+            ]
+          },
+          {
+            "location": "Wild Zone 20.",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -1261,6 +1331,20 @@
             "location": "Blueberry Dex",
             "methods": [
               "DLC Dex"
+            ]
+          }
+        ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Charmander",
+            "methods": [
+              "Evolve"
             ]
           }
         ]
@@ -1685,6 +1769,20 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Charmeleon",
+            "methods": [
+              "Evolve"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -1850,13 +1948,13 @@
       {
         "game": "Legends: Z-A",
         "methods": [
-          "Mega Evolution"
+          "Purchase"
         ],
         "locations": [
           {
-            "location": "Battle Transformation",
+            "location": "Purchase at the Stone Emporium for $100,000",
             "methods": [
-              "Mega Evolution"
+              "Purchase"
             ]
           }
         ]
@@ -2025,13 +2123,13 @@
       {
         "game": "Legends: Z-A",
         "methods": [
-          "Mega Evolution"
+          "Purchase"
         ],
         "locations": [
           {
-            "location": "Battle Transformation",
+            "location": "Purchase at the Stone Emporium for $100,000",
             "methods": [
-              "Mega Evolution"
+              "Purchase"
             ]
           }
         ]
@@ -2436,6 +2534,27 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Mission Reward",
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Complete Side Mission 22: A Call from Mable and choose Squirtle",
+            "methods": [
+              "Mission Reward"
+            ]
+          },
+          {
+            "location": "Wild Zone 20.",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -2569,6 +2688,20 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Squirtle",
+            "methods": [
+              "Evolve"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -2699,6 +2832,20 @@
             "location": "Blueberry Dex",
             "methods": [
               "DLC Dex"
+            ]
+          }
+        ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Wartortle",
+            "methods": [
+              "Evolve"
             ]
           }
         ]
@@ -2867,13 +3014,13 @@
       {
         "game": "Legends: Z-A",
         "methods": [
-          "Mega Evolution"
+          "Purchase"
         ],
         "locations": [
           {
-            "location": "Battle Transformation",
+            "location": "Purchase at the Stone Emporium for $100,000",
             "methods": [
-              "Mega Evolution"
+              "Purchase"
             ]
           }
         ]
@@ -5423,6 +5570,20 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Wild Zone 1.",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -5906,6 +6067,33 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve",
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Weedle",
+            "methods": [
+              "Evolve"
+            ]
+          },
+          {
+            "location": "Wild Zone 2.",
+            "methods": [
+              "Encounter"
+            ]
+          },
+          {
+            "location": "Wild Zone 7.",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -6172,6 +6360,27 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve",
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Kakuna",
+            "methods": [
+              "Evolve"
+            ]
+          },
+          {
+            "location": "Wild Zone 15.",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -6337,13 +6546,13 @@
       {
         "game": "Legends: Z-A",
         "methods": [
-          "Mega Evolution"
+          "Mission Reward"
         ],
         "locations": [
           {
-            "location": "Battle Transformation",
+            "location": "Complete Main Mission 16: A Rogue Mega Beedrill",
             "methods": [
-              "Mega Evolution"
+              "Mission Reward"
             ]
           }
         ]
@@ -7894,6 +8103,32 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Wild Zone 1.",
+            "methods": [
+              "Encounter"
+            ]
+          },
+          {
+            "location": "Wild Zone 5.",
+            "methods": [
+              "Encounter"
+            ]
+          },
+          {
+            "location": "Around the city",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -8857,6 +9092,27 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve",
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Pidgey",
+            "methods": [
+              "Evolve"
+            ]
+          },
+          {
+            "location": "Wild Zone 5.",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -9190,6 +9446,27 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve",
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Pidgeotto",
+            "methods": [
+              "Evolve"
+            ]
+          },
+          {
+            "location": "Lives in high places",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -9355,13 +9632,13 @@
       {
         "game": "Legends: Z-A",
         "methods": [
-          "Mega Evolution"
+          "Purchase"
         ],
         "locations": [
           {
-            "location": "Battle Transformation",
+            "location": "Purchase from Quasartico for 180 Mega Shards",
             "methods": [
-              "Mega Evolution"
+              "Purchase"
             ]
           }
         ]
@@ -16463,6 +16740,26 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Wild Zone 4.",
+            "methods": [
+              "Encounter"
+            ]
+          },
+          {
+            "location": "L Cafe",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -16971,6 +17268,27 @@
             "location": "Kanto Route 23",
             "methods": [
               "Grass/Cave Walk"
+            ]
+          }
+        ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve",
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Ekans",
+            "methods": [
+              "Evolve"
+            ]
+          },
+          {
+            "location": "Wild Zone 10.",
+            "methods": [
+              "Encounter"
             ]
           }
         ]
@@ -17683,6 +18001,27 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve",
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Pichu",
+            "methods": [
+              "Evolve"
+            ]
+          },
+          {
+            "location": "Wild Zone 3.",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -18125,6 +18464,20 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Pikachu",
+            "methods": [
+              "Evolve"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -18300,6 +18653,27 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Transfer",
+          "Mission Reward"
+        ],
+        "locations": [
+          {
+            "location": "Transfer via Pokemon Home",
+            "methods": [
+              "Transfer"
+            ]
+          },
+          {
+            "location": "Complete Side Mission 108: Alola, Raichu",
+            "methods": [
+              "Mission Reward"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -18465,13 +18839,13 @@
       {
         "game": "Legends: Z-A",
         "methods": [
-          "Mega Evolution"
+          "Mission Reward"
         ],
         "locations": [
           {
-            "location": "Battle Transformation",
+            "location": "Complete Side Mission 139: The Dauntless Raichu Duo",
             "methods": [
-              "Mega Evolution"
+              "Mission Reward"
             ]
           }
         ]
@@ -18640,13 +19014,13 @@
       {
         "game": "Legends: Z-A",
         "methods": [
-          "Mega Evolution"
+          "Mission Reward"
         ],
         "locations": [
           {
-            "location": "Battle Transformation",
+            "location": "Complete Side Mission 139: The Dauntless Raichu Duo",
             "methods": [
-              "Mega Evolution"
+              "Mission Reward"
             ]
           }
         ]
@@ -23397,6 +23771,27 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve",
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Cleffa",
+            "methods": [
+              "Evolve"
+            ]
+          },
+          {
+            "location": "Wild Zone 19. (Night)",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -23638,6 +24033,20 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Clefairy",
+            "methods": [
+              "Evolve"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -23803,13 +24212,13 @@
       {
         "game": "Legends: Z-A",
         "methods": [
-          "Mega Evolution"
+          "Purchase"
         ],
         "locations": [
           {
-            "location": "Battle Transformation",
+            "location": "Purchase from Quasartico for 240 Mega Shards",
             "methods": [
-              "Mega Evolution"
+              "Purchase"
             ]
           }
         ]
@@ -50790,6 +51199,26 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Wild Zone 5.",
+            "methods": [
+              "Encounter"
+            ]
+          },
+          {
+            "location": "Lives in high places",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -51255,6 +51684,27 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve",
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Abra",
+            "methods": [
+              "Evolve"
+            ]
+          },
+          {
+            "location": "Wild Zone 9.",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -51371,6 +51821,20 @@
             "location": "Hisui Dex",
             "methods": [
               "Regional Dex"
+            ]
+          }
+        ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Kadabra",
+            "methods": [
+              "Evolve"
             ]
           }
         ]
@@ -51539,13 +52003,13 @@
       {
         "game": "Legends: Z-A",
         "methods": [
-          "Mega Evolution"
+          "Purchase"
         ],
         "locations": [
           {
-            "location": "Battle Transformation",
+            "location": "Purchase from Quasartico for 360 Mega Shards",
             "methods": [
-              "Mega Evolution"
+              "Purchase"
             ]
           }
         ]
@@ -52559,6 +53023,26 @@
             "location": "Rock Tunnel B2f",
             "methods": [
               "Grass/Cave Walk"
+            ]
+          }
+        ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Wild Zone 8.",
+            "methods": [
+              "Encounter"
+            ]
+          },
+          {
+            "location": "Wild Zone 12.",
+            "methods": [
+              "Encounter"
             ]
           }
         ]
@@ -53577,6 +54061,27 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve",
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Machop",
+            "methods": [
+              "Evolve"
+            ]
+          },
+          {
+            "location": "Wild Zone 12.",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -53693,6 +54198,20 @@
             "location": "Hisui Dex",
             "methods": [
               "Regional Dex"
+            ]
+          }
+        ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Machoke",
+            "methods": [
+              "Evolve"
             ]
           }
         ]
@@ -54487,6 +55006,26 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Wild Zone 5.",
+            "methods": [
+              "Encounter"
+            ]
+          },
+          {
+            "location": "Wild Zone 10.",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -55032,6 +55571,27 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve",
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Bellsprout",
+            "methods": [
+              "Evolve"
+            ]
+          },
+          {
+            "location": "Wild Zone 13.",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -55134,6 +55694,20 @@
             "location": "Kitakami Dex",
             "methods": [
               "DLC Dex"
+            ]
+          }
+        ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Weepinbell",
+            "methods": [
+              "Evolve"
             ]
           }
         ]
@@ -55302,13 +55876,13 @@
       {
         "game": "Legends: Z-A",
         "methods": [
-          "Mega Evolution"
+          "Mission Reward"
         ],
         "locations": [
           {
-            "location": "Battle Transformation",
+            "location": "Complete Main Mission 13: A Rogue Mega Victreebel",
             "methods": [
-              "Mega Evolution"
+              "Mission Reward"
             ]
           }
         ]
@@ -67388,6 +67962,26 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Wild Zone 10.",
+            "methods": [
+              "Encounter"
+            ]
+          },
+          {
+            "location": "Wild Zone 11.",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -67504,6 +68098,20 @@
             "location": "Paldea Dex",
             "methods": [
               "Regional Dex"
+            ]
+          }
+        ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Mission Reward"
+        ],
+        "locations": [
+          {
+            "location": "Complete Side Mission 39: Slowpoke for Slowpoke",
+            "methods": [
+              "Mission Reward"
             ]
           }
         ]
@@ -68120,6 +68728,20 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Slowpoke",
+            "methods": [
+              "Evolve"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -68285,13 +68907,13 @@
       {
         "game": "Legends: Z-A",
         "methods": [
-          "Mega Evolution"
+          "Mission Reward"
         ],
         "locations": [
           {
-            "location": "Battle Transformation",
+            "location": "Complete Main Mission 11: A Rogue Mega Slowbro",
             "methods": [
-              "Mega Evolution"
+              "Mission Reward"
             ]
           }
         ]
@@ -68411,6 +69033,20 @@
             "location": "Paldea Dex",
             "methods": [
               "Regional Dex"
+            ]
+          }
+        ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Galarian Slowpoke",
+            "methods": [
+              "Evolve"
             ]
           }
         ]
@@ -77274,6 +77910,26 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Wild Zone 4.",
+            "methods": [
+              "Encounter"
+            ]
+          },
+          {
+            "location": "Lumiose Sewers",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -78413,6 +79069,27 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve",
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Gastly",
+            "methods": [
+              "Evolve"
+            ]
+          },
+          {
+            "location": "Lumiose Sewers",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -78672,6 +79349,20 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Haunter",
+            "methods": [
+              "Evolve"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -78837,13 +79528,13 @@
       {
         "game": "Legends: Z-A",
         "methods": [
-          "Mega Evolution"
+          "Purchase"
         ],
         "locations": [
           {
-            "location": "Battle Transformation",
+            "location": "Purchase at the Stone Emporium for $50,000",
             "methods": [
-              "Mega Evolution"
+              "Purchase"
             ]
           }
         ]
@@ -80283,6 +80974,20 @@
             "location": "Rock Tunnel B2f",
             "methods": [
               "Grass/Cave Walk"
+            ]
+          }
+        ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Wild Zone 14.",
+            "methods": [
+              "Encounter"
             ]
           }
         ]
@@ -92739,6 +93444,20 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Wild Zone 19.",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -92904,13 +93623,13 @@
       {
         "game": "Legends: Z-A",
         "methods": [
-          "Mega Evolution"
+          "Purchase"
         ],
         "locations": [
           {
-            "location": "Battle Transformation",
+            "location": "Purchase at the Stone Emporium for $70,000",
             "methods": [
-              "Mega Evolution"
+              "Purchase"
             ]
           }
         ]
@@ -101218,6 +101937,26 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Wild Zone 10.",
+            "methods": [
+              "Encounter"
+            ]
+          },
+          {
+            "location": "Wild Zone 2. (Night)",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -101513,6 +102252,27 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve",
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Staryu",
+            "methods": [
+              "Evolve"
+            ]
+          },
+          {
+            "location": "Wild Zone 16. (Night)",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -101678,13 +102438,13 @@
       {
         "game": "Legends: Z-A",
         "methods": [
-          "Mega Evolution"
+          "Mission Reward"
         ],
         "locations": [
           {
-            "location": "Battle Transformation",
+            "location": "Complete Main Mission 34: A Rogue Mega Starmie",
             "methods": [
-              "Mega Evolution"
+              "Mission Reward"
             ]
           }
         ]
@@ -102590,6 +103350,20 @@
             "location": "Kanto Safari Zone Middle",
             "methods": [
               "Grass/Cave Walk"
+            ]
+          }
+        ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Wild Zone 13. (Night)",
+            "methods": [
+              "Encounter"
             ]
           }
         ]
@@ -104390,6 +105164,20 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Wild Zone 13.",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -104555,13 +105343,13 @@
       {
         "game": "Legends: Z-A",
         "methods": [
-          "Mega Evolution"
+          "Purchase"
         ],
         "locations": [
           {
-            "location": "Battle Transformation",
+            "location": "Purchase from Quasartico for 240 Mega Shards",
             "methods": [
-              "Mega Evolution"
+              "Purchase"
             ]
           }
         ]
@@ -113368,6 +114156,26 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Wild Zone 2.",
+            "methods": [
+              "Encounter"
+            ]
+          },
+          {
+            "location": "Wild Zone 6.",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -116094,6 +116902,27 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve",
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Magikarp",
+            "methods": [
+              "Evolve"
+            ]
+          },
+          {
+            "location": "Wild Zone 11.",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -116259,13 +117088,13 @@
       {
         "game": "Legends: Z-A",
         "methods": [
-          "Mega Evolution"
+          "Purchase"
         ],
         "locations": [
           {
-            "location": "Battle Transformation",
+            "location": "Purchase from Quasartico for 240 Mega Shards",
             "methods": [
-              "Mega Evolution"
+              "Purchase"
             ]
           }
         ]
@@ -118449,6 +119278,26 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Live in high places and courtyards",
+            "methods": [
+              "Encounter"
+            ]
+          },
+          {
+            "location": "Wild Zone 19",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -118607,6 +119456,20 @@
             "location": "Paldea Dex",
             "methods": [
               "Regional Dex"
+            ]
+          }
+        ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Eevee",
+            "methods": [
+              "Evolve"
             ]
           }
         ]
@@ -118771,6 +119634,20 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Eevee",
+            "methods": [
+              "Evolve"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -118929,6 +119806,20 @@
             "location": "Paldea Dex",
             "methods": [
               "Regional Dex"
+            ]
+          }
+        ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Eevee",
+            "methods": [
+              "Evolve"
             ]
           }
         ]
@@ -120122,6 +121013,20 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Purchase"
+        ],
+        "locations": [
+          {
+            "location": "Purchase Old Amber for $30,000 at Stone Emporium and Revive at Pokemon Lab (after Side Mission 27)",
+            "methods": [
+              "Purchase"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -120287,13 +121192,13 @@
       {
         "game": "Legends: Z-A",
         "methods": [
-          "Mega Evolution"
+          "Purchase"
         ],
         "locations": [
           {
-            "location": "Battle Transformation",
+            "location": "Purchase Aerodactylite from Quasartico Inc. HQ for 240 Mega Shards",
             "methods": [
-              "Mega Evolution"
+              "Purchase"
             ]
           }
         ]
@@ -123805,6 +124710,20 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Lives in high places",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -124337,6 +125256,27 @@
             "location": "Paldea Dex",
             "methods": [
               "Regional Dex"
+            ]
+          }
+        ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve",
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Dratini",
+            "methods": [
+              "Evolve"
+            ]
+          },
+          {
+            "location": "Lives in high places. Rare",
+            "methods": [
+              "Encounter"
             ]
           }
         ]
@@ -124881,6 +125821,20 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Dragonair",
+            "methods": [
+              "Evolve"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -125046,13 +126000,13 @@
       {
         "game": "Legends: Z-A",
         "methods": [
-          "Mega Evolution"
+          "Mission Reward"
         ],
         "locations": [
           {
-            "location": "Battle Transformation",
+            "location": "Complete Main Mission 32: A Rogue Mega Dragonite",
             "methods": [
-              "Mega Evolution"
+              "Mission Reward"
             ]
           }
         ]
@@ -125383,6 +126337,20 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Mission Reward"
+        ],
+        "locations": [
+          {
+            "location": "Complete Side Mission EX2: Project M (from Mystery Gift)",
+            "methods": [
+              "Mission Reward"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -125548,13 +126516,13 @@
       {
         "game": "Legends: Z-A",
         "methods": [
-          "Mega Evolution"
+          "Mystery Gift"
         ],
         "locations": [
           {
-            "location": "Battle Transformation",
+            "location": "Obtain through Mystery Gift",
             "methods": [
-              "Mega Evolution"
+              "Mystery Gift"
             ]
           }
         ]
@@ -125723,13 +126691,13 @@
       {
         "game": "Legends: Z-A",
         "methods": [
-          "Mega Evolution"
+          "Mystery Gift"
         ],
         "locations": [
           {
-            "location": "Battle Transformation",
+            "location": "Obtain through Mystery Gift",
             "methods": [
-              "Mega Evolution"
+              "Mystery Gift"
             ]
           }
         ]
@@ -126097,6 +127065,27 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Starter",
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Starter Pokemon",
+            "methods": [
+              "Starter"
+            ]
+          },
+          {
+            "location": "Wild Zone 20.",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -126174,6 +127163,20 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Chikorita",
+            "methods": [
+              "Evolve"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -126248,6 +127251,20 @@
             "location": "Blueberry Dex",
             "methods": [
               "DLC Dex"
+            ]
+          }
+        ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Bayleef",
+            "methods": [
+              "Evolve"
             ]
           }
         ]
@@ -126416,13 +127433,20 @@
       {
         "game": "Legends: Z-A",
         "methods": [
-          "Mega Evolution"
+          "Gift",
+          "Purchase"
         ],
         "locations": [
           {
-            "location": "Battle Transformation",
+            "location": "Given to you during Main Mission 10: The Secrets of Mega Evolution if Chikorita was your Starter",
             "methods": [
-              "Mega Evolution"
+              "Gift"
+            ]
+          },
+          {
+            "location": "Purchase from Stone Emporium in the post-game if Chikorita was not your starter",
+            "methods": [
+              "Purchase"
             ]
           }
         ]
@@ -127119,6 +128143,27 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Starter",
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Starter Pokemon",
+            "methods": [
+              "Starter"
+            ]
+          },
+          {
+            "location": "Wild Zone 20.",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -127196,6 +128241,20 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Totodile",
+            "methods": [
+              "Evolve"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -127270,6 +128329,20 @@
             "location": "Blueberry Dex",
             "methods": [
               "DLC Dex"
+            ]
+          }
+        ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Croconaw",
+            "methods": [
+              "Evolve"
             ]
           }
         ]
@@ -127438,13 +128511,20 @@
       {
         "game": "Legends: Z-A",
         "methods": [
-          "Mega Evolution"
+          "Gift",
+          "Purchase"
         ],
         "locations": [
           {
-            "location": "Battle Transformation",
+            "location": "Given to you after Main Mission 10: The Secrets of Mega Evolution if Totodile was your Starter",
             "methods": [
-              "Mega Evolution"
+              "Gift"
+            ]
+          },
+          {
+            "location": "Purchase from Stone Emporium in the post-game if Totodile was not your starter",
+            "methods": [
+              "Purchase"
             ]
           }
         ]
@@ -130612,6 +131692,20 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Wild Zone 4.",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -131028,6 +132122,27 @@
             "location": "Kitakami Dex",
             "methods": [
               "DLC Dex"
+            ]
+          }
+        ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve",
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Spinarak",
+            "methods": [
+              "Evolve"
+            ]
+          },
+          {
+            "location": "Lumiose Sewers",
+            "methods": [
+              "Encounter"
             ]
           }
         ]
@@ -132994,6 +134109,20 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Wild Zone 1.",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -133260,6 +134389,26 @@
             "location": "Kitakami Dex",
             "methods": [
               "DLC Dex"
+            ]
+          }
+        ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Lives in high places",
+            "methods": [
+              "Encounter"
+            ]
+          },
+          {
+            "location": "Wild Zone 19. (Night)",
+            "methods": [
+              "Encounter"
             ]
           }
         ]
@@ -134796,6 +135945,20 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Wild Zone 1.",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -135047,6 +136210,33 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve",
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Mareep",
+            "methods": [
+              "Evolve"
+            ]
+          },
+          {
+            "location": "Wild Zone 6.",
+            "methods": [
+              "Encounter"
+            ]
+          },
+          {
+            "location": "Wild Zone 16.",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -135121,6 +136311,20 @@
             "location": "Paldea Dex",
             "methods": [
               "Regional Dex"
+            ]
+          }
+        ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Flaaffy",
+            "methods": [
+              "Evolve"
             ]
           }
         ]
@@ -135289,13 +136493,13 @@
       {
         "game": "Legends: Z-A",
         "methods": [
-          "Mega Evolution"
+          "Mission Reward"
         ],
         "locations": [
           {
-            "location": "Battle Transformation",
+            "location": "Complete Main Mission 23: A Rogue Mega Ampharos",
             "methods": [
-              "Mega Evolution"
+              "Mission Reward"
             ]
           }
         ]
@@ -141031,6 +142235,20 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Eevee",
+            "methods": [
+              "Evolve"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -141265,6 +142483,20 @@
             "location": "Paldea Dex",
             "methods": [
               "Regional Dex"
+            ]
+          }
+        ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Eevee",
+            "methods": [
+              "Evolve"
             ]
           }
         ]
@@ -141926,6 +143158,20 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Slowbro",
+            "methods": [
+              "Evolve"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -142014,6 +143260,20 @@
             "location": "Paldea Dex",
             "methods": [
               "Regional Dex"
+            ]
+          }
+        ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Galarian Slowpoke",
+            "methods": [
+              "Evolve"
             ]
           }
         ]
@@ -145937,6 +147197,20 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Onix",
+            "methods": [
+              "Evolve"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -146102,13 +147376,13 @@
       {
         "game": "Legends: Z-A",
         "methods": [
-          "Mega Evolution"
+          "Purchase"
         ],
         "locations": [
           {
-            "location": "Battle Transformation",
+            "location": "Purchase at the Stone Emporium for $70,000",
             "methods": [
-              "Mega Evolution"
+              "Purchase"
             ]
           }
         ]
@@ -147385,6 +148659,20 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Scyther",
+            "methods": [
+              "Evolve"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -147550,13 +148838,13 @@
       {
         "game": "Legends: Z-A",
         "methods": [
-          "Mega Evolution"
+          "Purchase"
         ],
         "locations": [
           {
-            "location": "Battle Transformation",
+            "location": "Purchase at the Stone Emporium for $100,000",
             "methods": [
-              "Mega Evolution"
+              "Purchase"
             ]
           }
         ]
@@ -148525,6 +149813,27 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Encounter",
+          "Mission Reward"
+        ],
+        "locations": [
+          {
+            "location": "Wild Zone 13.",
+            "methods": [
+              "Encounter"
+            ]
+          },
+          {
+            "location": "Complete Side Mission 2: A Use for an Evolution Stone",
+            "methods": [
+              "Mission Reward"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -148690,13 +149999,13 @@
       {
         "game": "Legends: Z-A",
         "methods": [
-          "Mega Evolution"
+          "Purchase"
         ],
         "locations": [
           {
-            "location": "Battle Transformation",
+            "location": "Purchase from Quasartico for 240 Mega Shards",
             "methods": [
-              "Mega Evolution"
+              "Purchase"
             ]
           }
         ]
@@ -153999,6 +155308,20 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Wild Zone 12.",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -154731,6 +156054,20 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Wild Zone 17.",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -154896,13 +156233,13 @@
       {
         "game": "Legends: Z-A",
         "methods": [
-          "Mega Evolution"
+          "Purchase"
         ],
         "locations": [
           {
-            "location": "Battle Transformation",
+            "location": "Purchase from Quasartico for 240 Mega Shards",
             "methods": [
-              "Mega Evolution"
+              "Purchase"
             ]
           }
         ]
@@ -155173,6 +156510,26 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Wild Zone 6.",
+            "methods": [
+              "Encounter"
+            ]
+          },
+          {
+            "location": "L Cafe",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -155295,6 +156652,27 @@
             "location": "Paldea Dex",
             "methods": [
               "Regional Dex"
+            ]
+          }
+        ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve",
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Houndour",
+            "methods": [
+              "Evolve"
+            ]
+          },
+          {
+            "location": "L Cafe",
+            "methods": [
+              "Encounter"
             ]
           }
         ]
@@ -155463,13 +156841,13 @@
       {
         "game": "Legends: Z-A",
         "methods": [
-          "Mega Evolution"
+          "Purchase"
         ],
         "locations": [
           {
-            "location": "Battle Transformation",
+            "location": "Purchase from Quasartico for 180 Mega Shards",
             "methods": [
-              "Mega Evolution"
+              "Purchase"
             ]
           }
         ]
@@ -159953,6 +161331,20 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Wild Zone 15.",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -160224,6 +161616,20 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Larvitar",
+            "methods": [
+              "Evolve"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -160399,6 +161805,20 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Pupitar",
+            "methods": [
+              "Evolve"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -160564,13 +161984,13 @@
       {
         "game": "Legends: Z-A",
         "methods": [
-          "Mega Evolution"
+          "Mission Reward"
         ],
         "locations": [
           {
-            "location": "Battle Transformation",
+            "location": "Complete Main Mission 33: A Rogue Mega Tyranitar",
             "methods": [
-              "Mega Evolution"
+              "Mission Reward"
             ]
           }
         ]
@@ -170745,6 +172165,20 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Lives near grass. Often seen in courtyards",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -170952,6 +172386,20 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Ralts",
+            "methods": [
+              "Evolve"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -171096,6 +172544,27 @@
             "location": "Paldea Dex",
             "methods": [
               "Regional Dex"
+            ]
+          }
+        ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve",
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Kirlia",
+            "methods": [
+              "Evolve"
+            ]
+          },
+          {
+            "location": "Wild Zone 20.",
+            "methods": [
+              "Encounter"
             ]
           }
         ]
@@ -171264,13 +172733,20 @@
       {
         "game": "Legends: Z-A",
         "methods": [
-          "Mega Evolution"
+          "Purchase",
+          "Mystery Gift"
         ],
         "locations": [
           {
-            "location": "Battle Transformation",
+            "location": "Purchase from Quasartico for 240 Mega Shards",
             "methods": [
-              "Mega Evolution"
+              "Purchase"
+            ]
+          },
+          {
+            "location": "Obtain via Mystery Gift",
+            "methods": [
+              "Mystery Gift"
             ]
           }
         ]
@@ -176368,6 +177844,20 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Wild Zone 9.",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -176533,13 +178023,13 @@
       {
         "game": "Legends: Z-A",
         "methods": [
-          "Mega Evolution"
+          "Purchase"
         ],
         "locations": [
           {
-            "location": "Battle Transformation",
+            "location": "Purchase from Quasartico for 180 Mega Shards",
             "methods": [
-              "Mega Evolution"
+              "Purchase"
             ]
           }
         ]
@@ -176972,6 +178462,20 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Wild Zone 9.",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -177137,13 +178641,13 @@
       {
         "game": "Legends: Z-A",
         "methods": [
-          "Mega Evolution"
+          "Mission Reward"
         ],
         "locations": [
           {
-            "location": "Battle Transformation",
+            "location": "Complete Main Mission 21: A Rogue Mega Mawile",
             "methods": [
-              "Mega Evolution"
+              "Mission Reward"
             ]
           }
         ]
@@ -177490,6 +178994,20 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Wild Zone 14.",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -177767,6 +179285,27 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve",
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Aron",
+            "methods": [
+              "Evolve"
+            ]
+          },
+          {
+            "location": "Wild Zone 14.",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -177869,6 +179408,27 @@
             "location": "BDSP Game Data",
             "methods": [
               "Game Compatibility"
+            ]
+          }
+        ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve",
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Lairon",
+            "methods": [
+              "Evolve"
+            ]
+          },
+          {
+            "location": "Wild Zone 20.",
+            "methods": [
+              "Encounter"
             ]
           }
         ]
@@ -178037,13 +179597,13 @@
       {
         "game": "Legends: Z-A",
         "methods": [
-          "Mega Evolution"
+          "Purchase"
         ],
         "locations": [
           {
-            "location": "Battle Transformation",
+            "location": "Purchase from Quasartico for 360 Mega Shards",
             "methods": [
-              "Mega Evolution"
+              "Purchase"
             ]
           }
         ]
@@ -178608,6 +180168,20 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Wild Zone 6. (Day)",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -179035,6 +180609,27 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve",
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Meditite",
+            "methods": [
+              "Evolve"
+            ]
+          },
+          {
+            "location": "Wild Zone 16.",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -179200,13 +180795,13 @@
       {
         "game": "Legends: Z-A",
         "methods": [
-          "Mega Evolution"
+          "Purchase"
         ],
         "locations": [
           {
-            "location": "Battle Transformation",
+            "location": "Purchase at the Stone Emporium for $50,000",
             "methods": [
-              "Mega Evolution"
+              "Purchase"
             ]
           }
         ]
@@ -179455,6 +181050,26 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Wild Zone 5.",
+            "methods": [
+              "Encounter"
+            ]
+          },
+          {
+            "location": "L Cafe",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -179585,6 +181200,27 @@
             "location": "BDSP Game Data",
             "methods": [
               "Game Compatibility"
+            ]
+          }
+        ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve",
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Electrike",
+            "methods": [
+              "Evolve"
+            ]
+          },
+          {
+            "location": "L Cafe",
+            "methods": [
+              "Encounter"
             ]
           }
         ]
@@ -179753,13 +181389,13 @@
       {
         "game": "Legends: Z-A",
         "methods": [
-          "Mega Evolution"
+          "Purchase"
         ],
         "locations": [
           {
-            "location": "Battle Transformation",
+            "location": "Purchase from Quasartico for 180 Mega Shards",
             "methods": [
-              "Mega Evolution"
+              "Purchase"
             ]
           }
         ]
@@ -181506,6 +183142,27 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve",
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Budew",
+            "methods": [
+              "Evolve"
+            ]
+          },
+          {
+            "location": "Wild Zone 7.",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -182156,6 +183813,20 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Wild Zone 10.",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -182757,6 +184428,20 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Carvanha",
+            "methods": [
+              "Evolve"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -182922,13 +184607,13 @@
       {
         "game": "Legends: Z-A",
         "methods": [
-          "Mega Evolution"
+          "Purchase"
         ],
         "locations": [
           {
-            "location": "Battle Transformation",
+            "location": "Purchase from Quasartico for 180 Mega Shards",
             "methods": [
-              "Mega Evolution"
+              "Purchase"
             ]
           }
         ]
@@ -184752,6 +186437,20 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Wild Zone 8.",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -185043,6 +186742,20 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Numel",
+            "methods": [
+              "Evolve"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -185208,13 +186921,13 @@
       {
         "game": "Legends: Z-A",
         "methods": [
-          "Mega Evolution"
+          "Mission Reward"
         ],
         "locations": [
           {
-            "location": "Battle Transformation",
+            "location": "Complete Main Mission 12: A Rogue Mega Camerupt",
             "methods": [
-              "Mega Evolution"
+              "Mission Reward"
             ]
           }
         ]
@@ -187808,6 +189521,26 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Wild Zone 6.",
+            "methods": [
+              "Encounter"
+            ]
+          },
+          {
+            "location": "Wild Zone 18.",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -188149,6 +189882,27 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve",
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Swablu",
+            "methods": [
+              "Evolve"
+            ]
+          },
+          {
+            "location": "Wild Zone 18.",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -188314,13 +190068,13 @@
       {
         "game": "Legends: Z-A",
         "methods": [
-          "Mega Evolution"
+          "Mission Reward"
         ],
         "locations": [
           {
-            "location": "Battle Transformation",
+            "location": "Complete Main Mission 28: A Rogue Mega Altaria",
             "methods": [
-              "Mega Evolution"
+              "Mission Reward"
             ]
           }
         ]
@@ -195639,6 +197393,26 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Wild Zone 7. (Night)",
+            "methods": [
+              "Encounter"
+            ]
+          },
+          {
+            "location": "Wild Zone 15. (Night)",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -195956,6 +197730,20 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Shuppet",
+            "methods": [
+              "Evolve"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -196121,13 +197909,13 @@
       {
         "game": "Legends: Z-A",
         "methods": [
-          "Mega Evolution"
+          "Mission Reward"
         ],
         "locations": [
           {
-            "location": "Battle Transformation",
+            "location": "Complete Main Mission 18: A Rogue Mega Banette",
             "methods": [
-              "Mega Evolution"
+              "Mission Reward"
             ]
           }
         ]
@@ -198381,6 +200169,27 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Encounter",
+          "Mission Reward"
+        ],
+        "locations": [
+          {
+            "location": "Lives in high places",
+            "methods": [
+              "Encounter"
+            ]
+          },
+          {
+            "location": "Complete Main Mission 9: Chase That Mysterious Pok�mon",
+            "methods": [
+              "Mission Reward"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -198546,13 +200355,13 @@
       {
         "game": "Legends: Z-A",
         "methods": [
-          "Mega Evolution"
+          "Mission Reward"
         ],
         "locations": [
           {
-            "location": "Battle Transformation",
+            "location": "Complete Main Mission 9: Chase That Mysterious Pok�mon",
             "methods": [
-              "Mega Evolution"
+              "Mission Reward"
             ]
           }
         ]
@@ -198721,13 +200530,13 @@
       {
         "game": "Legends: Z-A",
         "methods": [
-          "Mega Evolution"
+          "Mission Reward"
         ],
         "locations": [
           {
-            "location": "Battle Transformation",
+            "location": "Complete Hyperspace Mission 1: Hyperspace Lumiose Survey No. 1",
             "methods": [
-              "Mega Evolution"
+              "Mission Reward"
             ]
           }
         ]
@@ -199334,6 +201143,20 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Wild Zone 12.",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -199561,6 +201384,20 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Snorunt",
+            "methods": [
+              "Evolve"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -199726,13 +201563,13 @@
       {
         "game": "Legends: Z-A",
         "methods": [
-          "Mega Evolution"
+          "Purchase"
         ],
         "locations": [
           {
-            "location": "Battle Transformation",
+            "location": "Purchase from Quasartico for 240 Mega Shards",
             "methods": [
-              "Mega Evolution"
+              "Purchase"
             ]
           }
         ]
@@ -202452,6 +204289,20 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Wild Zone 18.",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -202613,6 +204464,20 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Bagon",
+            "methods": [
+              "Evolve"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -202771,6 +204636,20 @@
             "location": "Paldea Dex",
             "methods": [
               "Regional Dex"
+            ]
+          }
+        ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Shelgon",
+            "methods": [
+              "Evolve"
             ]
           }
         ]
@@ -202939,13 +204818,13 @@
       {
         "game": "Legends: Z-A",
         "methods": [
-          "Mega Evolution"
+          "Purchase"
         ],
         "locations": [
           {
-            "location": "Battle Transformation",
+            "location": "Purchase from Quasartico for 360 Mega Shards",
             "methods": [
-              "Mega Evolution"
+              "Purchase"
             ]
           }
         ]
@@ -203234,6 +205113,20 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "L Cafe",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -203457,6 +205350,27 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve",
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Beldum",
+            "methods": [
+              "Evolve"
+            ]
+          },
+          {
+            "location": "L Cafe",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -203630,6 +205544,20 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Metang",
+            "methods": [
+              "Evolve"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -203795,13 +205723,13 @@
       {
         "game": "Legends: Z-A",
         "methods": [
-          "Mega Evolution"
+          "Purchase"
         ],
         "locations": [
           {
-            "location": "Battle Transformation",
+            "location": "Purchase from Quasartico for 360 Mega Shards",
             "methods": [
-              "Mega Evolution"
+              "Purchase"
             ]
           }
         ]
@@ -211751,6 +213679,20 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Wild Zone 2.",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -211891,6 +213833,27 @@
             "location": "Hisui Dex",
             "methods": [
               "Regional Dex"
+            ]
+          }
+        ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve",
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Roselia",
+            "methods": [
+              "Evolve"
+            ]
+          },
+          {
+            "location": "Wild Zone 20.",
+            "methods": [
+              "Encounter"
             ]
           }
         ]
@@ -216386,6 +218349,20 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Wild Zone 6.",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -216516,6 +218493,20 @@
             "location": "Hisui Dex",
             "methods": [
               "Regional Dex"
+            ]
+          }
+        ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Buneary",
+            "methods": [
+              "Evolve"
             ]
           }
         ]
@@ -216684,13 +218675,13 @@
       {
         "game": "Legends: Z-A",
         "methods": [
-          "Mega Evolution"
+          "Purchase"
         ],
         "locations": [
           {
-            "location": "Battle Transformation",
+            "location": "Purchase from Quasartico for 180 Mega Shards",
             "methods": [
-              "Mega Evolution"
+              "Purchase"
             ]
           }
         ]
@@ -221641,6 +223632,20 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Wild Zone 8.",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -221882,6 +223887,20 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Gible",
+            "methods": [
+              "Evolve"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -222012,6 +224031,20 @@
             "location": "Paldea Dex",
             "methods": [
               "Regional Dex"
+            ]
+          }
+        ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Gabite",
+            "methods": [
+              "Evolve"
             ]
           }
         ]
@@ -222180,13 +224213,13 @@
       {
         "game": "Legends: Z-A",
         "methods": [
-          "Mega Evolution"
+          "Purchase"
         ],
         "locations": [
           {
-            "location": "Battle Transformation",
+            "location": "Purchase at the Stone Emporium for $70,000",
             "methods": [
-              "Mega Evolution"
+              "Purchase"
             ]
           }
         ]
@@ -222355,13 +224388,13 @@
       {
         "game": "Legends: Z-A",
         "methods": [
-          "Mega Evolution"
+          "Unspecified"
         ],
         "locations": [
           {
-            "location": "Battle Transformation",
+            "location": "Unspecified",
             "methods": [
-              "Mega Evolution"
+              "Unspecified"
             ]
           }
         ]
@@ -222899,6 +224932,27 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Encounter",
+          "Mission Reward"
+        ],
+        "locations": [
+          {
+            "location": "Lives in high places. Seen only when it&#x27;s sunny",
+            "methods": [
+              "Encounter"
+            ]
+          },
+          {
+            "location": "Complete Side Mission 24: An Abra Playmate",
+            "methods": [
+              "Mission Reward"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -223130,6 +225184,27 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve",
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Riolu",
+            "methods": [
+              "Evolve"
+            ]
+          },
+          {
+            "location": "Wild Zone 20.",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -223295,13 +225370,13 @@
       {
         "game": "Legends: Z-A",
         "methods": [
-          "Mega Evolution"
+          "Purchase"
         ],
         "locations": [
           {
-            "location": "Battle Transformation",
+            "location": "Purchase from Quasartico for 240 Mega Shards",
             "methods": [
-              "Mega Evolution"
+              "Purchase"
             ]
           }
         ]
@@ -223470,13 +225545,13 @@
       {
         "game": "Legends: Z-A",
         "methods": [
-          "Mega Evolution"
+          "Mission Reward"
         ],
         "locations": [
           {
-            "location": "Battle Transformation",
+            "location": "Complete Side Mission 197: Ultra-Hardcore Lucario Showdown!",
             "methods": [
-              "Mega Evolution"
+              "Mission Reward"
             ]
           }
         ]
@@ -223705,6 +225780,20 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Wild Zone 7. (Day)",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -223891,6 +225980,27 @@
             "location": "Paldea Dex",
             "methods": [
               "Regional Dex"
+            ]
+          }
+        ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve",
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Hippopotas",
+            "methods": [
+              "Evolve"
+            ]
+          },
+          {
+            "location": "Wild Zone 20.",
+            "methods": [
+              "Encounter"
             ]
           }
         ]
@@ -226819,6 +228929,20 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Wild Zone 12.",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -227082,6 +229206,20 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Snover",
+            "methods": [
+              "Evolve"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -227247,13 +229385,13 @@
       {
         "game": "Legends: Z-A",
         "methods": [
-          "Mega Evolution"
+          "Purchase"
         ],
         "locations": [
           {
-            "location": "Battle Transformation",
+            "location": "Purchase at the Stone Emporium for $50,000",
             "methods": [
-              "Mega Evolution"
+              "Purchase"
             ]
           }
         ]
@@ -228637,6 +230775,20 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Eevee",
+            "methods": [
+              "Evolve"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -228767,6 +230919,20 @@
             "location": "Paldea Dex",
             "methods": [
               "Regional Dex"
+            ]
+          }
+        ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Eevee",
+            "methods": [
+              "Evolve"
             ]
           }
         ]
@@ -229420,6 +231586,20 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Kirlia",
+            "methods": [
+              "Evolve"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -229585,13 +231765,13 @@
       {
         "game": "Legends: Z-A",
         "methods": [
-          "Mega Evolution"
+          "Purchase"
         ],
         "locations": [
           {
-            "location": "Battle Transformation",
+            "location": "Purchase from Quasartico for 240 Mega Shards",
             "methods": [
-              "Mega Evolution"
+              "Purchase"
             ]
           }
         ]
@@ -229952,6 +232132,20 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Snorunt",
+            "methods": [
+              "Evolve"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -230117,13 +232311,13 @@
       {
         "game": "Legends: Z-A",
         "methods": [
-          "Mega Evolution"
+          "Mission Reward"
         ],
         "locations": [
           {
-            "location": "Battle Transformation",
+            "location": "Complete Main Mission 27: A Rogue Mega Froslass",
             "methods": [
-              "Mega Evolution"
+              "Mission Reward"
             ]
           }
         ]
@@ -233819,6 +236013,27 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Starter",
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Starter Pokemon",
+            "methods": [
+              "Starter"
+            ]
+          },
+          {
+            "location": "Wild Zone 20.",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -233865,6 +236080,20 @@
             "location": "Blueberry Dex",
             "methods": [
               "DLC Dex"
+            ]
+          }
+        ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Tepig",
+            "methods": [
+              "Evolve"
             ]
           }
         ]
@@ -233942,6 +236171,20 @@
             "location": "Blueberry Dex",
             "methods": [
               "DLC Dex"
+            ]
+          }
+        ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Pignite",
+            "methods": [
+              "Evolve"
             ]
           }
         ]
@@ -234110,13 +236353,20 @@
       {
         "game": "Legends: Z-A",
         "methods": [
-          "Mega Evolution"
+          "Gift",
+          "Purchase"
         ],
         "locations": [
           {
-            "location": "Battle Transformation",
+            "location": "Given to you after Main Mission 10: The Secrets of Mega Evolution if Tepig was your Starter",
             "methods": [
-              "Mega Evolution"
+              "Gift"
+            ]
+          },
+          {
+            "location": "Purchase from Stone Emporium in the post-game if Tepig was not your starter",
+            "methods": [
+              "Purchase"
             ]
           }
         ]
@@ -234659,6 +236909,26 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Wild Zone 2.",
+            "methods": [
+              "Encounter"
+            ]
+          },
+          {
+            "location": "Lumiose Sewers",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -234927,6 +237197,27 @@
             "methods": [
               "Grass/Cave Walk",
               "Red Flowers"
+            ]
+          }
+        ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve",
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Patrat",
+            "methods": [
+              "Evolve"
+            ]
+          },
+          {
+            "location": "Wild Zone 10.",
+            "methods": [
+              "Encounter"
             ]
           }
         ]
@@ -236148,6 +238439,20 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Lives in high places. Often seen up in trees",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -236169,7 +238474,22 @@
     "generation": 5,
     "introducedInGame": "Black/White",
     "descriptionShort": null,
-    "obtainMethodsByGame": []
+    "obtainMethodsByGame": [
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Pansage",
+            "methods": [
+              "Evolve"
+            ]
+          }
+        ]
+      }
+    ]
   },
   {
     "profileKey": "513",
@@ -236311,6 +238631,20 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Lives in high places. Often seen up in trees",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -236332,7 +238666,22 @@
     "generation": 5,
     "introducedInGame": "Black/White",
     "descriptionShort": null,
-    "obtainMethodsByGame": []
+    "obtainMethodsByGame": [
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Pansear",
+            "methods": [
+              "Evolve"
+            ]
+          }
+        ]
+      }
+    ]
   },
   {
     "profileKey": "515",
@@ -236474,6 +238823,20 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Lives in high places. Often seen up in trees",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -236495,7 +238858,22 @@
     "generation": 5,
     "introducedInGame": "Black/White",
     "descriptionShort": null,
-    "obtainMethodsByGame": []
+    "obtainMethodsByGame": [
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Panpour",
+            "methods": [
+              "Evolve"
+            ]
+          }
+        ]
+      }
+    ]
   },
   {
     "profileKey": "517",
@@ -240009,6 +242387,26 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Wild Zone 8.",
+            "methods": [
+              "Encounter"
+            ]
+          },
+          {
+            "location": "Wild Zone 14.",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -240684,6 +243082,27 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve",
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Drilbur",
+            "methods": [
+              "Evolve"
+            ]
+          },
+          {
+            "location": "Wild Zone 14.",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -240849,13 +243268,13 @@
       {
         "game": "Legends: Z-A",
         "methods": [
-          "Mega Evolution"
+          "Purchase"
         ],
         "locations": [
           {
-            "location": "Battle Transformation",
+            "location": "Purchase from Quasartico for 360 Mega Shards",
             "methods": [
-              "Mega Evolution"
+              "Purchase"
             ]
           }
         ]
@@ -241800,6 +244219,26 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Wild Zone 7.",
+            "methods": [
+              "Encounter"
+            ]
+          },
+          {
+            "location": "Wild Zone 19.",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -241965,13 +244404,13 @@
       {
         "game": "Legends: Z-A",
         "methods": [
-          "Mega Evolution"
+          "Purchase"
         ],
         "locations": [
           {
-            "location": "Battle Transformation",
+            "location": "Purchase from Quasartico for 180 Mega Shards",
             "methods": [
-              "Mega Evolution"
+              "Purchase"
             ]
           }
         ]
@@ -244072,6 +246511,20 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Wild Zone 5.",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -244193,6 +246646,27 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve",
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Venipede",
+            "methods": [
+              "Evolve"
+            ]
+          },
+          {
+            "location": "Wild Zone 15.",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -244267,6 +246741,27 @@
             "location": "Isle of Armor Dex",
             "methods": [
               "DLC Dex"
+            ]
+          }
+        ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve",
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Whirlipede",
+            "methods": [
+              "Evolve"
+            ]
+          },
+          {
+            "location": "Wild Zone 15.",
+            "methods": [
+              "Encounter"
             ]
           }
         ]
@@ -244435,13 +246930,13 @@
       {
         "game": "Legends: Z-A",
         "methods": [
-          "Mega Evolution"
+          "Purchase"
         ],
         "locations": [
           {
-            "location": "Battle Transformation",
+            "location": "Purchase from Quasartico for 240 Mega Shards",
             "methods": [
-              "Mega Evolution"
+              "Purchase"
             ]
           }
         ]
@@ -246788,6 +249283,20 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Wild Zone 8.",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -246979,6 +249488,27 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve",
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Sandile",
+            "methods": [
+              "Evolve"
+            ]
+          },
+          {
+            "location": "Wild Zone 8.",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -247067,6 +249597,20 @@
             "location": "Paldea Dex",
             "methods": [
               "Regional Dex"
+            ]
+          }
+        ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Krokorok",
+            "methods": [
+              "Evolve"
             ]
           }
         ]
@@ -248385,6 +250929,20 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Lumiose Sewers",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -248543,6 +251101,27 @@
             "location": "Blueberry Dex",
             "methods": [
               "DLC Dex"
+            ]
+          }
+        ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve",
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Scraggy",
+            "methods": [
+              "Evolve"
+            ]
+          },
+          {
+            "location": "Wild Zone 20.",
+            "methods": [
+              "Encounter"
             ]
           }
         ]
@@ -248711,13 +251290,13 @@
       {
         "game": "Legends: Z-A",
         "methods": [
-          "Mega Evolution"
+          "Purchase"
         ],
         "locations": [
           {
-            "location": "Battle Transformation",
+            "location": "Purchase from Quasartico for 240 Mega Shards",
             "methods": [
-              "Mega Evolution"
+              "Purchase"
             ]
           }
         ]
@@ -249652,6 +252231,20 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Lives in alleys. Often seen near trash cans",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -249790,6 +252383,27 @@
             "location": "Galar Dex",
             "methods": [
               "Regional Dex"
+            ]
+          }
+        ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve",
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Trubbish",
+            "methods": [
+              "Evolve"
+            ]
+          },
+          {
+            "location": "Wild Zone 20.",
+            "methods": [
+              "Encounter"
             ]
           }
         ]
@@ -252354,6 +254968,26 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Wild Zone 7.",
+            "methods": [
+              "Encounter"
+            ]
+          },
+          {
+            "location": "Wild Zone 12.",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -252585,6 +255219,20 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Vanillite",
+            "methods": [
+              "Evolve"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -252725,6 +255373,20 @@
             "location": "Galar Dex",
             "methods": [
               "Regional Dex"
+            ]
+          }
+        ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Vanillish",
+            "methods": [
+              "Evolve"
             ]
           }
         ]
@@ -253670,6 +256332,26 @@
             "location": "Isle of Armor Dex",
             "methods": [
               "DLC Dex"
+            ]
+          }
+        ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Lives in high places",
+            "methods": [
+              "Encounter"
+            ]
+          },
+          {
+            "location": "Wild Zone 14.",
+            "methods": [
+              "Encounter"
             ]
           }
         ]
@@ -256574,6 +259256,20 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Wild Zone 10.",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -256674,6 +259370,20 @@
             "location": "Paldea Dex",
             "methods": [
               "Regional Dex"
+            ]
+          }
+        ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Tynamo",
+            "methods": [
+              "Evolve"
             ]
           }
         ]
@@ -256805,6 +259515,20 @@
             "location": "Paldea Dex",
             "methods": [
               "Regional Dex"
+            ]
+          }
+        ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Eelektrik",
+            "methods": [
+              "Evolve"
             ]
           }
         ]
@@ -256973,13 +259697,13 @@
       {
         "game": "Legends: Z-A",
         "methods": [
-          "Mega Evolution"
+          "Purchase"
         ],
         "locations": [
           {
-            "location": "Battle Transformation",
+            "location": "Purchase from Quasartico for 240 Mega Shards",
             "methods": [
-              "Mega Evolution"
+              "Purchase"
             ]
           }
         ]
@@ -257584,6 +260308,20 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Lumiose Sewers",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -257675,6 +260413,27 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve",
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Litwick",
+            "methods": [
+              "Evolve"
+            ]
+          },
+          {
+            "location": "Wild Zone 17.",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -257763,6 +260522,20 @@
             "location": "Kitakami Dex",
             "methods": [
               "DLC Dex"
+            ]
+          }
+        ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Lampent",
+            "methods": [
+              "Evolve"
             ]
           }
         ]
@@ -257931,13 +260704,13 @@
       {
         "game": "Legends: Z-A",
         "methods": [
-          "Mega Evolution"
+          "Purchase"
         ],
         "locations": [
           {
-            "location": "Battle Transformation",
+            "location": "Purchase from Quasartico for 360 Mega Shards",
             "methods": [
-              "Mega Evolution"
+              "Purchase"
             ]
           }
         ]
@@ -259836,6 +262609,20 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Wild Zone 11.",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -259882,6 +262669,27 @@
             "location": "Galar Dex",
             "methods": [
               "Regional Dex"
+            ]
+          }
+        ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Transfer",
+          "Mission Reward"
+        ],
+        "locations": [
+          {
+            "location": "Transfer via Pokemon Home",
+            "methods": [
+              "Transfer"
+            ]
+          },
+          {
+            "location": "Complete Side Mission 72: Find My Galarian Stunfisk!",
+            "methods": [
+              "Mission Reward"
             ]
           }
         ]
@@ -265949,6 +268757,27 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Mission Reward",
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Complete Side Mission 7: A Feisty Chespin",
+            "methods": [
+              "Mission Reward"
+            ]
+          },
+          {
+            "location": "Wild Zone 17.",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -265995,6 +268824,20 @@
             "location": "Blueberry Dex",
             "methods": [
               "DLC Dex"
+            ]
+          }
+        ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Chespin",
+            "methods": [
+              "Evolve"
             ]
           }
         ]
@@ -266072,6 +268915,20 @@
             "location": "Blueberry Dex",
             "methods": [
               "DLC Dex"
+            ]
+          }
+        ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Quilladin",
+            "methods": [
+              "Evolve"
             ]
           }
         ]
@@ -266240,13 +269097,13 @@
       {
         "game": "Legends: Z-A",
         "methods": [
-          "Mega Evolution"
+          "Ranked Reward"
         ],
         "locations": [
           {
-            "location": "Battle Transformation",
+            "location": "Reach Rank K in Season 3 of the Ranked Ladder",
             "methods": [
-              "Mega Evolution"
+              "Ranked Reward"
             ]
           }
         ]
@@ -266327,6 +269184,20 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Mission Reward"
+        ],
+        "locations": [
+          {
+            "location": "Complete Side Mission 8: Get Well Fennekin",
+            "methods": [
+              "Mission Reward"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -266373,6 +269244,27 @@
             "location": "Blueberry Dex",
             "methods": [
               "DLC Dex"
+            ]
+          }
+        ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve",
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Fennekin",
+            "methods": [
+              "Evolve"
+            ]
+          },
+          {
+            "location": "Wild Zone 18.",
+            "methods": [
+              "Encounter"
             ]
           }
         ]
@@ -266450,6 +269342,20 @@
             "location": "Blueberry Dex",
             "methods": [
               "DLC Dex"
+            ]
+          }
+        ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Braixen",
+            "methods": [
+              "Evolve"
             ]
           }
         ]
@@ -266618,13 +269524,13 @@
       {
         "game": "Legends: Z-A",
         "methods": [
-          "Mega Evolution"
+          "Ranked Reward"
         ],
         "locations": [
           {
-            "location": "Battle Transformation",
+            "location": "Reach Rank K in Season 2 of the Ranked Ladder",
             "methods": [
-              "Mega Evolution"
+              "Ranked Reward"
             ]
           }
         ]
@@ -266705,6 +269611,27 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Mission Reward",
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Complete Side Mission 9: A Challenge from Froakie",
+            "methods": [
+              "Mission Reward"
+            ]
+          },
+          {
+            "location": "Wild Zone 16.",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -266751,6 +269678,20 @@
             "location": "Blueberry Dex",
             "methods": [
               "DLC Dex"
+            ]
+          }
+        ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Froakie",
+            "methods": [
+              "Evolve"
             ]
           }
         ]
@@ -266828,6 +269769,20 @@
             "location": "Blueberry Dex",
             "methods": [
               "DLC Dex"
+            ]
+          }
+        ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Frogadier",
+            "methods": [
+              "Evolve"
             ]
           }
         ]
@@ -266996,13 +269951,13 @@
       {
         "game": "Legends: Z-A",
         "methods": [
-          "Mega Evolution"
+          "Ranked Reward"
         ],
         "locations": [
           {
-            "location": "Battle Transformation",
+            "location": "Reach Rank K in Season 1 of the Ranked Ladder",
             "methods": [
-              "Mega Evolution"
+              "Ranked Reward"
             ]
           }
         ]
@@ -267123,6 +270078,26 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Wild Zone 1.",
+            "methods": [
+              "Encounter"
+            ]
+          },
+          {
+            "location": "Wild Zone 5.",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -267197,6 +270172,27 @@
             "location": "Galar Dex",
             "methods": [
               "Regional Dex"
+            ]
+          }
+        ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve",
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Bunnelby",
+            "methods": [
+              "Evolve"
+            ]
+          },
+          {
+            "location": "Wild Zone 17.",
+            "methods": [
+              "Encounter"
             ]
           }
         ]
@@ -267449,6 +270445,26 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Wild Zone 1.",
+            "methods": [
+              "Encounter"
+            ]
+          },
+          {
+            "location": "Around the city",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -267608,6 +270624,27 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve",
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Fletchling",
+            "methods": [
+              "Evolve"
+            ]
+          },
+          {
+            "location": "Wild Zone 9.",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -267724,6 +270761,27 @@
             "location": "Paldea Dex",
             "methods": [
               "Regional Dex"
+            ]
+          }
+        ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve",
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Fletchinder",
+            "methods": [
+              "Evolve"
+            ]
+          },
+          {
+            "location": "Lives in high places",
+            "methods": [
+              "Encounter"
             ]
           }
         ]
@@ -267844,6 +270902,20 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Wild Zone 1.",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -267893,6 +270965,27 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve",
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Scatterbug",
+            "methods": [
+              "Evolve"
+            ]
+          },
+          {
+            "location": "Wild Zone 4. (Day)",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -267939,6 +271032,27 @@
             "location": "Paldea Dex",
             "methods": [
               "Regional Dex"
+            ]
+          }
+        ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve",
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Spewpa",
+            "methods": [
+              "Evolve"
+            ]
+          },
+          {
+            "location": "Wild Zone 13. (Day)",
+            "methods": [
+              "Encounter"
             ]
           }
         ]
@@ -268065,6 +271179,20 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Wild Zone 3.",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -268153,6 +271281,27 @@
             "location": "Paldea Dex",
             "methods": [
               "Regional Dex"
+            ]
+          }
+        ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve",
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Litleo",
+            "methods": [
+              "Evolve"
+            ]
+          },
+          {
+            "location": "Wild Zone 17.",
+            "methods": [
+              "Encounter"
             ]
           }
         ]
@@ -268321,13 +271470,13 @@
       {
         "game": "Legends: Z-A",
         "methods": [
-          "Mega Evolution"
+          "Purchase"
         ],
         "locations": [
           {
-            "location": "Battle Transformation",
+            "location": "Purchase from Quasartico for 240 Mega Shards",
             "methods": [
-              "Mega Evolution"
+              "Purchase"
             ]
           }
         ]
@@ -268460,6 +271609,26 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Lives near flower beds",
+            "methods": [
+              "Encounter"
+            ]
+          },
+          {
+            "location": "Wild Zone 3. (Red)",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -268546,6 +271715,33 @@
             "location": "Paldea Dex",
             "methods": [
               "Regional Dex"
+            ]
+          }
+        ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve",
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Flabebe",
+            "methods": [
+              "Evolve"
+            ]
+          },
+          {
+            "location": "Lives near flower beds",
+            "methods": [
+              "Encounter"
+            ]
+          },
+          {
+            "location": "Wild Zone 7.",
+            "methods": [
+              "Encounter"
             ]
           }
         ]
@@ -268714,13 +271910,13 @@
       {
         "game": "Legends: Z-A",
         "methods": [
-          "Mega Evolution"
+          "Battle Reward"
         ],
         "locations": [
           {
-            "location": "Battle Transformation",
+            "location": "Win 15 Matches in Infinite Z-A Royale",
             "methods": [
-              "Mega Evolution"
+              "Battle Reward"
             ]
           }
         ]
@@ -268770,6 +271966,27 @@
             "location": "Paldea Dex",
             "methods": [
               "Regional Dex"
+            ]
+          }
+        ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve",
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Floette",
+            "methods": [
+              "Evolve"
+            ]
+          },
+          {
+            "location": "Wild Zone 16.",
+            "methods": [
+              "Encounter"
             ]
           }
         ]
@@ -268854,6 +272071,20 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Wild Zone 3.",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -268900,6 +272131,27 @@
             "location": "Paldea Dex",
             "methods": [
               "Regional Dex"
+            ]
+          }
+        ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve",
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Skiddo",
+            "methods": [
+              "Evolve"
+            ]
+          },
+          {
+            "location": "Wild Zone 12.",
+            "methods": [
+              "Encounter"
             ]
           }
         ]
@@ -269088,6 +272340,20 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Wild Zone 3.",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -269241,6 +272507,20 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Pancham",
+            "methods": [
+              "Evolve"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -269358,6 +272638,26 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Wild Zone 11.",
+            "methods": [
+              "Encounter"
+            ]
+          },
+          {
+            "location": "Wild Zone 19.",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -269463,6 +272763,26 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Wild Zone 3.",
+            "methods": [
+              "Encounter"
+            ]
+          },
+          {
+            "location": "Wild Zone 9.",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -269537,6 +272857,20 @@
             "location": "Blueberry Dex",
             "methods": [
               "DLC Dex"
+            ]
+          }
+        ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Espurr",
+            "methods": [
+              "Evolve"
             ]
           }
         ]
@@ -269705,13 +273039,13 @@
       {
         "game": "Legends: Z-A",
         "methods": [
-          "Mega Evolution"
+          "Mission Reward"
         ],
         "locations": [
           {
-            "location": "Battle Transformation",
+            "location": "Complete Hyperspace Mission 4: Hyperspace Lumiose Survey No. 4",
             "methods": [
-              "Mega Evolution"
+              "Mission Reward"
             ]
           }
         ]
@@ -269848,6 +273182,26 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Wild Zone 4. (Night)",
+            "methods": [
+              "Encounter"
+            ]
+          },
+          {
+            "location": "L Cafe",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -269897,6 +273251,27 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve",
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Honedge",
+            "methods": [
+              "Evolve"
+            ]
+          },
+          {
+            "location": "L Cafe",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -269943,6 +273318,20 @@
             "location": "Galar Dex",
             "methods": [
               "Regional Dex"
+            ]
+          }
+        ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Doublade",
+            "methods": [
+              "Evolve"
             ]
           }
         ]
@@ -270013,6 +273402,20 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Lives in high places. Often seen near market stalls",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -270059,6 +273462,20 @@
             "location": "Galar Dex",
             "methods": [
               "Regional Dex"
+            ]
+          }
+        ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Spritzee",
+            "methods": [
+              "Evolve"
             ]
           }
         ]
@@ -270129,6 +273546,20 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Lives in high places. Often seen near market stalls",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -270175,6 +273606,20 @@
             "location": "Galar Dex",
             "methods": [
               "Regional Dex"
+            ]
+          }
+        ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Slurpuff",
+            "methods": [
+              "Evolve"
             ]
           }
         ]
@@ -270377,6 +273822,26 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Wild Zone 11.",
+            "methods": [
+              "Encounter"
+            ]
+          },
+          {
+            "location": "Lumiose Sewers",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -270465,6 +273930,27 @@
             "location": "Blueberry Dex",
             "methods": [
               "DLC Dex"
+            ]
+          }
+        ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve",
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Inkay",
+            "methods": [
+              "Evolve"
+            ]
+          },
+          {
+            "location": "Wild Zone 20.",
+            "methods": [
+              "Encounter"
             ]
           }
         ]
@@ -270633,13 +274119,13 @@
       {
         "game": "Legends: Z-A",
         "methods": [
-          "Mega Evolution"
+          "Purchase"
         ],
         "locations": [
           {
-            "location": "Battle Transformation",
+            "location": "Purchase from Quasartico for 240 Mega Shards",
             "methods": [
-              "Mega Evolution"
+              "Purchase"
             ]
           }
         ]
@@ -270802,6 +274288,26 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Wild Zone 2.",
+            "methods": [
+              "Encounter"
+            ]
+          },
+          {
+            "location": "Wild Zone 6.",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -270876,6 +274382,27 @@
             "location": "Galar Dex",
             "methods": [
               "Regional Dex"
+            ]
+          }
+        ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve",
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Binacle",
+            "methods": [
+              "Evolve"
+            ]
+          },
+          {
+            "location": "Wild Zone 16. (Night)",
+            "methods": [
+              "Encounter"
             ]
           }
         ]
@@ -271044,13 +274571,13 @@
       {
         "game": "Legends: Z-A",
         "methods": [
-          "Mega Evolution"
+          "Mission Reward"
         ],
         "locations": [
           {
-            "location": "Battle Transformation",
+            "location": "Complete Main Mission 22: A Rogue Mega Barbaracle",
             "methods": [
-              "Mega Evolution"
+              "Mission Reward"
             ]
           }
         ]
@@ -271154,6 +274681,20 @@
             "location": "Paldea Dex",
             "methods": [
               "Regional Dex"
+            ]
+          }
+        ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Lumiose Sewers",
+            "methods": [
+              "Encounter"
             ]
           }
         ]
@@ -271271,6 +274812,33 @@
             "location": "Paldea Dex",
             "methods": [
               "Regional Dex"
+            ]
+          }
+        ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve",
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Skrelp",
+            "methods": [
+              "Evolve"
+            ]
+          },
+          {
+            "location": "Lumiose Sewers",
+            "methods": [
+              "Encounter"
+            ]
+          },
+          {
+            "location": "Wild Zone 20.",
+            "methods": [
+              "Encounter"
             ]
           }
         ]
@@ -271439,13 +275007,13 @@
       {
         "game": "Legends: Z-A",
         "methods": [
-          "Mega Evolution"
+          "Purchase"
         ],
         "locations": [
           {
-            "location": "Battle Transformation",
+            "location": "Purchase from Quasartico for 240 Mega Shards",
             "methods": [
-              "Mega Evolution"
+              "Purchase"
             ]
           }
         ]
@@ -271549,6 +275117,20 @@
             "location": "Paldea Dex",
             "methods": [
               "Regional Dex"
+            ]
+          }
+        ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Wild Zone 11.",
+            "methods": [
+              "Encounter"
             ]
           }
         ]
@@ -271669,6 +275251,20 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Clauncher",
+            "methods": [
+              "Evolve"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -271746,6 +275342,20 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Wild Zone 14. (Sunny)",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -271820,6 +275430,20 @@
             "location": "Galar Dex",
             "methods": [
               "Regional Dex"
+            ]
+          }
+        ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Helioptile",
+            "methods": [
+              "Evolve"
             ]
           }
         ]
@@ -271928,6 +275552,20 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Purchase"
+        ],
+        "locations": [
+          {
+            "location": "Purchase Jaw Fossil for $20,000 at Stone Emporium and revive at Pokemon Lab (Side Mission 27)",
+            "methods": [
+              "Purchase"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -271974,6 +275612,20 @@
             "location": "Crown Tundra Dex",
             "methods": [
               "DLC Dex"
+            ]
+          }
+        ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Tyrunt",
+            "methods": [
+              "Evolve"
             ]
           }
         ]
@@ -272082,6 +275734,20 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Purchase"
+        ],
+        "locations": [
+          {
+            "location": "Purchase Sail Fossil for $20,000 at Stone Emporium and revive at Pokemon Lab (Side Mission 27)",
+            "methods": [
+              "Purchase"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -272128,6 +275794,20 @@
             "location": "Crown Tundra Dex",
             "methods": [
               "DLC Dex"
+            ]
+          }
+        ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Amaura",
+            "methods": [
+              "Evolve"
             ]
           }
         ]
@@ -272233,6 +275913,20 @@
             "location": "Paldea Dex",
             "methods": [
               "Regional Dex"
+            ]
+          }
+        ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Eevee",
+            "methods": [
+              "Evolve"
             ]
           }
         ]
@@ -272437,6 +276131,20 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Lives in high places",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -272602,13 +276310,13 @@
       {
         "game": "Legends: Z-A",
         "methods": [
-          "Mega Evolution"
+          "Mission Reward"
         ],
         "locations": [
           {
-            "location": "Battle Transformation",
+            "location": "Complete Main Mission 17: A Rogue Mega Hawlucha",
             "methods": [
-              "Mega Evolution"
+              "Mission Reward"
             ]
           }
         ]
@@ -272746,6 +276454,20 @@
             "location": "Paldea Dex",
             "methods": [
               "Regional Dex"
+            ]
+          }
+        ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Lives in high places",
+            "methods": [
+              "Encounter"
             ]
           }
         ]
@@ -273090,6 +276812,20 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Wild Zone 9.",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -273397,6 +277133,26 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Found in high places during the rain.",
+            "methods": [
+              "Encounter"
+            ]
+          },
+          {
+            "location": "Lumiose Sewers",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -273612,6 +277368,27 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve",
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Goomy",
+            "methods": [
+              "Evolve"
+            ]
+          },
+          {
+            "location": "Lives by water. Seen only when it rains. Rare",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -273728,6 +277505,20 @@
             "location": "Paldea Dex",
             "methods": [
               "Regional Dex"
+            ]
+          }
+        ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Transfer"
+        ],
+        "locations": [
+          {
+            "location": "Transfer via Pokemon Home",
+            "methods": [
+              "Transfer"
             ]
           }
         ]
@@ -273850,6 +277641,20 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Goodra",
+            "methods": [
+              "Evolve"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -273966,6 +277771,20 @@
             "location": "Paldea Dex",
             "methods": [
               "Regional Dex"
+            ]
+          }
+        ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Hisuian Sliggoo",
+            "methods": [
+              "Evolve"
             ]
           }
         ]
@@ -274196,6 +278015,26 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Lumiose Sewers",
+            "methods": [
+              "Encounter"
+            ]
+          },
+          {
+            "location": "Wild Zone 17.",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -274389,6 +278228,20 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Wild Zone 13. (Night)",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -274568,6 +278421,20 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Phantump",
+            "methods": [
+              "Evolve"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -274645,6 +278512,20 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Wild Zone 15.",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -274691,6 +278572,20 @@
             "location": "Galar Dex",
             "methods": [
               "Regional Dex"
+            ]
+          }
+        ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Pumpkaboo",
+            "methods": [
+              "Evolve"
             ]
           }
         ]
@@ -274863,6 +278758,20 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Wild Zone 12.",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -274968,6 +278877,20 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Bergmite",
+            "methods": [
+              "Evolve"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -275070,6 +278993,20 @@
             "location": "Paldea Dex",
             "methods": [
               "Regional Dex"
+            ]
+          }
+        ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Transfer"
+        ],
+        "locations": [
+          {
+            "location": "Transfer via Pokemon Home",
+            "methods": [
+              "Transfer"
             ]
           }
         ]
@@ -275220,6 +279157,26 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Lumiose Sewers",
+            "methods": [
+              "Encounter"
+            ]
+          },
+          {
+            "location": "Wild Zone 18. (Night)",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -275353,6 +279310,33 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Evolve",
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Evolve Noibat",
+            "methods": [
+              "Evolve"
+            ]
+          },
+          {
+            "location": "Wild Zone 18. (Night)",
+            "methods": [
+              "Encounter"
+            ]
+          },
+          {
+            "location": "L Cafe",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -275450,6 +279434,20 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Mission Reward"
+        ],
+        "locations": [
+          {
+            "location": "Complete Main Mission 40: The One That Gives",
+            "methods": [
+              "Mission Reward"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -275544,6 +279542,20 @@
             "location": "Sword/Shield Game Data",
             "methods": [
               "Game Compatibility"
+            ]
+          }
+        ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Mission Reward"
+        ],
+        "locations": [
+          {
+            "location": "Complete Main Mission 41: The One That Takes",
+            "methods": [
+              "Mission Reward"
             ]
           }
         ]
@@ -275677,6 +279689,20 @@
             "location": "Sword/Shield Game Data",
             "methods": [
               "Game Compatibility"
+            ]
+          }
+        ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Mission Reward"
+        ],
+        "locations": [
+          {
+            "location": "Complete Main Mission 42: To Keep the World in Balance",
+            "methods": [
+              "Mission Reward"
             ]
           }
         ]
@@ -275845,13 +279871,13 @@
       {
         "game": "Legends: Z-A",
         "methods": [
-          "Mega Evolution"
+          "Mission Reward"
         ],
         "locations": [
           {
-            "location": "Battle Transformation",
+            "location": "Complete Main Mission 37: Operation Project Lumiose",
             "methods": [
-              "Mega Evolution"
+              "Mission Reward"
             ]
           }
         ]
@@ -275929,6 +279955,20 @@
             "location": "Scarlet/Violet Game Data",
             "methods": [
               "Game Compatibility"
+            ]
+          }
+        ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Mission Reward"
+        ],
+        "locations": [
+          {
+            "location": "Complete Side Mission EX1: Shine Bright Like a Gemstone",
+            "methods": [
+              "Mission Reward"
             ]
           }
         ]
@@ -276097,13 +280137,13 @@
       {
         "game": "Legends: Z-A",
         "methods": [
-          "Mega Evolution"
+          "Mystery Gift"
         ],
         "locations": [
           {
-            "location": "Battle Transformation",
+            "location": "Obtain through Mystery Gift",
             "methods": [
-              "Mega Evolution"
+              "Mystery Gift"
             ]
           }
         ]
@@ -286249,6 +290289,20 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Wild Zone 19.",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -286414,13 +290468,13 @@
       {
         "game": "Legends: Z-A",
         "methods": [
-          "Mega Evolution"
+          "Purchase"
         ],
         "locations": [
           {
-            "location": "Battle Transformation",
+            "location": "Purchase from Quasartico for 360 Mega Shards",
             "methods": [
-              "Mega Evolution"
+              "Purchase"
             ]
           }
         ]
@@ -294602,6 +298656,20 @@
             ]
           }
         ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Encounter"
+        ],
+        "locations": [
+          {
+            "location": "Wild Zone 16.",
+            "methods": [
+              "Encounter"
+            ]
+          }
+        ]
       }
     ]
   },
@@ -294767,13 +298835,13 @@
       {
         "game": "Legends: Z-A",
         "methods": [
-          "Mega Evolution"
+          "Purchase"
         ],
         "locations": [
           {
-            "location": "Battle Transformation",
+            "location": "Purchase from Quasartico for 240 Mega Shards",
             "methods": [
-              "Mega Evolution"
+              "Purchase"
             ]
           }
         ]

@@ -9,7 +9,7 @@
 - For modern games with sparse encounter endpoint coverage (Lets Go onward), generation augments availability from:
   - PokeAPI regional/DLC Pokedex resources (`letsgo-kanto`, `galar`, `isle-of-armor`, `crown-tundra`, `hisui`, `paldea`, `kitakami`, `blueberry`).
   - PokeAPI modern version-group compatibility signals (`sword-shield`, `brilliant-diamond-shining-pearl`, `legends-arceus`, `scarlet-violet`) when no encounter/pokedex location rows exist.
-- `Legends: Z-A` remains a placeholder in API responses; PokeAPI currently has no corresponding version/pokedex data to source encounters from.
+- `Legends: Z-A` still lacks official PokeAPI version/pokedex encounter coverage, so availability is curated manually in `data/normalized/pokemon.json`.
 - Pokemon detail responses always include the full Gen 1-9 game list plus `Legends: Z-A`; missing encounters are returned as `Not obtainable` for that game.
 - `base_stat_total` is computed during seed as `HP + Attack + Defense + Special Attack + Special Defense + Speed`.
 - Ability and move effect text are normalized to ASCII for consistency.
