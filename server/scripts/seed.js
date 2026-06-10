@@ -6,6 +6,10 @@ import { getDbConnection } from "../src/db/tunnelPool.js";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+// Rows per INSERT statement. Keeps parameter counts well under the
+// 65535-parameter protocol limit (widest table is 19 columns).
+const BATCH_SIZE = 500;
+
 const readJson = async (name, fallback = null) => {
   const filePath = path.resolve(__dirname, `../../data/normalized/${name}.json`);
 
@@ -28,6 +32,50 @@ const calculateBaseStatTotal = (pokemon) =>
   pokemon.specialAttack +
   pokemon.specialDefense +
   pokemon.speed;
+
+// Multi-row INSERT in chunks. `rows` is an array of value arrays matching
+// `columns`. Returns all RETURNING rows when `returning` is set.
+const batchInsert = async (client, { table, columns, rows, onConflict = "", returning = "" }) => {
+  const returned = [];
+
+  for (let start = 0; start < rows.length; start += BATCH_SIZE) {
+    const chunk = rows.slice(start, start + BATCH_SIZE);
+    const values = [];
+    const tuples = chunk.map((row, rowIndex) => {
+      values.push(...row);
+      const offset = rowIndex * columns.length;
+      return `(${columns.map((_, colIndex) => `$${offset + colIndex + 1}`).join(", ")})`;
+    });
+
+    const result = await client.query(
+      `
+        INSERT INTO ${table} (${columns.join(", ")})
+        VALUES ${tuples.join(", ")}
+        ${onConflict}
+        ${returning ? `RETURNING ${returning}` : ""}
+      `,
+      values,
+    );
+
+    returned.push(...result.rows);
+  }
+
+  return returned;
+};
+
+// A single statement may not touch the same conflict key twice, so collapse
+// duplicates ahead of time. `lastWins` mirrors ON CONFLICT DO UPDATE
+// (the final occurrence applies); first-wins mirrors DO NOTHING.
+const dedupeByKey = (rows, keyOf, { lastWins }) => {
+  const map = new Map();
+  for (const row of rows) {
+    const key = keyOf(row);
+    if (lastWins || !map.has(key)) {
+      map.set(key, row);
+    }
+  }
+  return [...map.values()];
+};
 
 const seed = async () => {
   const db = await getDbConnection();
@@ -77,260 +125,233 @@ const seed = async () => {
     `);
 
     const typeMap = new Map();
-    for (const type of types) {
-      const result = await client.query(
-        `INSERT INTO battleex.types (name) VALUES ($1) RETURNING id`,
-        [type.name],
-      );
-      typeMap.set(type.name, result.rows[0].id);
+    for (const row of await batchInsert(client, {
+      table: "battleex.types",
+      columns: ["name"],
+      rows: types.map((type) => [type.name]),
+      returning: "id, name",
+    })) {
+      typeMap.set(row.name, row.id);
     }
 
-    for (const entry of typeEffectiveness) {
-      await client.query(
-        `
-          INSERT INTO battleex.type_effectiveness (attacking_type_id, defending_type_id, multiplier)
-          VALUES ($1, $2, $3)
-        `,
-        [
-          typeMap.get(entry.attackingType),
-          typeMap.get(entry.defendingType),
-          entry.multiplier,
-        ],
-      );
-    }
+    await batchInsert(client, {
+      table: "battleex.type_effectiveness",
+      columns: ["attacking_type_id", "defending_type_id", "multiplier"],
+      rows: typeEffectiveness.map((entry) => [
+        typeMap.get(entry.attackingType),
+        typeMap.get(entry.defendingType),
+        entry.multiplier,
+      ]),
+    });
 
     const pokemonMap = new Map();
-    for (const entry of pokemon) {
-      const profileKey = String(entry.profileKey ?? entry.nationalDexNumber);
-      const result = await client.query(
-        `
-          INSERT INTO battleex.pokemon (
-            profile_key,
-            national_dex_number,
-            name,
-            form_name,
-            is_regional_variant,
-            primary_type_id,
-            secondary_type_id,
-            hp,
-            attack,
-            defense,
-            special_attack,
-            special_defense,
-            speed,
-            base_stat_total,
-            sprite_url,
-            description_short,
-            generation,
-            introduced_in_game,
-            obtain_methods
-          )
-          VALUES (
-            $1, $2, $3, $4, $5, $6, $7, $8,
-            $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19
-          )
-          RETURNING id
-        `,
-        [
-          profileKey,
-          entry.nationalDexNumber,
-          entry.name,
-          entry.formName || null,
-          Boolean(entry.isRegionalVariant),
-          typeMap.get(entry.primaryType),
-          entry.secondaryType ? typeMap.get(entry.secondaryType) : null,
-          entry.hp,
-          entry.attack,
-          entry.defense,
-          entry.specialAttack,
-          entry.specialDefense,
-          entry.speed,
-          calculateBaseStatTotal(entry),
-          entry.spriteUrl,
-          entry.descriptionShort,
-          entry.generation,
-          entry.introducedInGame,
-          JSON.stringify(entry.obtainMethodsByGame ?? []),
-        ],
-      );
-
-      pokemonMap.set(profileKey, result.rows[0].id);
+    for (const row of await batchInsert(client, {
+      table: "battleex.pokemon",
+      columns: [
+        "profile_key",
+        "national_dex_number",
+        "name",
+        "form_name",
+        "is_regional_variant",
+        "primary_type_id",
+        "secondary_type_id",
+        "hp",
+        "attack",
+        "defense",
+        "special_attack",
+        "special_defense",
+        "speed",
+        "base_stat_total",
+        "sprite_url",
+        "description_short",
+        "generation",
+        "introduced_in_game",
+        "obtain_methods",
+      ],
+      rows: pokemon.map((entry) => [
+        String(entry.profileKey ?? entry.nationalDexNumber),
+        entry.nationalDexNumber,
+        entry.name,
+        entry.formName || null,
+        Boolean(entry.isRegionalVariant),
+        typeMap.get(entry.primaryType),
+        entry.secondaryType ? typeMap.get(entry.secondaryType) : null,
+        entry.hp,
+        entry.attack,
+        entry.defense,
+        entry.specialAttack,
+        entry.specialDefense,
+        entry.speed,
+        calculateBaseStatTotal(entry),
+        entry.spriteUrl,
+        entry.descriptionShort,
+        entry.generation,
+        entry.introducedInGame,
+        JSON.stringify(entry.obtainMethodsByGame ?? []),
+      ]),
+      returning: "id, profile_key",
+    })) {
+      pokemonMap.set(row.profile_key, row.id);
     }
 
     const abilityMap = new Map();
-    for (const ability of abilities) {
-      const result = await client.query(
-        `
-          INSERT INTO battleex.abilities (name, short_effect, full_effect, is_battle_relevant)
-          VALUES ($1, $2, $3, $4)
-          RETURNING id
-        `,
-        [ability.name, ability.shortEffect, ability.fullEffect, ability.isBattleRelevant],
-      );
-
-      abilityMap.set(ability.name, result.rows[0].id);
+    for (const row of await batchInsert(client, {
+      table: "battleex.abilities",
+      columns: ["name", "short_effect", "full_effect", "is_battle_relevant"],
+      rows: abilities.map((ability) => [
+        ability.name,
+        ability.shortEffect,
+        ability.fullEffect,
+        ability.isBattleRelevant,
+      ]),
+      returning: "id, name",
+    })) {
+      abilityMap.set(row.name, row.id);
     }
 
     const moveMap = new Map();
-    for (const move of moves) {
-      const result = await client.query(
-        `
-          INSERT INTO battleex.moves (
-            name,
-            type_id,
-            category,
-            power,
-            accuracy,
-            pp,
-            short_effect,
-            full_effect,
-            priority
-          )
-          VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9)
-          RETURNING id
-        `,
-        [
-          move.name,
-          typeMap.get(move.type),
-          move.category,
-          move.power,
-          move.accuracy,
-          move.pp,
-          move.shortEffect,
-          move.fullEffect,
-          move.priority,
-        ],
-      );
-
-      moveMap.set(move.name, result.rows[0].id);
+    for (const row of await batchInsert(client, {
+      table: "battleex.moves",
+      columns: [
+        "name",
+        "type_id",
+        "category",
+        "power",
+        "accuracy",
+        "pp",
+        "short_effect",
+        "full_effect",
+        "priority",
+      ],
+      rows: moves.map((move) => [
+        move.name,
+        typeMap.get(move.type),
+        move.category,
+        move.power,
+        move.accuracy,
+        move.pp,
+        move.shortEffect,
+        move.fullEffect,
+        move.priority,
+      ]),
+      returning: "id, name",
+    })) {
+      moveMap.set(row.name, row.id);
     }
 
     const evolutionFamilyMap = new Map();
-    for (const family of evolutionFamilies) {
-      const result = await client.query(
-        `
-          INSERT INTO battleex.evolution_families (source_chain_id, is_branched)
-          VALUES ($1, $2)
-          RETURNING id
-        `,
-        [family.sourceChainId, Boolean(family.isBranched)],
-      );
-
-      evolutionFamilyMap.set(family.sourceChainId, result.rows[0].id);
+    for (const row of await batchInsert(client, {
+      table: "battleex.evolution_families",
+      columns: ["source_chain_id", "is_branched"],
+      rows: evolutionFamilies.map((family) => [
+        family.sourceChainId,
+        Boolean(family.isBranched),
+      ]),
+      returning: "id, source_chain_id",
+    })) {
+      evolutionFamilyMap.set(row.source_chain_id, row.id);
     }
 
-    for (const node of evolutionNodes) {
-      const familyId = evolutionFamilyMap.get(node.sourceChainId);
-      const pokemonId = pokemonMap.get(String(node.pokemonProfileKey));
-
-      if (!familyId || !pokemonId) {
-        continue;
-      }
-
-      await client.query(
-        `
-          INSERT INTO battleex.evolution_nodes (
-            family_id,
-            pokemon_id,
-            depth,
-            display_order,
-            path_key,
-            display_name
-          )
-          VALUES ($1, $2, $3, $4, $5, $6)
-          ON CONFLICT (family_id, pokemon_id)
-          DO UPDATE SET
-            depth = EXCLUDED.depth,
-            display_order = EXCLUDED.display_order,
-            path_key = EXCLUDED.path_key,
-            display_name = EXCLUDED.display_name
-        `,
-        [
+    const nodeRows = evolutionNodes
+      .map((node) => {
+        const familyId = evolutionFamilyMap.get(node.sourceChainId);
+        const pokemonId = pokemonMap.get(String(node.pokemonProfileKey));
+        if (!familyId || !pokemonId) {
+          return null;
+        }
+        return [
           familyId,
           pokemonId,
           node.depth,
           node.displayOrder,
           node.pathKey || null,
           node.displayName || null,
-        ],
-      );
-    }
+        ];
+      })
+      .filter(Boolean);
+    await batchInsert(client, {
+      table: "battleex.evolution_nodes",
+      columns: ["family_id", "pokemon_id", "depth", "display_order", "path_key", "display_name"],
+      rows: dedupeByKey(nodeRows, (row) => `${row[0]}|${row[1]}`, { lastWins: true }),
+      onConflict: `
+        ON CONFLICT (family_id, pokemon_id)
+        DO UPDATE SET
+          depth = EXCLUDED.depth,
+          display_order = EXCLUDED.display_order,
+          path_key = EXCLUDED.path_key,
+          display_name = EXCLUDED.display_name
+      `,
+    });
 
-    for (const edge of evolutionEdges) {
-      const familyId = evolutionFamilyMap.get(edge.sourceChainId);
-      const fromPokemonId = pokemonMap.get(String(edge.fromPokemonProfileKey));
-      const toPokemonId = pokemonMap.get(String(edge.toPokemonProfileKey));
-
-      if (!familyId || !fromPokemonId || !toPokemonId) {
-        continue;
-      }
-
-      await client.query(
-        `
-          INSERT INTO battleex.evolution_edges (
-            family_id,
-            from_pokemon_id,
-            to_pokemon_id,
-            label,
-            tooltip,
-            sort_order
-          )
-          VALUES ($1, $2, $3, $4, $5, $6)
-          ON CONFLICT (family_id, from_pokemon_id, to_pokemon_id)
-          DO UPDATE SET
-            label = EXCLUDED.label,
-            tooltip = EXCLUDED.tooltip,
-            sort_order = EXCLUDED.sort_order
-        `,
-        [
+    const edgeRows = evolutionEdges
+      .map((edge) => {
+        const familyId = evolutionFamilyMap.get(edge.sourceChainId);
+        const fromPokemonId = pokemonMap.get(String(edge.fromPokemonProfileKey));
+        const toPokemonId = pokemonMap.get(String(edge.toPokemonProfileKey));
+        if (!familyId || !fromPokemonId || !toPokemonId) {
+          return null;
+        }
+        return [
           familyId,
           fromPokemonId,
           toPokemonId,
           edge.label,
           edge.tooltip || null,
           edge.sortOrder || 0,
-        ],
-      );
-    }
+        ];
+      })
+      .filter(Boolean);
+    await batchInsert(client, {
+      table: "battleex.evolution_edges",
+      columns: ["family_id", "from_pokemon_id", "to_pokemon_id", "label", "tooltip", "sort_order"],
+      rows: dedupeByKey(edgeRows, (row) => `${row[0]}|${row[1]}|${row[2]}`, { lastWins: true }),
+      onConflict: `
+        ON CONFLICT (family_id, from_pokemon_id, to_pokemon_id)
+        DO UPDATE SET
+          label = EXCLUDED.label,
+          tooltip = EXCLUDED.tooltip,
+          sort_order = EXCLUDED.sort_order
+      `,
+    });
 
-    for (const link of pokemonAbilities) {
-      const pokemonId = pokemonMap.get(String(link.pokemonProfileKey ?? link.pokemonDex));
-      const abilityId = abilityMap.get(link.abilityName);
+    const abilityLinkRows = pokemonAbilities
+      .map((link) => {
+        const pokemonId = pokemonMap.get(String(link.pokemonProfileKey ?? link.pokemonDex));
+        const abilityId = abilityMap.get(link.abilityName);
+        if (!pokemonId || !abilityId) {
+          return null;
+        }
+        return [pokemonId, abilityId, link.slotType];
+      })
+      .filter(Boolean);
+    await batchInsert(client, {
+      table: "battleex.pokemon_abilities",
+      columns: ["pokemon_id", "ability_id", "slot_type"],
+      rows: dedupeByKey(abilityLinkRows, (row) => row.join("|"), { lastWins: false }),
+      onConflict: "ON CONFLICT DO NOTHING",
+    });
 
-      if (!pokemonId || !abilityId) {
-        continue;
-      }
-
-      await client.query(
-        `
-          INSERT INTO battleex.pokemon_abilities (pokemon_id, ability_id, slot_type)
-          VALUES ($1, $2, $3)
-          ON CONFLICT DO NOTHING
-        `,
-        [pokemonId, abilityId, link.slotType],
-      );
-    }
-
-    for (const link of pokemonMoves) {
-      const pokemonId = pokemonMap.get(String(link.pokemonProfileKey ?? link.pokemonDex));
-      const moveId = moveMap.get(link.moveName);
-
-      if (!pokemonId || !moveId) {
-        continue;
-      }
-
-      await client.query(
-        `
-          INSERT INTO battleex.pokemon_moves (pokemon_id, move_id, learn_method, is_notable_battle_move)
-          VALUES ($1, $2, $3, $4)
-          ON CONFLICT (pokemon_id, move_id)
-          DO UPDATE SET
-            learn_method = EXCLUDED.learn_method,
-            is_notable_battle_move = EXCLUDED.is_notable_battle_move
-        `,
-        [pokemonId, moveId, link.learnMethod, Boolean(link.isNotableBattleMove)],
-      );
-    }
+    const moveLinkRows = pokemonMoves
+      .map((link) => {
+        const pokemonId = pokemonMap.get(String(link.pokemonProfileKey ?? link.pokemonDex));
+        const moveId = moveMap.get(link.moveName);
+        if (!pokemonId || !moveId) {
+          return null;
+        }
+        return [pokemonId, moveId, link.learnMethod, Boolean(link.isNotableBattleMove)];
+      })
+      .filter(Boolean);
+    await batchInsert(client, {
+      table: "battleex.pokemon_moves",
+      columns: ["pokemon_id", "move_id", "learn_method", "is_notable_battle_move"],
+      rows: dedupeByKey(moveLinkRows, (row) => `${row[0]}|${row[1]}`, { lastWins: true }),
+      onConflict: `
+        ON CONFLICT (pokemon_id, move_id)
+        DO UPDATE SET
+          learn_method = EXCLUDED.learn_method,
+          is_notable_battle_move = EXCLUDED.is_notable_battle_move
+      `,
+    });
 
     await client.query("COMMIT");
 
