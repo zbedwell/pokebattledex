@@ -109452,6 +109452,104 @@
     "isNotableBattleMove": true
   },
   {
+    "pokemonProfileKey": "978-tatsugiri-mega",
+    "moveSlug": "take-down",
+    "moveName": "Take Down",
+    "learnMethod": "machine",
+    "isNotableBattleMove": true
+  },
+  {
+    "pokemonProfileKey": "978-tatsugiri-mega",
+    "moveSlug": "hydro-pump",
+    "moveName": "Hydro Pump",
+    "learnMethod": "machine",
+    "isNotableBattleMove": true
+  },
+  {
+    "pokemonProfileKey": "978-tatsugiri-mega",
+    "moveSlug": "surf",
+    "moveName": "Surf",
+    "learnMethod": "machine",
+    "isNotableBattleMove": true
+  },
+  {
+    "pokemonProfileKey": "978-tatsugiri-mega",
+    "moveSlug": "hyper-beam",
+    "moveName": "Hyper Beam",
+    "learnMethod": "machine",
+    "isNotableBattleMove": true
+  },
+  {
+    "pokemonProfileKey": "978-tatsugiri-mega",
+    "moveSlug": "rest",
+    "moveName": "Rest",
+    "learnMethod": "machine",
+    "isNotableBattleMove": true
+  },
+  {
+    "pokemonProfileKey": "978-tatsugiri-mega",
+    "moveSlug": "substitute",
+    "moveName": "Substitute",
+    "learnMethod": "machine",
+    "isNotableBattleMove": true
+  },
+  {
+    "pokemonProfileKey": "978-tatsugiri-mega",
+    "moveSlug": "protect",
+    "moveName": "Protect",
+    "learnMethod": "machine",
+    "isNotableBattleMove": true
+  },
+  {
+    "pokemonProfileKey": "978-tatsugiri-mega",
+    "moveSlug": "icy-wind",
+    "moveName": "Icy Wind",
+    "learnMethod": "machine",
+    "isNotableBattleMove": true
+  },
+  {
+    "pokemonProfileKey": "978-tatsugiri-mega",
+    "moveSlug": "outrage",
+    "moveName": "Outrage",
+    "learnMethod": "machine",
+    "isNotableBattleMove": true
+  },
+  {
+    "pokemonProfileKey": "978-tatsugiri-mega",
+    "moveSlug": "endure",
+    "moveName": "Endure",
+    "learnMethod": "machine",
+    "isNotableBattleMove": true
+  },
+  {
+    "pokemonProfileKey": "978-tatsugiri-mega",
+    "moveSlug": "sleep-talk",
+    "moveName": "Sleep Talk",
+    "learnMethod": "machine",
+    "isNotableBattleMove": true
+  },
+  {
+    "pokemonProfileKey": "978-tatsugiri-mega",
+    "moveSlug": "baton-pass",
+    "moveName": "Baton Pass",
+    "learnMethod": "machine",
+    "isNotableBattleMove": true
+  },
+  {
+    "pokemonProfileKey": "978-tatsugiri-mega",
+    "moveSlug": "rain-dance",
+    "moveName": "Rain Dance",
+    "learnMethod": "machine",
+    "isNotableBattleMove": true
+  },
+  {
+    "pokemonProfileKey": "978-tatsugiri-mega",
+    "moveSlug": "whirlpool",
+    "moveName": "Whirlpool",
+    "learnMethod": "machine",
+    "isNotableBattleMove": true
+  },
+  {
     "pokemonProfileKey": "979",
     "moveSlug": "fire-punch",
     "moveName": "Fire Punch",

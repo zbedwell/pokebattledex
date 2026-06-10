@@ -15810,6 +15810,18 @@
     "slotType": "hidden"
   },
   {
+    "pokemonProfileKey": "978-tatsugiri-mega",
+    "abilitySlug": "commander",
+    "abilityName": "Commander",
+    "slotType": "primary"
+  },
+  {
+    "pokemonProfileKey": "978-tatsugiri-mega",
+    "abilitySlug": "storm-drain",
+    "abilityName": "Storm Drain",
+    "slotType": "hidden"
+  },
+  {
     "pokemonProfileKey": "979",
     "abilitySlug": "vital-spirit",
     "abilityName": "Vital Spirit",

@@ -8640,6 +8640,14 @@
     "displayName": "Tatsugiri"
   },
   {
+    "sourceChainId": 514,
+    "pokemonProfileKey": "978-tatsugiri-mega",
+    "depth": 1,
+    "displayOrder": 1,
+    "pathKey": "0.battle.1",
+    "displayName": "Tatsugiri (Mega)"
+  },
+  {
     "sourceChainId": 515,
     "pokemonProfileKey": "984",
     "depth": 0,

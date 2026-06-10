@@ -4584,6 +4584,14 @@
     "sortOrder": 0
   },
   {
+    "sourceChainId": 514,
+    "fromPokemonProfileKey": "978",
+    "toPokemonProfileKey": "978-tatsugiri-mega",
+    "label": "Mega Evolution (Mega Stone)",
+    "tooltip": "Mega Evolution (Mega Stone)",
+    "sortOrder": 0
+  },
+  {
     "sourceChainId": 527,
     "fromPokemonProfileKey": "996",
     "toPokemonProfileKey": "997",

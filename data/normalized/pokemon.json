@@ -305607,6 +305607,181 @@
     ]
   },
   {
+    "profileKey": "978-tatsugiri-mega",
+    "nationalDexNumber": 978,
+    "name": "Tatsugiri (Mega)",
+    "formName": "Mega",
+    "isRegionalVariant": false,
+    "primaryType": "Dragon",
+    "secondaryType": "Water",
+    "hp": 68,
+    "attack": 65,
+    "defense": 90,
+    "specialAttack": 135,
+    "specialDefense": 125,
+    "speed": 92,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10324.png",
+    "generation": 6,
+    "introducedInGame": "X/Y",
+    "descriptionShort": null,
+    "obtainMethodsByGame": [
+      {
+        "game": "X",
+        "methods": [
+          "Mega Evolution"
+        ],
+        "locations": [
+          {
+            "location": "Battle Transformation",
+            "methods": [
+              "Mega Evolution"
+            ]
+          }
+        ]
+      },
+      {
+        "game": "Y",
+        "methods": [
+          "Mega Evolution"
+        ],
+        "locations": [
+          {
+            "location": "Battle Transformation",
+            "methods": [
+              "Mega Evolution"
+            ]
+          }
+        ]
+      },
+      {
+        "game": "Omega Ruby",
+        "methods": [
+          "Mega Evolution"
+        ],
+        "locations": [
+          {
+            "location": "Battle Transformation",
+            "methods": [
+              "Mega Evolution"
+            ]
+          }
+        ]
+      },
+      {
+        "game": "Alpha Sapphire",
+        "methods": [
+          "Mega Evolution"
+        ],
+        "locations": [
+          {
+            "location": "Battle Transformation",
+            "methods": [
+              "Mega Evolution"
+            ]
+          }
+        ]
+      },
+      {
+        "game": "Sun",
+        "methods": [
+          "Mega Evolution"
+        ],
+        "locations": [
+          {
+            "location": "Battle Transformation",
+            "methods": [
+              "Mega Evolution"
+            ]
+          }
+        ]
+      },
+      {
+        "game": "Moon",
+        "methods": [
+          "Mega Evolution"
+        ],
+        "locations": [
+          {
+            "location": "Battle Transformation",
+            "methods": [
+              "Mega Evolution"
+            ]
+          }
+        ]
+      },
+      {
+        "game": "Ultra Sun",
+        "methods": [
+          "Mega Evolution"
+        ],
+        "locations": [
+          {
+            "location": "Battle Transformation",
+            "methods": [
+              "Mega Evolution"
+            ]
+          }
+        ]
+      },
+      {
+        "game": "Ultra Moon",
+        "methods": [
+          "Mega Evolution"
+        ],
+        "locations": [
+          {
+            "location": "Battle Transformation",
+            "methods": [
+              "Mega Evolution"
+            ]
+          }
+        ]
+      },
+      {
+        "game": "Let's Go Pikachu",
+        "methods": [
+          "Mega Evolution"
+        ],
+        "locations": [
+          {
+            "location": "Battle Transformation",
+            "methods": [
+              "Mega Evolution"
+            ]
+          }
+        ]
+      },
+      {
+        "game": "Let's Go Eevee",
+        "methods": [
+          "Mega Evolution"
+        ],
+        "locations": [
+          {
+            "location": "Battle Transformation",
+            "methods": [
+              "Mega Evolution"
+            ]
+          }
+        ]
+      },
+      {
+        "game": "Legends: Z-A",
+        "methods": [
+          "Mega Evolution"
+        ],
+        "locations": [
+          {
+            "location": "Battle Transformation",
+            "methods": [
+              "Mega Evolution"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
     "profileKey": "979",
     "nationalDexNumber": 979,
     "name": "Annihilape",
