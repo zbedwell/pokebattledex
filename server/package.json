@@ -9,6 +9,7 @@
     "create-db": "node scripts/create-database.js",
     "migrate": "node scripts/migrate.js",
     "seed": "node scripts/seed.js",
+    "sync-sprites": "node scripts/sync-sprites.mjs",
     "test": "vitest run"
   },
   "keywords": [],

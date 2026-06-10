@@ -224240,7 +224240,7 @@
     "specialAttack": 141,
     "specialDefense": 85,
     "speed": 151,
-    "spriteUrl": null,
+    "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10309.png",
     "generation": 6,
     "introducedInGame": "X/Y",
     "descriptionShort": null,
