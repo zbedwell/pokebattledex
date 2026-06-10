@@ -45,6 +45,11 @@ export const api = {
     return handleResponse(response);
   },
 
+  async getPokemonLearnset(id) {
+    const response = await fetch(`${API_BASE}/pokemon/${id}/learnset`);
+    return handleResponse(response);
+  },
+
   async comparePokemon(ids) {
     const response = await fetch(`${API_BASE}/pokemon/compare?ids=${ids.join(",")}`);
     return handleResponse(response);

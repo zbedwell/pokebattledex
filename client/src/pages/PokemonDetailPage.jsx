@@ -13,6 +13,7 @@ import { ErrorState } from "../components/ErrorState.jsx";
 import { EmptyState } from "../components/EmptyState.jsx";
 import { DataStatusBanner } from "../components/DataStatusBanner.jsx";
 import { EvolutionLine } from "../components/EvolutionLine.jsx";
+import { LearnsetSection } from "../components/LearnsetSection.jsx";
 import { statKeys } from "../utils/formatters.js";
 
 export const PokemonDetailPage = () => {
@@ -236,6 +237,8 @@ export const PokemonDetailPage = () => {
           )}
         </SectionCard>
       </div>
+
+      <LearnsetSection pokemonId={id} />
 
       <SectionCard title="Similar Pokemon Suggestions">
         <div className="grid gap-3 md:grid-cols-3">

@@ -32,6 +32,11 @@ export const createPokemonController = ({ pokemonService }) => ({
     res.status(200).json(data);
   }),
 
+  getPokemonLearnset: asyncHandler(async (req, res) => {
+    const data = await pokemonService.getPokemonLearnset(req.params.id);
+    res.status(200).json(data);
+  }),
+
   comparePokemon: asyncHandler(async (req, res) => {
     const query = validateCompareQuery(req.query);
     const data = await pokemonService.comparePokemon(query.ids);

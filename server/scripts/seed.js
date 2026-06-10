@@ -35,11 +35,14 @@ const calculateBaseStatTotal = (pokemon) =>
 
 // Multi-row INSERT in chunks. `rows` is an array of value arrays matching
 // `columns`. Returns all RETURNING rows when `returning` is set.
-const batchInsert = async (client, { table, columns, rows, onConflict = "", returning = "" }) => {
+const batchInsert = async (
+  client,
+  { table, columns, rows, onConflict = "", returning = "", batchSize = BATCH_SIZE },
+) => {
   const returned = [];
 
-  for (let start = 0; start < rows.length; start += BATCH_SIZE) {
-    const chunk = rows.slice(start, start + BATCH_SIZE);
+  for (let start = 0; start < rows.length; start += batchSize) {
+    const chunk = rows.slice(start, start + batchSize);
     const values = [];
     const tuples = chunk.map((row, rowIndex) => {
       values.push(...row);
@@ -93,6 +96,7 @@ const seed = async () => {
       evolutionFamilies,
       evolutionNodes,
       evolutionEdges,
+      pokemonLearnsets,
     ] =
       await Promise.all([
         readJson("types"),
@@ -105,12 +109,14 @@ const seed = async () => {
         readJson("evolutionFamilies", []),
         readJson("evolutionNodes", []),
         readJson("evolutionEdges", []),
+        readJson("pokemonLearnsets", []),
       ]);
 
     await client.query("BEGIN");
 
     await client.query(`
       TRUNCATE TABLE
+        battleex.pokemon_learnsets,
         battleex.evolution_edges,
         battleex.evolution_nodes,
         battleex.evolution_families,
@@ -351,6 +357,23 @@ const seed = async () => {
           learn_method = EXCLUDED.learn_method,
           is_notable_battle_move = EXCLUDED.is_notable_battle_move
       `,
+    });
+
+    const learnsetRows = pokemonLearnsets
+      .map((entry) => {
+        const pokemonId = pokemonMap.get(String(entry.pokemonProfileKey));
+        if (!pokemonId) {
+          return null;
+        }
+        return [pokemonId, JSON.stringify(entry.learnset)];
+      })
+      .filter(Boolean);
+    await batchInsert(client, {
+      table: "battleex.pokemon_learnsets",
+      columns: ["pokemon_id", "learnset"],
+      rows: dedupeByKey(learnsetRows, (row) => row[0], { lastWins: true }),
+      // JSONB payloads are large; keep statements modest.
+      batchSize: 100,
     });
 
     await client.query("COMMIT");

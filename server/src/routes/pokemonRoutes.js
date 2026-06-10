@@ -12,6 +12,7 @@ export const createPokemonRoutes = (services) => {
   router.get("/:id", controller.getPokemonDetail);
   router.get("/:id/moves", controller.getPokemonMoves);
   router.get("/:id/abilities", controller.getPokemonAbilities);
+  router.get("/:id/learnset", controller.getPokemonLearnset);
 
   return router;
 };

@@ -208,6 +208,37 @@ export const createPokemonRepository = (db) => ({
     return Array.isArray(methods) ? methods : [];
   },
 
+  async getPokemonLearnset(pokemonId) {
+    const query = `
+      SELECT learnset
+      FROM battleex.pokemon_learnsets
+      WHERE pokemon_id = $1
+      LIMIT 1
+    `;
+
+    const result = await db.query(query, [pokemonId]);
+    return result.rows[0]?.learnset ?? null;
+  },
+
+  async getMovesByNames(names) {
+    const query = `
+      SELECT
+        m.id,
+        m.name,
+        t.name AS type,
+        m.category,
+        m.power,
+        m.accuracy,
+        m.pp
+      FROM battleex.moves m
+      JOIN battleex.types t ON t.id = m.type_id
+      WHERE m.name = ANY($1::text[])
+    `;
+
+    const result = await db.query(query, [names]);
+    return result.rows;
+  },
+
   async getPokemonSummaryById(pokemonId) {
     const query = `
       SELECT

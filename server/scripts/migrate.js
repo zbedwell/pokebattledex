@@ -7,13 +7,19 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const runMigrations = async () => {
-  const migrationPath = path.resolve(__dirname, "../db/migrations/001_init.sql");
-  const sql = await fs.readFile(migrationPath, "utf8");
+  const migrationsDir = path.resolve(__dirname, "../db/migrations");
+  const files = (await fs.readdir(migrationsDir))
+    .filter((file) => file.endsWith(".sql"))
+    .sort();
 
   const db = await getDbConnection();
-  await db.pool.query(sql);
 
-  console.log("Migration completed: 001_init.sql");
+  for (const file of files) {
+    const sql = await fs.readFile(path.join(migrationsDir, file), "utf8");
+    await db.pool.query(sql);
+    console.log(`Migration completed: ${file}`);
+  }
+
   await db.close();
 };
 

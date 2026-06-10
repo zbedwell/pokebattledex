@@ -58,6 +58,53 @@ const MAINLINE_GAMES_GEN_1_TO_9_PLUS_ZA = [
   "Legends: Z-A",
 ];
 
+// Learnset version groups in release order, matching the slugs stored in
+// battleex.pokemon_learnsets.
+const LEARNSET_VERSION_GROUPS = [
+  { slug: "red-blue", label: "Red/Blue" },
+  { slug: "yellow", label: "Yellow" },
+  { slug: "gold-silver", label: "Gold/Silver" },
+  { slug: "crystal", label: "Crystal" },
+  { slug: "ruby-sapphire", label: "Ruby/Sapphire" },
+  { slug: "emerald", label: "Emerald" },
+  { slug: "firered-leafgreen", label: "FireRed/LeafGreen" },
+  { slug: "diamond-pearl", label: "Diamond/Pearl" },
+  { slug: "platinum", label: "Platinum" },
+  { slug: "heartgold-soulsilver", label: "HeartGold/SoulSilver" },
+  { slug: "black-white", label: "Black/White" },
+  { slug: "black-2-white-2", label: "Black 2/White 2" },
+  { slug: "x-y", label: "X/Y" },
+  { slug: "omega-ruby-alpha-sapphire", label: "Omega Ruby/Alpha Sapphire" },
+  { slug: "sun-moon", label: "Sun/Moon" },
+  { slug: "ultra-sun-ultra-moon", label: "Ultra Sun/Ultra Moon" },
+  { slug: "lets-go-pikachu-lets-go-eevee", label: "Let's Go Pikachu/Eevee" },
+  { slug: "sword-shield", label: "Sword/Shield" },
+  { slug: "brilliant-diamond-and-shining-pearl", label: "Brilliant Diamond/Shining Pearl" },
+  { slug: "legends-arceus", label: "Legends: Arceus" },
+  { slug: "scarlet-violet", label: "Scarlet/Violet" },
+  { slug: "legends-z-a", label: "Legends: Z-A" },
+];
+
+const LEARN_METHOD_LABELS = {
+  "level-up": "Level Up",
+  machine: "TM / HM",
+  tutor: "Move Tutor",
+  egg: "Egg Moves",
+};
+const LEARN_METHOD_ORDER = ["level-up", "machine", "tutor", "egg"];
+
+const learnMethodLabel = (method) =>
+  LEARN_METHOD_LABELS[method] ||
+  method
+    .split("-")
+    .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
+    .join(" ");
+
+const learnMethodRank = (method) => {
+  const index = LEARN_METHOD_ORDER.indexOf(method);
+  return index === -1 ? LEARN_METHOD_ORDER.length : index;
+};
+
 const NOT_OBTAINABLE_METHOD = "Not obtainable";
 const EVOLVE_METHOD = "Evolve";
 const EVOLUTION_LOCATION = "Evolution";
@@ -1236,6 +1283,71 @@ export const createPokemonService = ({ pokemonRepository, typeService }) => {
         },
         abilities: await pokemonRepository.getPokemonAbilities(pokemon.id),
       };
+    },
+
+    async getPokemonLearnset(identifier) {
+      const pokemon = await pokemonRepository.getPokemonByIdentifier(identifier);
+      if (!pokemon) {
+        throw notFound("Pokemon not found.");
+      }
+
+      const learnset = await pokemonRepository.getPokemonLearnset(pokemon.id);
+      const summary = {
+        id: pokemon.id,
+        name: pokemon.name,
+        national_dex_number: pokemon.national_dex_number,
+      };
+
+      if (!learnset) {
+        return { pokemon: summary, games: [] };
+      }
+
+      const moveNames = new Set();
+      for (const methods of Object.values(learnset)) {
+        for (const rows of Object.values(methods)) {
+          for (const [moveName] of rows) {
+            moveNames.add(moveName);
+          }
+        }
+      }
+
+      const moveRows = await pokemonRepository.getMovesByNames([...moveNames]);
+      const moveByName = new Map(moveRows.map((row) => [row.name, row]));
+
+      // Newest games first so the UI defaults to the most current learnset.
+      const games = [];
+      for (const { slug, label } of [...LEARNSET_VERSION_GROUPS].reverse()) {
+        const methods = learnset[slug];
+        if (!methods) {
+          continue;
+        }
+
+        const methodEntries = Object.keys(methods)
+          .sort(
+            (a, b) => learnMethodRank(a) - learnMethodRank(b) || a.localeCompare(b),
+          )
+          .map((method) => ({
+            method,
+            label: learnMethodLabel(method),
+            moves: methods[method].map(([moveName, level]) => {
+              const meta = moveByName.get(moveName);
+              return {
+                level,
+                id: meta?.id ?? null,
+                name: moveName,
+                type: meta?.type ?? null,
+                category: meta?.category ?? null,
+                power: meta?.power ?? null,
+                accuracy: meta?.accuracy ?? null,
+                pp: meta?.pp ?? null,
+              };
+            }),
+          }));
+
+        games.push({ version_group: slug, label, methods: methodEntries });
+      }
+
+      return { pokemon: summary, games };
     },
 
     async comparePokemon(idsQuery) {
